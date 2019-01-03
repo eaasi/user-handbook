@@ -1,10 +1,19 @@
 .. EaaSI docs
 
-EaaSI Technical Documentation
+EaaSI User Handbook
 ====================================
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
 
-   install/docker
-   install/setup
+   guide/introduction
+   guide/architecture
+   guide/installation
+   guide/interface
+   guide/resources
+   guide/publishing
+   guide/workflow
+   guide/administration
+   guide/faq
+   guide/glossary
+   guide/links

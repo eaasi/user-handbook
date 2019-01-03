@@ -3,7 +3,7 @@
 
 # You can set these variables from the command line.
 SPHINXBUILD   = sphinx-build
-SPHINXPROJ    = eaas
+SPHINXPROJ    = eaasi
 SOURCEDIR     = source
 BUILDDIR      = build
 
@@ -23,4 +23,3 @@ clean:
 # "make mode" option.  $(O) is meant as a shortcut for $(SPHINXOPTS).
 %: Makefile
 	@$(SPHINXBUILD) -b $@ $(SPHINXOPTS) $(O) "$(SOURCEDIR)" "$(BUILDDIR)"
-

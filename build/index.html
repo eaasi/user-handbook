@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>EaaSI Technical Documentation &mdash; EaaSI  documentation</title>
+  <title>EaaSI User Handbook &mdash; EaaSI  documentation</title>
   
 
   
@@ -36,7 +36,7 @@
               href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
     <link rel="top" title="EaaSI  documentation" href="#"/>
-        <link rel="next" title="Dependencies" href="install/docker.html"/> 
+        <link rel="next" title="Introduction" href="guide/introduction.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -86,8 +86,17 @@
             
             
               <ul>
-<li class="toctree-l1"><a class="reference internal" href="install/docker.html">Dependencies</a></li>
-<li class="toctree-l1"><a class="reference internal" href="install/setup.html">Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guide/introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guide/architecture.html">System Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guide/installation.html">Installation and Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guide/interface.html">Navigating the EaaSI Interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guide/resources.html">Adding Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guide/publishing.html">Publishing Resources to the EaaSI Network</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guide/workflow.html">Example Workflows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guide/administration.html">Administration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guide/faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guide/glossary.html">EaaSI Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guide/links.html">Further Documentation</a></li>
 </ul>
 
             
@@ -132,7 +141,7 @@
     
       <li><a href="#">Docs</a> &raquo;</li>
         
-      <li>EaaSI Technical Documentation</li>
+      <li>EaaSI User Handbook</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -151,12 +160,58 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="eaasi-technical-documentation">
-<h1>EaaSI Technical Documentation<a class="headerlink" href="#eaasi-technical-documentation" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="eaasi-user-handbook">
+<h1>EaaSI User Handbook<a class="headerlink" href="#eaasi-user-handbook" title="Permalink to this headline">¶</a></h1>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="install/docker.html">Dependencies</a></li>
-<li class="toctree-l1"><a class="reference internal" href="install/setup.html">Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guide/introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guide/architecture.html">System Architecture</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="guide/architecture.html#node-components">Node Components</a></li>
+<li class="toctree-l2"><a class="reference internal" href="guide/architecture.html#oai-pmh-synchronization">OAI-PMH Synchronization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="guide/architecture.html#environment-derivation">Environment Derivation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="guide/architecture.html#emulators">Emulators</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="guide/installation.html">Installation and Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guide/interface.html">Navigating the EaaSI Interface</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="guide/interface.html#landing-page">Landing Page</a></li>
+<li class="toctree-l2"><a class="reference internal" href="guide/interface.html#environments">Environments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="guide/interface.html#software">Software</a></li>
+<li class="toctree-l2"><a class="reference internal" href="guide/interface.html#objects">Objects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="guide/interface.html#action-menu">Action Menu</a></li>
+<li class="toctree-l2"><a class="reference internal" href="guide/interface.html#settings">Settings</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="guide/resources.html">Adding Resources</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="guide/resources.html#adding-an-object">Adding an Object</a></li>
+<li class="toctree-l2"><a class="reference internal" href="guide/resources.html#adding-software">Adding Software</a></li>
+<li class="toctree-l2"><a class="reference internal" href="guide/resources.html#adding-base-environments">Adding Base Environments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="guide/resources.html#creating-a-software-environment">Creating a Software Environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="guide/resources.html#creating-an-object-environment">Creating an Object Environment</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="guide/publishing.html">Publishing Resources to the EaaSI Network</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="guide/publishing.html#what-resources-can-be-published">What resources can be published?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="guide/publishing.html#what-resources-should-be-published">What resources <em>should</em> be published?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="guide/publishing.html#how-to-publish-base-and-software-environments">How to publish base and software environments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="guide/publishing.html#how-to-publish-software">How to publish software</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="guide/workflow.html">Example Workflows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guide/administration.html">Administration</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="guide/administration.html#permissions-control">Permissions Control</a></li>
+<li class="toctree-l2"><a class="reference internal" href="guide/administration.html#syncing-to-the-network">Syncing to the Network</a></li>
+<li class="toctree-l2"><a class="reference internal" href="guide/administration.html#other-settings">Other settings</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="guide/faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guide/glossary.html">EaaSI Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guide/links.html">Further Documentation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="guide/links.html#issue-bug-reporting">Issue/bug reporting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="guide/links.html#google-groups">Google Groups</a></li>
+<li class="toctree-l2"><a class="reference internal" href="guide/links.html#spn">SPN</a></li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
@@ -171,7 +226,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="install/docker.html" class="btn btn-neutral float-right" title="Dependencies" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="guide/introduction.html" class="btn btn-neutral float-right" title="Introduction" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
     </div>
