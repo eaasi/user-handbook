@@ -65,6 +65,9 @@ todo_include_todos = True
 #
 html_theme = 'sphinx_rtd_theme'
 html_theme_path = ["_themes", ]
+html_theme_options = {
+    'logo_only': True
+}
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
@@ -76,6 +79,8 @@ html_theme_path = ["_themes", ]
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
+
+html_logo = "_static/logo.svg"
 
 # Custom sidebar templates, must be a dictionary that maps document names
 # to template names.
@@ -96,4 +101,3 @@ html_sidebars = {
 
 # Output file base name for HTML help builder.
 htmlhelp_basename = 'eaasdoc'
-
