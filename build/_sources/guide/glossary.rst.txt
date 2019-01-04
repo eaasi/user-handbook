@@ -1,4 +1,0 @@
-.. EaaSI Glossary
-
-EaaSI Glossary
-**************
