@@ -1,5 +1,7 @@
 .. Navigating the interface
 
+.. _navigation:
+
 Navigating the EaaSI Interface
 ******************************
 
