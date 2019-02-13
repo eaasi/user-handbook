@@ -12,13 +12,11 @@ Google Groups
 =============
 EaaSI maintains several Google Groups for conversational, forum-style discussion regarding the EaaSI platform and other concerns related to the network.
 
-While the primary purpose of these Groups is to give members of the EaaSI network a place to discuss and troubleshoot issues, node affiliates (e.g. other staff or faculty from a node host) and interested members of the public are invited to read and request to join in the conversation. Node team members should automatically be sent invitations to join these lists; others will be accepted at the discretion of the Group maintainer and the EaaSI communications team.
+While the primary purpose of these Groups is to give members of the EaaSI network a place to discuss and troubleshoot issues, node affiliates (e.g. other staff or faculty from a node host) are invited to request to join in the conversation. Node team members should automatically be sent invitations to join these lists; others will be accepted at the discretion of the EaaSI communications team.
 
 `EaaSI Tech Talk <https://groups.google.com/forum/#!forum/eaasi-tech-talk>`_
  Open forum for discussion of the Emulation as a Service platform and other technical aspects of network operation. The EaaSI Software Preservation Analyst will periodically review the Group for issues that may need to be added to the bug tracker, but please be aware this may result in a slower response time from the development team in addressing the concern.
 
-`EaaSI Metadata <https://groups.google.com/forum/#!forum/eaasi-metadata>`_
- Forum for discussion of the EaaSI metadata profile, integration with WikiDP, concerns of software and computing environment cataloging, etc.
 
 SPN
 ===
