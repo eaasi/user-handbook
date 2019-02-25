@@ -1,5 +1,7 @@
 .. Administrative settings
 
+.. _administration:
+
 Administration
 **************
 

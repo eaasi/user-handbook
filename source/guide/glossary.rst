@@ -25,7 +25,9 @@ EaaSI Glossary
   Configuration User
       Configuration users are a user or set of users within each node with power to edit and modify content within their EaaS instance. Configuration users might, for example, upload software, configure new base environments, or enter descriptive and technical metadata for objects.
 
+--------------------------------------------------------------------------------------------------
 
+.. glossary::
 
   Resources
     A resource refers broadly to any usable element within the EaaS system, such as environments, software, and objects (e.g., file sets, data, disk images of storage media, etc.). It is the combination of metadata and files necessary to manifest the resource within the system as either a record or an operational element of a computing environment.
@@ -66,13 +68,15 @@ EaaSI Glossary
         The intended use of an Object Environment is to provide access to the digital object as it would have been rendered/interacted with in its original (or a representative) computing environment.
 
   Software
-      Software refers to application and system software, including operating systems, commercial and open source software applications, device drivers, etc. May also be referred to as a "Software Object".
+      May also be referred to as a "Software Object". Software refers to application and system software, including operating systems, commercial and open source software applications, device drivers, etc.
 
   Objects
-      Objects refer to items in a digital collection; that is, information or works from institutional collections intended for representation (by Software) and interpretation by users within an emulated Environment.
-      Within EaaS, the line between Software and Object (which may also be a piece of “software” in the general sense) is largely contextual and workflow related: a file or file-set is “Software” if it is intended to be used to accurately render and interact with Object(s) originally created with that (or otherwise compatible) Software. A file or file-set is an Object if it is the thing intended to be provided for interaction using Software or a Base Environment.
+      May also be referred to as a "Digital Object". Objects are items in a digital collection; that is, information or works from institutional collections intended for representation (by Software) and interpretation by users within an emulated Environment.
+      Within EaaS, the line between Software and Object (which may also be a piece of “software” in the general sense) is largely contextual and workflow related: a file or file-set is “Software” if it is intended to be used to accurately render and interact with Object(s) originally created with that (or otherwise compatible) Software. A file or file-set is an Object if it is the thing intended to be provided for interaction using Software in an Environment.
 
+---------------------------------------------------------------------------
 
+.. glossary::
 
 EaaS Components
   Components refer to individual modules of the EaaS software stack - as each System Role plays a part in the EaaS user ecosystem, each component performs a particular task within the EaaS stack.
@@ -104,6 +108,9 @@ Database
     The EaaS database hosts all software, hardware configuration, and object repository metadata necessary for EaaS to coordinate requests and retrieval of emulation resources between the various EaaS components, and between instances of the EaaSI network.
     The database is currently a locally-stored MySQL database; updates and syncing of local databases with the EaaSI network should be performed by Admins only at direction of the EaaSI development team.
 
+--------------------------------------------------------------------------------------
+
+.. glossary::
 
 Affiliated Projects
   EaaSI isn’t just a network unto itself - it’s part of a larger ecosystem of digital preservation community and practice. These are a few of our most closely-affiliated projects.

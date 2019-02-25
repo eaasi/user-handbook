@@ -1,5 +1,7 @@
 .. Adding resources to EaaSI
 
+.. _add_resources:
+
 Adding Resources
 ****************
 

@@ -54,6 +54,9 @@ EaaS relies on several open source projects to actually perform emulation and vi
 - `QEMU <https://www.qemu.org/>`_
 x86 PC emulation/virtualization, PowerPC 9.x-10.x Mac OS emulation
 
+- `Linapple-pie <https://github.com/dabonetn/linapple-pie/>`_
+Apple II emulation
+
 - `Basilisk II <https://basilisk.cebix.net/>`_
 68k series Mac emulation
 
