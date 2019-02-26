@@ -44,33 +44,42 @@ Likewise, the Object Archive module provides access to :term:`Objects` and :term
 OAI-PMH Synchronization
 =======================
 
+.. image:: images/oai-pmh.png
+
 Environment Derivation
 ======================
 
+.. image:: images/DerivativeEnvironmentsDiagram.jpg
+
+.. image:: images/Derivatives-example.jpg
+
+
+.. _emulators:
+
 Emulators
 =========
-EaaS relies on several open source projects to actually perform emulation and virtualization. Using the Import Container feature, different emulation software (and different versions of the included emulators) can be imported into the system, but available to a default EaaSI installation are:
-
-- `QEMU <https://www.qemu.org/>`_
-x86 PC emulation/virtualization, PowerPC 9.x-10.x Mac OS emulation
-
-- `Linapple-pie <https://github.com/dabonetn/linapple-pie/>`_
-Apple II emulation
-
-- `Mini vMac <https://www.gryphel.com/c/minivmac/`_
-68k series Mac emulation
+EaaS relies on several open source projects to actually perform emulation and virtualization. Containerized emulators can be added to an EaaSI installation to expand the platform's compatibility (using the Import Container feature). The full list of Dockerized emulators prepared by the EaaS development team is located and will be updated on their `public GitLab repository <https://gitlab.com/emulation-as-a-service/emulators>`_, but immediately available for the EaaSI network are:
 
 - `Basilisk II <https://basilisk.cebix.net/>`_
-68k series Mac emulation
-
-- `SheepShaver <https://sheepshaver.cebix.net/>`_
-PowerPC Mac OS 8.x-9.0 emulation
-
-- `VICE (Versatile Commodore Emulator) <http://vice-emu.sourceforge.net/>`_
-Commodore series emulation
+    68k series Mac emulation
 
 - `ContrAlto <https://github.com/livingcomputermuseum/ContrAlto>`_
-Xerox Alto emulation
+    Xerox Alto emulation
 
 - `FS-UAE <https://fs-uae.net/>`_
-Amiga series emulation
+    Amiga series emulation
+
+- `Linapple-pie <https://github.com/dabonetn/linapple-pie/>`_
+    Apple II emulation
+
+- `Mini vMac <https://www.gryphel.com/c/minivmac/>`_
+    68k series Mac emulation
+
+- `QEMU <https://www.qemu.org/>`_
+    x86 PC emulation/virtualization, PowerPC 9.1-10.x Mac OS emulation
+
+- `SheepShaver <https://sheepshaver.cebix.net/>`_
+    PowerPC Mac OS 8.x-9.0 emulation
+
+- `VICE (Versatile Commodore Emulator) <http://vice-emu.sourceforge.net/>`_
+    Commodore series emulation

@@ -1,5 +1,7 @@
 .. Links to other docs
 
+.. _links:
+
 Further Documentation
 *********************
 
