@@ -46,6 +46,8 @@ OAI-PMH Synchronization
 
 .. image:: images/oai-pmh.png
 
+.. _derivation:
+
 Environment Derivation
 ======================
 

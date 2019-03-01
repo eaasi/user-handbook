@@ -5,8 +5,7 @@
 Administration
 **************
 
-Permissions Control
-===================
+.. _OAI-PMH:
 
 Syncing to the Network
 ======================
