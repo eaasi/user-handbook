@@ -44,14 +44,21 @@ Likewise, the Object Archive module provides access to :term:`Objects` and :term
 OAI-PMH Synchronization
 =======================
 
+The EaaSI network makes use of the `Open Archives Initiative Protocol for Metadata Harvesting (OAI-PMH) <https://www.openarchives.org/pmh/>`_ to request, share and synchronize metadata between nodes.
+
+Each EaaSI installation contains an OAI-PMH harvester and a data provider. The harvester requests metadata (in EaaSI's case, Base and Software Environment records) from the data providers at other nodes; the data providers query the node's local records and return this metadata back to the original harvester.
+
 .. image:: images/oai-pmh.png
+
+Using the provided metadata, the harvester can also then find and replicate necessary files (disk images) from the other nodes on :ref:`request <replication>`.
 
 .. _derivation:
 
 Environment Derivation
 ======================
 
-.. image:: images/DerivativeEnvironmentsDiagram.jpg
+EaaS makes use of a snapshot-base storage system to avoid redundant copying and storage of full disk images. Revisions and changes to any Base Environment are isolated and stored in files separate from the base image - the saved derivative environments are then recreated programmatically from the original base and full chain of changes at the point that the user requests to run or replicate the environment.
+
 
 .. image:: images/Derivatives-example.jpg
 
@@ -60,7 +67,7 @@ Environment Derivation
 
 Emulators
 =========
-EaaS relies on several open source projects to actually perform emulation and virtualization. Containerized emulators can be added to an EaaSI installation to expand the platform's compatibility (using the Import Container feature). The full list of Dockerized emulators prepared by the EaaS development team is located and will be updated on their `public GitLab repository <https://gitlab.com/emulation-as-a-service/emulators>`_, but immediately available for the EaaSI network are:
+EaaS relies on several open source projects to actually perform emulation and virtualization. Containerized emulators can be added to an EaaSI installation to expand the platform's compatibility (using the "Emulators" page - details forthcoming). The full list of Dockerized emulators prepared by the EaaS development team is located and will be updated on their `public GitLab repository <https://gitlab.com/emulation-as-a-service/emulators>`_, but immediately available for the EaaSI network are:
 
 - `Basilisk II <https://basilisk.cebix.net/>`_
     68k series Mac emulation

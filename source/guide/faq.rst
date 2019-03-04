@@ -15,7 +15,7 @@ EaaSI is shorthand for the Scaling Emulation and Software Preservation Infrastru
 
 A: EaaSI adheres to principles of fair use for academic and cultural institutions as recommended by the SPN-affiliate project `Code of Best Practices for Fair Use in Software Preservation <https://www.softwarepreservationnetwork.org/bp-fair-use/>`_. Our network's members have countless files in digital collections that are inaccessible without appropriate software - by sharing our acquired *software* collections (with measures for network authentication and object control baked in to our platform), we can offer long-term access to these files for scholarly research and discovery in cases where current commercial options no longer functionally or contextually support them.
 
-We also rely on the provisions of the 2018 DMCA exemption for software preservation in cases where legacy software DRM might otherwise prevent us from exercising our fair use. Please see the `Preservationist's Guide to the DMCA Exemption for Software Preservation <http://softwarepn.webmasters21.com/wp-content/uploads/2019/01/2018-12_DMCAchecklist_updated_12132018.pdf>`_ for more details and guidance.
+We also rely on the provisions of the 2018 DMCA exemption for software preservation in cases where legacy software DRM might otherwise prevent us from exercising right to fair use. Please see the `Preservationist's Guide to the DMCA Exemption for Software Preservation <http://softwarepn.webmasters21.com/wp-content/uploads/2019/01/2018-12_DMCAchecklist_updated_12132018.pdf>`_ for more details and guidance.
 
 These guidelines are dependent on United States copyright law - EaaSI network :term:`node hosts <node>` are therefore currently limited to US-based institutions.
 
@@ -45,7 +45,7 @@ From there, a legacy operating system's boot time might be improved marginally b
 
 **Q: Your legacy software environments can connect to the live internet...are there malware or security concerns?**
 
-A: Sure, but maybe not in the way you're thinking, and no more so than on any other modern computing system.
+A: Sure, but no more so than on any other modern computing system.
 
 There are a few layers of this question: first, the possibility of encountering legacy malware that target our historical operating systems somewhere still hosted on the live web. Since updates to internet protocols and web security (e.g. HTTPS, changes to JavaScript) have made the vast majority of the live web incompatible with legacy browsers in the first place, it's not exactly likely. But employ the same kind of healthy and skeptical browsing habits that you bring to the modern web on your own computer and you'll be fine.
 

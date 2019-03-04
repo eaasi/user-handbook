@@ -19,7 +19,7 @@ What resources *should* be published?
 =====================================
 
 .. warning::
-  Once published to the network, removing or deleting an environment may have severe technical repercussions, since users at other nodes may have generated derivatives from that environment that would be broken.
+  Once published to the network, removing or deleting an environment may have severe technical repercussions, since users at other nodes may have generated derivatives from that environment, which would break.
 
   Nodes and users are advised to use the beta testing period to consider how to design and enforce local workflows for publishing resources, given these technical restrictions.
 
@@ -44,11 +44,14 @@ To publish a Base or Software Environment from your local node to the network, l
 In the top right corner of the environment detail page, click the "Publish" button:
 
 .. warning::
-  Once you click "Publish", this action cannot be undone via the EaaSI interface, and it can not be easily undone (if it can at all) by systems administrators or the EaaSI development team.
+  Once you click "Publish", you will lose the "Delete" environment option in the *Public* tab. Publishing cannot be undone via the EaaSI interface, and it can not be easily undone (if it can at all) by systems administrators or the EaaSI development team.
 
 .. image:: images/publish_button.png
 
 When the environment has been successfully published, it will move to the *Public* sub-section of the environments overview. After their next sync to the network, other nodes will be able to see and replicate this environment via their *Remote* sub-section.
+
+
+.. _replication:
 
 How to replicate published Base and Software Environments to a local node
 =========================================================================
