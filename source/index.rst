@@ -12,6 +12,7 @@ EaaSI User Handbook
    guide/interface
    guide/resources
    guide/publishing
+   guide/emulators
    guide/workflow
    guide/administration
    guide/faq

@@ -26,7 +26,7 @@ The EaaSI navigation sidebar allows users to investigate and interact with EaaSI
 
 .. image:: images/resources_navigation.png
 
-The sidebar can also be used to access various pages for :ref:`importing resources <add_resources>`, adding emulators, and :ref:`adminstrative settings <administration>`.
+The sidebar can also be used to access various pages for :ref:`importing resources <add_resources>`, :ref:`adding emulators <managing_emulators>`, and :ref:`adminstrative settings <administration>`.
 
 .. image:: images/settings_navigation.png
 
@@ -108,7 +108,7 @@ An environment record will initially only display a few descriptive fields. Clic
 
 .. image:: images/environment_record.png
 
-- *Environment Settings* determine the :term:`Hardware Configuration`; users can see which emulator (and version) have been selected the run the environment, as well as specific configuration options/arguments passed to the emulation application.
+- *Environment Settings* determine the :term:`Hardware Configuration`; users can see which emulator (and version, if an emulator has multiple imported :ref:`containers <emulator_containers>`) have been selected the run the environment, as well as specific configuration options/arguments passed to the emulation application.
 
   .. note:: Only "Environment can print", "Relative Mouse (Pointerlock)", and "Enable Internet access" are fully supported emulation features as of the beta. All other check-box options should be considered experimental.
 
