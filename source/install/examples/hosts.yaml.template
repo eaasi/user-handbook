@@ -1,0 +1,6 @@
+---
+all:
+  hosts:
+    eaas-gateway:
+      ansible_host: my-ubuntu-machine.dns.internal
+      ansible_user: ubuntu

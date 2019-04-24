@@ -8,7 +8,8 @@ EaaSI User Handbook
 
    guide/introduction
    guide/architecture
-   guide/installation
+   install/requirements
+   install/setup
    guide/interface
    guide/resources
    guide/publishing
