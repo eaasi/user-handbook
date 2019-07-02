@@ -177,14 +177,23 @@ the ``eaasi.yaml`` file should be used.
 Updating EaaSI
 ^^^^^^^^^^^^^^
 
-Due to the way how Ansible works, most actions executed during the installation are idempotent and can be
-repeated multiple times resulting in the same deployment state. This also means, that certain operations
-(like downloading files) are skipped, if those files are already present on the target machine. Ansible
-must be forced to omit the idempotency requirement for certain operations, to be able to update EaaSI's UI,
-server binary and runtime docker-image. To do this selectively, an *update-mode* was introduced to the
-installer. Updating process is mostly equivalent to the normal deployment process, since an update may
-also require modifications of target machine's configuration. To update EaaSI components on an already
-deployed machine, run:
+To update a previously-existing EaaSI installation, first update the `eaasi-installer`_ to match the new/updated tagged
+release provided by the EaaSI team, by running, for example:
+
+.. code-block:: sh
+
+  $ git-pull.sh origin eaasi-release-072019
+
+Where ``eaasi-release-072019`` should be replaced by the relevant tag provided.
+
+The EaaSI configuration located in ``artifacts/config/eaasi.yaml`` must then be updated with the relevant tag on
+certain lines as well; for example:
+
+  - docker.image: "eaas/eaas-appserver:eaasi-release-072019"
+  - eaas.git_branch: "eaasi-release-072019"
+  - ui.git_branch: "eaasi-release-072019"
+
+Following these configuration changes, to update the various EaaSI components, run:
 
 .. code-block:: sh
 
@@ -198,6 +207,12 @@ where ``<component>`` can be one of the following:
 
 Multiple components can be specified as a space-separated list. If called without any ``<component>``
 arguments, then all components will be updated by default.
+
+Updates are run selectively in this way due to the way Ansible works: most actions executed during the installation are
+idempotent and can be repeated multiple times resulting in the same deployment state. This also means, that certain
+operations (like downloading files) are skipped, if those files are already present on the target machine. Ansible
+must be forced to omit the idempotency requirement for certain operations, to be able to update EaaSI's UI,
+server binary and runtime docker-image.
 
 
 .. _container_setup:
