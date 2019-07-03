@@ -1,13 +1,27 @@
-image: alpine
+stages:
+- build
+- deploy
+
+build:
+  image: alpine:3.9
+  stage: build
+  script:
+  - apk add --no-cache make python3
+  - pip3 install sphinx==1.8.5 sphinx-rtd-theme
+  - make html
+  artifacts:
+    paths:
+    - build
 
 pages:
+  variables:
+    GIT_STRATEGY: none
+  image: busybox
+  stage: deploy
+  dependencies:
+  - build
   script:
-  - apk --no-cache add py2-pip python-dev
-  - pip install sphinx
-  - pip install sphinx_rtd_theme
-  - apk --no-cache add make
-  - make html
-  - mv build/ public/
+  - mv build public
   artifacts:
     paths:
     - public
