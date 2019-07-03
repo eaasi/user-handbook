@@ -100,3 +100,19 @@ html_sidebars = {
 
 # Output file base name for HTML help builder.
 htmlhelp_basename = 'eaasdoc'
+
+# -- Extensions -----------------------------------------------------------
+
+def setup(app):
+    from sphinx.util.docfields import Field
+
+    app.add_object_type(
+        'config-value',
+        'config-value',
+        objname='configuration value',
+        indextemplate='pair: %s; configuration value',
+        doc_field_types=[
+            Field('type', label='Type', names=('type'), has_arg=True),
+            Field('default', label='Default', names=('default'), has_arg=True),
+        ]
+    )
