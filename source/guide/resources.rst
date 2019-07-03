@@ -16,6 +16,8 @@ Importing Resources
 
   EaaSI staff will communicate details of this transition well ahead of time to allow node hosts to plan accordingly.
 
+.. image:: images/visual_designs5.jpg
+
 .. _import_object:
 
 Importing an Object
@@ -42,14 +44,17 @@ There are four Media Types available to describe the file(s) being uploaded. The
 communicate to emulators where/how to mount an object into an environment (i.e. relevant file system and/or virtual
 drive).
 
-  - *ISO* - Mounts the object in an environment's virtual optical/CD-ROM drive. Should accept any file extension.
-  - *Floppy* - Mounts the object in an environment's virtual floppy drive. Should accept any file extension.
-  - *Disk* - Attempts to mount the object as a hard drive (success may thus be highly variable depending on an
-    environment's configured hardware, the operating system's compatibility with the image's file system, etc.). Should
-    accept most if not all hard disk image formats (IMG, DMG, DD/raw, QCOW, VDI, VMDK, E01/EWF, etc.)
-  - *Files* - This option will accept any set of non-disk-image files. To allow for maximum compatibility, imported
-    file sets are currently packaged by EaaSI into an ISO file and file set objects will thus mount in an environment's
-    virtual optical/CD-ROM drive.
+.. image:: images/visual_designs4.jpg
+
+
+- *ISO* - Mounts the object in an environment's virtual optical/CD-ROM drive. Should accept any file extension.
+
+- *Floppy* - Mounts the object in an environment's virtual floppy drive. Should accept any file extension.
+
+- *Disk* - Attempts to mount the object as a hard drive (success may thus be highly variable depending on an environment's configured hardware, the operating system's compatibility with the image's file system, etc.). Should accept most if not all hard disk image formats (IMG, DMG, DD/raw, QCOW, VDI, VMDK, E01/EWF, etc.)
+
+- *Files* - This option will accept any set of non-disk-image files. To allow for maximum compatibility, imported file sets are currently packaged by EaaSI into an ISO file and file set objects will thus mount in an environment's virtual optical/CD-ROM drive.
+
 
 Click the "Add Files" button to pull up a file browser and select the file(s) that make up your desired Object. You can
 add as many individual files to an import as desired to create multi-file Objects. The files that make up an Object
@@ -119,3 +124,10 @@ local network, etc.
 When the user is satisfied with the new environment's operation, shut down the emulated operating system and select
 "Save Environment" from the Action Menu. When the new base has been named, described and saved, it will be available in
 the *Private* sub-section of the Base Environments overview.
+
+
+Importing Emulators
+====================
+
+Please see managing_emulators_ for more detailed instructions on managing and importing new emulators into an EaaSI
+node.

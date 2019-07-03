@@ -3,9 +3,27 @@
 System Architecture
 *******************
 
+Emulation-as-a-Service uses environment configuration templates (stored in XML) to assemble emulated hardware and data
+as specified by the user.
+
+The effect is to create in-browser virtual environments that mimic the behavior of a physical computer.
+
+When an EaaSI user runs an environment, the configuration file directs the platform to the appropriate emulator
+for that system, the hardware settings for that emulator, a disk image containing a bootable operating system, and, if
+desired, additional content (e.g. software installation media imaged from a CD-ROM or floppy disk) to mount in the
+environment.
+
+.. image:: images/visual_designs1.jpg
+
+.. image:: images/visual_designs2.jpg
+
+.. image:: images/visual_designs3.jpg
+
+
 Node Components
 ===============
-The EaaS stack is composed of a number of software modules working together. These modules can be deployed together or
+
+The EaaS stack is composed of a number of software modules working together to accomplish this assembly and configuration. These modules can be deployed together or
 configured across multiple physical/virtual machines, depending on resources available. EaaSI installations contain
 additional components to allow for sharing :term:`resources` and metadata across the EaaSI network, but core
 functionality is accomplished with the following components.
