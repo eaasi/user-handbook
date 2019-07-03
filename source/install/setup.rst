@@ -177,8 +177,8 @@ the ``eaasi.yaml`` file should be used.
 Updating EaaSI
 ^^^^^^^^^^^^^^
 
-To update a previously-existing EaaSI installation, first update the `eaasi-installer`_ to match the new/updated tagged
-release provided by the EaaSI team, by running, for example:
+To update a previously-existing EaaSI installation, first update the `eaasi-installer`_ by running its ``git-pull.sh``
+script to match the new/updated tagged release provided by the EaaSI team, for example:
 
 .. code-block:: sh
 
