@@ -142,6 +142,9 @@ the EaaSI network are:
 
 - `PCE <http://www.hampa.ch/pce/about.html>`_
     Various microcomputer emulators, including Atari ST, IBM PC5150, and classic Macintosh models
+    
+- `Previous <https://sourceforge.net/projects/previous/>`_
+    NeXT hardware emulation (NeXT Cube, NeXT Station)
 
 - `QEMU <https://www.qemu.org/>`_
     x86 PC emulation/virtualization, PowerPC 9.1-10.x Mac OS emulation
