@@ -129,5 +129,5 @@ the *Private* sub-section of the Base Environments overview.
 Importing Emulators
 ====================
 
-Please see managing_emulators_ for more detailed instructions on managing and importing new emulators into an EaaSI
+Please see :ref:`managing_emulators` for more detailed instructions on managing and importing new emulators into an EaaSI
 node.

@@ -3,7 +3,7 @@
 .. _managing_emulators:
 
 Managing Emulators
-*****************
+*******************
 
 The EaaSI platform relies on a number of open-source emulator projects to perform the emulation
 aspect of software and environment management. Replicating environments, troubleshooting, and expanding a node's
