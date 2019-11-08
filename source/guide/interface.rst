@@ -104,21 +104,28 @@ During the session, the EaaSI Action Menu will appear below the navigation sideb
 .. image:: images/actions_menu.png
   :align: center
 
-- *Download Print Jobs*: This button will appear contextually depending on whether "Environment can print" has been
+Download Print Jobs 
+  This button will appear contextually depending on whether "Environment can print" has been
   selected in the environment record (see `Viewing and editing environment records`_). If enabled, PostScript print
   jobs from the emulated system should be converted and available here as downloadable PDFs.
-- *Change Media*: This button will appear contextually depending on whether a multi-disk-image Software or Digital
+Change Media 
+  This button will appear contextually depending on whether a multi-disk-image Software or Digital
   Object has been loaded into the environment. The user can switch between images within the emulation session,
   mimicking the behavior of inserting and ejecting floppy disks or CD-ROMs in physical drives.
-- *Save Environment*: Saves the current emulation session state as a new revision or derivative environment; changes
+Save Environment 
+  Saves the current emulation session state as a new revision or derivative environment; changes
   are :ref:`isolated <derivation>` from the base image that began the session. The guest operating system must be shut
   down before the environment changes can be saved (see `Creating new environments`_)
-- *Send Ctrl-Alt-Del*: Shortcut for sending the `"Ctrl+Alt+Delete" <https://en.wikipedia.org/wiki/Control-Alt-Delete>`_
+Send Ctrl-Alt-Del 
+  Shortcut for sending the `"Ctrl+Alt+Delete" <https://en.wikipedia.org/wiki/Control-Alt-Delete>`_
   keyboard input to the emulated operating system
-- *Send Esc*: Sends the "Esc" keyboard input to the emulated operating system
-- *Restart Session*: Reloads the emulation session; any changes made to the environment during the current session will
+Send Esc 
+  Sends the "Esc" keyboard input to the emulated operating system
+Restart Session 
+  Reloads the emulation session; any changes made to the environment during the current session will
   be discarded
-- *Stop*: Shuts down the emulation program and quits emulation session altogether; any changes made to the environment
+Stop 
+  Shuts down the emulation program and quits emulation session altogether; any changes made to the environment
   during the session will be discarded
 
 An emulation session can be ended in several ways: using the "Stop" button from the Action Menu, shutting down the
@@ -138,41 +145,53 @@ An environment record will display several categories of available/editable opti
 
 .. image:: images/environment_record.png
 
-- *Description* allows for some brief description of the environment's content and purpose. By default
-  it is populated by the environment's most recent save/revision message.
+Description
+  allows for some brief description of the environment's content and purpose. By default
+  it is populated by the environment's most recent save/revision message.  
 
-- *System* settings determine the :term:`Hardware Configuration`; users can see which emulator (and version, if an
+System 
+  settings determine the :term:`Hardware Configuration`; users can see which emulator (and version, if an
   emulator has multiple imported :ref:`containers <emulator_containers>`) have been selected the run the environment, as
   well as specific configuration options/arguments passed to the underlying emulator.
   
-- *Configured Drives* allow advanced users to determine which and how many drives (hard disk, CD-ROM, floppy)
+Configured Drives 
+  allow advanced users to determine which and how many drives (hard disk, CD-ROM, floppy)
   are attached to the emulated machine, which may allow for mounting multiple software/digital objects.
   This requires advanced knowledge of the Hardware Configuration, compatible data binding protocols and filesystems,
   etc. to properly fill out. Consult with the EaaSI team if necessary.
   
-- *UI Options* allows for more user-friendly, checkbox-style enabling of certain common features:
-  - *Environment can print* enables the EaaSI UI to intercept PostScript printing jobs from the emulated
-     operating system, convert them to PDF and offer them to download from the host browser. Requires a compatible
-     PostScript printer driver to have been set up in the emulated operating system.
-  - *Relative Mouse (Pointerlock)* allows the EaaSI interface to capture the mouse for use of the emulated operating
-     system only, if the user clicks on the emulation window. (Press "Esc" at any time to free the mouse for use in your
-     host system/browser again).
-  - *User file upload* is an experimental feature allowing end users to import an arbitrary file from their
-      host into the emulated machine. Currently not functional in EaaSI installations.
-  - *XPRA Video (Experimental)* is an experimental feature for alternative browser delivery of graphics/video. Not stable
-      in EaaSI installations.
-  - *Requires clean shutdown* forces clean completion of an ACPI "shutdown" within the emulated operating system
-      before the EaaSI Action Menu will allow the user to save the environment. Can be enabled to encourage
-      healthy saving habits.
-      
-- *Networking* options are mostly included from OpenSLX's exploration into emulating networked environments.
-      EaaSI users will probably primarily be interested in "Enable networking" and "Enable internet access"
-      options to connect emulated environments to the live web (requires an emulated network adapter, and compatible
-      hardware and TCP/IP drivers). For details on EaaS's advanced server/network emulation, consult OpenSLX via the EaaSI Tech Talk list. 
-      
-- *Configured Software* lists any Software Objects that were loaded and saved into this environment.
+UI Options 
+  allow for more user-friendly, checkbox-style enabling of certain common features:
+  
+- *Environment can print* enables the EaaSI UI to intercept PostScript printing jobs from the emulated 
+  operating system, convert them to PDF and offer them to download from the host browser. Requires a compatible 
+  PostScript printer driver to have been set up in the emulated operating system.
 
-- *Revision History* describes the history of the environment in EaaSI, including any revisions made to this
+- *Relative Mouse (Pointerlock)* allows the EaaSI interface to capture the mouse for use of the emulated 
+  operating system only, if the user clicks on the emulation window. (Press "Esc" at any time to free the mouse 
+  for use in your host system/browser again).
+
+- *User file upload* is an experimental feature allowing end users to import an arbitrary file from their 
+  host into the emulated machine. Currently not functional in EaaSI installations.
+
+- *XPRA Video (Experimental)* is an experimental feature for alternative browser delivery of graphics/video. 
+  Not stable in EaaSI installations.
+
+- *Requires clean shutdown* forces clean completion of an ACPI "shutdown" within the emulated operating system 
+  before the EaaSI Action Menu will allow the user to save the environment. Can be enabled to encourage healthy 
+  saving habits.
+      
+Networking 
+  options are mostly included from OpenSLX's exploration into emulating networked environments.
+  EaaSI users will probably primarily be interested in "Enable networking" and "Enable internet access"
+  options to connect emulated environments to the live web (requires an emulated network adapter, and compatible
+  hardware and TCP/IP drivers). For details on EaaS's advanced server/network emulation, consult OpenSLX via the EaaSI Tech Talk list. 
+      
+Configured Software
+  lists any Software Objects that were loaded and saved into this environment.
+
+Revision History 
+  describes the history of the environment in EaaSI, including any revisions made to this
   environment *and* the environment(s) it was derived from, if applicable.
 
 To edit settings and descriptive metadata, click the "Edit" button at the top right corner of the page to open the
@@ -195,7 +214,7 @@ Creating new environments
 Adding new environments to the overview will depend on the type of environment being created. See:
 
   - :ref:`import_base`
-  - `Creating a Software Environment`_
+  - `Creating a Derivative Environment with a Software Object`_
   - `Creating an Object Environment`_
 
 
