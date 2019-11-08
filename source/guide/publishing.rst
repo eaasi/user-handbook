@@ -11,7 +11,7 @@ What resources can be published to the network?
 Environments are the only type of resource that can be published and shared between EaaSI nodes. (Software can/must be
 shared in the form of Software Environments)
 
-Also, this only applies to Base and Software Environments: Object Environments can not be published.
+Also, this only applies to Base Environments: Object Environments can not be published.
 :term:`Digital Objects <objects>` and associated Object Environments are assumed to be collection items, unique to each
 node/institution, and therefore potentially subject to different terms of access, licensing, etc. than the software we
 are preserving and sharing under the guidelines of fair use.
@@ -47,7 +47,7 @@ the network.
 How to publish Base and Software Environments
 =============================================
 
-To publish a Base or Software Environment from your local node to the network, locate the selected environment in the
+To publish a Base Environment from your local node to the network, locate the selected environment in the
 *Private* sub-section of the "Base Environment" tab of the Environments overview page. In the "Actions" dropdown menu,
 select "Details":
 
@@ -69,7 +69,7 @@ their *Remote* sub-section.
 
 .. _replication:
 
-How to replicate published Base and Software Environments to a local node
+How to replicate published Base Environments to a local node
 =========================================================================
 
 In the *Remote* sub-section of the environments overview, locate the selected environment from another node to
