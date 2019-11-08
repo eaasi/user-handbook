@@ -48,17 +48,17 @@ Overview page
 
 Environments are sorted into tabs and sub-sections depending on:
 
-  1. Derivative status (i.e. if it is a Base, Software or Object Environment)
+  1. Derivative status (i.e. if it is a Base or Object Environment)
   2. Published status (its visibility to other users in the network)
 
 .. image:: images/environments_overview.png
 
-The "Base Environments" tab contains both :term:`Base` and :term:`Software Environments <Software Environment>`. Base
-Environments have typically been marked as a "Base" in their name. The notation "V#" has been used internally by EaaSI
+"Vanilla" operating system environments have typically been marked as a "Base" in their name. The notation "V#" has been used internally by EaaSI
 staff to mark "version" number for base environments - e.g. "V1" for the first attempt at importing a base image, "V2"
-for the second attempt at importing a base image of the same system, etc.
+for the second attempt at importing a base image of the same system, etc. These are usually the starting
+points for importing Software and building derivative environment chains.
 
-Software Environments can typically be identified by a name that connotes its original base environment and the name of
+Derivative environments can typically be identified by a name that connotes its original base environment and the name of
 the Software added (e.g. "Windows 98 SE + Microsoft Office 97").
 
 The "Base Environments" tab is further broken down into three sub-sections: *Private*, *Public* and *Remote*.
@@ -134,19 +134,44 @@ environment overview.
 
 .. image:: images/details_action.png
 
-An environment record will initially only display a few descriptive fields. Click the 'Advanced Options' button to
-reveal the full environment record:
+An environment record will display several categories of available/editable options:
 
 .. image:: images/environment_record.png
 
-- *Environment Settings* determine the :term:`Hardware Configuration`; users can see which emulator (and version, if an
+- *Description* allows for some brief description of the environment's content and purpose. By default
+  it is populated by the environment's most recent save/revision message.
+
+- *System* settings determine the :term:`Hardware Configuration`; users can see which emulator (and version, if an
   emulator has multiple imported :ref:`containers <emulator_containers>`) have been selected the run the environment, as
-  well as specific configuration options/arguments passed to the emulation application.
-
-  .. note:: Only "Environment can print", "Relative Mouse (Pointerlock)", and "Enable Internet access" are fully
-    supported emulation features as of the beta. All other check-box options should be considered experimental.
-
+  well as specific configuration options/arguments passed to the underlying emulator.
+  
+- *Configured Drives* allow advanced users to determine which and how many drives (hard disk, CD-ROM, floppy)
+  are attached to the emulated machine, which may allow for mounting multiple software/digital objects.
+  This requires advanced knowledge of the Hardware Configuration, compatible data binding protocols and filesystems,
+  etc. to properly fill out. Consult with the EaaSI team if necessary.
+  
+- *UI Options* allows for more user-friendly, checkbox-style enabling of certain common features:
+  - *Environment can print* enables the EaaSI UI to intercept PostScript printing jobs from the emulated
+     operating system, convert them to PDF and offer them to download from the host browser. Requires a compatible
+     PostScript printer driver to have been set up in the emulated operating system.
+  - *Relative Mouse (Pointerlock)* allows the EaaSI interface to capture the mouse for use of the emulated operating
+     system only, if the user clicks on the emulation window. (Press "Esc" at any time to free the mouse for use in your
+     host system/browser again).
+  - *User file upload* is an experimental feature allowing end users to import an arbitrary file from their
+      host into the emulated machine. Currently not functional in EaaSI installations.
+  - *XPRA Video (Experimental)* is an experimental feature for alternative browser delivery of graphics/video. Not stable
+      in EaaSI installations.
+  - *Requires clean shutdown* forces clean completion of an ACPI "shutdown" within the emulated operating system
+      before the EaaSI Action Menu will allow the user to save the environment. Can be enabled to encourage
+      healthy saving habits.
+      
+- *Networking* options are mostly included from OpenSLX's exploration into emulating networked environments.
+      EaaSI users will probably primarily be interested in "Enable networking" and "Enable internet access"
+      options to connect emulated environments to the live web (requires an emulated network adapter, and compatible
+      hardware and TCP/IP drivers). For details on EaaS's advanced server/network emulation, consult OpenSLX via the EaaSI Tech Talk list. 
+      
 - *Configured Software* lists any Software Objects that were loaded and saved into this environment.
+
 - *Revision History* describes the history of the environment in EaaSI, including any revisions made to this
   environment *and* the environment(s) it was derived from, if applicable.
 
@@ -156,19 +181,6 @@ record in editable mode.
 .. image:: images/edit_environment_record.png
   :align: center
 
-.. note:: Enabling "Relative Mouse (Pointerlock)" is highly recommended for most if not all environments. It usually
-  allows more accurate mouse movement and input to the emulated system.
-
-- *Environment can print* allows the EaaSI platform to pass any `PostScript <https://en.wikipedia.org/wiki/PostScript>`_
-  print jobs from the emulated environment to the host system and convert the print job to a PDF for the user to
-  download from their browser. (Requires PostScript drivers to be installed and configured in the emulated operating
-  system)
-- *Relative Mouse (Pointerlock)* allows the EaaSI interface to capture the mouse for use of the emulated operating
-  system only, if the user clicks on the emulation window. (Press "Esc" at any time to free the mouse for use in your
-  host system/browser again)
-- *Enable Internet access* allows, if the emulated hardware has been configured correctly, for the emulated system to
-  access the live internet via the host system's network. (Requires an emulated network adapter, and compatible
-  hardware and TCP/IP drivers)
 
 After making any changes to an environment record, be sure to click "Save" at the bottom of the page to save your edits.
 
@@ -191,7 +203,7 @@ Deleting environments
 ----------------------
 
 .. warning::
-  Only *Private* Base/Software Environments and Object Environments can be deleted. Any *Public* or *Remote*
+  Only *Private* Base Environments and Object Environments can be deleted. Any *Public* or *Remote*
   environments can not be deleted through the interface, as doing so will disrupt functionality across the entire network. See :ref:`publishing`.
 
 .. warning::
@@ -201,12 +213,12 @@ Deleting environments
 Private environments can be deleted by node admin users in two locations in the EaaSI interface: either through the
 Environments overview page, or on any given environment's details page.
 
-To delete a private Base or Software Environment from the Environments overview page, select the "Delete" option from
+To delete a private Base Environment from the Environments overview page, select the "Delete" option from
 the Actions dropdown list for the selected environment.
 
 .. image:: images/delete_environment_overview.png
 
-To delete a private Base, Software or Object Environment from its details page, first select "Details" from the Actions
+To delete a private Base or Object Environment from its details page, first select "Details" from the Actions
 dropdown list for the selected environment, then click on the red "Delete Environment" button at the bottom of the
 relevant details page.
 
@@ -264,10 +276,10 @@ Object from the Objects overview to the Software overview.
 The new Software Object should now be available in any "Add Software" options for environments.
 
 
-Creating a Software Environment
--------------------------------
+Creating a Derivative Environment with a Software Object
+---------------------------------------------------------
 
-There are two paths to start creating a new Software Environment: from the Environments overview page, or any given
+There are two paths to load Software into an environment: from the Environments overview page, or any given
 environment Details page.
 
 To start from the overview page, use the "Actions" column dropdown menu to select "Add Software" for the selected
@@ -363,7 +375,7 @@ Click on an Object title to view its metadata and details.
 
 The "Object Details" section currently displays the Object ID as assigned during :ref:`import <import_object>`.
 
-"Configured Environments" displays environments (Base, Software, or Object) that are either automatically recommended
+"Configured Environments" displays environments (Base or Object) that are either automatically recommended
 by the EaaS system or have already been manually assigned by the user to this object.
 
 "Classification Details" displays `Siegfried <https://www.itforarchivists.com/siegfried>`_ file format identification
@@ -383,7 +395,7 @@ Creating an Object Environment
 To create a derivative :term:`object environment` for easy emulated access to an Object, use the Objects overview and
 navigate to the details page of the desired Object.
 
-Select an appropriate Base or Software environment in which to try running the Object from the list of recommended
+Select an appropriate Base Environment in which to try running the Object from the list of recommended
 options. The user can also always manually select an environment, out of **all** available environments (including
 *Remote* environments, which can be an excellent method of testing whether a node wishes to replicate an environment
 from another node) by clicking the "Add environment" button and searching/selecting from the provided dropdown menu.
@@ -392,7 +404,7 @@ from another node) by clicking the "Add environment" button and searching/select
 
 .. image:: images/add_environment_dropdown.png
 
-.. note:: You can add new Objects to any type of environment - Base, Software, or Object - to create a new derivative
+.. note:: You can add new Objects to any type of environment - Base or Object - to create a new derivative
   environment. However, this may particularly cause unexpected behavior with Object Environments, as currently adding
   an Object to an already-saved Object Environment may essentially eject/overwrite the original saved Digital Object
   from the environment's virtual drive(s).
