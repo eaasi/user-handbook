@@ -3,12 +3,15 @@
 Setup and Deployment
 =====================
 
-There are currently two supported methods for deployment of EaaSI: via an automated Ansible installer, or via manual
-deployment of a pre-configured Docker container. Please consult the appropriate documentation depending on your
-preferred method.
+`Ansible <https://www.ansible.com/>`_ deployment has been used by EaaSI Network node hosts and is recommended for 
+**production-level** installations (multiple users, accessible over a local network). Those interested in **testing** 
+the EaaSI platform on a single machine for evaluation or personal/small-scale purposes may use a
+pre-configured Docker container.
+
+Please consult the appropriate documentation depending on your preferred method.
 
 
-Ansible Deployment
+Production Deployment
 ------------------
 
 This method uses Ansible for setting up and configuring a server for EaaSI deployment.
@@ -217,10 +220,11 @@ server binary and runtime docker-image.
 
 .. _container_setup:
 
-Container Deployment
----------------------
+Testing
+---------
 
 .. note::
 
-   This method requires installation of Docker before deployment.
-   See :ref:`Dependencies <docker_install_section>` for more information.
+   This method requires installation of Docker.
+   Consult the `Docker Engine - Community <https://docs.docker.com/install/>`_ installation instructions
+   for your operating system before proceeding.
