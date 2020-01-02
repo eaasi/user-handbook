@@ -7,20 +7,51 @@ Further Documentation
 
 Issue/bug reporting
 ===================
-EaaSI admin users may report bugs and technical issues with the platform directly to the development team at our
-provided `GitLab dev repo <https://gitlab.com/eaasi/eaasi-dev/issues>`_. Please use the provided templates to describe
-your bug or issue in as much detail as possible!
+
+EaaSI users may report bugs and technical issues with the platform directly to the team using `GitLab <https://gitlab.com>`_. 
+Please `report any new issue here <https://gitlab.com/eaasi/eaasi-dev/issues/new>`_ using the provided 
+templates to describe your bug in as much detail as possible!
+
+.. raw:: html
+
+  <form action="https://gitlab.com/eaasi/eaasi-dev/issues?scope=all&amp;utf8=%E2%9C%93">
+    <label><b>Search for an existing bug:</b>
+    <br>
+    <br>
+    <input type="text" name="search" placeholder="e.g.: 'OAI-PMH error'" id="bugInput"></label>
+    <input type="hidden" name="state" value="all">
+    <br>
+    <input type="submit" value="Submit">
+  </form>
+
+|  
+
+Bug How-Tos
+------------
+
+tktktktktk
+
+tips to filing good bugs with EaaSI - how to fill out a GitLab ticket, using templates (bug vs feature request),
+getting relevant version info, waiting
+
+tktktktktkt
+
 
 
 Google Groups
 =============
-EaaSI maintains several Google Groups for conversational, forum-style discussion regarding the EaaSI platform and other
-concerns related to the network.
+
+EaaSI maintains two Google Groups for conversational, forum-style discussion regarding the EaaSI platform and other
+technical concerns related to the network.
 
 While the primary purpose of these Groups is to give members of the EaaSI network a place to discuss and troubleshoot
 issues, node affiliates (e.g. other staff or faculty from a node host) are invited to request to join in the
 conversation. Node team members should automatically be sent invitations to join these lists; others will be accepted
 at the discretion of the EaaSI communications team.
+
+`EaaSI (All) <https://groups.google.com/forum/#!forum/eaasi-all>`_
+ For communicating about the project timeline, discussion, agendas for monthly calls, scheduling, 
+ requests for feedback and announcements regarding related projects/events/research.
 
 `EaaSI Tech Talk <https://groups.google.com/forum/#!forum/eaasi-tech-talk>`_
  Open forum for discussion of the Emulation as a Service platform and other technical aspects of network operation.
@@ -31,5 +62,6 @@ at the discretion of the EaaSI communications team.
 
 SPN
 ===
+
 For more information about the EaaSI network and our full program of work, please visit our project site on the
 `Software Preservation Network <https://softwarepreservationnetwork.org/eaasi>`_!
