@@ -5,23 +5,19 @@ EaaSI Glossary
 
 .. glossary::
 
-  System Roles
-    System Roles describe the relationship between an individual entity or person and the EaaS platform.
-
   Node
-      A node is an institutional member of the EaaSI network. Each node administers an instance of the EaaS stack; node
-      instances will initially be deployed with a predetermined, shared set of resources.
-      When the network is ready for additional Resources, each node will control which of its uploaded resources are
-      synced to the rest of the EaaSI network and which remain accessible only within the node’s instance.
-      One institution may host multiple nodes within the EaaSI network; for example if they are a lead infrastructure
-      provider in a consortium, they may providing hosting for distinct nodes for their consortium members.
+      A node is an institutional member of the EaaSI network. Each node administers an instance of the EaaS stack;
+      it controls which of its uploaded resources are synced to the rest of the EaaSI network and which remain accessible 
+      only within the node’s instance. One institution may host multiple nodes within the EaaSI network; 
+      for example if they are a lead infrastructure provider in a consortium, they may providing hosting for 
+      distinct nodes for their consortium members.
 
   Source
       If a node contributes any resources to the EaaSI network, it is also considered the source for that particular
       resource.
 
   User
-      A user is an operator of the EaaS system/software stack.
+      A user is an operator of the EaaS software.
 
   Admin
       Admins are a user or a set of users within each node responsible for maintaining the node’s EaaS instance. Admins
