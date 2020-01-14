@@ -1,4 +1,4 @@
-.. Adding resources to EaaSI
+.. Import Resource
 
 .. _add_resources:
 

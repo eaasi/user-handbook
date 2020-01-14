@@ -4,18 +4,33 @@ EaaSI User Handbook
 ====================================
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
+   :caption: Overview
 
-   guide/introduction
-   guide/architecture
-   install/requirements
-   install/setup
-   guide/interface
-   guide/resources
-   guide/publishing
-   guide/emulators
-   guide/workflow
+   overview/introduction
+   overview/architecture
+   overview/emulators
+   overview/demo
+   overview/install/setup
+   
+.. toctree::   
+   :maxdepth: 1
+   :caption: User Guide
+   
+   guide/logging-in
+   guide/dashboard
+   guide/explore-resources
+   guide/my-resources
+   guide/emulation-project
+   guide/import-resource
    guide/administration
-   guide/faq
-   guide/glossary
-   guide/links
+   
+.. toctree::
+   :maxdepth: 1
+   :caption: More Help
+   
+   resources/bugs
+   resources/community
+   resources/faq
+   resources/glossary
+   resources/workflow

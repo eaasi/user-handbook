@@ -1,39 +1,11 @@
 .. Links to other docs
 
-.. _links:
+.. _community:
 
-Further Documentation
-*********************
+EaaSI Community
+*****************
 
-Issue/bug reporting
-===================
-
-EaaSI users may report bugs and technical issues with the platform directly to the team using `GitLab <https://gitlab.com>`_. 
-Please `report any new issue here <https://gitlab.com/eaasi/eaasi-dev/issues/new>`_ using the provided 
-templates to describe your bug in as much detail as possible!
-
-(You will need to `register <https://gitlab.com/users/sign_in>`_ for an account with GitLab to submit
-a bug report - please see our page on :ref:`bugs` for guidance!) 
-
-.. raw:: html
-
-  <form action="https://gitlab.com/eaasi/eaasi-dev/issues?scope=all&amp;utf8=%E2%9C%93">
-    <label style="font-size:20px;"><b>Search for an existing bug:</b>
-    <br>
-    <br>
-    <input type="text" name="search" placeholder="e.g.: 'OAI-PMH error'" id="bugInput"></label>
-    <input type="hidden" name="state" value="all">
-    <br>
-    <input type="submit" value="Submit">
-  </form>
-
-|  
-
-Related to bug reports are feature or enhancement requests. Templates in GitLab are provided for communicating
-feature requests directly to the EaaSI team; larger requests will probably also benefit from discussion
-on our `Google Groups`_ so that other members of the EaaSI Network can get involved!
-
-
+.. _google_groups:
 
 Google Groups
 =============
