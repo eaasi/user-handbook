@@ -70,6 +70,7 @@ connect to a third-party storage system, depending on the node setup.
 .. image:: images/EaaS_Model.png
 
 
+.. _oai-pmh:
 
 OAI-PMH Synchronization
 =======================

@@ -27,7 +27,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = 'EaaSI'
-copyright = '2019, EaaSI Team'
+copyright = '2019-2020, EaaSI Team'
 author = 'EaaSI Development Team'
 
 # The version info for the project you're documenting, acts as replacement for
