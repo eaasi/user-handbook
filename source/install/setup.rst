@@ -234,11 +234,11 @@ to simplify deploying EaaSI on to a single desktop for purposes of testing and d
 following instructions are optimized for MacOS and Linux but can be adapted for Windows as well (see
 below).
 
-**1.** Download and unpack ``EaaSI_Demo.tar.gz`` from [Wasabi link].
+**1.** Download and unpack ``eaasi_usb.tar.gz`` from https://s3.wasabisys.com/EaaSIDemonstrators/DemonstratorVersion1/eaasi_usb.tar.gz.
 
-  Checksum (SHA256): []
+  Checksum (SHA256): [ac9d8a3a3c2dcf0881797df3b03e88a8dca76d5cac18fa134b0b75215d768885]
 
-  This file is approximately 1.6 GB (3.4 GB unzipped) and contains the filesystem, server deployment
+  This file is approximately 5.1 GB (~15 GB unzipped) and contains the filesystem, server deployment
   and Docker images necessary to run EaaSI within a single directory.
   
 **2.** Using terminal of choice, change directories into the extracted ``EaaSI_Demo`` folder::
@@ -269,6 +269,9 @@ User Handbook to add :ref:`emulators <managing_emulators>`, :ref:`upload softwar
 and :ref:`create environments <import_base>`! But we recommend using the `EaaSI Open Source Sandbox 
 <https://eaasi-sandbox.softwarepreservationnetwork.org/eaasi/#/portal/welcome>`_ to get started with 
 some already-made environments.
+
+[**NOT YET READY** Please check back with this space in February 2020 for full instructions on 
+interacting with the EaaSI Sandbox via your Docker deployment]
 
 Click on "OAI-PMH" in the navigation sidebar. In the "Metadata Harvesting" menu, click on the "Add OAI-PMH
 Endpoint" button.
