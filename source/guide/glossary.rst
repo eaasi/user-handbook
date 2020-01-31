@@ -79,14 +79,18 @@ Glossary
       it controls which of that node's :term:`resources<resource>` are synced to the rest of the EaaSI Network and which remain accessible 
       only within the node. One node host could potentially run multiple nodes within the EaaSI Network; for example if they are 
       a lead infrastructure provider in a consortium, they may provide hosting for distinct nodes for their consortial members.
+      
+  Object 
+      An object is any collection of files that represent the materials used to transmit, install, and/or operate :term:`software` or :term:`content` 
+      in EaaSI. (For example, disk images of an installation CD or an archive file packaging software components together)
   
   Operating System
       :term:`Software` may be labelled an Operating System if it contains bootable or installable system software (i.e. that Software
       can run or install a stand-alone :term:`environment`).
       
   Resource
-      A resource refers broadly to a usable object in EaaSI: either an :term:`environment`, :term:`software`, or :term:`content`.
-      It is the combination of metadata and files necessary to manifest the resource in the system.
+      A resource refers broadly to either an :term:`environment`, :term:`software` object, or :term:`content` object.
+      It is the combination of metadata and files necessary to render an environment or :term:`object` in the system.
 
   Software
       Software refers to application and system software, including operating systems, commercial and open source 
