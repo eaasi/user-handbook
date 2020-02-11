@@ -4,6 +4,7 @@
 
 Emulators
 =========
+
 EaaS relies on several open source projects to actually perform emulation and virtualization.
 These emulators have been containerized into Docker images by the EaaS development team to allow for easily swapping in
 new emulators (or different versions of an emulator) to an EaaSI installation.
@@ -12,7 +13,7 @@ Default EaaSI deployments will come only with QEMU (v3.1) installed, but emulati
 by replicating environments from other nodes and/or using the Emulator menu in the demo interface. Please see
 :ref:`managing_emulators` for more details.
 
-The full list of compatible and pre-Dockerized emulators prepared by the EaaS team is located and will be updated on
+The full list of compatible and Dockerized emulators prepared by the EaaS team is located and will be updated on
 their `public GitLab repository <https://gitlab.com/emulation-as-a-service/emulators>`_, but immediately available for
 the EaaSI network are:
 

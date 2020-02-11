@@ -7,21 +7,21 @@ Try EaaSI
 
 .. note::
 
-   This method requires installation of Docker.
+   Trying EaaSI requires installation of Docker.
    Consult the `Docker Engine - Community <https://docs.docker.com/install/>`_ installation instructions
    for your operating system before proceeding.
    
 The development team at OpenSLX has packaged custom Docker images of an example EaaSI release
-to simplify deploying EaaSI on to a single desktop for purposes of testing and demonstration. The
+to simplify running EaaSI on a single machine (out of a single directory) for purposes of testing and demonstration. The
 following instructions are optimized for MacOS and Linux but can be adapted for Windows as well (see
 below).
 
-**1.** Download and unpack ``EaaSI_Demo.tar.gz`` from [Wasabi link].
+**1.** Download and unpack ``EaaSI_Demo.tar.gz`` from https://s3.wasabisys.com/EaaSIDemonstrators/DemonstratorVersion1/eaasi_usb.tar.gz.
 
-  Checksum (SHA256): []
+  Checksum (SHA256): [ac9d8a3a3c2dcf0881797df3b03e88a8dca76d5cac18fa134b0b75215d768885]
 
-  This file is approximately 1.6 GB (3.4 GB unzipped) and contains the filesystem, server deployment
-  and Docker images necessary to run EaaSI within a single directory.
+  This file is approximately 5.1 GB (~15 GB unzipped) and contains the filesystem, server deployment
+  and Docker layers necessary to run EaaSI within a single directory.
   
 **2.** Using terminal of choice, change directories into the extracted ``EaaSI_Demo`` folder::
   
@@ -48,33 +48,23 @@ configuration in the provided ``docker-compose.yaml`` file::
 
 **7.** At this point, you have a functional test instance of EaaSI and can consult the rest of this
 User Handbook to add :ref:`emulators <managing_emulators>`, :ref:`upload software <adding_software>` 
-and :ref:`create environments <import_base>`! But we recommend using the `EaaSI Open Source Sandbox 
-<https://eaasi-sandbox.softwarepreservationnetwork.org/eaasi/#/portal/welcome>`_ to get started with 
-some already-made environments.
+and :ref:`create environments <import_base>`! The provided demo includes several open source operating
+system environments to get you started.
 
-Click on "OAI-PMH" in the navigation sidebar. In the "Metadata Harvesting" menu, click on the "Add OAI-PMH
-Endpoint" button.
+**8.** To gracefully shut down the EaaSI Docker container, open a second terminal window and run::
+  
+  $ sudo docker-compose down
+  
+in the ``EaaSI_Demo`` directory.
 
-.. image:: /guide/images/add_endpoint.png
-
-Under ``Hostname``, enter: ``http://[sandbox_endpoint_URL]``. (You may name the endpoint however you
-wish, e.g. "EaaSI Sandbox")
-
-Click "Add". Your EaaSI Sandbox entry should now be available in the Metadata Harvesting menu.
-
-Click "Synchronize Full" to fetch information about all of the environments available in the Open
-Source Sandbox. (This may take a minute or two!)
-
-Once the synchronization is complete, use the sidebar to navigate to "Environments", then under
-"Virtual machines" click on the "Remote" tab. You should see a list of the same environments available
-on the online Sandbox!
-
-Use the dropdown menus to view the Details pages of the various environments and choose which you
-would like to run and use locally. When you have chosen an environment, click "Replicate" in the top
-right corner of any environment Details page to download it into your EaaSI installation. (Download/
-replication time will vary depending on the size of the environment, the quality of your internet
-connection, and current traffic on the Open Source Sandbox)
-
-As part of the replication process, EaaSI will automatically fetch and download the necessary emulator
-for running that environment. This has the added benefit of making that emulator and its templates
-available for you to create and import new environments as well!
+.. note::
+  
+  **For Windows users**: The EaaSI team has sometimes encountered minor issues with Docker for Windows. 
+  You *must* share the drive containing the "EaaSI_Demo" directory with Docker in Docker Desktop -> Settings -> Shared Drives, 
+  using an admin account's credentials. There may be issues at this point if you are logged in to Windows 
+  with Microsoft account or domain authentication, where drive sharing does not work even if that domain user has admin privilieges. 
+  See: https://github.com/docker/for-win/issues/3174. If there are problems authenticating with a domain user,
+  try setting up a local admin account and using those credentials to share the drive with Docker. 
+  
+  Once the C: (or other relevant drive address) has been properly shared with Docker, all the Docker commands described 
+  above can be run in a PowerShell or Command Prompt terminal with raised (admin) privileges, simply excluding "sudo" from the commands.
