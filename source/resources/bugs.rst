@@ -62,7 +62,7 @@ be completed using a different button the menu?
 5. Choose a template to pre-populate the "Description" field with important information and questions
 that will help guide you in writing your bug report.
 
-[image of templates]
+.. image:: ../images/bug_report_template.png
 
 Give your bug a good "Title" summarizing your problem.
 
@@ -71,4 +71,4 @@ and give as much information about your system as possible (your host node, your
 browser version, etc). The more information you give us, the faster our developers can narrow down the source
 of your issue!
 
-[image of pre-populated Bug template]
+.. image:: ../images/bug_report_description.png
