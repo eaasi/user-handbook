@@ -3,10 +3,10 @@
 System Architecture
 *******************
 
-Emulation-as-a-Service uses environment configuration templates (stored in XML) to assemble emulated hardware and data
+Emulation-as-a-Service uses configuration templates (stored in XML) to assemble emulated hardware and data
 as specified by the user.
 
-The effect is to create in-browser virtual environments that mimic the behavior of a physical computer.
+The effect is to create in-browser virtual computing :term:`environments <environment>` that mimic the behavior of a physical machine.
 
 When an EaaSI user runs an environment, the configuration file directs the platform to the appropriate emulator
 for that system, the hardware settings for that emulator, a disk image containing a bootable operating system, and, if

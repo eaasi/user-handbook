@@ -57,7 +57,7 @@ be completed using a different button the menu?
 4. If you haven't logged in to GitLab yet, make sure you do so now. On the eaasi-dev Issue list, select
 "New Issue".
 
-.. image:: images/gitlab_new_issue.png
+.. image:: ../images/gitlab_new_issue.png
 
 5. Choose a template to pre-populate the "Description" field with important information and questions
 that will help guide you in writing your bug report.

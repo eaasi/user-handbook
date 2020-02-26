@@ -16,11 +16,11 @@ to simplify running EaaSI on a single machine (out of a single directory) for pu
 following instructions are optimized for MacOS and Linux but can be adapted for Windows as well (see
 below).
 
-**1.** Download and unpack ``EaaSI_Demo.tar.gz`` from https://s3.wasabisys.com/EaaSIDemonstrators/DemonstratorVersion1/eaasi_usb.tar.gz.
+**1.** Download and unpack ``EaaSI_Demo_v1.tar.gz`` from https://s3.wasabisys.com/EaaSIDemonstrators/EaaSI_Demo_v1.tar.gz.
 
-  Checksum (SHA256): [ac9d8a3a3c2dcf0881797df3b03e88a8dca76d5cac18fa134b0b75215d768885]
+  Checksum (SHA256): [5cab2d6ffac81ac02dc1ad166fdc40fd4b441c061daace25b7797d54fd375998]
 
-  This file is approximately 5.1 GB (~15 GB unzipped) and contains the filesystem, server deployment
+  This file is approximately 2.0 GB (~5 GB unzipped) and contains the filesystem, server deployment
   and Docker layers necessary to run EaaSI within a single directory.
   
 **2.** Using terminal of choice, change directories into the extracted ``EaaSI_Demo`` folder::
