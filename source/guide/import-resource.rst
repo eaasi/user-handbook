@@ -2,7 +2,7 @@
 
 .. _add_resources:
 
-Importing Resources
+Import Resources
 *******************
 
 .. warning::

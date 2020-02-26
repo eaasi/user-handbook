@@ -26,10 +26,8 @@ presence/availability of the emulator in the node is determined by the "Number o
 
 For instance, in the above screenshot, the example node contains QEMU (two versions/images), BasiliskII and SheepShaver.
 
-Details for each emulator - version number(s), Docker source info, etc. - can be reviewed by clicking the "Details"
+Details for each emulator - version number(s), Docker source info, etc. - can be reviewed by clicking its corresponding "Details"
 button.
-
-.. image:: images/emulator_detail_button.png
 
 .. image:: images/emulator_details.png
 
