@@ -10,6 +10,14 @@ Manage Node
   and :term:`Configuration Users <configuration user>` will not see this page in the EaaSI menu or be able to control
   any of the settings described.
 
+The Manage Node page has two primary sections: :ref:`node_management` for controlling the :term:`node` itself (emulators, OAI-PMH, computing
+resources) and :ref:`user_admin` for managing the users who can access the node. See each section below for more details.
+
+This page also displays the node's EaaSI Application Version number, which is important information to include
+when :ref:`bugs`.
+
+
+.. _node_management:
 
 Node Management
 ==================
@@ -25,7 +33,7 @@ and expanding a node's functionality all may involve some management of the emul
 .. image:: ../images/emulators_menu.png
 
 The list on this page represents the whole range of emulators that have been containerized and made available to the
-EaaSI network by the development team via the OpenSLX team's `GitLab repo <https://gitlab.com/emulation-as-a-service/emulators>`_.
+EaaSI network by the development team via the OpenSLX team's `GitLab repository <https://gitlab.com/emulation-as-a-service/emulators>`_.
 This does **not** mean they are necessarily available for immediate use in the current node installation. The
 presence/availability of the emulator in the node is determined by the "Number of Images".
 
@@ -41,13 +49,13 @@ be convenient for troubleshooting environments, as certain versions of an emulat
 legacy operating systems or hardware than others.
 
 If an emulator has multiple images/versions in a node, the version that EaaSI uses to run an environment can be viewed
-and edited on any given environment details page under "Environment Settings":
+and edited on any given environment details page under "Emulator" settings:
 
-.. image:: images/emulator_settings.png
+.. image:: ../images/emulator_version_settings.png
 
 .. note::
-  The "Default" tag will determine which emulator image/version is used when creating new environments with a Hardware
-  Configuration template that depends on that emulator.
+  The "Default" tag will determine which emulator image/version is used when creating new environments with a System 
+  template that depends on that emulator.
   
 New emulator images/versions can be added to the node in two ways: either through environment replication or manual adding of
 Docker images.
@@ -56,14 +64,12 @@ Emulator images are automatically imported into a node if a node user attempts t
 a remote node in the network, and the host node does not have the emulator image the remote node used to originally
 create and configure that environment.
 
-For example: a user at Node A sees a remote Mac OS 9.0.4 environment configured using SheepShaver available from Node B.
+*For example: a user at Node A sees a remote Mac OS 9.0.4 environment configured using SheepShaver available from Node B.
 Node A does not currently have a SheepShaver image installed. But, when the user chooses to replicate, the appropriate
 SheepShaver image will be imported as part of the environment replication process, with no extra input needed.
-SheepShaver will now be available in Node A for future environment creation and configuration as well.
+SheepShaver will now be available in Node A for future environment creation and configuration as well.*
 
-.. image:: [Ethan make a diagram]
-
-The above method requires little to no direct management from an EaaSI Admin. But Admins can also manually add
+The replication method requires little to no direct management from an EaaSI Admin. But Admins can also manually add
 emulator images as well by clicking the "Import Emulator" button on the Emulators page:
 
   .. image:: ../images/import_emulator_button.png
@@ -126,12 +132,41 @@ accordingly.
 Running Tasks
 ---------------
 
+The Running Tasks tab allows Admins to monitor activity on the node, including any currently running environment sessions,
+replication requests, uploads or imports, etc. This high-level information is meant to help Admins
+better troubleshoot the node (i.e. confirm that uploads have completed, that environments have been properly shut down,
+etc)
+
+
+.. _user_admin:
 
 Node User Administration
 =========================
 
+Manage Users
+-------------
+
+EaaSI users must for now be added manually by a node :term:`Admin` before they can :ref:`log in <logging_in>` to a node.
+The Manage Users page lists all individuals that are present on the node, including their given username and their role/permission
+level.
+
+.. image:: ../images/node_users.png
+
+Clicking on a user's Details page will allow an Admin the ability to also edit that user's email address (used for authenticating login),
+their username and full name information, and their role/permission level:
+
+.. image:: ../images/edit_user.png
+
+
 Create New User
 ----------------
 
-Manager Users
---------------
+To add a new user to a node, an Admin can click on the "Create New User" button to set the new user's email,
+name, and user role.
+
+**All** fields in the Create New User menu are required.
+
+.. image:: ../images/create_new_user.png
+
+Once added, new users should be able to successfully follow the procedures described in :ref:`logging_in` to join
+the node.

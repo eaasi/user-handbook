@@ -10,7 +10,7 @@ between EaaSI's authentication and Single Sign-On/local authentication services 
 instutitions is in development.
 
 Before logging in for the first time, a new EaaSI user must be added to the :term:`node` by an :term:`Admin`
-or :term:`Manager` (the Admin must set a user/display name, email and permission level for the user). Once added, the new user may "Sign Up"
+(the Admin must set a user/display name, email and permission level for the user; see :ref:`user_admin`). Once added, the new user may "Sign Up"
 on the OAuth page to confirm their account and set a password for authentication.
 
 .. image:: ../images/landing_page.png

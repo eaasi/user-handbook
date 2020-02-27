@@ -40,4 +40,6 @@ Blog Feed
 
 The bottom of the Dashboard page displays a refreshing feed of the most recent posts from the `Software
 Preservation Network <https://www.softwarepreservationnetwork.org/spn-news/>`_ blog, so EaaSI users can
-keep up with the latest and greatest news in software preservation and emulation! 
+keep up with the latest and greatest news in software preservation and emulation!
+
+.. image:: ../images/blog.png
