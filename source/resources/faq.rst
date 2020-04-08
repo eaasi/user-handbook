@@ -3,6 +3,12 @@
 FAQ
 ***
 
+**Q: How much does EaaSI cost?**
+
+**Q: How can I start using EaaSI NOW?**
+
+**Q: What kind of files can I access with EaaSI?**
+
 **Q: Are EaaSI and EaaS the same thing?**
 
 A: Not exactly!
@@ -19,7 +25,7 @@ metadata schema for cataloging software, community outreach and more.
 
 **Q: (How) is this legal?**
 
-A: EaaSI adheres to principles of fair use for academic and cultural institutions as recommended by the SPN-affiliate
+A: EaaSI adheres to principles of fair use for academic, cultural, and non-profit institutions as recommended by the SPN-affiliate
 project `Code of Best Practices for Fair Use in Software Preservation <https://www.softwarepreservationnetwork.org/bp-fair-use/>`_.
 Our network's members have countless files in digital collections that are inaccessible without appropriate software -
 by sharing our acquired *software* collections (with measures for network authentication and object control baked in to

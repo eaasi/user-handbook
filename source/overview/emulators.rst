@@ -20,20 +20,11 @@ the EaaSI network are:
 - `Basilisk II <https://basilisk.cebix.net/>`_
     68k series Mac emulation
 
-- `BeebEm <http://www.mkw.me.uk/beebem/>`_
-    BBC Micro and Master 128 emulation
-
 - `ContrAlto <https://github.com/livingcomputermuseum/ContrAlto>`_
     Xerox Alto emulation
 
 - `FS-UAE <https://fs-uae.net/>`_
     Amiga series emulation
-
-- `Hatari <https://hatari.tuxfamily.org/>`_
-    Atari ST/STE/TT/Falcon series emulation
-
-- `KEGS <http://kegs.sourceforge.net/>`_
-    Apple IIgs emulation
 
 - `Linapple-pie <https://github.com/dabonetn/linapple-pie/>`_
     Apple II emulation

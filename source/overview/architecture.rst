@@ -87,6 +87,7 @@ The harvester requests metadata (in EaaSI's case, Base and Software Environment 
 at other nodes; the data providers query the node's local records and return this metadata back to the original harvester.
 
 .. image:: ../images/oai-pmh.png
+  :align: center
 
 Using the provided metadata, the harvester can also then find and replicate necessary files (disk images) from the
 other nodes on :ref:`request <replication>`.

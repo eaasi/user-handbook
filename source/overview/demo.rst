@@ -16,11 +16,11 @@ to simplify running EaaSI on a single machine (out of a single directory) for pu
 following instructions are optimized for MacOS and Linux but can be adapted for Windows as well (see
 below).
 
-**1.** Download and unpack ``EaaSI_Demo_v1.tar.gz`` from https://s3.wasabisys.com/EaaSIDemonstrators/EaaSI_Demo_v1.tar.gz.
+**1.** Download and unpack ``EaaSI_Demo_v1_Lite.tar.gz`` from https://s3.wasabisys.com/EaaSIDemonstrators/EaaSI_Demo_v1_Lite.tar.gz.
 
-  Checksum (SHA256): [5cab2d6ffac81ac02dc1ad166fdc40fd4b441c061daace25b7797d54fd375998]
+  Checksum (SHA256): [7cbad886168e7d59956720c70a4047cf63e372169e54c5324bdf5bf622c67e7b]
 
-  This file is approximately 2.0 GB (~5 GB unzipped) and contains the filesystem, server deployment
+  This file is approximately 2.6 GB (~8 GB unzipped) and contains the filesystem, server deployment
   and Docker layers necessary to run EaaSI within a single directory.
   
 **2.** Using terminal of choice, change directories into the extracted ``EaaSI_Demo`` folder::
@@ -47,9 +47,13 @@ configuration in the provided ``docker-compose.yaml`` file::
   - Password: ``demo``
 
 **7.** At this point, you have a functional test instance of EaaSI and can consult the rest of this
-User Handbook to add :ref:`emulators <managing_emulators>`, :ref:`upload software <adding_software>` 
-and :ref:`create environments <import_base>`! The provided demo includes several open source operating
+User Handbook to add :ref:`emulators <managing_emulators_dev>`, :ref:`upload software <adding_software_dev>` 
+and :ref:`create environments <import_base_dev>`! The provided demo includes a few open source operating
 system environments to get you started.
+
+.. note::
+  EaaSI demo Docker deployments use the "Dev UI" interface. Use the :ref:`dev_ui` section of this Handbook
+  for instructions for using your EaaSI Docker!
 
 **8.** To gracefully shut down the EaaSI Docker container, open a second terminal window and run::
   
