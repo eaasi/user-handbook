@@ -6,37 +6,30 @@ Import Resources
 *******************
 
 .. warning::
-  The EaaSI platform is currently in "beta"! At this point our goal is to test critical network functionality and
-  gather feedback for further development. We can not guarantee the persistence of any :term:`resources` in the system
-  when we transition from the 'beta' to our first 'official' release.
+  tktktktk something about migrating resources from the 2019 beta versions if necessary
 
-  In other words, **any** environments (Base, Software or Object) created and saved by the network (other than those
-  sourced from and maintained by Yale University Library) during the beta may be deleted at the end of the beta, and
-  Software or Digital Objects may need to be re-imported from storage.
+.. image:: ../images/visual_designs5.jpg
 
-  EaaSI staff will communicate details of this transition well ahead of time to allow node hosts to plan accordingly.
+To import a new Content, Software, or Environment Resource, navigate to the "Import Resource" page using the sidebar
+navigation menu.
 
-.. image:: images/visual_designs5.jpg
+.. image:: ../images/import_resource_overview.png
 
-.. _import_object:
+From there, please follow the corresponding instructions and guidelines below depending on whether you wish to import :term:`Content`,
+:term:`Software`, or a stand-alone :term:`Environment`.
 
-Importing an Object
-================
+.. _import_content:
 
-To add a new Digital or Software Object to your EaaSI installation, navigate to the "Import Object" page using the
-sidebar menu.
+Importing Content
+===================
 
-.. image:: images/import_object_overview.png
+To begin, select the "Import Content" button on the Import Resource page.
 
-The Object Upload page displays two options: uploading Objects "From File" (anywhere on the local filesystem of the
-computer the user is accessing the interface from), or "From Repository". Only "From File" is supported during the beta;
-connections to digital repositories at node hosts will require further development.
+First, you will need to name your Content resource. This should be something short and descriptive; spaces, periods, hyphens
+and underscores are OK, but please avoid using other special characters.
 
-Use the Object ID field to name the Object. Avoid using special characters or spaces in the Object ID to prevent
-unexpected system behavior (hyphens and underscores are OK).
+.. image:: ../images/about_this_content.png
 
-.. image:: images/object_id.png
-  :align: center
 
 .. _media_types:
 
@@ -44,7 +37,7 @@ There are four Media Types available to describe the file(s) being uploaded. The
 communicate to emulators where/how to mount an object into an environment (i.e. relevant file system and/or virtual
 drive).
 
-.. image:: images/visual_designs4.jpg
+.. image:: ../images/visual_designs4.jpg
 
 
 - *ISO* - Mounts the object in an environment's virtual optical/CD-ROM drive. Should accept any file extension.
@@ -60,7 +53,7 @@ Click the "Add Files" button to pull up a file browser and select the file(s) th
 add as many individual files to an import as desired to create multi-file Objects. The files that make up an Object
 should be of a consistent Media Type to allow for successful mounting into an emulator.
 
-.. image:: images/media_type.png
+.. image:: ../images/media_type.png
 
 .. note::
   For example, An operating system installer might contain a boot floppy and then multiple CD-ROMs. The floppy image
@@ -75,9 +68,15 @@ imported Object is considered a Software Object (rather than a Digital Object/co
 :ref:`adding_software`.
 
 
+.. _import_software:
+
+Importing Software
+======================
+
+
 .. _import_base:
 
-Importing Base Environments
+Importing an Environment
 ===========================
 
 .. note::

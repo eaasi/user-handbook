@@ -22,6 +22,8 @@ when :ref:`bugs`.
 Node Management
 ==================
 
+.. _managing_emulators:
+
 Emulators
 -----------
 
@@ -136,6 +138,8 @@ The Running Tasks tab allows Admins to monitor activity on the node, including a
 replication requests, uploads or imports, etc. This high-level information is meant to help Admins
 better troubleshoot the node (i.e. confirm that uploads have completed, that environments have been properly shut down,
 etc)
+
+.. image:: ../images/running_tasks.png
 
 
 .. _user_admin:
