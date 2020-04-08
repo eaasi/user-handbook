@@ -23,6 +23,7 @@ EaaSI User Handbook
    guide/my-resources
    guide/emulation-project
    guide/import-resource
+   guide/publishing
    guide/administration
    
 .. toctree::
@@ -34,3 +35,15 @@ EaaSI User Handbook
    resources/faq
    resources/glossary
    resources/workflow
+   resources/dev_ui
+  
+.. toctree::
+  :maxdepth: 1
+  :caption: Dev Interface
+  
+  legacy/dev_ui
+  legacy/interface
+  legacy/resources
+  legacy/publishing
+  legacy/emulators
+  legacy/administration
