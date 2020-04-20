@@ -21,7 +21,6 @@ EaaSI User Handbook
    guide/dashboard
    guide/explore-resources
    guide/my-resources
-   guide/emulation-project
    guide/import-resource
    guide/publishing
    guide/administration
@@ -39,7 +38,7 @@ EaaSI User Handbook
   
 .. toctree::
   :maxdepth: 1
-  :caption: Dev Interface
+  :caption: Legacy Interface
   
   legacy/dev_ui
   legacy/interface

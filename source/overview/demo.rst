@@ -52,7 +52,7 @@ and :ref:`create environments <import_base_dev>`! The provided demo includes a f
 system environments to get you started.
 
 .. note::
-  EaaSI demo Docker deployments use the "Dev UI" interface. Use the :ref:`dev_ui` section of this Handbook
+  EaaSI demo Docker deployments use the "Legacy UI" interface. Use the :ref:`legacy_ui` section of this Handbook
   for instructions for using your EaaSI Docker!
 
 **8.** To gracefully shut down the EaaSI Docker container, open a second terminal window and run::

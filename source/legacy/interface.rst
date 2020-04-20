@@ -1,8 +1,8 @@
 
 .. _navigation_dev:
 
-Navigating and Using the Dev Interface
-****************************************
+Navigating and Using the Legacy Interface
+*******************************************
 
 These guidelines and screenshots refer to the EaaSI Dev UI, as of April 2020. The Dev UI is intended
 for legacy support and gradual introduction of cutting-edge features into the EaaSI stack, so the 

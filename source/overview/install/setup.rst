@@ -141,7 +141,7 @@ Edit this file with a text editor. An example configuration can look as follows:
 .. literalinclude:: examples/eaasi.yaml.template
    :language: yaml
 
-All available configuration options are grouped into 4 sections: ``host``, ``docker``, ``ui`` and ``eaas``.
+All available configuration options are grouped into 4 sections: ``host``, ``docker``, ``eaas`` , ``portal``.
 
 .. include:: installer-config.rst
 

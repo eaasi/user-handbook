@@ -8,7 +8,7 @@ program. It is intended to help new users navigate and perform common tasks with
 
 The EaaSI platform is built on top of Emulation-as-a-Service (EaaS). EaaSI's "flavor" of EaaS contains features and
 functionality unique to the needs of the EaaSI network, and a fresh interface design by `PortalMedia <https://www.portalmedia.com/>`_.
-This guide is intended to expand upon the description of Demo and Administration UI functionality in the 
+This guide is intended to expand upon the description of functionality in the 
 `EaaS documentation <http://eaas.uni-freiburg.de/docs/>`_, to account for these changes.
 
 We hope that the User Handbook will be of help, not just to members and users within the EaaSI network, but more
