@@ -3,25 +3,14 @@
 Setup and Deployment
 =====================
 
-`Ansible <https://www.ansible.com/>`_ deployment has been used by EaaSI Network node hosts and is recommended for 
-**production-level** installations (multiple users, accessible over a local network). Those interested in **testing** 
-the EaaSI platform on a single machine for evaluation or personal/small-scale purposes may use a
-pre-configured Docker container.
-
-Please consult the appropriate documentation depending on your preferred method.
-
-
-Production Deployment
-------------------
-
-This method uses Ansible for setting up and configuring a server for EaaSI deployment.
+Production deployment uses Ansible for setting up and configuring a server for EaaSI deployment.
 
 .. _eaasi-installer: https://gitlab.com/eaasi/eaasi-installer
 .. _eaasi-ansible: https://gitlab.com/eaasi/eaasi-ansible
 
 
-Preconditions
-^^^^^^^^^^^^^^
+System Requirements
+--------------------
 
 - A VM or physical machine for the EaaSI gateway (installation target). The gateway machine can act as
   an all-in-one installation, ie include UI, emulator runtime and various archive implementations.
@@ -64,7 +53,7 @@ Current version of the installer makes the following assumptions:
 
 
 Installation Procedure
-^^^^^^^^^^^^^^^^^^^^^^
+-----------------------
 
 The installation procedure consists of the following steps:
 
@@ -152,7 +141,7 @@ Edit this file with a text editor. An example configuration can look as follows:
 .. literalinclude:: examples/eaasi.yaml.template
    :language: yaml
 
-All available configuration options are grouped into 4 sections: ``host``, ``docker``, ``ui`` and ``eaas``.
+All available configuration options are grouped into 4 sections: ``host``, ``docker``, ``eaas`` , ``portal``.
 
 .. include:: installer-config.rst
 
@@ -178,7 +167,7 @@ the ``eaasi.yaml`` file should be used.
 .. _updating-eaasi:
 
 Updating EaaSI
-^^^^^^^^^^^^^^
+---------------
 
 To update a previously-existing EaaSI installation, first update the `eaasi-installer`_ by running its ``git-pull.sh``
 script to match the new/updated tagged release provided by the EaaSI team, for example:
@@ -216,6 +205,7 @@ idempotent and can be repeated multiple times resulting in the same deployment s
 operations (like downloading files) are skipped, if those files are already present on the target machine. Ansible
 must be forced to omit the idempotency requirement for certain operations, to be able to update EaaSI's UI,
 server binary and runtime docker-image.
+<<<<<<< HEAD:source/install/setup.rst
 
 
 .. _container_setup:
@@ -299,3 +289,5 @@ connection, and current traffic on the Open Source Sandbox)
 As part of the replication process, EaaSI will automatically fetch and download the necessary emulator
 for running that environment. This has the added benefit of making that emulator and its templates
 available for you to create and import new environments as well!
+=======
+>>>>>>> v2020.03-release:source/overview/install/setup.rst

@@ -2,7 +2,35 @@
 
 .. _bugs:
 
-GitLab How-Tos
+Reporting Bugs
+=================
+
+EaaSI users may report bugs and technical issues with the platform directly to the team using `GitLab <https://gitlab.com>`_. 
+Please `report any new issue here <https://gitlab.com/eaasi/eaasi-dev/issues/new>`_ using the provided 
+templates to describe your bug in as much detail as possible!
+
+(You will need to `register <https://gitlab.com/users/sign_in>`_ for an account with GitLab to submit
+a bug report - please see our `how-tos`_ below for guidance!) 
+
+.. raw:: html
+
+  <form action="https://gitlab.com/eaasi/eaasi-dev/issues?scope=all&amp;utf8=%E2%9C%93">
+    <label style="font-size:20px;"><b>Search for an existing bug:</b>
+    <br>
+    <br>
+    <input type="text" name="search" placeholder="e.g.: 'OAI-PMH error'" id="bugInput"></label>
+    <input type="hidden" name="state" value="all">
+    <br>
+    <input type="submit" value="Submit">
+  </form>
+
+|  
+
+Related to bug reports are feature or enhancement requests. Templates in GitLab are provided for communicating
+feature requests directly to the EaaSI team; larger requests will probably also benefit from discussion
+on our :ref:`google_groups` so that other members of the EaaSI Network can get involved!
+
+How-Tos
 ------------
 
 Since submitting bug reports or `requests <Feature and Software Requests_>`_ may require you to use tools you have not used previously, we have
@@ -30,14 +58,12 @@ be completed using a different button the menu?
 (If you haven't already). On the `eaasi-dev Issue list <https://gitlab.com/eaasi/eaasi-dev/issues>`_, 
 select "New Issue".
 
-.. image:: images/gitlab_new_issue.png
-  :scale: 75
+.. image:: ../images/gitlab_new_issue.png
 
 **5. Choose the "Bug Report" template**. This will pre-populate the Description field with questions and
 guidelines to help you write your bug report:
 
-.. image:: images/bug_report_template.png
-  :scale: 75
+.. image:: ../images/bug_report_template.png
 
 **6. Give your bug a brief and descriptive "Title"** summarizing your problem!
 
@@ -46,21 +72,6 @@ and give as much information about your system as possible (your host node, your
 browser version, etc). The more information you give us, the faster our developers can narrow down the source
 of your issue!
 
-.. image:: images/bug_report_description.png
-  :scale: 65
-  
-The Bug Report template in our GitLab will also auto-assign a "bug report" label to your issue, which helps
-bring it to the quick attention of EaaSI staff.
-
-**7. Please wait patiently!** EaaSI staff will address your bug report and make sure it gets in front of
-the right people at our development teams as soon as possible. We may follow up with a request for more
-details. You can set your `GitLab account notifications <https://docs.gitlab.com/ee/user/profile/notifications.html>`_ 
-to receive emails related to your bug report, so you don't miss a thing if we ask for more information (or
-when your bug gets fixed!)
-
-
-Feature and Software Requests
-==============================
 
 There are also provided templates for requesting enhancements to the EaaSI platform, or for EaaSI staff to
 try to add new software to the Network.
@@ -84,3 +95,5 @@ or just need help figuring out how to interact with/view a funky file, send a So
 will check the software collection at Yale University Library to see if we can provide the relevant software (provided
 you're writing from a EaaSI Network node host), or at least help you find some more information about the software
 you need.
+
+.. image:: ../images/bug_report_description.png

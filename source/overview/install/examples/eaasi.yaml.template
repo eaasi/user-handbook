@@ -1,0 +1,42 @@
+---
+host:
+  build_dir: "/eaas-build"
+  eaas_home: "/eaas-home"
+
+docker:
+  image: "eaas/eaas-appserver"
+  port: 80
+
+eaas:
+  git_branch: "eaasi-release-032019"
+  enable_oaipmh_provider: true
+  
+portal: 
+  db_update: true
+  git_branch: “eaasi-release-2020.03”
+
+  auth:
+    saml:
+      enabled: false
+      auth_endpoint: “https://your.sso.domain/saml”
+      entrypoint_url: “https://your.sso.domain/saml”
+      logout_url: “https://your.sso.domain/logout”
+      client_id: “CLIENT_ID”
+      sp_cert: “./artifacts/auth/cert.pem”
+      sp_private_key: “./artifacts/auth/key.pem”
+
+    mailer:
+      port: 587
+      host: “smtp.example.net”
+      user: “admin”
+      password: “password”
+      sender: “noreply@your-email-domain.com”
+  
+  organization:
+    name: “Your Organization Name”
+
+  initial_user:
+    email: “admin@example.com”
+    username: “admin”
+    first_name: “first name”
+    last_name: “last name”

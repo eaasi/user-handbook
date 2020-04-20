@@ -1,6 +1,6 @@
 .. Adding resources to EaaSI
 
-.. _add_resources:
+.. _add_resources_dev:
 
 Importing Resources
 *******************
@@ -18,7 +18,7 @@ Importing Resources
 
 .. image:: images/visual_designs5.jpg
 
-.. _import_object:
+.. _import_object_dev:
 
 Importing an Object
 ================
@@ -38,7 +38,7 @@ unexpected system behavior (hyphens and underscores are OK).
 .. image:: images/object_id.png
   :align: center
 
-.. _media_types:
+.. _media_types_dev:
 
 There are four Media Types available to describe the file(s) being uploaded. The Media Type will be used by EaaS to
 communicate to emulators where/how to mount an object into an environment (i.e. relevant file system and/or virtual
@@ -70,12 +70,12 @@ should be of a consistent Media Type to allow for successful mounting into an em
 Once all desired files have been selected, click "Import" at the bottom of the page. A pop-up window should display the
 progress and success of the Object import.
 
-On successful import, the new Object will be available in the :ref:`Objects overview <objects_overview>`. If the
+On successful import, the new Object will be available in the :ref:`Objects overview <objects_overview_dev>`. If the
 imported Object is considered a Software Object (rather than a Digital Object/collection item) see
-:ref:`adding_software`.
+:ref:`adding_software_dev`.
 
 
-.. _import_base:
+.. _import_base_dev:
 
 Importing Base Environments
 ===========================
@@ -112,7 +112,7 @@ for instructions.
 
 The "Native Config" field will specify the actual flags/options passed to the underlying emulator according to the
 selected Hardware Configuration template. You can edit the Hardware Configuration here accordingly (consult each
-:ref:`emulator's <emulators>`) documentation for available options.
+:ref:`emulator's <emulators_dev>`) documentation for available options.
 
 .. image:: images/native_config.png
 
@@ -129,5 +129,5 @@ the *Private* sub-section of the Base Environments overview.
 Importing Emulators
 ====================
 
-Please see :ref:`managing_emulators` for more detailed instructions on managing and importing new emulators into an EaaSI
+Please see :ref:`managing_emulators_dev` for more detailed instructions on managing and importing new emulators into an EaaSI
 node.

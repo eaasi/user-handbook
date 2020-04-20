@@ -1,6 +1,6 @@
 .. Managing Emulators
 
-.. _managing_emulators:
+.. _managing_emulators_dev:
 
 Managing Emulators
 *******************
@@ -67,7 +67,7 @@ To start a new environment from scratch rather than replicating and deriving fro
 be present, to populate these menus in the UI. The target emulator must thus be imported first (see below).
 
 
-.. _emulator_containers:
+.. _emulator_containers_dev:
 
 Adding New Emulator Containers
 ==============================

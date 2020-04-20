@@ -3,6 +3,12 @@
 FAQ
 ***
 
+**Q: How much does EaaSI cost?**
+
+**Q: How can I start using EaaSI NOW?**
+
+**Q: What kind of files can I access with EaaSI?**
+
 **Q: Are EaaSI and EaaS the same thing?**
 
 A: Not exactly!
@@ -19,7 +25,7 @@ metadata schema for cataloging software, community outreach and more.
 
 **Q: (How) is this legal?**
 
-A: EaaSI adheres to principles of fair use for academic and cultural institutions as recommended by the SPN-affiliate
+A: EaaSI adheres to principles of fair use for academic, cultural, and non-profit institutions as recommended by the SPN-affiliate
 project `Code of Best Practices for Fair Use in Software Preservation <https://www.softwarepreservationnetwork.org/bp-fair-use/>`_.
 Our network's members have countless files in digital collections that are inaccessible without appropriate software -
 by sharing our acquired *software* collections (with measures for network authentication and object control baked in to
@@ -32,7 +38,9 @@ might otherwise prevent us from exercising right to fair use. Please see the
 for more details and guidance.
 
 These guidelines are dependent on United States copyright law - EaaSI network :term:`node hosts <node>` are therefore
-currently limited to US-based institutions.
+currently limited to US-based institutions. Along with our SPN colleagues, we are actively exploring possibilities for
+international partnership, including cross-compatibility between U.S. fair use and "fair dealing" in Commonwealth nations; or
+creating localized EaaSI networks in other nations.
 
 **Q: Can EaaSI emulate (Amiga, Mac OS, Commodore, DOS, Atari...)?**
 
@@ -50,12 +58,14 @@ A: That will depend on a few factors, mainly:
 
   1. Is the environment locally stored/cached, or remote (hosted by another node)?
   2. What computing resources (CPU, RAM) have been assigned to that environment's :term:`hardware configuration`?
+  3. The size of the environment's base disk image(s)
+  4. The strength/bandwidth of your network connection
 
-The former will have the most noticeable results: the emulation session will load and boot much faster if the base
-environment's disk image is already in storage connected to the local :term:`image archive`.
+The emulation session will load and boot much faster if the environment's disk image is already in 
+storage connected to the local :term:`image archive`.
 
 Otherwise, the base image must first be fetched over HTTP from the remote node's storage, which will slow loading
-(variably, depending on network bandwidth, data rates, the size of the image, etc.)
+(again variably, depending on network bandwidth, data rates, the size of the image, etc.)
 
 After being run once, a remote environment will load faster on subsequent boots as long as that environment image
 remains in the local cache, but caches will be cleared periodically and possibly unpredictably, so this is not a
@@ -66,6 +76,13 @@ or processor power in the emulated hardware configuration. EaaSI staff have stri
 accurately reflect contemporary hardware for the target operating system, but there is obviously much wiggle room
 within those lines. If employing this strategy to optimize environments, keep legacy system requirements and
 compatibility in mind to avoid unexpected software behavior.
+
+Generally speaking, environments based on older operating systems will load faster than more recent systems,
+since the average size of operating systems, applications, and user data/files have grown along with the capacity of
+storage media. Particularly when dealing with newer operating systems, EaaSI staff recommend setting up
+staying as conservative as possible when setting up base environments (e.g. selecting "minimal" install options) to
+minimize the amount of data that needs to get moved around the Network or streamed to client browsers and speed up
+response time.
 
 
 **Q: Your legacy software environments can connect to the live internet...are there malware or security concerns?**
@@ -87,8 +104,8 @@ discarded.
 Even if you do somehow save an infected environment, the damage should be isolated to that environment/image. To have
 any effect outside the emulated environment, the malware would have to bridge out of the "guest" operating system to
 the "host" system running the EaaSI platform - a fully up-to-date, modern, secure OS, managed by our node system
-administrators. Legacy malware just wasn't written to behave or be effective this way. And in any case, EaaSI is
-further deployed on host systems via Docker containers, which provides even another layer of network protection
+administrators. Legacy malware just wasn't written to behave or be effective this way. And in any case, our emulated environments
+(and the EaaSI platform itself) are further deployed on host systems via Docker containers, which provides even another layer of network protection
 between any emulated environment and your host network.
 
 The more likely concern would be modern malware and vulnerabilities that are specifically designed to target emulation
@@ -98,6 +115,3 @@ EaaSI: to allow them to be easily updated to account for security updates from t
 team will regularly Docker-ize new releases of QEMU and others to ease and encourage this process.
 
 In other words, just as you should regularly update your modern operating system and applications, EaaSI will too!
-
-
-**Q: How do I get a direct link to an environment for sharing?**
