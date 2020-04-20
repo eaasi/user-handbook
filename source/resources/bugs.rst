@@ -97,3 +97,15 @@ you're writing from a EaaSI Network node host), or at least help you find some m
 you need.
 
 .. image:: ../images/bug_report_description.png
+
+.. _requests:
+
+Feature and Software Requests
+-------------------------------
+
+GitLab Issue templates are also provided for submitting requests for new platform features or specific
+software titles/needs to EaaSI staff. Using these templates will, again, help EaaSI staff to make sure
+requests for assistance (from Network nodes in particular) are tracked and fulfilled in a timely manner.
+
+To submit a Feature or Software Request on GitLab, see steps 4-7 above. Simply replace the "Bug Report"
+template in step 5 with the appropriate "Feature Request" or "Software Request" option!
