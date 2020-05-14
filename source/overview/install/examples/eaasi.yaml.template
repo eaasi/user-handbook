@@ -14,17 +14,8 @@ eaas:
 portal: 
   db_update: true
   git_branch: “eaasi-release-2020.03”
-
+  
   auth:
-    saml:
-      enabled: false
-      auth_endpoint: “https://your.sso.domain/saml”
-      entrypoint_url: “https://your.sso.domain/saml”
-      logout_url: “https://your.sso.domain/logout”
-      client_id: “CLIENT_ID”
-      sp_cert: “./artifacts/auth/cert.pem”
-      sp_private_key: “./artifacts/auth/key.pem”
-
     mailer:
       port: 587
       host: “smtp.example.net”

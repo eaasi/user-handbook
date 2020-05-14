@@ -5,28 +5,21 @@
 Logging In
 ===========
 
-Currently users must log in to the EaaSI interface using a basic OAuth service. Streamlined integration
-between EaaSI's authentication and Single Sign-On/local authentication services at Network
-instutitions is in development.
+Currently users must log in to the EaaSI interface using a basic local database for user management. Streamlined integration
+between EaaSI and Single Sign-On/local authentication services at Network instutitions is in development.
 
-Before logging in for the first time, a new EaaSI user must be added to the :term:`node` by an :term:`Admin`
-(the Admin must set a user/display name, email and permission level for the user; see :ref:`user_admin`). Once added, the new user may "Sign Up"
-on the OAuth page to confirm their account and set a password for authentication.
+Before logging in for the first time, a new EaaSI user must be added to the :term:`node` by an :term:`Admin`.
+The initial Admin must set a user/display name, email and permission level for the user; see :ref:`user_admin`).
+
+(The initial Admin user is determined during deployment - see :ref:`configuring-eaasi-installer`)
 
 .. image:: ../images/landing_page.png
   :align: center
 
-New users have the option of using their Google/Gmail account to log in, rather than setting a unique
-password, if desired.
+New users should receive an email containing their password at the email specified by the Admin.
 
-.. image:: ../images/sign_up.png
-  :align: center
-
-After signing up, users may log in to their EaaSI node using the "Log In" tab of the OAuth page to proceed
-to the EaaSI :ref:`dashboard`.
-
-.. image:: ../images/log_in.png
-  :align: center
+Passwords can be automatically reset, but not customized. Please keep track of your assigned password
+for logging in, preferably in a secure location such as a password manager.
 
 
 Logging Out

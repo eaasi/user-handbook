@@ -47,7 +47,7 @@ Current version of the installer makes the following assumptions:
 
   .. note::
 
-     `eaasi-ansible`_ already supports distributed deployment, consisting of a single gateway
+     `eaasi-ansible`_ technically supports distributed deployment, consisting of a single gateway
      machine and multiple worker machines running emulation sessions. However, this is not yet
      fully documented and therefore not available in the current installer version.
 
@@ -158,10 +158,12 @@ When everything is configured, the installation process can be started by runnin
    $ ./scripts/deploy.sh
 
 It will take a while depending on your internet connection and target machine. When the installation process
-is finished, you should be able to access the EaaSI-UI with a browser under the URL ``http://<hostname>``.
+is finished, you should be able to access EaaSI with a browser at the URL ``http://<hostname>``.
 The ``<hostname>`` should match the address of the target machine you specified in the ``hosts.yaml`` file.
-When asked for login credentials, the ``ui.http_auth.user`` and ``ui.http_auth.password`` you specified in
-the ``eaasi.yaml`` file should be used.
+When asked for login credentials, use the email you configured for the ``intial_user`` and the password ``eaasidemo1``.
+
+.. warning::
+  Again, we strongly recommend the initial user immediately reset their password upon successful login. This will also act as a test of the selected SMTP mailer configuration.
 
 
 .. _updating-eaasi:
@@ -174,16 +176,16 @@ script to match the new/updated tagged release provided by the EaaSI team, for e
 
 .. code-block:: sh
 
-  $ git-pull.sh origin eaasi-release-072019
+  $ git-pull.sh origin eaasi-release-2020.03
 
-Where ``eaasi-release-072019`` should be replaced by the relevant tag provided.
+Where ``eaasi-release-2020.03`` should be replaced by the relevant tag provided.
 
 The EaaSI configuration located in ``artifacts/config/eaasi.yaml`` must then be updated with the relevant tag on
 certain lines as well; for example:
 
-  - docker.image: "eaas/eaas-appserver:eaasi-release-072019"
-  - eaas.git_branch: "eaasi-release-072019"
-  - ui.git_branch: "eaasi-release-072019"
+  - docker.image: "eaas/eaas-appserver:eaasi-release-2020.03"
+  - eaas.git_branch: "eaasi-release-2020.03"
+  - portal.git_branch: "eaasi-release-2020.03"
 
 Following these configuration changes, to update the various EaaSI components, run:
 
@@ -193,15 +195,15 @@ Following these configuration changes, to update the various EaaSI components, r
 
 where ``<component>`` can be one of the following:
 
-- ``ui``: to update EaaSI's UI to the latest version
 - ``ear``: to update EaaSI's server binary to the latest version
 - ``docker-image``: to update runtime docker-image to the latest version
+- ``portal``: to update the UI and front-end to the latest version
 
 Multiple components can be specified as a space-separated list. If called without any ``<component>``
 arguments, then all components will be updated by default.
 
 Updates are run selectively in this way due to the way Ansible works: most actions executed during the installation are
-idempotent and can be repeated multiple times resulting in the same deployment state. This also means, that certain
+idempotent and can be repeated multiple times resulting in the same deployment state. This also means certain
 operations (like downloading files) are skipped, if those files are already present on the target machine. Ansible
 must be forced to omit the idempotency requirement for certain operations, to be able to update EaaSI's UI,
 server binary and runtime docker-image.

@@ -124,9 +124,6 @@
       Git branch name to install EaaSI UI from.
       
   .. config-value:: auth
-  
-    Placeholder config for expected SAML/SSO authentication integration. Values can be left at their
-    default or commented out. (?)
     
   .. config-value:: mailer
   
@@ -182,7 +179,7 @@
     
       :type: string
       
-      Login password for the initial Admin user will be sent automatically to this address.
+      The login password for the initial user is hard-coded to **"eaasidemo1"**. It is strongly recommended that this initial user reset their password (which will generate a random, more secure password). Reset passwords for the initial user will be sent to this address.
       
     .. config-value:: username
     

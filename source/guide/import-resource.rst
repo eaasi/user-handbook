@@ -2,11 +2,12 @@
 
 .. _add_resources:
 
+.. note::
+  Resources imported by nodes previous to the 2020.03-beta release *should* persist without additional
+  migration steps. Please file a bug report or contact the EaaSI team if encountering missing resources.
+
 Import Resources
 *******************
-
-.. warning::
-  tktktktk something about migrating resources from the 2019 beta versions if necessary
 
 .. image:: ../images/visual_designs5.jpg
 
@@ -26,14 +27,27 @@ Importing Content
 To begin, select the "Import Content" button on the Import Resource page.
 
 First, you will need to name your Content resource. This should be something short and descriptive; spaces, periods, hyphens
-and underscores are OK, but please avoid using other special characters.
+and underscores are OK, but please avoid using other special characters. Then proceed by clicking "Continue".
 
 .. image:: ../images/about_this_content.png
 
+You have three options for attaching and uploading files to be included in an import:
+
+.. image:: ../images/attach_files.png
+
+1. **URL**: Provide a direct download URL from publicly available cloud/web storage (HTTP addresses only)
+2. **My Computer**: Will pull up a file browser for you to manually select the file(s) from your computer that make up your desired Content.
+3. **Drag Files**: You may drag-and-drop the file(s) from your desktop to make up your desired Content.
+
+Once at least one file is selected, the UI will allow you to "Add More Files" to create a multi-file resource:
+
+.. image:: ../images/add_more_files.png
+
+You may add as many files as desired.
 
 .. _media_types:
 
-There are four Media Types available to describe the file(s) being uploaded. The Media Type will be used by EaaS to
+There are four Physical Formats available to describe the file(s) being uploaded. The Physical Format will be used by EaaS to
 communicate to emulators where/how to mount an object into an environment (i.e. relevant file system and/or virtual
 drive).
 
@@ -46,26 +60,24 @@ drive).
 
 - *Disk* - Attempts to mount the object as a hard drive (success may thus be highly variable depending on an environment's configured hardware, the operating system's compatibility with the image's file system, etc.). Should accept most if not all hard disk image formats (IMG, DMG, DD/raw, QCOW, VDI, VMDK, E01/EWF, etc.)
 
-- *Files* - This option will accept any set of non-disk-image files. To allow for maximum compatibility, imported file sets are currently packaged by EaaSI into an ISO file and file set objects will thus mount in an environment's virtual optical/CD-ROM drive.
+- *Files* - This option will accept any set of files (i.e. intended for files that are not packaged in a disk image). To allow the arbitrary file set to be mounted in the broadest possible range of operating systems, imported file sets are currently packaged by EaaSI into an ISO file on the back-end; Files objects should thus mount in an environment's virtual CD-ROM/optical drive.
 
 
-Click the "Add Files" button to pull up a file browser and select the file(s) that make up your desired Object. You can
-add as many individual files to an import as desired to create multi-file Objects. The files that make up an Object
-should be of a consistent Media Type to allow for successful mounting into an emulator.
+For "ISO", "Floppy", and "Disk" type resources, the files that make up the Content **must** be of the same Physical Format to mount and switch between files/disks
+properly in emulation. Mixed-format resources are currently not supported.
 
-.. image:: ../images/media_type.png
-
-.. note::
+.. warning::
   For example, An operating system installer might contain a boot floppy and then multiple CD-ROMs. The floppy image
-  and the CD-ROM images must be considered and imported as different Objects, but the CD-ROM images should likely be
-  imported together as a single Object.
+  and the CD-ROM images must be considered and imported as different resources, but the CD-ROM images should likely be
+  imported together as a single resource.
 
-Once all desired files have been selected, click "Import" at the bottom of the page. A pop-up window should display the
-progress and success of the Object import.
+Once all desired files have been selected, click "Finish Import" at the top of the page:
 
-On successful import, the new Object will be available in the :ref:`Objects overview <objects_overview>`. If the
-imported Object is considered a Software Object (rather than a Digital Object/collection item) see
-:ref:`adding_software`.
+.. image:: ../images/finish_import.png
+
+Please **do not** navigate away fromm the import page until the upload is completed (i.e. the EaaSI logo stops spinning)
+
+On successful import, the new Content resource will be available in the :ref:`explore` menu.
 
 
 .. _import_software:
@@ -73,20 +85,37 @@ imported Object is considered a Software Object (rather than a Digital Object/co
 Importing Software
 ======================
 
+The steps for importing Software resources are extremely similar to those for :ref:`import_content` above, with a few added options
+for additional metadata.
+
+To start import of a Software resource, select "Import Software" on the Import Resources page, then select "Fast Import".
+
+.. image:: ../images/fast_import.png
+
+.. warning::
+  "Detailed Import" is a proposed future feature that takes advantage of the full EaaSI metadata model for describing software.
+  It is non-functional in the 2020.03-beta release, but can give nodes an idea of the type of information they may want to start
+  capturing about their software collections. The EaaSI team is considering enforcing detailed description of Software resources
+  that are published to the Network in order to reduce redundant/duplicate resources.
+  
+From there, you must at a minimum assign a name to the Software Resource:
+
+.. image:: ../images/about_software.png
+
+All notes above regarding Physical Formats and selecting files to create a Content resource apply to Software as well.
+
+(Again, mixed-format Software types are currently not compatible with EaaSI)
+
+When you have selected Finish Import.
+
 
 .. _import_base:
 
 Importing an Environment
 ===========================
 
-.. note::
-  To import a new Base Environment into EaaSI using the demo interface, the base disk image file must first be directly
-  accessible at an HTTP web address. This could include cloud storage services (Google Drive, Dropbox, Box, etc.)
-
-  If this is not possible, environments must be directly uploaded into the EaaSI container's file system and synced
-  into the system. Contact the EaaSI team for instructions.
-
-To import a new Base Environment, navigate to the "Import/Create Environment" page using the sidebar menu.
+To import a new Environment resource (i.e. a disk image that already contains a bootable operating system), 
+select "Import Environment" on the "Import Resources" menu.
 
 .. image:: images/create_base_environment.png
 
