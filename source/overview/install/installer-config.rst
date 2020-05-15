@@ -19,14 +19,13 @@
       :type: string
       :default: ``/tmp``
 
-      Directory to store runtime data.
+      Directory to store runtime data. (optional)
 
    .. config-value:: ssh_port
 
       :type: int
-      :default: 22
 
-      Custom SSH port to use during installation.
+      Optional, custom SSH port to use during installation.
 
 
 .. config-value:: docker
@@ -39,15 +38,22 @@
 
       Docker image to pull during installation.
 
+   .. config-value:: network_name
+   
+      :type: string
+      :default: ``eaasi``
+      
+      Name the Docker network created and used for all communication between EaaSI containers. Can be any arbitrary name.
+      
    .. config-value:: port
-
+   
       :type: int
-
-      Public network port for the EaaS service.
+      
+      Optional, custom Docker port to use during installation.
 
    .. config-value:: ssl
 
-      Configuration options for SSL support.
+      Optional configuration options for SSL support.
 
       .. config-value:: enabled
 
@@ -73,7 +79,7 @@
          :type: string
 
          A path to certificate's private key. Similar file location restrictions apply,
-         see `sectificate's note <#config-value-certificate>`_ for more information.
+         see `certificate's note <#config-value-certificate>`_ for more information.
 
    .. config-value:: image_archive_volume
 
@@ -106,22 +112,29 @@
 
       Flag to enable export of EaaS environments through an OAI-PMH provider.
       
+   .. config-value:: db_upgrade
+   
+      :type: boolean
+      :default: true
+      
+      Performs a one-time migration of legacy EaaS UI database to new Portal database, if necessary. Action is idempotent (will check itself so that it only executes once), so can always be left to ``true``
+      
 .. config-value:: portal
 
   Configuration options for the PortalMedia EaaSI User Interface.
-  
-  .. config-value:: db_update
-
-     :type: boolean
-     :default: true
-     
-     This will remove all current data, if any from the eaasi-database, and perform a clean seed. 
      
   .. config-value:: git_branch
      
      :type: string
      
       Git branch name to install EaaSI UI from.
+      
+  .. config-value:: db_update
+
+      :type: boolean
+      :default: false
+         
+      This will remove all current data, if any from the eaasi-database, and perform a clean seed. This optional variable is hidden and defaults to ``false`` to prevent accidental deletion of production data. **Only set this variable to ``true`` if it is necessary or helpful to perform a clean install or update of your node!!!**
       
   .. config-value:: auth
     

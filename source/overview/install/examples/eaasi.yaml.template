@@ -1,18 +1,25 @@
 ---
 host:
-  build_dir: "/eaas-build"
-  eaas_home: "/eaas-home"
+  build_dir: "/eaasi/build"
+  eaas_home: "/eaasi/"
 
 docker:
-  image: "eaas/eaas-appserver"
-  port: 80
+  image: "eaas/eaas-appserver:eaasi-release-2019-11"
+  network_name: "eaasi"
+
+  # to enable SSL with custom certificate,
+  # uncomment the following lines...
+  #ssl:
+  #  enabled: true
+  #  certificate: "./artifacts/ssl/certificate.crt"
+  #  private_key: "./artifacts/ssl/private.key"
 
 eaas:
-  git_branch: "eaasi-release-032019"
+  git_branch: "eaasi-release-2019.11"
   enable_oaipmh_provider: true
-  
+  db_upgrade: true
+
 portal: 
-  db_update: true
   git_branch: “eaasi-release-2020.03”
   
   auth:

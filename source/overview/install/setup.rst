@@ -1,5 +1,7 @@
 .. Setup
 
+.. _setup:
+
 Setup and Deployment
 =====================
 
@@ -22,6 +24,7 @@ System Requirements
   to run emulators and store disk images.
 - The installer requires a ``python`` interpreter to be installed on the target machine. This will be
   handled automatically on supported Linux distributions.
+- a configured SMTP mail server to handle delivery of user passwords (a temporary user management solution) - either a third-party service (MailGun, SendGrid) or a local option should work
 
 .. note::
 
@@ -158,13 +161,13 @@ When everything is configured, the installation process can be started by runnin
    $ ./scripts/deploy.sh
 
 It will take a while depending on your internet connection and target machine. When the installation process
-is finished, you should be able to access EaaSI with a browser at the URL ``http://<hostname>``.
+is finished, you should be able to access EaaSI with a browser at the URL ``http://<hostname>`` (or ``https://<hostname>`` if SSL was properly enabled and configured)
 The ``<hostname>`` should match the address of the target machine you specified in the ``hosts.yaml`` file.
 When asked for login credentials, use the email you configured for the ``intial_user`` and the password ``eaasidemo1``.
 
 .. warning::
   Again, we strongly recommend the initial user immediately reset their password upon successful login. This will also act as a test of the selected SMTP mailer configuration.
-
+  
 
 .. _updating-eaasi:
 
@@ -172,20 +175,21 @@ Updating EaaSI
 ---------------
 
 To update a previously-existing EaaSI installation, first update the `eaasi-installer`_ by running its ``git-pull.sh``
-script to match the new/updated tagged release provided by the EaaSI team, for example:
+script to match the most up-to-date release provided by the EaaSI team:
 
 .. code-block:: sh
 
-  $ git-pull.sh origin eaasi-release-2020.03
+  $ ./git-pull.sh && ./git-pull.sh origin eaasi-release-2020.03
 
-Where ``eaasi-release-2020.03`` should be replaced by the relevant tag provided.
+.. note::
+  Running the ``git-pull.sh`` script twice, first without arguments, ensures that the script itself is up-to-date first, before fetching the current release branch.
 
-The EaaSI configuration located in ``artifacts/config/eaasi.yaml`` must then be updated with the relevant tag on
-certain lines as well; for example:
+The EaaSI configuration located in ``artifacts/config/eaasi.yaml`` must then be updated with the relevant git branch or tag on
+certain lines as well, for the ``docker``, ``eaas`` and ``portal`` modules. For the most up-to-date release recommended by EaaSI staff, please use:
 
-  - docker.image: "eaas/eaas-appserver:eaasi-release-2020.03"
-  - eaas.git_branch: "eaasi-release-2020.03"
-  - portal.git_branch: "eaasi-release-2020.03"
+  - docker.image: ``eaas/eaas-appserver:eaasi-release-2019.11``
+  - eaas.git_branch: ``eaasi-release-2019.11``
+  - portal.git_branch: ``eaasi-release-2020.03``
 
 Following these configuration changes, to update the various EaaSI components, run:
 
@@ -197,7 +201,7 @@ where ``<component>`` can be one of the following:
 
 - ``ear``: to update EaaSI's server binary to the latest version
 - ``docker-image``: to update runtime docker-image to the latest version
-- ``portal``: to update the UI and front-end to the latest version
+- ``ui``: to update the PortalMedia UI elements to the latest version  
 
 Multiple components can be specified as a space-separated list. If called without any ``<component>``
 arguments, then all components will be updated by default.
@@ -207,3 +211,10 @@ idempotent and can be repeated multiple times resulting in the same deployment s
 operations (like downloading files) are skipped, if those files are already present on the target machine. Ansible
 must be forced to omit the idempotency requirement for certain operations, to be able to update EaaSI's UI,
 server binary and runtime docker-image.
+
+Deployment Troubleshooting
+----------------------------
+
+If you encounter errors in deploying or updating to EaaSI release 2020.03-beta, the EaaSI team has created a :ref:`Deployment FAQ/troubleshooting <deploy_faq>` page with possible pitfalls and work-arounds encountered by the development team during testing. This may be of use when working in non-standard network environments in particular.
+
+Please :ref:`file a ticket <bugs>` if continuing to encounter issues/errors during deployment or updating of your EaaSI node.

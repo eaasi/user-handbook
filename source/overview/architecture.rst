@@ -29,16 +29,17 @@ physical/virtual machines, depending on resources available. EaaSI installations
 sharing :term:`resources <resource>` and metadata across the EaaSI Network, but core functionality is accomplished with the following components.
 
 
-Front-end
+Client
 ----------
 
-The front-end provides an interface to use the EaaS API through RESTful HTTP requests. EaaSI will ultimately offer a
-number of potential front-end access services that vary by use case; this Handbook is primarily concerned with the
-administrative interface designed by PortalMedia that allows for importing, saving, and documenting legacy software and content in
-emulated computing environments. (See :ref:`navigation`) 
+An EaaSI client/front-end provides an interface to use the EaaS API through RESTful HTTP requests. This Handbook is primarily concerned with the EaaSI administrative interface designed by PortalMedia that allows for importing, saving, and documenting legacy software and content in emulated computing environments.
+
+(The "Legacy UI" used for EaaS dev work can, as of v2020.03 release, remain accessible at the same time as the EaaSI administrative interface if so desired and configured. See :ref:`setup`)
 
 Sharing and accessing those environments (e.g. as a patron or scholar), integrating with existing access services, or interacting
-with EaaSI Network metadata in alternative routes, will all be the subject of future front-end development.
+with EaaSI Network metadata in alternative routes and modules, will all be the subject of future front-end development.
+
+.. image:: ../images/eaasi-client_summary.png
 
 
 Gateway
