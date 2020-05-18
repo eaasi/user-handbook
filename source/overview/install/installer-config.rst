@@ -111,13 +111,7 @@
       :type: boolean
 
       Flag to enable export of EaaS environments through an OAI-PMH provider.
-      
-   .. config-value:: db_upgrade
-   
-      :type: boolean
-      :default: true
-      
-      Performs a one-time migration of legacy EaaS UI database to new Portal database, if necessary. Action is idempotent (will check itself so that it only executes once), so can always be left to ``true``
+
       
 .. config-value:: portal
 
@@ -134,7 +128,7 @@
       :type: boolean
       :default: false
          
-      This will remove all current data, if any from the eaasi-database, and perform a clean seed. This optional variable is hidden and defaults to ``false`` to prevent accidental deletion of production data. **Only set this variable to ``true`` if it is necessary or helpful to perform a clean install or update of your node!!!**
+      (Optional) This will remove all current data, if any from the eaasi-database, and perform a clean seed. This optional variable is hidden and defaults to ``false`` to prevent accidental deletion of production data. **Only set this variable to ``true`` if it is necessary or helpful to perform a clean re-install or update of your node!!!**
       
   .. config-value:: auth
     
