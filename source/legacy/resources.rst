@@ -107,9 +107,6 @@ this *must* be a direct link; consult your service's sharing settings.
 If the Base Environment is running a KVM-compatible operating system (e.g. Windows XP), you can enable virtualization
 here.
 
-If a specific ROM file is needed to run the environment (e.g. for Apple/Mac operating systems), contact the EaaSI team
-for instructions.
-
 The "Native Config" field will specify the actual flags/options passed to the underlying emulator according to the
 selected Hardware Configuration template. You can edit the Hardware Configuration here accordingly (consult each
 :ref:`emulator's <emulators_dev>`) documentation for available options.
@@ -124,6 +121,9 @@ local network, etc.
 When the user is satisfied with the new environment's operation, shut down the emulated operating system and select
 "Save Environment" from the Action Menu. When the new base has been named, described and saved, it will be available in
 the *Private* sub-section of the Base Environments overview.
+
+.. note::
+  If creating an Apple/Mac OS environment using Mini vMac, BasiliskII or SheepShaver emulators, additional steps are required. Please see :ref:`mac_envs`.
 
 
 Importing Emulators
