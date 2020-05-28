@@ -3,11 +3,8 @@
 FAQ
 ***
 
-**Q: How much does EaaSI cost?**
-
-**Q: How can I start using EaaSI NOW?**
-
-**Q: What kind of files can I access with EaaSI?**
+EaaSI Program of Work
+======================
 
 **Q: Are EaaSI and EaaS the same thing?**
 
@@ -17,11 +14,11 @@ Emulation-as-a-Service (EaaS) is an open source software stack, originally devel
 project at the University of Freiburg, now maintained by OpenSLX. It allows for emulated computing environments to be
 assembled, configured and accessed via a modern web browser.
 
-EaaSI is shorthand for the Scaling Emulation and Software Preservation Infrastructure program of work. It refers to our
-series of projects collectively aiming to expand preservation, access and use of legacy software and digital objects
-via emulation and a shared network of resources, services and labor. That *includes* a custom EaaSI "flavor" of EaaS
-that suits the needs of our distributed network, but also includes documentation, front-end access services, improving
-metadata schema for cataloging software, community outreach and more.
+EaaSI is shorthand for the Scaling Emulation and Software Preservation Infrastructure program of work. The EaaSI project has two key components:
+
+  1. The **core EaaSI software** provides an improved EaaS interface with an updated User Interface, extensive metadata capture, search, and browse features and workflows, user and content access management features and workflows, Virtual Reading Room features and workflows, and the Universal Virtual Interactor (UVI) algorithms and workflows. While compared to previous options, the EaaSI software provides much improved emulator administration, management and access interface, it is fairly complicated software to install, configure, and run in a large scale production capacity.  Most significantly, acquiring, installing, configuring and documenting legacy software is also a huge challenge, as it can take detailed knowledge of hardware settings and software configurations to make it all work seamlessly. For these reasons a core outcome of the EaaSI Program of work has been the creation of the EaaSI Network.
+
+  2. The **EaaSI Network** greatly simplifies engagement with emulation as it avoids each organization having to acquire, install, configure and document legacy software and instead gives them access to working versions via a simple replication process. Members of the EaaSI Network also have access to end-user and technical support for configuring and running the EaaSI software as well as training opportunities facilitated by the EaaSI team. The EaaSI team members at Yale are seeding the network with a large number of software titles pre-configured in working emulated environments and other nodes (EaaSI installation hosts) are populating the network with software titles from domains related to their collecting focus.
 
 **Q: (How) is this legal?**
 
@@ -39,8 +36,7 @@ for more details and guidance.
 
 These guidelines are dependent on United States copyright law - EaaSI network :term:`node hosts <node>` are therefore
 currently limited to US-based institutions. Along with our SPN colleagues, we are actively exploring possibilities for
-international partnership, including cross-compatibility between U.S. fair use and "fair dealing" in Commonwealth nations; or
-creating localized EaaSI networks in other nations.
+international partnership, including cross-compatibility between U.S. fair use and "fair dealing" in Commonwealth nations; creating localized EaaSI networks in other nations; how US-hosted storage might affect the legal framework of the Network, etc.
 
 **Q: Can EaaSI emulate (Amiga, Mac OS, Commodore, DOS, Atari...)?**
 
@@ -52,6 +48,30 @@ Emulators are containerized by the EaaSI development team to allow for easily po
 versions of the same emulator, into an installation to expand and optimize its legacy hardware and software
 compatibility.
 
+**Q: How can I get involved with EaaSI?**
+
+A: There are lots of options, depending on your level of capacity and interest!
+
+- Join the `Software Preservation Network <https://www.softwarepreservationnetwork.org>`_! If you are interested in joining an active and healthy community of practice that is focused on software preservation and emulation, and/or, if you are interested in testing the **EaaSI beta hosted service in 2021** (rather than hosting your own node or standing up your own infrastructure), join the Software Preservation Network. Please reach out to us at `eaasi@yale.edu <mailto:eaasi@yale.edu>`_ to learn more.  
+
+- Encourage local and regional colleagues to play in the `EaaSI Open Source Sandbox <https://eaasi-sandbox.softwarepreservationnetwork.org/eaasi/#/portal/welcome>`_! The sandbox is currently limited to open source software and does not have the updated administrative interface, but it does give everyone a chance to interact with emulated environments and helps users understand the core functionality of EaaSI.
+
+- Try out the :ref:`demo <container_setup>` EaaSI alpha installation. While we can’t provide end-user support for this right now, there is documentation in this Handbook and we’re working on additional community-driven support options.
+
+- The `EaaSI project site <https://www.softwarepreservationnetwork.org/projects/emulation-as-a-service-infrastructure/>`_ is home to Capacity-Building Templates, Presentations, and more. After playing in the sandbox, or trying the demo installation, encourage practitioners within local/regional organizations to walk through these capacity building exercises (e.g. assessing emulation needs in your collections) with key organizational partners, compare notes, convene a conversation. We are building a body of data resulting from these capacity-building exercises that spans organizational types, geographies, and sizes. This data is synthesized on a rolling basis in order to have up-to-date information about where the software preservation and emulation community writ large should dedicate its energy and attention. These exercises are usually meant to be completed in pairs, or completed on behalf of a single organization or single unit/department and then compared with colleagues in other organizations or other units/departments.
+
+- While we currently use Google Groups for the EaaSI Tech Talk User Forum (see :ref:`community`), we are investigating forum plugins for the SPN website so that we can create something akin to StackOverflow for EaaSI - a place where users can upvote or downvote responses, and more easily provide support for one another.
+
+- We have Environment Creation Office Hours every other week where network participants can show up and work alongside one another in the configuration of base environments. Members of the Tech Talk list are invited to join in, time zones permitting!
+
+- If you are a member or representative of a professional community or association that you think would be interested in EaaSI. While we cannot provide end-user support to those outside the Network at this time, we are happy to join periodic or ad hoc community calls to provide technical overviews, share demos, and answer questions.
+
+- Partner with SPN on an international grant project on the legal framework for sharing software and emulation environments across borders. As described above, the EaaSI network is currently limited to countries with an equivalent of “fair use” (US) or “fair dealing” (Canada). SPN is driving the law and policy agenda to expand lawful preservation and reuse of software and is currently seeking collaborators for a grant project that will determine the legal basis for an international EaaSI network. This project will explore the terms of existing international treaties, as well as, compare legal tools available in three distinct intellectual property regimes. Please let `Jessica Meyerson <mailto:jessica@educopia.org>`_ know if you are interested in collaborating.
+
+
+Technical Concerns
+===================
+
 **Q: How long should an environment take to boot (on average)?**
 
 A: That will depend on a few factors, mainly:
@@ -62,14 +82,7 @@ A: That will depend on a few factors, mainly:
   4. The strength/bandwidth of your network connection
 
 The emulation session will load and boot much faster if the environment's disk image is already in 
-storage connected to the local :term:`image archive`.
-
-Otherwise, the base image must first be fetched over HTTP from the remote node's storage, which will slow loading
-(again variably, depending on network bandwidth, data rates, the size of the image, etc.)
-
-After being run once, a remote environment will load faster on subsequent boots as long as that environment image
-remains in the local cache, but caches will be cleared periodically and possibly unpredictably, so this is not a
-recommended strategy for optimization.
+storage connected to the local :term:`image archive` and cached on the Emulation Component (i.e. the configured server in the EaaSI stack that actually performs the emulation). So an environment that is being run for the first time in days (weeks, etc.) may load slower than subsequent, immediate attempts to run.
 
 From there, a legacy operating system's boot time might be improved marginally by assigning that environment more RAM
 or processor power in the emulated hardware configuration. EaaSI staff have striven to create base environments that
