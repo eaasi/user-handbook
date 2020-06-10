@@ -12,26 +12,32 @@ Production deployment uses Ansible for setting up and configuring a server for E
 
 
 System Requirements
---------------------
+---------------------
 
-- A VM or physical machine for the EaaSI gateway (installation target). The gateway machine can act as
-  an all-in-one installation, ie include UI, emulator runtime and various archive implementations.
-- A supported Linux operating system should be installed on the target machine. Currently Ubuntu 16.04,
-  Ubuntu 18.04 and CentOS 7 distributions are supported.
-- SSH access to this machine with ``sudo`` or root capabilities. Please make sure you do not need
-  a password to use sudo.
-- At least 10 GB of free disk space for a minimal EaaSI installation. Additional disk space is required
-  to run emulators and store disk images.
-- The installer requires a ``python`` interpreter to be installed on the target machine. This will be
-  handled automatically on supported Linux distributions.
-- a configured SMTP mail server to handle delivery of user passwords (a temporary user management solution) - either a third-party service (MailGun, SendGrid) or a local option should work
+- A VM or physical machine for the EaaSI gateway (installation target). The gateway machine can act as an all-in-one installation, i.e. include UI/front-end, emulator runtime and storage.
+- A supported Linux operating system should be installed on the target machine. Currently Ubuntu 16.04, Ubuntu 18.04 and CentOS 7 distributions are supported.
+- SSH access to the target machine with ``sudo`` or root capabilities. Please make sure you do not need a password to use sudo.
+- At least 10 GB of free disk space for a minimal EaaSI installation. Additional disk space is required to run emulators and store disk images.
+- The installer requires a ``python`` interpreter to be installed on the target machine. (This should be handled automatically on supported Linux distributions)
+- A configured SMTP mail server to handle delivery of user passwords (a temporary user management solution) - either a third-party service (MailGun, SendGrid, AWS) or a local option should work
 
 .. note::
 
-   This method requires manual installation of Docker only on the controller-machine, see
-   :ref:`Dependencies <docker_install_section>` for more information. Installation of Docker and
-   Docker-Compose on target machines will be handled automatically by the installer, if they are
-   not pre-installed there.
+   Docker must also be previously installed on the "controller machine". Installation of Docker and Docker-Compose on *target* machines will be handled automatically by the installer, if they are not pre-installed there.
+   
+   Please see Docker's `official documentation <https://docs.docker.com/get-docker/>`_ to install Docker and Docker Compose on your controller machine before proceeding to setup and deployment.
+
+
+Host Configuration
+^^^^^^^^^^^^^^^^^^^
+
+Certain additional steps are also required to enable *all* of EaaSI's features. Core functionality will still be available without these modifications, but some unexpected or unideal behavior may occur.
+
+On the target/gateway machine, please check the following permissions:
+
+- **KVM support:** Make sure that the Docker user has read/write permissions to ``/dev/kvm``.
+- **SELinux:** If SELinux is enabled, make sure to allow mapping low memory addresses by running ``sudo setsebool -P mmap_low_allowed 1`` (this is required for certain emulators, such as SheepShaver).
+- **Writable Shared Folders:** Make sure that the Docker user has write permission to shared folders.
 
 
 Assumptions
@@ -218,3 +224,16 @@ Deployment Troubleshooting
 If you encounter errors in deploying or updating to EaaSI release 2020.03-beta, the EaaSI team has created a :ref:`Deployment FAQ/troubleshooting <deploy_faq>` page with possible pitfalls and work-arounds encountered by the development team during testing. This may be of use when working in non-standard network environments in particular.
 
 Please :ref:`file a ticket <bugs>` if continuing to encounter issues/errors during deployment or updating of your EaaSI node.
+
+
+Browser Compatibility
+----------------------
+
+The EaaSI team recommends attempting to access the EaaSI UI using:
+
+- Firefox (v. 65+, possibly a few older versions too)
+- Chrome
+
+All other current browsers - such as Safari or older (non-Chrome-based) versions of Microsoft Edge will work to some degree but are not well tested.
+
+.. note:: Some browser extensions also may interfere with EaaSI functionality, including ad-blockers, popup-blockers or similar. If encountering unexpected behavior, please try disabling all browser extensions first.
