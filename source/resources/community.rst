@@ -33,4 +33,4 @@ SPN
 ===
 
 For more information about the EaaSI network and our full program of work, please visit our project site on the
-`Software Preservation Network <https://softwarepreservationnetwork.org/eaasi>`_!
+`Software Preservation Network <https://www.softwarepreservationnetwork.org/projects/emulation-as-a-service-infrastructure>`_!

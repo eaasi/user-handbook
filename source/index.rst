@@ -21,9 +21,12 @@ EaaSI User Handbook
    guide/dashboard
    guide/explore-resources
    guide/my-resources
+   guide/details
+   guide/emulation_project
+   guide/emulation_access
    guide/import-resource
-   guide/publishing
    guide/administration
+   guide/publishing
    
 .. toctree::
    :maxdepth: 1

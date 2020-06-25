@@ -8,7 +8,7 @@ Publishing and Replicating Resources
 What resources can be published to the network?
 ===============================================
 
-Environments are the only type of resource that can be published and shared between EaaSI nodes. (Software can/must be
+Environments are the only type of resource that can currently be published and shared between EaaSI nodes. (Software can/must be
 shared by first installing it into an Environment and then publishing the Environment)
 
 Also, this does not apply to Content Environments.:term:`Content` and associated Content Environments are assumed to be collection items, unique to each
@@ -29,7 +29,7 @@ What resources *should* be published?
   Nodes and users are advised to use the beta testing period to consider how to design and enforce local workflows for
   publishing resources, given these technical restrictions.
 
-When selecting Base and Software Environments to share with the rest of the network, EaaSI users and admins can
+When selecting Environments to share with the rest of the network, EaaSI users and admins can
 consider questions posed by the `Code of Best Practices in Fair Use for Software Preservation <https://www.arl.org/storage/documents/publications/2018.09.24_softwarepreservationcode.pdf>`_:
 
   - Did you lawfully acquire your copy of the software included in the environment?
@@ -42,16 +42,23 @@ type of content that might be appropriate to share, but this will also be an ong
 the network.
 
 
-
 How to publish Environments
 =================================
 
-tktktktktktk
+In a selected Private Environment's Action menu (either in the Slide Menu on the Explore/My Resources pages, or the Actions menu in the Environment's Details page), select "Publish to Network":
+
+.. image:: ../images/publish_slide_ui.png
+
+.. image:: ../images/publish_details.png
 
 
 .. _replication:
 
-How to replicate Environments to a local node
-================================================
+How to save published Environments to a local node
+====================================================
 
-tktktktktktk
+In a selected Remote Environment's Action menu (either in the Slide Menu on the Explore/My Resources pages, or the Actions menu in the Environment's Details page), select "Saved to My Node":
+
+.. image:: ../images/save_slide_ui.png
+
+.. image:: ../images/save_details.png
