@@ -94,7 +94,12 @@ First, an Ansible controller-machine must be prepared. This controller-machine w
 installation process and should preferably use a Linux operating system, but MacOS should also work.
 To prepare the controller-machine execute the following steps:
 
-- Clone the `eaasi-installer`_ repository into an empty directory
+- Clone the `eaasi-installer`_ repository into an empty directory. Make sure you have cloned the recommended branch for the current EaaSI release, e.g.:
+
+  .. code-block:: sh
+
+    $ git clone -b eaasi-release-2020.03 https://gitlab.com/eaasi/eaasi-installer
+
 - Change into this directory and run:
 
   .. code-block:: sh
