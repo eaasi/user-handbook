@@ -14,36 +14,68 @@ Production deployment uses Ansible for setting up and configuring a server for E
 System Requirements
 ---------------------
 
-- A VM or physical machine for the EaaSI gateway (installation target). The gateway machine can act as an all-in-one installation, i.e. include UI/front-end, emulator runtime and storage.
-- A supported Linux operating system should be installed on the target machine. Currently Ubuntu 16.04, Ubuntu 18.04 and CentOS 7 distributions are supported.
-- SSH access to the target machine with ``sudo`` or root capabilities. Please make sure you do not need a password to use sudo.
-- At least 10 GB of free disk space for a minimal EaaSI installation. Additional disk space is required to run emulators and store disk images.
-- The installer requires a ``python`` interpreter to be installed on the target machine. (This should be handled automatically on supported Linux distributions)
-- A configured SMTP mail server to handle delivery of user passwords (a temporary user management solution) - either a third-party service (MailGun, SendGrid, AWS) or a local option should work
+Hardware Requirements
+^^^^^^^^^^^^^^^^^^^^^^
 
-.. note::
+- A VM or physical machine for the EaaSI gateway (*target* machine).
 
-   Docker must also be previously installed on the "controller machine". Installation of Docker and Docker-Compose on *target* machines will be handled automatically by the installer, if they are not pre-installed there.
-   
-   Please see Docker's `official documentation <https://docs.docker.com/get-docker/>`_ to install Docker and Docker Compose on your controller machine before proceeding to setup and deployment.
+- Minimal/testing:
+
+  - 8-core AMD64 CPU
+  - 16 GB RAM
+  - 10 GB free disk space for the EaaSI system
+  - an additional 100+ GB disk space for resources (Environments, Software, Content), mounted to local file system
+
+- Recommended:
+
+  - 12-core AMD64 CPU
+  - 24 GB RAM
+  - 10 GB free disk space for the EaaSI system
+  - an additional 300+ GB disk space for resources
+  - For VM deployments, support for "Nested KVM"/nested virtualization on the host machine (see :ref:`enable-kvm`)
+  
+    - If deploying in the cloud, Azure and GCloud VMs should offer this feature out-of-the-box (GCloud users must acknolwedge that the feature is still technically in "beta" first).
+    - AWS currently only offers nested virtualization support on its "bare metal" options.
+  
+- A *controller* machine to run the installation scripts. Typical desktop/laptop hardware is plenty. See below for software requirements.
+
+ 
+Software Requirements
+^^^^^^^^^^^^^^^^^^^^^^^
+
+- A supported Linux operating system should be installed on the *target* machine:
+
+  - Ubuntu 16.04
+  - Ubuntu 18.04
+  - CentOS 7
+  
+- A ``python`` interpreter on the *target* machine (this should usually be handled automatically on the supported Linux distributions listed above)
+
+- `Docker <https://docs.docker.com/get-docker/>`_ must be installed on the *controller* machine. (Installation of Docker and Docker-Compose on the *target* machine will be automatically handled by the installer, if they are not already present). Please consult Docker's official documentation to install Docker and Docker Compose on the controller machine before proceeding to installation.
 
 
-Host Configuration
-^^^^^^^^^^^^^^^^^^^
+Target Machine Configuration
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Certain additional steps are also required to enable *all* of EaaSI's features. Core functionality will still be available without these modifications, but some unexpected or unideal behavior may occur.
+- SSH access to the *target* machine with ``sudo`` or root capabilities. Please make sure the target machine user does not need a password to use sudo.
 
-On the target/gateway machine, please check the following permissions:
+- EaaSI (as of v2020.03) requires access from the *target* machine to a SMTP mail server, to handle delivery of user passwords. Either a third-party service (MailGun, SendGrid, AWS, Gmail) or a local option (e.g. a university's mailing system) should work. Please contact your appropriate IT representative if necessary to obtain the ``mailer`` variables listed in :ref:`configuring-eaasi-installer`.
 
-- **KVM support:** Make sure that the Docker user has read/write permissions to ``/dev/kvm``.
-- **SELinux:** If SELinux is enabled, make sure to allow mapping low memory addresses by running ``sudo setsebool -P mmap_low_allowed 1`` (this is required for certain emulators, such as SheepShaver).
-- **Writable Shared Folders:** Make sure that the Docker user has write permission to shared folders.
+- Certain emulators, such as SheepShaver, require mapping to low memory addresses, which may be disabled by SELinux. If SELinux is enabled, allow mapping low memory addresses by running ``sudo setsebool -P mmap_low_allowed 1`` on the *target* machine.
+
+- Make sure that the Docker user has write permission to shared folders.
+
+- The Docker user must have read/write permissions to ``/dev/kvm`` for :ref:`KVM <enable-kvm>`/nested virtualization support for Environments to work properly.
+
+- In order to interact and exchange resources with the EaaSI Network, the *target* machine must be configured at a publicly addressable IP and able to accept HTTP requests.
+
+- EaaSI specifically retrieves resources from the EaaSI Network via HTTPS, so the machine must also be set up with a valid SSL certificate.
 
 
 Assumptions
 ^^^^^^^^^^^
 
-Current version of the installer makes the following assumptions:
+The current version of the EaaSI installer makes the following assumptions:
 
 - The `eaasi-installer`_ depends on the `eaasi-ansible`_ repository, which is meant to be used as
   an EaaSI-specific Ansible library containing a collection of Ansible roles, Docker images and

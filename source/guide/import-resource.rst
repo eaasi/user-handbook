@@ -117,13 +117,9 @@ Importing an Environment
 To import a new Environment resource (i.e. a disk image that already contains a bootable operating system), 
 select "Import Environment" on the "Import Resources" menu.
 
-.. image:: images/create_base_environment.png
-
 Choose the most appropriate system for the environment from the available dropdown menu. These options are provided
 :term:`Hardware Configurations <Hardware Configuration>` that will determine the emulator program and settings EaaSI
 uses for this environment (the displayed "System Properties" will change accordingly).
-
-.. image:: images/generic_pc_system.png
 
 Under the "Disk" section, copy the HTTP link to the base image file (accepted disk image types are raw/dd, VDI, E01/EWF
 and QCOW2; VHD and VDMK are also accepted but will be converted to QCOW2). If importing from a cloud storage service,
@@ -135,14 +131,16 @@ this *must* be a direct link; consult your service's sharing settings.
 If the Base Environment is running a KVM-compatible operating system (e.g. Windows XP), you can enable virtualization
 here.
 
-If a specific ROM file is needed to run the environment (e.g. for Apple/Mac operating systems), contact the EaaSI team
-for instructions.
+.. warning::
+  "Enable KVM" allows for the EaaSI platform to virtualize, rather than emulate, compatible x86 operating system Environments. This will greatly accelerate and improve Environment use if compatible, but may result in errors if incompatible. It is recommended for recent (~2005-present) Linux systems or Windows XP and newer. Please consult KVM's `documentation <https://www.linux-kvm.org/page/Main_Page>`_ to investigate whether your desired "guest" OS is compatible.
+  
+  KVM support must also be properly configured by your EaaSI sysadmin during deployment for "Enable KVM" to be effective. Please consult the :ref:`enable-kvm` page and contact your EaaSI sysadmin if uncertain whether your EaaSI node supports "Enable KVM".
+
+If a specific ROM file is needed to run the environment (e.g. for Apple/Mac operating systems), please consult :ref:`mac_envs`.
 
 The "Native Config" field will specify the actual flags/options passed to the underlying emulator according to the
 selected Hardware Configuration template. You can edit the Hardware Configuration here accordingly (consult each
 :ref:`emulator's <emulators>`) documentation for available options.
-
-.. image:: images/native_config.png
 
 Click "Start" to begin the import process. The base image will first be cached into EaaSI's temporary storage. Once the
 base image has been cached, an emulation session will load to allow the user to preview the new environment before

@@ -33,6 +33,8 @@ An example Emulation Project below, using the "Generic 90s PC" template provided
 .. image:: ../images/ms-dos622.png
 
 .. warning::
-  "Enable KVM", if the EaaSI deployment is properly configured, allows for the EaaSI platform to virtualize, rather than emulate, compatible x86 operating system Environments. This will accelerate and improve Environment use if compatible, but may result in errors if incompatible. It is recommended for recent (~2005-present) Linux systems or Windows XP and newer. Please consult KVM's `documentation <https://www.linux-kvm.org/page/Main_Page>`_ to investigate whether your desired "guest" OS is compatible.
+  "Enable KVM" allows for the EaaSI platform to virtualize, rather than emulate, compatible x86 operating system Environments. This will greatly accelerate and improve Environment use if compatible, but may result in errors if incompatible. It is recommended for recent (~2005-present) Linux systems or Windows XP and newer. Please consult KVM's `documentation <https://www.linux-kvm.org/page/Main_Page>`_ to investigate whether your desired "guest" OS is compatible.
+  
+  KVM support must also be properly configured by your EaaSI sysadmin during deployment for "Enable KVM" to be effective. Please consult the :ref:`enable-kvm` page and contact your EaaSI sysadmin if uncertain whether your EaaSI node supports "Enable KVM".
   
 Clicking "Run" will start an emulation session in the Emulation Access interface with the selected settings. From this point, the user can install and configure the operating system software, Change Resource Media, and Save the Environment to create a new Private Environment. See :ref:`emulation_access`.
