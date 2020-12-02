@@ -5,18 +5,18 @@
 EaaSI Community
 *****************
 
+.. _forum:
+EaaSI Community Forum
+======================
+
+The `EaaSI Community <https://forum.eaasi.cloud/>`_ Discourse forum is an open space, not just for reporting bugs, but also public discussion regarding emulation, software preservation, configuration workflows, assistance with using legacy software applications, and other topics related to the EaaSI program of work. Please sign up for an account today and join in the conversation!
+
 .. _google_groups:
 
 Google Groups
 =============
 
-EaaSI maintains two Google Groups for conversational, forum-style discussion regarding the EaaSI platform and other
-technical concerns related to the network.
-
-While the primary purpose of these Groups is to give members of the EaaSI network a place to discuss and troubleshoot
-issues, node affiliates (e.g. other staff or faculty from a node host) are invited to request to join in the
-conversation. Node team members should automatically be sent invitations to join these lists; others will be accepted
-at the discretion of the EaaSI communications team.
+Prior to the Community Forum, the EaaSI project maintained two Google Groups mailing lists. Their content remains available for historical and reference purposes.
 
 `EaaSI (All) <https://groups.google.com/forum/#!forum/eaasi-all>`_
  For communicating about the project timeline, discussion, agendas for monthly calls, scheduling, 
@@ -24,9 +24,6 @@ at the discretion of the EaaSI communications team.
 
 `EaaSI Tech Talk <https://groups.google.com/forum/#!forum/eaasi-tech-talk>`_
  Open forum for discussion of the Emulation as a Service platform and other technical aspects of network operation.
- The EaaSI Software Preservation Analyst will periodically review the Group for issues that may need to be added to the
- bug tracker, but please be aware this may result in a slower response time from the development team in addressing the
- concern.
 
 
 SPN
