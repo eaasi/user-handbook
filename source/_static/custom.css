@@ -1,3 +1,28 @@
 .wy-nav-content {
     max-width: 75% !important;
 }
+
+.wy-side-nav-search {
+  background-color: #133f47;
+  border: 1px;
+}
+
+.wy-nav-top {
+  background-color: #133f47;
+}
+
+.wy-nav-content {
+  background-color: #fdfcfb;
+}
+
+.wy-nav-side {
+  background-color: #f6eee6;
+}
+
+.wy-menu-vertical a {
+  color: #404040;
+}
+
+.wy-menu-vertical a:hover {
+  background-color: #e4cab5;  
+}
