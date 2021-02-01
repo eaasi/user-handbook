@@ -5,7 +5,7 @@
 Reporting Bugs
 =================
 
-EaaSI users may report bugs and technical issues with the platform directly to the support team in `The Support Center <https://forum.eaasi.cloud/c/support-center/6>`_ on the EaaSI Community Forum. 
+EaaSI users may report bugs and technical issues with the platform directly to the support team in the `Support Center <https://forum.eaasi.cloud/c/support-center/6>`_ on the EaaSI Community Forum. 
 
 (You will need to `register <https://forum.eaasi.cloud/login>`_ for an account on the Community Forum first!) 
 

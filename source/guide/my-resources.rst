@@ -16,4 +16,4 @@ By default, the My Resources page will open on the "My Bookmarks" tab, but users
 .. image:: ../images/imported_resources.png
 
 .. note::
-  Coming soon! Environment resources will be tracked and associated with the individual user who created them within the EaaSI platform - allowing for more granular quality control by Admin/Manager-level users and for users to further track their own work using the "My Contributions" tab.
+  "My Contributions" under development - Environment resources will be tracked and associated with the individual user who created them within the EaaSI platform - allowing for more granular quality control by Admin/Manager-level users and for users to further track their own work using the "My Contributions" tab.
