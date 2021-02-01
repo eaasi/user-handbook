@@ -32,7 +32,7 @@ Environment resources can be refined by Network Status, i.e. whether that Enviro
 * **Remote** (available at a synced node in the Network but must be replicated to the local node
   before it can be used)
   
-* **Saved** (published to the Network and already replicated and available in the user's local node)
+* **Public** (published to the Network and already replicated and available in the user's local node)
 
 * **Private** (only available to users in the local node, not available to the Network)
 
@@ -74,10 +74,10 @@ Clicking on the top left corner of any resource card will activate a Slide Menu 
 * **"View Details"** will take the user to that resource's Details page (same as clicking on the resource name/title)
 * **"Run in Emulator"** (Private and Saved Environment resources only) opens an Environment in the Emulation Access interface
 * **"Bookmark This Resource"** adds the resource to bookmarks on the :ref:`my_resources` page (same action as clicking the bookmark icon)
-* **"Add to Emulation Project"** (feature under development, not available in v2020.03)
+* **"Add to Emulation Project"** adds the resource to the user's current :ref:`emulation-project`
 * **"Add Software"** (Private and Saved Environment resources only) allows the user to select a Software resource from a dropdown menu, then opens that Environment in the Emulation Access interface with the Software resource attached
-* **"Save to My Node"** (Remote Environment resources only) copies an Environment published from another node in the Network to the user's node - the Environment tag will change from Remote to Saved
-* **"Publish to Network"** (Private Environment resources only) makes an Environment available for users at other nodes to save to their node - the Environment tag will change from Private to Saved
+* **"Save to My Node"** (Remote Environment resources only) copies an Environment published from another node in the Network to the user's node - the Environment tag will change from Remote to Public
+* **"Publish to Network"** (Private Environment resources only) makes an Environment available for users at other nodes to save to their node - the Environment tag will change from Private to Public + Saved Locally
 * **"Delete"** (Private Environment and Content resources only) removes the selected resource from the node
 
 The Slide Menu will also display any currently running background processes in the node (e.g. importing emulators, Saving resources to the node, etc.)

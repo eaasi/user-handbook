@@ -15,9 +15,8 @@ showing the in-browser emulation capabilities of EaaS to those outside the EaaSI
   
 **Learn and Support**: Links to the EaaSI User Handbook that you are reading right now!
 
-**User Forum**: Links to the "EaaSI Tech Talk" Google Group, a forum for connecting with other
-EaaSI users for support and collaboration. This forum is not open to the general public but new users
-can be added by EaaSI staff on request. (See :ref:`community`)
+**User Forum**: Links to the `EaaSI Community Forum <https://forum.eaasi.cloud>`_, a public Discourse for reporting bugs to the development team, as well as connecting with other
+EaaSI users for support and collaboration. (See :ref:`community`)
   
 Activity
 ---------
@@ -33,13 +32,3 @@ user. (You can click on "See ALL My Resources" to navigate to the :ref:`my_resou
 
 **Network Activity** displays the latest resources published within the EaaSI Network (that is, all
 resources that have been published by *other* nodes connected by an :term:`Admin` user to the current node).
-
-
-Blog Feed
------------
-
-The bottom of the Dashboard page displays a refreshing feed of the most recent posts from the `Software
-Preservation Network <https://www.softwarepreservationnetwork.org/spn-news/>`_ blog, so EaaSI users can
-keep up with the latest and greatest news in software preservation and emulation!
-
-.. image:: ../images/blog.png

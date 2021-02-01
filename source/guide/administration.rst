@@ -6,8 +6,7 @@ Manage Node
 **************
 
 .. warning::
-  The Manage Node interface should *only* be visible to :term:`Admin` users. :term:`Managers <manager>`
-  and :term:`Configuration Users <configuration user>` will not see this page in the EaaSI menu or be able to control
+  The Manage Node interface should *only* be visible to :term:`Admin` users. :term:`Configuration Users <configuration user>` will not see this page in the EaaSI menu or be able to control
   any of the settings described.
 
 The Manage Node page has two primary sections: :ref:`node_management` for controlling the :term:`node` itself (emulators, OAI-PMH, computing
@@ -36,10 +35,11 @@ and expanding a node's functionality all may involve some management of the emul
 
 The list on this page represents the whole range of emulators that have been containerized and made available to the
 EaaSI network by the development team via the OpenSLX team's `GitLab repository <https://gitlab.com/emulation-as-a-service/emulators>`_.
-This does **not** mean they are necessarily available for immediate use in the current node installation. The
-presence/availability of the emulator in the node is determined by the "Number of Images".
 
-For instance, in the above screenshot, the example node contains QEMU (two versions/images), BasiliskII and VICE (vide-sdl).
+.. warning::
+  This does **not** mean that all listed emulators are necessarily available for immediate use in the current node. The presence/availability of the emulator in the node is determined by the "Number of Images".
+
+  For instance, in the above screenshot, the example node contains QEMU (two versions/images), BasiliskII and VICE (vide-sdl).
 
 Details for each emulator - version number(s), Docker source info, etc. - can be reviewed by clicking the "Details"
 button.
@@ -140,6 +140,28 @@ better troubleshoot the node (i.e. confirm that uploads have completed, that env
 etc)
 
 .. image:: ../images/running_tasks.png
+
+Node Preferences
+------------------
+
+Under Node Preferences, Admin users may set the local keyboard layout and language for their node. This is necessary to map user input (keyboard presses) to a running Environment.
+
+The EaaSI UI itself is currently only available in English (US).
+
+Install & Updates
+-------------------
+
+Using this menu, EaaSI Admins can perform two maintenance tasks that may be necessary following a new update or release of the EaaSI platform.
+
+"Synchronize Backend" will refresh the API connection between EaaSI's front-end and back-end components (recommended after an update to the EaaSI UI)
+
+"Migrate Old DB Data" will convert existing resource metadata following any changes to the node's database.
+(recommended to perform only on request by the EaaSI dev team; metadata migrations will only be required after major updates to both front-end and back-end infrastructure)
+
+Troubleshooting
+-----------------
+
+In the event that EaaSI users encounter bugs or unexpected behavior, Admin users can use this menu to download server and web API logs. These logs may provide guidance to local IT or to the EaaSI support team. Please attach these logs when :ref:`bugs` if possible.
 
 
 .. _user_admin:

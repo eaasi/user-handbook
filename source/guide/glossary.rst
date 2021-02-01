@@ -64,6 +64,9 @@ Glossary
       An :term:`environment’s<environment>` hardware configuration refers to the emulator configuration settings that replicate the hardware
       of a physical computer system. Within EaaSI, these configurations are provided as templates.
       
+  Image
+      A bootable disk image imported to create a new :term:`Base`. EaaSI users are encouraged to create new Base Environments from :term:`software` resources within the platform using the :ref:`emulation-project`menu. However, importing Images allows users to make use of bootable computing environments originally created *outside* the EaaSI platform: e.g. a virtual machine from VirtualBox or VMWare, or a physical hard drive extracted from a running computer and imaged.
+      
   Manager
       Managers have the middle level of permissions in EaaSI. They are able to manage other users (at the same permission
       level or lower) and :term:`resources<resource>` (e.g. import :term:`software` or :term:`content`, publish or replicate :term:`environments
