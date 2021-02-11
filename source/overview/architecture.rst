@@ -19,6 +19,7 @@ environment.
 
 .. image:: ../images/visual_designs3.jpg
 
+.. _node_components:
 
 Node Components
 ===============

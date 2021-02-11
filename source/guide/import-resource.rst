@@ -3,21 +3,21 @@
 .. _add_resources:
 
 .. note::
-  Resources imported by nodes previous to the 2020.03-beta release *should* persist without additional
-  migration steps. Please file a bug report or contact the EaaSI team if encountering missing resources.
+  Resources imported by nodes previous to an EaaSI update *should* persist without additional
+  migration steps. The EaaSI team still always recommends healthy backup practices! Do please file a bug report or contact the EaaSI team if encountering missing resources.
 
 Import Resources
 *******************
 
 .. image:: ../images/visual_designs5.jpg
 
-To import a new Content, Software, or Environment Resource, navigate to the "Import Resource" page using the sidebar
+To import a new Content, Software, or Image Resource, navigate to the "Import Resource" page using the sidebar
 navigation menu.
 
 .. image:: ../images/import_resource_overview.png
 
 From there, please follow the corresponding instructions and guidelines below depending on whether you wish to import :term:`Content`,
-:term:`Software`, or a stand-alone :term:`Environment`.
+:term:`Software`, or a stand-alone :term:`Image`.
 
 .. _import_content:
 
@@ -109,13 +109,25 @@ All notes above regarding Physical Formats and selecting files to create a Conte
 When you have selected Finish Import.
 
 
-.. _import_base:
+.. _import_image:
 
-Importing an Environment
+Importing an Image
 ===========================
 
-To import a new Environment resource (i.e. a disk image that already contains a bootable operating system), 
-select "Import Environment" on the "Import Resources" menu.
+The workflow for importing an :term:`Image` resource is intended to serve one of two specific use cases:
+
+1. The user wishes to import an already-existing virtual machine or server image from an alternative emulation or virtualization application (VirtualBox, VMWare, KVM, etc) into EaaSI. For example: the `BitCurator Environment VM <https://confluence.educopia.org/display/BC/Installation+via+Virtual+Machine>`_.
+
+2. The user has created a disk image of a specific/unique individual computer and wishes to import and run it in EaaSI for assessment, processing, and/or access. For example: `Salman Rushdie's desktop <https://www.newyorker.com/tech/annals-of-technology/digital-life-salman-rushdie>`_, emulated in its (redacted) entirety for users at the Emory University Manuscript, Archives and Rare Book Library.
+
+In both cases, an Image is a complete, bootable object that can be run in emulation without additional configuration or installation of Software.
+
+.. warning::
+  This is not the procedure EaaSI recommends for creating new Environments in general. EaaSI recommends either creating Environments from scratch within the EaaSI platform using :term:`operating system` installation media, replicating existing Environments published in the Network, creating :term:`derivates <derivative>` from Environments already in your node, etc.
+  
+  Importing Images is only recommended/encouraged in one of the use cases described above.
+
+To import a new Image resource, select "Import Image" on the "Import Resources" menu.
 
 Choose the most appropriate system for the environment from the available dropdown menu. These options are provided
 :term:`Hardware Configurations <Hardware Configuration>` that will determine the emulator program and settings EaaSI
@@ -125,7 +137,7 @@ Under the "Disk" section, copy the HTTP link to the base image file (accepted di
 and QCOW2; VHD and VDMK are also accepted but will be converted to QCOW2). If importing from a cloud storage service,
 this *must* be a direct link; consult your service's sharing settings.
 
-.. note::
+.. warning::
   If importing an EWF image, this must be contained in a single E01 file. Multi-file forensic images are not supported.
 
 If the Base Environment is running a KVM-compatible operating system (e.g. Windows XP), you can enable virtualization

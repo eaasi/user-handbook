@@ -64,11 +64,12 @@ Glossary
       An :term:`environment’s<environment>` hardware configuration refers to the emulator configuration settings that replicate the hardware
       of a physical computer system. Within EaaSI, these configurations are provided as templates.
       
-  Manager
-      Managers have the middle level of permissions in EaaSI. They are able to manage other users (at the same permission
-      level or lower) and :term:`resources<resource>` (e.g. import :term:`software` or :term:`content`, publish or replicate :term:`environments
-      <environment>`), but can not access :term:`Admin` settings for node management. Managers also retain
-      all permissions/actions of :term:`Configuration Users<configuration user>`.
+  Image
+      The term "image" has been used in various interchanging ways in the EaaSI platform: disk images, emulator "images" (containers), the :ref:`Image Archive <node_components>`. Moving forward, the EaaSI team plans to use this terminology more precisely: Emulators are exchanged via containers, and disk images will always be referred to in full as "disk images".
+      
+      An Image resource refers very specifically to a bootable disk image imported as the basis for an :term:`environment`. It is to refer specifically to either: the necessary disk image/component to import an existing virtual machine from an alternative emulation/virtualization platform (VirtualBox, VMWare, etc) or a unique computing system that must be preserved and presented in its entirety as :term:`content` (for example, `Salman Rushdie's desktop <https://www.newyorker.com/tech/annals-of-technology/digital-life-salman-rushdie>`_).
+      
+      The ultimate goal of the EaaSI program is to abstract Images out of the EaaSI front-end as a resource type. However, they remain currently necessary for the workflows and use cases enumerated above.
             
   Node
       A node is one installation/instance of the EaaSI platform. By default, all imported or created :term:`resources<resource>` stay
