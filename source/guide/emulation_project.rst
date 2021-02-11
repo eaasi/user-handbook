@@ -14,7 +14,7 @@ To create a new Base Environment, two conditions must be met:
 
 1. The node must have available system hardware templates. Templates are made available either by:
   - saving Remote environments from other nodes in the Network to your node (the emulator and template used to create that Environment will then automatically become available in the local node)
-  - importing emulator images (see :ref:`Managing Emulators <managing_emulators>`)
+  - importing a new emulator container (see :ref:`Managing Emulators <managing_emulators>`)
 2. An appropriate, bootable Software resource (e.g. an operating system installation disk) - that is, any Software resource that has been marked "IS AN OPERATING SYSTEM"
 
 On the Emulation Project menu, the user must first select an option from the Template menu (to select an emulator and default configuration).

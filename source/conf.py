@@ -27,8 +27,8 @@ master_doc = 'index'
 
 # General information about the project.
 project = 'EaaSI'
-copyright = '2019-2020, EaaSI Team'
-author = 'EaaSI Development Team'
+copyright = '2019-2021, EaaSI Team'
+author = 'EaaSI Team'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the

@@ -15,8 +15,7 @@ We hope that the User Handbook will be of help, not just to members and users wi
 broadly to all those interested in workflows for deploying emulation as an access service for digital preservation.
 
 The EaaSI User Handbook is hosted and published through GitLab Pages. For any technical issues encountered
-*with this site* or suggestions/requests for expanded documentation, please feel free to file an issue in the
-`GitLab <https://gitlab.com/eaasi/eaasi_user_handbook/issues>`_ repository or contact the
+*with this site* or suggestions/requests for expanded documentation, please feel free to start a thread in the `EaaSI Community Forum <https://forum.eaasi.cloud`_ or contact the
 `EaaSI Software Preservation Analyst <https://web.library.yale.edu/sd/staff/45476>`_.
 
 .. warning::
