@@ -27,6 +27,7 @@ EaaSI User Handbook
    guide/import-resource
    guide/administration
    guide/publishing
+   guide/emulator_limitations
    
 .. toctree::
    :maxdepth: 1
