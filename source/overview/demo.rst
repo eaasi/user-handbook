@@ -23,14 +23,14 @@ below).
   This file is approximately 2.6 GB (~8 GB unzipped) and contains the filesystem, server deployment
   and Docker layers necessary to run EaaSI within a single directory.
   
-**2.** Using terminal of choice, change directories into the extracted ``EaaSI_Demo`` folder::
+**2.** Using terminal of choice, change directories into the extracted, top-level ``EaaSI_Demo_Lite`` folder::
   
-  $ cd EaaSI_Demo
+  $ cd EaaSI_Demo_Lite
   
 **3.** Load the two required Docker images (enter sudo/admin credentials when prompted)::
 
   $ sudo docker load -i docker/eaas-proxy.tar
-  $ sudo docker load -i docker/eaas-custom.tar
+  $ sudo docker load -i docker/eaas-rootfs.tar
   
 **4.** Run ``docker-compose`` to create and run containers from the loaded images, using the
 configuration in the provided ``docker-compose.yaml`` file::
@@ -59,7 +59,7 @@ system environments to get you started.
   
   $ sudo docker-compose down
   
-in the ``EaaSI_Demo`` directory.
+in the ``EaaSI_Demo_Lite`` directory.
 
 .. note::
   
