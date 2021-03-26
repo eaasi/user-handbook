@@ -7,14 +7,16 @@ Try EaaSI
 
 .. note::
 
-   Trying EaaSI requires installation of Docker.
-   Consult the `Docker Engine - Community <https://docs.docker.com/install/>`_ installation instructions
-   for your operating system before proceeding.
+   Trying EaaSI requires installation of Docker Engine and Docker Compose. On macOS and Windows, both will be handled automatically by installing Docker Desktop. On Linux, it may be necessary to install both packages/tools separately. Please consult the `Get Docker <https://docs.docker.com/get-docker/>`_ instructions for your operating system and make sure you have both packages before proceeding.
    
 The development team at OpenSLX has packaged custom Docker images of an example EaaSI release
 to simplify running EaaSI on a single machine (out of a single directory) for purposes of testing and demonstration. The
 following instructions are optimized for MacOS and Linux but can be adapted for Windows as well (see
 below).
+
+.. note::
+  EaaSI demo Docker deployments use the "Legacy UI" interface. Use the :ref:`legacy_ui` section of this Handbook
+  for instructions for using your portable EaaSI Docker deployment!
 
 **1.** Download and unpack ``EaaSI_Demo_v1_Lite.tar.gz`` from https://s3.wasabisys.com/EaaSIDemonstrators/EaaSI_Demo_v1_Lite.tar.gz.
 
@@ -50,10 +52,6 @@ configuration in the provided ``docker-compose.yaml`` file::
 User Handbook to add :ref:`emulators <managing_emulators_dev>`, :ref:`upload software <adding_software_dev>` 
 and :ref:`create environments <import_base_dev>`! The provided demo includes a few open source operating
 system environments to get you started.
-
-.. note::
-  EaaSI demo Docker deployments use the "Legacy UI" interface. Use the :ref:`legacy_ui` section of this Handbook
-  for instructions for using your EaaSI Docker!
 
 **8.** To gracefully shut down the EaaSI Docker container, open a second terminal window and run::
   
