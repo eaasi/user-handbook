@@ -24,11 +24,8 @@ Activity
 The EaaSI Dashboard displays three activity feeds to conveniently access the latest environments and other
 resources available in your EaaSI :term:`node`.
 
-**My Node Activity** displays the latest resources created or uploaded in your node, regardless of the
+**My Node Activity** displays the latest Environments created or uploaded in your node, regardless of the
 user who created them. (You can click on "See ALL Node Resources" to navigate to the :ref:`explore` page)
 
-**My Resources** displays the latest resources created, uploaded, or bookmarked by the currently logged-in
+**My Resources** displays the latest Environments created, uploaded, or bookmarked by the currently logged-in
 user. (You can click on "See ALL My Resources" to navigate to the :ref:`my_resources` page)
-
-**Network Activity** displays the latest resources published within the EaaSI Network (that is, all
-resources that have been published by *other* nodes connected by an :term:`Admin` user to the current node).
