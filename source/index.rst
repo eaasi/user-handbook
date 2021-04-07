@@ -42,9 +42,9 @@ EaaSI User Handbook
   
 .. toctree::
   :maxdepth: 1
-  :caption: Legacy Interface
+  :caption: Demo Client
   
-  legacy/dev_ui
+  legacy/demo_client
   legacy/interface
   legacy/resources
   legacy/publishing
