@@ -7,15 +7,13 @@ This User Handbook is a product of the `Scaling Emulation and Software Preservat
 program. It is intended to help new users navigate and perform common tasks within the EaaSI user interface.
 
 The EaaSI platform is built on top of Emulation-as-a-Service (EaaS). EaaSI's "flavor" of EaaS contains features and
-functionality unique to the needs of the EaaSI network, and a fresh interface design by `PortalMedia <https://www.portalmedia.com/>`_.
-This guide is intended to expand upon the description of functionality in the 
-`EaaS documentation <http://eaas.uni-freiburg.de/docs/>`_, to account for these changes.
+functionality unique to the needs of the EaaSI network, and a fresh client design by `PortalMedia <https://www.portalmedia.com/>`_. For more detail on the distinction between the two, please consult the EaaSI Training Module, `"The EaaS | EaaSI Software Stack" <https://www.softwarepreservationnetwork.org/eaasi-training-module-3-the-eaas-eaasi-stack/>`_.
 
 We hope that the User Handbook will be of help, not just to members and users within the EaaSI network, but more
 broadly to all those interested in workflows for deploying emulation as an access service for digital preservation.
 
 The EaaSI User Handbook is hosted and published through GitLab Pages. For any technical issues encountered
-*with this site* or suggestions/requests for expanded documentation, please feel free to start a thread in the `EaaSI Community Forum <https://forum.eaasi.cloud`_ or contact the
+*with this site* or suggestions/requests for expanded documentation, please feel free to start a thread in the `EaaSI Community Forum <https://forum.eaasi.cloud>`_ or contact the
 `EaaSI Software Preservation Analyst <https://web.library.yale.edu/sd/staff/45476>`_.
 
 .. warning::
