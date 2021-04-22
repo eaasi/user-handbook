@@ -16,9 +16,6 @@ environment.
 .. image:: ../images/visual_designs1.jpg
   :align: center
 
-.. image:: ../images/visual_designs2.jpg
-  :align: center
-
 .. image:: ../images/visual_designs3.jpg
   :align: center
 
@@ -38,7 +35,7 @@ EaaSI stacks(a :term:`node`) contain additional components to allow for sharing 
 Client
 ----------
 
-An EaaS client provides an web/browser-based interface for users to interact with Emulation-as-a-Service through RESTful HTTP requests. This Handbook is primarily concerned with the "EaaSI Client" designed by PortalMedia that allows for importing, saving, and documenting legacy software and content in emulated computing environments.
+An EaaS client provides an web/browser-based interface for users to interact with Emulation-as-a-Service through `RESTful HTTP requests <https://openslx.gitlab.io/eaas-api-docs/master/emil/index.html>`_. This Handbook is primarily concerned with the "EaaSI Client" designed by PortalMedia that allows for importing, saving, and documenting legacy software and content in emulated computing environments.
 
 .. note::
   There is also the "Demo Client" used by OpenSLX to initially design, implement, and demonstrate new features for the EaaS back-end platform. EaaSI users may still encounter this client at times, such as using the :ref:`"Try EaaSI"<container_setup>` Docker images. Please refer to the :ref:`demo_client` section of this Handbook for questions about using this interface.

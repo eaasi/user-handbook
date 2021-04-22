@@ -39,14 +39,14 @@ EaaSI network by the development team via the OpenSLX team's `GitLab repository 
 .. warning::
   This does **not** mean that all listed emulators are necessarily available for immediate use in the current node. The presence/availability of the emulator in the node is determined by the "Number of Images".
 
-  For instance, in the above screenshot, the example node contains QEMU (two versions/images), BasiliskII and VICE (vide-sdl).
+  For instance, in the above screenshot, the example node contains QEMU (four versions/images), BasiliskII (one version), SheepShaver (one version) and VICE (one version).
 
 Details for each emulator - version number(s), Docker source info, etc. - can be reviewed by clicking the "Details"
 button.
 
-.. image:: ../images/emulator_details.png
+.. image:: ../images/emulator_images.png
 
-Again, in the above example, the node installation has two images/versions of QEMU available: 2.12 and 3.1. This can
+Again, in the above example, the node installation has four images/versions of QEMU available: 2.5, 2.12, 3.0 and 3.1. This can
 be convenient for troubleshooting environments, as certain versions of an emulator may be more compatible with certain
 legacy operating systems or hardware than others.
 
