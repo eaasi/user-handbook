@@ -14,6 +14,3 @@ As on the :ref:`explore` page, you can use the Refine Your Results page to sort 
 By default, the My Resources page will open on the "My Bookmarks" tab, but users can also navigate to the "Imported Resources" tab to view and track Software and Content resources that they have individually imported to the node:
 
 .. image:: ../images/imported_resources.png
-
-.. note::
-  "My Contributions" under development - Environment resources will be tracked and associated with the individual user who created them within the EaaSI platform - allowing for more granular quality control by Admin/Manager-level users and for users to further track their own work using the "My Contributions" tab.
