@@ -99,6 +99,4 @@ Content Details
 .. warning::
   Content metadata is **not** editable after import.
   
-The EaaSI system currently gathers very little metadata or description about Content resources. From the Content resource Details page, users can attempt to auto-detect compatible Environments with the "Detect Environments" feature or Add the Content to their Emulation Project.
-
-.. image:: ../images/content_details.png
+The EaaSI system currently gathers very little metadata or description about Content resources, except for its name/label. Therefore there are no Details pages for Content resources.

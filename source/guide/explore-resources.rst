@@ -60,20 +60,22 @@ Content Results
 Content results can only be minimally sorted and refined until implementation of the EaaSI metadata application profile.
 
 
-Slide Menu
+.. _actions:
+
+Actions Menu
 -------------
 
-Clicking on the top left corner of any resource card will activate a Slide Menu containing contextual "Actions" for that resource:
+Clicking on the top left corner of any resource card will activate a slide menu containing contextual "Actions" for that resource:
 
 .. image:: ../images/slide_ui.gif
 
 * **"View Details"** will take the user to that resource's Details page (same as clicking on the resource name/title)
-* **"Run in Emulator"** (Private and Saved Environment resources only) opens an Environment in the Emulation Access interface
+* **"Run in Emulator"** (Private and Saved Locally Environment resources only) opens an Emulation Access session using that Environment
 * **"Bookmark This Resource"** adds the resource to bookmarks on the :ref:`my_resources` page (same action as clicking the bookmark icon)
 * **"Add to Emulation Project"** adds the resource to the user's current :ref:`emulation-project`
 * **"Add Software"** (Private and Saved Locally Environment resources only) allows the user to select a Software resource from a dropdown menu, then opens that Environment in the Emulation Access interface with the Software resource attached
-* **"Save to My Node"** (Remote Environment resources only) copies an Environment published from another node in the Network to the user's node - the Environment tag will change from Remote to Public
+* **"Save to My Node"** (Public Environment resources only) copies an Environment published from another node in the Network to the user's node - the Environment tag will change from Remote to Public
 * **"Publish to Network"** (Private Environment resources only) makes an Environment available for users at other nodes to save to their node - the Environment tag will change from Private to Public + Saved Locally
 * **"Delete"** (Private Environment and Content resources only) removes the selected resource from the node
 
-The Slide Menu will also display any of the user's currently running background processes (e.g. saving Environments to the node)
+The Actions Menu will also display any of the user's currently running background processes (e.g. saving Environments to the node)

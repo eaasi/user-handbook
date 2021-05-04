@@ -5,36 +5,34 @@
 Emulation Project
 ===================
 
-The Emulation Project menu allows EaaSI users the opportunity to create new Environments from "scratch" using existing Software and emulators in their node.
+The Emulation Project menu allows EaaSI users the opportunity to build new Environments using existing Environment, Software and Content resources in their node.
 
 .. note::
-  For the EaaSI v2020.03 release, "Emulation Project" essentially replaces the "Create Environment" menu and workflow from the :ref:`legacy_ui`. Future updates will expand the feature-set of the Emulation Project for a more flexible "mix-and-match" type approach to creating new Environments.
+  For the EaaSI v2020.03 release and newer, "Emulation Project" essentially replaces the "Create Environment" menu and workflow from the :ref:`demo_client`. Certain Environment creation workflows may be more limited in the EaaSI Client's Emulation Project than in the Demo Client. Workflows and features will be re-designed to fit the EaaSI Client and implemented on a rolling basis.
   
-To create a new Base Environment, two conditions must be met:
+To create a new (derivative) Environment resource, you **must** start by selecting an existing "base environment" (an available resource from the network that has been Saved Locally to your node).
 
-1. The node must have available system hardware templates. Templates are made available either by:
-  - saving Remote environments from other nodes in the Network to your node (the emulator and template used to create that Environment will then automatically become available in the local node)
-  - importing a new emulator container (see :ref:`Managing Emulators <managing_emulators>`)
-2. An appropriate, bootable Software resource (e.g. an operating system installation disk) - that is, any Software resource that has been marked "IS AN OPERATING SYSTEM"
+The shortcut buttons on the Emulation Project page will guide you back to either the Explore Resources overview or the My Resources page to select and add an Environment to the Emulation Project using the :ref:`Actions <actions>` menu.
 
-On the Emulation Project menu, the user must first select an option from the Template menu (to select an emulator and default configuration).
+.. image:: ../images/emulation_project.png
 
-Next, specify a disk size (in MB) for the Environment's system drive. The EaaSI platform will automatically create a blank disk image/virtual hard drive on which to install the operating system, of the specified size.
+Once an Environment resource has been added to the Emulation Project, you can begin creating your new Environment resource by either:
+
+1. Editing the selected Environment's options.
+2. Returning to the Explore/My Resources pages and adding additional Content or Software resource(s) to the Project.
 
 .. note::
-  The blank disk iamge will be created using QEMU's "qcow2" file format.
-  
-Select a bootable operating system disk using the "Install from Object" dropdown menu (the dropdown menu should display all Software resources in the node that have been marked "IS AN OPERATING SYSTEM").
+  Though you can add multiple Environments, multiple Content, and/or multiple Software resources to the Emulation Project page, in order to select "Run" and begin an Emulation Access session, you can only actively select **ONE** Environment resource and at most **ONE** Content or Software resource.
 
-If desired, the user can edit the Config field to tweak the settings passed to the underlying emulator. The Config field is filled in automatically by the selected Template, but can be freely edited. Please consult the relevant :ref:`emulator's <emulators>` documentation to change Config settings appropriately (or contact the EaaSI Tech Talk list or the Software Preservation Analyst for assistance).
+In the example below, an existing "FreeDOS 1.2" Environment, a "Borland Quattro Pro 5.0" Software resource, and a "SimCity 1.02" Content resource have all been added to the Emulation Project. The "Borland Quattro Pro 5.0" is the **active** object and will be the one presented in the Emulation Access session once the user clicks "Run":
 
-An example Emulation Project below, using the "Generic 90s PC" template provided by the "eaas/qemu-eaas:2-12" emulator image, a bootable MS-DOS 6.22 Software resource (Floppy-type set), and a 1 GB virtual hard drive:
+.. image:: ../images/emulation_project_example.png
 
-.. image:: ../images/ms-dos622.png
+Once the user has crafted their desired resources and options, they may select "Run" to begin an :ref:`emulation_access` session. From this point, the user can install and configure the operating system software, Change Resource Media, save the new configuration as its own Environment resource, etc. 
+
+The options and resources selected on the Emulation Project page will persist until intentionally cleared by the user, regardless of whether the user saves or discards their changes in an Emulation Access session started from this page. This is intended to make it easier for the user to return and tweak the Emulation Project settings without re-assembling all the selected resources after an Emulation Access session.
 
 .. warning::
-  "Enable KVM" allows for the EaaSI platform to virtualize, rather than emulate, compatible x86 operating system Environments. This will greatly accelerate and improve Environment use if compatible, but may result in errors if incompatible. It is recommended for recent (~2005-present) Linux systems or Windows XP and newer. Please consult KVM's `documentation <https://www.linux-kvm.org/page/Main_Page>`_ to investigate whether your desired "guest" OS is compatible.
+  The "Virtualize CPU" option under Environment's Advanced Options allows for the EaaSI platform to virtualize, rather than emulate, KVM-compatible x86 operating system Environments. This will greatly accelerate and improve Environment use if compatible, but may result in errors if incompatible. It is recommended for recent (~2005-present) Linux systems or Windows XP and newer. Please consult KVM's `documentation <https://www.linux-kvm.org/page/Main_Page>`_ to investigate whether your desired "guest" OS is compatible.
   
-  KVM support must also be properly configured by your EaaSI sysadmin during deployment for "Enable KVM" to be effective. Please consult the :ref:`enable-kvm` page and contact your EaaSI sysadmin if uncertain whether your EaaSI node supports "Enable KVM".
-  
-Clicking "Run" will start an emulation session in the Emulation Access interface with the selected settings. From this point, the user can install and configure the operating system software, Change Resource Media, and Save the Environment to create a new Private Environment. See :ref:`emulation_access`.
+  KVM support must also be properly configured by your EaaSI sysadmin during deployment for "Virtualize CPU" to be effective. Please consult the :ref:`enable-kvm` page and contact your EaaSI sysadmin if uncertain whether your EaaSI node supports "Virtualize CPU".

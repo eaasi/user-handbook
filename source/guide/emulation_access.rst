@@ -7,9 +7,8 @@ Emulation Access Interface
 
 The Emulation Access screen allows the user to interact with a running emulation Environment. The user will be led to this screen when:
 
-  1. They select the "Run in Emulator" or "Add Software" actions for any given Environment resource
-  2. They complete the Import Image workflow
-  3. They complete an Emulator Project workflow
+  #. They select the "Run in Emulator" or "Add Software" from the :ref:`actions` on any given Environment resource
+  #. They run an :ref:`emulation-project` workflow
   
 .. image:: ../images/emulation_access.png
 
