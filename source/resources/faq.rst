@@ -106,3 +106,25 @@ Even if you do somehow save an infected environment, the damage should be isolat
 The most likely concern would be modern malware and vulnerabilities that are specifically designed to target emulation and virtualization platforms. Again, most legacy web browsers likely couldn't even access the sites where these vulnerabilities are exploited. But this is also another part of the motivation in containerizing many of the modules and emulators underlying EaaSI: to allow them to be easily updated to account for security updates. The EaaS development team regularly updates components to account for secure releases.
 
 In other words, just as you should regularly update your own operating system and applications, EaaSI will too!
+
+|
+
+Can I take screenshots or video of Software or Content running in emulation?
+--------------------------------------------
+
+EaaSI's Emulation Access interface has a built-in feature for taking screenshots of the currently-running emulation. Video is not available out-of-the-box at this time.
+
+|
+
+What is the difference between saving a "New Environment" or a "Revision" from an existing Environment?
+----------------------------------------------
+
+The choice affects how the resource is presented to users in the EaaSI Client. 
+
+Choosing a "new environment" creates an entirely new resource card anywhere resources are visible in the Client (the Explore Resources or My Resources pages, for example). The original Environment will *also* still have an entry. The new Environment will be Private by default.
+
+Choosing "revision" does not create a new resource card - instead it updates and overrides the current resource card.
+
+(**This is only true** if the original Environment was a **Private** resource, not published to the EaaSI Network. If the original Environment was a Public + Saved Locally Environment, selecting "revision" will have **the same** effect as "new environment", and a new resource card will be created for the revision.)
+
+In both cases, Emulation-as-a-Service creates a derivative QCOW disk image file to represent and save the changes to the original Environment, whether the changes are *presented* as a new Environment or as a revision. So revisions can still be easily reverted by consulting the History tab on the Environment's details page and creating a fork at the point of the original Environment.

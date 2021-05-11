@@ -31,8 +31,3 @@ In the example below, an existing "FreeDOS 1.2" Environment, a "Borland Quattro 
 Once the user has crafted their desired resources and options, they may select "Run" to begin an :ref:`emulation_access` session. From this point, the user can install and configure the operating system software, Change Resource Media, save the new configuration as its own Environment resource, etc. 
 
 The options and resources selected on the Emulation Project page will persist until intentionally cleared by the user, regardless of whether the user saves or discards their changes in an Emulation Access session started from this page. This is intended to make it easier for the user to return and tweak the Emulation Project settings without re-assembling all the selected resources after an Emulation Access session.
-
-.. warning::
-  The "Virtualize CPU" option under Environment's Advanced Options allows for the EaaSI platform to virtualize, rather than emulate, KVM-compatible x86 operating system Environments. This will greatly accelerate and improve Environment use if compatible, but may result in errors if incompatible. It is recommended for recent (~2005-present) Linux systems or Windows XP and newer. Please consult KVM's `documentation <https://www.linux-kvm.org/page/Main_Page>`_ to investigate whether your desired "guest" OS is compatible.
-  
-  KVM support must also be properly configured by your EaaSI sysadmin during deployment for "Virtualize CPU" to be effective. Please consult the :ref:`enable-kvm` page and contact your EaaSI sysadmin if uncertain whether your EaaSI node supports "Virtualize CPU".

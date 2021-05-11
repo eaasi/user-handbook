@@ -9,7 +9,7 @@ Glossary
       Admin users have the highest level of permissions in EaaSI. They are responsible for :term:`node` management
       and can perform all administrative tasks, including importing emulators, syncing :term:`resources<resource>` to
       the :term:`network`, adding new network :term:`endpoints<endpoint>`, monitoring running tasks, etc. Admins
-      also retain all the permissions/actions of :term:`Managers<manager>` and :term:`Configuration Users<configuration user>`
+      also retain all the permissions/actions of :term:`Configuration Users<configuration user>`
       as well.
       
   Base
@@ -21,8 +21,7 @@ Glossary
       
   Configuration User
       Configuration users have the lowest set of permissions in EaaSI. They are able to configure or edit metadata for
-      existing :term:`resources<resource>` and run environments, but can not import any new resources or access the
-      Manage Node menu.
+      existing :term:`resources<resource>` and run environments, but can not interact directly with the EaaSI Network (saving or publishing Environments) or access administrative features in the Manage Node menu.
         
   Content
       Content are items from a digital collection; that is, digital information or works from institutional collections intended 
@@ -63,13 +62,6 @@ Glossary
   Hardware Configuration
       An :term:`environment’s<environment>` hardware configuration refers to the emulator configuration settings that replicate the hardware
       of a physical computer system. Within EaaSI, these configurations are provided as templates.
-      
-  Image
-      The term "image" has been used in various interchanging ways in the EaaSI platform: disk images, emulator "images" (containers), the :ref:`Image Archive <node_components>`. Moving forward, the EaaSI team plans to use this terminology more precisely: Emulators are exchanged via containers, and disk images will always be referred to in full as "disk images".
-      
-      An Image resource refers very specifically to a bootable disk image imported as the basis for an :term:`environment`. It is to refer specifically to either: the necessary disk image/component to import an existing virtual machine from an alternative emulation/virtualization platform (VirtualBox, VMWare, etc) or a unique computing system that must be preserved and presented in its entirety as :term:`content` (for example, `Salman Rushdie's desktop <https://www.newyorker.com/tech/annals-of-technology/digital-life-salman-rushdie>`_).
-      
-      The ultimate goal of the EaaSI program is to abstract Images out of the EaaSI front-end as a resource type. However, they remain currently necessary for the workflows and use cases enumerated above.
             
   Node
       A node is one installation/instance of the EaaSI platform. By default, all imported or created :term:`resources<resource>` stay
@@ -90,7 +82,7 @@ Glossary
       can run or install a stand-alone :term:`environment`).
       
   Resource
-      A resource refers broadly to a usable entity in EaaSI: an :term:`environment`, :term:`software`, :term:`content`, or :term:`image`.
+      A resource refers broadly to a usable entity in EaaSI: an :term:`environment`, :term:`software`, or :term:`content`.
       It is the combination of an :term:`object` and the metadata necessary to render that object.
 
   Software

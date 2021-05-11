@@ -8,11 +8,9 @@ Publishing and Saving Resources
 What resources *can* be published to the network?
 ===============================================
 
-Environments are the only type of resource that can currently be published and shared between EaaSI nodes. (Software can/must be
-shared by first installing it into an Environment and then publishing the Environment)
+Environment and Software resources are the only types of resource that can currently be published and shared between EaaSI nodes.
 
-Also, this does not apply to Content Environments. :term:`Content` and associated Content Environments are assumed to be collection items, unique to each
-node/institution, and therefore potentially subject to different terms of access, licensing, etc. than general software copyright. Content resources therefore can not be Published in the EaaSI Client.
+:term:`Content` and associated Content Environments are assumed to be collection items, unique to each node/institution, and therefore potentially subject to different terms of access, licensing, etc. than general software copyright. Content resources therefore can not be Published in the EaaSI Client, whether on their own or contained within Content Environments.
 
 
 What resources *should* be published?
@@ -25,10 +23,10 @@ What resources *should* be published?
   Nodes and users are advised to design and enforce local workflows for
   publishing resources, given these technical restrictions.
 
-When selecting Environments to share with the rest of the network, EaaSI users and admins can
+When selecting resources to share with the rest of the network, EaaSI users and admins can
 consider questions posed by the `Code of Best Practices in Fair Use for Software Preservation <https://www.arl.org/storage/documents/publications/2018.09.24_softwarepreservationcode.pdf>`_:
 
-  - Did you lawfully acquire your copy of the software included in the environment?
+  - Did you lawfully acquire your copy of the Software (and/or the software included in an environment)?
   - Is the software still reasonably available in the commercial marketplace?
   - Are there any limitations present in donation or acquisition agreements that might preclude fair use?
   - What license(s) was the software distributed under?
@@ -53,7 +51,7 @@ In a selected Private Environment's Actions menu, select "Publish to Network":
 How to save published Environments to a local node
 ====================================================
 
-In a selected Remote Environment's Actions menu, select "Save to My Node":
+In a selected Public Environment's Actions menu, select "Save to My Node":
 
 .. image:: ../images/save_slide_ui.png
 

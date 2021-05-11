@@ -50,13 +50,13 @@ drive).
   :align: center
 
 
-- *ISO* - Mounts the object in an environment's virtual optical/CD-ROM drive. Should accept any file extension.
+- **ISO** - Mounts the object in an environment's virtual optical/CD-ROM drive. Should accept any file extension.
 
-- *Floppy* - Mounts the object in an environment's virtual floppy drive. Should accept any file extension.
+- **Floppy** - Mounts the object in an environment's virtual floppy drive. Should accept any file extension.
 
-- *Disk* - Attempts to mount the object as a hard drive (success may thus be highly variable depending on an environment's configured hardware, the operating system's compatibility with the image's file system, etc.). Should accept most if not all hard disk image formats (IMG, DMG, DD/raw, QCOW, VDI, VMDK, E01/EWF, etc.)
+- **Disk** - Attempts to mount the object as a hard drive (success may thus be highly variable depending on an environment's configured hardware, the operating system's compatibility with the image's file system, etc.). Should accept most if not all hard disk image formats (IMG, DMG, DD/raw, QCOW, VDI, VMDK, E01/EWF, etc.)
 
-- *Files* - This option will accept any set of files (i.e. intended for files that are not packaged in a disk image). To allow the arbitrary file set to be mounted in the broadest possible range of operating systems, imported file sets are currently packaged by EaaSI into an ISO file on the back-end; Files objects should thus mount in an environment's virtual CD-ROM/optical drive.
+- **Files** - This option will accept any set of files (i.e. intended for files that are not packaged in a disk image). To allow the arbitrary file set to be mounted in the broadest possible range of operating systems, imported file sets are currently packaged by EaaSI into an ISO file on the back-end; Files objects should thus mount in an environment's virtual CD-ROM/optical drive.
 
 
 For "ISO", "Floppy", and "Disk" type resources, the files that make up the Content **must** be of the same Physical Format to mount and switch between files/disks
@@ -66,6 +66,8 @@ properly in emulation. Mixed-format resources are currently not supported.
   For example, An operating system installer might contain a boot floppy and then multiple CD-ROMs. The floppy image
   and the CD-ROM images must be considered and imported as different resources, but the CD-ROM images should likely be
   imported together as a single resource.
+  
+You can change the Physical Format of many/all files associated with the resource at once by using the Select All button. When multiple files are selected in the import menu, changing the Physical Format of one file will change the Physical Format of *all* files selected accordingly.
 
 Once all desired files have been selected, click "Finish Import" at the top of the page:
 
