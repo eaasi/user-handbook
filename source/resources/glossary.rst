@@ -9,7 +9,7 @@ Glossary
       Admin users have the highest level of permissions in EaaSI. They are responsible for :term:`node` management
       and can perform all administrative tasks, including importing emulators, syncing :term:`resources<resource>` to
       the :term:`network`, adding new network :term:`endpoints<endpoint>`, monitoring running tasks, etc. Admins
-      also retain all the permissions/actions of :term:`Managers<manager>` and :term:`Configuration Users<configuration user>`
+      also retain all the permissions/actions of :term:`Configuration Users<configuration user>`
       as well.
       
   Base
@@ -21,8 +21,7 @@ Glossary
       
   Configuration User
       Configuration users have the lowest set of permissions in EaaSI. They are able to configure or edit metadata for
-      existing :term:`resources<resource>` and run environments, but can not import any new resources or access the
-      Manage Node menu.
+      existing :term:`resources<resource>` and run environments, but can not interact directly with the EaaSI Network (saving or publishing Environments) or access administrative features in the Manage Node menu.
         
   Content
       Content are items from a digital collection; that is, digital information or works from institutional collections intended 
@@ -63,12 +62,6 @@ Glossary
   Hardware Configuration
       An :term:`environment’s<environment>` hardware configuration refers to the emulator configuration settings that replicate the hardware
       of a physical computer system. Within EaaSI, these configurations are provided as templates.
-      
-  Manager
-      Managers have the middle level of permissions in EaaSI. They are able to manage other users (at the same permission
-      level or lower) and :term:`resources<resource>` (e.g. import :term:`software` or :term:`content`, publish or replicate :term:`environments
-      <environment>`), but can not access :term:`Admin` settings for node management. Managers also retain
-      all permissions/actions of :term:`Configuration Users<configuration user>`.
             
   Node
       A node is one installation/instance of the EaaSI platform. By default, all imported or created :term:`resources<resource>` stay
@@ -89,12 +82,12 @@ Glossary
       can run or install a stand-alone :term:`environment`).
       
   Resource
-      A resource refers broadly to a usable entity in EaaSI: either an :term:`environment`, :term:`software`, or :term:`content`.
+      A resource refers broadly to a usable entity in EaaSI: an :term:`environment`, :term:`software`, or :term:`content`.
       It is the combination of an :term:`object` and the metadata necessary to render that object.
 
   Software
       Software refers to application and system software, including operating systems, commercial and open source 
-      software applications, device drivers, etc.
+      software applications, device drivers, etc. It is shareable to the :term:`EaaSI Network` under our intepretation of the U.S. legal framework of fair use.
   
   Source
       If a :term:`node` contributes any :term:`resources<resource>` to the EaaSI Network, it is also considered that resource's source.

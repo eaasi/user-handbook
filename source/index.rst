@@ -18,6 +18,7 @@ EaaSI User Handbook
    :caption: User Guide
    
    guide/logging-in
+   guide/hosted_service
    guide/dashboard
    guide/explore-resources
    guide/my-resources
@@ -27,6 +28,7 @@ EaaSI User Handbook
    guide/import-resource
    guide/administration
    guide/publishing
+   guide/emulator_limitations
    
 .. toctree::
    :maxdepth: 1
@@ -41,9 +43,9 @@ EaaSI User Handbook
   
 .. toctree::
   :maxdepth: 1
-  :caption: Legacy Interface
+  :caption: Demo Client
   
-  legacy/dev_ui
+  legacy/demo_client
   legacy/interface
   legacy/resources
   legacy/publishing

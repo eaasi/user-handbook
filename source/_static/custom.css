@@ -1,24 +1,30 @@
+/* fix display so text takes up more of the page on desktop */
 .wy-nav-content {
     max-width: 75% !important;
 }
 
+/* changes color under the logo and search box */
 .wy-side-nav-search {
   background-color: #133f47;
   border: 1px;
 }
 
+/* changes color of the top nav bar on mobile */
 .wy-nav-top {
   background-color: #133f47;
 }
 
+/* changes defualt background color for main body/text */
 .wy-nav-content {
   background-color: #fdfcfb;
 }
 
+/* changes background color of side nav bar */
 .wy-nav-side {
   background-color: #f6eee6;
 }
 
+/* changes text and hover colors to make nav bar legible */
 .wy-menu-vertical a {
   color: #404040;
 }

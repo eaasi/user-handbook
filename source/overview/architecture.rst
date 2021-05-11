@@ -14,65 +14,64 @@ desired, additional content (e.g. software installation media imaged from a CD-R
 environment.
 
 .. image:: ../images/visual_designs1.jpg
-
-.. image:: ../images/visual_designs2.jpg
+  :align: center
 
 .. image:: ../images/visual_designs3.jpg
+  :align: center
 
+.. _node_components:
 
 Node Components
 ===============
 
-Emulation-as-a-Service is a server software stack composed of a number of modules working together to accomplish 
-the task of emulator assembly and configuration. These modules can be deployed together or configured across multiple 
-physical/virtual machines, depending on resources available. EaaSI installations (a :term:`node`) contain additional components to allow for 
-sharing :term:`resources <resource>` and metadata across the EaaSI Network, but core functionality is accomplished with the following components.
+Emulation-as-a-Service is a server software stack composed of a number of modules working together to accomplish the task of emulator assembly and configuration. Currently these modules must be deployed as a monolith (all on one server), but the development team is making advances to deploy the modules across multiple physical/virtual machines for ideal configuration. 
+
+EaaSI stacks(a :term:`node`) contain additional components to allow for sharing :term:`resources <resource>` and metadata across the EaaSI Network, but core functionality is accomplished with the following components:
+
+.. image:: ../images/EaaS_Model.png
+  :align: center
 
 
 Client
 ----------
 
-An EaaSI client/front-end provides an interface to use the EaaS API through RESTful HTTP requests. This Handbook is primarily concerned with the EaaSI administrative interface designed by PortalMedia that allows for importing, saving, and documenting legacy software and content in emulated computing environments.
+An EaaS client provides an web/browser-based interface for users to interact with Emulation-as-a-Service through `RESTful HTTP requests <https://openslx.gitlab.io/eaas-api-docs/master/emil/index.html>`_. This Handbook is primarily concerned with the "EaaSI Client" designed by PortalMedia that allows for importing, saving, and documenting legacy software and content in emulated computing environments.
 
-(The "Legacy UI" used for EaaS dev work can, as of v2020.03 release, remain accessible at the same time as the EaaSI administrative interface if so desired and configured. See :ref:`setup`)
+.. note::
+  There is also the "Demo Client" used by OpenSLX to initially design, implement, and demonstrate new features for the EaaS back-end platform. EaaSI users may still encounter this client at times, such as using the :ref:`"Try EaaSI"<container_setup>` Docker images. Please refer to the :ref:`demo_client` section of this Handbook for questions about using this interface.
 
-Sharing and accessing those environments (e.g. as a patron or scholar), integrating with existing access services, or interacting
-with EaaSI Network metadata in alternative routes and modules, will all be the subject of future front-end development.
+Further clients and services based on Environments created with the EaaSI Client are under development within the full EaaSI program of work. More details for using these clients and services will be released as relevant.
+
+The EaaSI Client is built using the Vue.js framework, on a LNPP (Linux-Nginx-PostgreSQL, PHP) stack, deployed via Docker:
 
 .. image:: ../images/eaasi-client_summary.png
+  :align: center
 
 
 Gateway
 --------
 
-The EaaS Gateway acts as the API end-point and manages all emulation-related resources (it tracks emulation sessions,
-calculates necessary compute resources, and finds all disk images/software/metadata as requested from the front-end).
+The EaaS Gateway acts as the API end-point, taking requests from the Client/user and managing all emulation-related resources and permissions. It tracks emulation sessions, calculates necessary computing resources, and locates the resources in storage (disk images, files, XML metadata) necessary to fulfill user requests; then passes this information to the EmuComp to run the emulation.
 
 
 Emulation Component (EmuComp)
 ------------------------------
 
-The Emulation Component module actually allocates local CPU resources to serve emulation sessions. Its hardware must be
-optimized to allow for potentially running multiple emulation sessions.
+The Emulation Component (EmuComp) module actually allocates local CPU resources to serve emulation sessions, and underlying emulator applications (QEMU, SheepShaver, etc.) are located and installed here. The EmuComp's hardware must be optimized to allow for potentially running multiple emulation sessions.
 
 
-Image Archive (Connector)
--------------------------
+Storage
+------------
 
-The Image Archive connector/facade provides access to the underlying disk images that form :term:`environments <environment>` (and
-their metadata). This module can act as a simple archive for locally-stored images, or (ideally) connect to a
-third-party storage system (e.g. AWS, Wasabi, other cloud or networked storage), depending on where each EaaSI node intends to store its resources.
+The EmuComp locates and mounts resources in file storage as directed by the Gateway. Files in storage include:
 
+- Image Archive: Disk images and XML that make up :term:`Environment` resources (system drives containing bootable software, and the neccesary hardware/emulator configuration desired to run them). All Environment resources in the Image Archive are stored in the `QCOW2 disk image format <https://en.wikipedia.org/wiki/Qcow>`_.
 
-Object Archive (Connector)
---------------------------
+- Software Archive: Disk images and files that make up :term:`Software` resources.
 
-Likewise, the Object Archive module provides access to :term:`content` and :term:`software` objects (floppy, CD-ROM, and hard
-disk images, file sets, etc.); this module can also act as a simple archive for locally-stored data or (ideally)
-connect to a third-party storage system, depending on the node setup.
+- Content Archive: Disk images and files that make up :term:`Content` resources.
 
-
-.. image:: ../images/EaaS_Model.png
+The EmuComp can connect to resources either in local file storage (i.e. on the same server) or networked storage available to the EmuComp over HTTP. Support for deploying and connecting EaaSI nodes to resources in S3-type/cloud object storage is in development.
 
 
 .. _oai-pmh:
@@ -83,9 +82,9 @@ OAI-PMH Synchronization
 The EaaSI network makes use of the `Open Archives Initiative Protocol for Metadata Harvesting (OAI-PMH) <https://www.openarchives.org/pmh/>`_
 to request, share and synchronize metadata between nodes.
 
-In addition to the node components listed above, each EaaSI installation contains an OAI-PMH harvester and a data provider. 
-The harvester requests metadata (in EaaSI's case, Base and Software Environment records) from the data providers 
-at other nodes; the data providers query the node's local records and return this metadata back to the original harvester.
+In addition to the node components listed above, each EaaSI installation contains an OAI-PMH *harvester* and a *provider*. 
+The harvester requests metadata (in EaaSI's case, Environment records) from the data providers 
+at other nodes; the remote nodes' providers query their local records and return this metadata back to the original harvester.
 
 .. image:: ../images/oai-pmh.png
   :align: center
@@ -98,10 +97,8 @@ other nodes on :ref:`request <replication>`.
 Environment Derivation
 ======================
 
-EaaS makes use of a snapshot-based file format (`qcow <https://en.wikipedia.org/wiki/Qcow>`_) to avoid redundant copying and 
-storage of full disk images. Any revisions or changes to an environment are isolated and saved in a new qcow file that is linked
-but separate from the environment's original disk image. The saved derivative environments are then recreated programmatically from the 
-original base and full chain of changes at the point that the user requests to run or replicate the environment.
+EaaS makes use of a snapshot-based file format (`qcow <https://en.wikipedia.org/wiki/Qcow>`_) to avoid redundant copying and storage of full disk images when creating Environments. Any revisions or changes to an environment are isolated and saved in a new qcow file that is linked back to stored and identified separately from the Environment's original disk image. The saved derivative environments are then recreated programmatically to present the full chain of changes at the point that the user requests to run or replicate the environment.
 
 
 .. image:: ../images/Derivatives-example.jpg
+  :align: center
