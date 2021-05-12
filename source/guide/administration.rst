@@ -196,3 +196,25 @@ name, and user role.
 
 Once added, new users should be able to successfully follow the procedures described in :ref:`logging_in` to join
 the node.
+
+.. _permissions:
+
+Permission Levels
+--------------------
+
+Lower-level ("Configuration") users may be restricted by the EaaSI client from performing certain actions described in this Handbook. To summarize:
+
+**Admin**-level users can:
+  - Save public Environments (published from other nodes/sources in the EaaSI Network) to their local node's storage
+  - Add new users to the local node and change their permissions level (e.g. promote a Configuration user to an Admin)
+  - Publish Environments and Software resources that are local to their node to the wider EaaSI Network
+  - Access administrative features, such as OAI-PMH settings, emulator management, etc.
+  - All features and actions available to Configuration-level users
+
+**Configuration**-level users can:
+  - import new local Software and Content resources to their local node
+  - run and create new Environment resources using Environments that have been Saved Locally by an Admin in their local node
+  - run and create new Environment resources using public Software resources, or their private Software and Content resources
+  - download server logs helpful for troubleshooting and filing bug reports
+  - view currently-running tasks in their local node (also potentially useful for filing bug reports)
+  - change their basic user account settings (email and password)
