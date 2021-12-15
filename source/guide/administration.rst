@@ -6,8 +6,7 @@ Manage Node
 **************
 
 .. warning::
-  The Manage Node interface should *only* be visible to :term:`Admin` users. :term:`Configuration Users <configuration user>` will not see this page in the EaaSI menu or be able to control
-  any of the settings described.
+  Though the Manage Node interface should be visible to both :term:`Admin` and :term:`Configuration Users <configuration user>`, Configuration Users will not see all the management functionality described on this page. This is intentional. Configuration Users can see Running Process and download logs for troubleshooting and support purposes, but will not be able to control node-level settings like user permissions, emulator management, or OAI-PMH endpoint synchronization.
 
 The Manage Node page has two primary sections: :ref:`node_management` for controlling the :term:`node` itself (emulators, OAI-PMH, computing
 resources) and :ref:`user_admin` for managing the users who can access the node. See each section below for more details.
@@ -26,7 +25,7 @@ Node Management
 Emulators
 -----------
 
-The EaaSI platform relies on a number of open-source emulators. Replicating environments, troubleshooting, 
+The EaaSI platform relies on a number of open-source emulators. Replicating environments, troubleshooting,
 and expanding a node's functionality all may involve some management of the emulators themselves.
 
 :term:`Admin` users can review and manage emulators via the "Emulators" section of the Manage Node page.
@@ -56,9 +55,9 @@ and edited on any given environment details page under "Emulator" settings:
 .. image:: ../images/emulator_version_settings.png
 
 .. note::
-  The "Default" tag will determine which emulator image/version is used when creating new environments with a System 
+  The "Default" tag will determine which emulator image/version is used when creating new environments with a System
   template that depends on that emulator.
-  
+
 New emulator images/versions can be added to the node in two ways: either through environment replication or manual adding of
 Docker images.
 
@@ -124,7 +123,7 @@ To add endpoints (other nodes) to this page, click the "Add New Endpoint" button
 .. image:: ../images/add_endpoint.png
 
 Details for adding EaaSI Network nodes (i.e. the appropriate Host Location URLs for each node) will be provided to each node's
-Admins for configuration. You should "Name" the endpoint something quick and descriptive to remember which node it represents 
+Admins for configuration. You should "Name" the endpoint something quick and descriptive to remember which node it represents
 (e.g. "Yale", "EaaSI Open Source Sandbox", etc.)
 
 To fetch the available metadata/environments from other nodes, simply click the "Synchronize" button next to the
@@ -172,8 +171,7 @@ Node User Administration
 Manage Users
 -------------
 
-EaaSI users must for now be added manually by a node :term:`Admin` before they can :ref:`log in <logging_in>` to a node.
-The Manage Users page lists all individuals that are present on the node, including their given username and their role/permission
+EaaSI users must for now be added manually by a node :term:`Admin` before they can :ref:`log in <logging_in>` to a node. The Manage Users page lists all individuals that are present on the node, including their given username and their role/permission
 level.
 
 .. image:: ../images/node_users.png
@@ -182,6 +180,8 @@ Clicking on a user's Details page will allow an Admin the ability to also edit t
 their username and full name information, and their role/permission level:
 
 .. image:: ../images/edit_user.png
+  :align: center
+  :scale: 75
 
 
 Create New User
@@ -193,9 +193,33 @@ name, and user role.
 **All** fields in the Create New User menu are required.
 
 .. image:: ../images/create_new_user.png
+  :align: center
+  :scale: 75
 
-Once added, new users should be able to successfully follow the procedures described in :ref:`logging_in` to join
-the node.
+Once added, **the user's temporary one-time password will be displayed to the Admin in a notification for approximately 15-20 seconds**. The Admin will need to immediately copy and save the password and provide it to the user, for example:
+
+.. image:: ../images/new_user_temp_password.png
+  :align: center
+
+
+All new users will be prompted the first time they log in to change their password from the provided credentials to a new password of the user's choice. See :ref:`logging_in`.
+
+
+Resetting User Passwords
+--------------------------
+
+If a user (of any level) *forgets* or otherwise loses their password, they will need to ask an Admin-level user in their node to reset their password. Admin users can accomplish this on the Manage Users page of their node settings (Manage Node -> Manage Users -> select Details of user in question):
+
+.. image:: ../images/reset_password.png
+  :align: center
+  :width: 600
+
+Once the Admin confirms they want to reset the user's password, **the user's new temporary password will be displayed to the Admin in a notification for approximately 15-20 seconds**. The Admin will need to immediately copy and save the password and provide it to the user, for example:
+
+.. image:: ../images/password_notification.png
+  :align: center
+
+Once the Admin has provided the user with the temporary password, the user in question will be able to log in again. They will be prompted to immediately change/reset the temporary password back to a password of their choosing.
 
 .. _permissions:
 

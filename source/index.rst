@@ -12,13 +12,12 @@ EaaSI User Handbook
    overview/emulators
    overview/demo
    overview/install/setup
-   
-.. toctree::   
+
+.. toctree::
    :maxdepth: 1
    :caption: User Guide
-   
+
    guide/logging-in
-   guide/hosted_service
    guide/dashboard
    guide/explore-resources
    guide/my-resources
@@ -29,22 +28,22 @@ EaaSI User Handbook
    guide/administration
    guide/publishing
    guide/emulator_limitations
-   
+
 .. toctree::
    :maxdepth: 1
    :caption: More Help
-   
+
    resources/bugs
    resources/community
    resources/faq
    resources/glossary
    resources/workflow
    resources/dev_ui
-  
+
 .. toctree::
   :maxdepth: 1
   :caption: Demo Client
-  
+
   legacy/demo_client
   legacy/interface
   legacy/resources

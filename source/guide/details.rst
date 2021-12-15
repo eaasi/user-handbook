@@ -47,20 +47,12 @@ By default, PC-based EaaSI Environments should have at least: a Disk drive (for 
 
 "Relative Mouse (Pointerlock)" enables a running Environment to capture the user's mouse input.
 
-"WebRTC Audio" enables an improved method for streaming audio from the emulation session to the user's browser. 
-
 "Requires clean shutdown" forces the user to perform a full ACPI shutdown of the Environment's operating system in emulation before allowing the user to use the Save Environment feature. (editable)
 
 "Internet Enabled" controls whether or not the Environment can theoretically access the live internet while running (if the Environment is configured correctly).
-
-.. note::
-  WebRTC Audio is now out of beta and considered a recommended configuration setting for most Environments. However, accessing Environments over/through a VPN may break WebRTC audio.
   
 .. note::
   "Requires clean shutdown" is recommended for most Environments from approximately 1998 and later (e.g. Windows 98 and up) to make sure emulation sessions save cleanly as a new Environment or revision without operating system errors. It should **not** be enabled for Environments and operating systems prior to this. See `Advanced Configuration and Power Interface <https://en.wikipedia.org/wiki/Advanced_Configuration_and_Power_Interface>`_.
-  
-.. warning::
-  "XPRA Video" is an alpha feature for improving video delivery and lag (essentially an equivalent to the improved WebRTC audio delivery). It is not yet stable and is not yet functional in EaaSI.
 
 .. warning::
   For "Environment can  print" and "Enable Internet access" features to work correctly, the Environment's operating system must have been properly configured with a functional PostScript printer drive (for "Environment can print") or an installed TCP/IP networking stack ("Enable Internet access"). Please consult the `Software Help <https://forum.eaasi.cloud/c/software-help/10>`_ section of the EaaSI Community Forum if needing assistance in this area for the Environment or legacy operating system of your choice.

@@ -19,3 +19,4 @@ The EaaSI User Handbook is hosted and published through GitLab Pages. For any te
 .. warning::
   The EaaSI platform is maintained by a small team and remains reliant on grant/seed funding for staffing and support. Users will experience bugs and inconsistencies not described in this
   documentation. Please see :ref:`bugs` and :ref:`community` for assistance. 
+  

@@ -62,6 +62,9 @@ Glossary
   Hardware Configuration
       An :term:`environment’s<environment>` hardware configuration refers to the emulator configuration settings that replicate the hardware
       of a physical computer system. Within EaaSI, these configurations are provided as templates.
+      
+  Image
+      An Image is a very specific type of :term:`resource` that can be used in advanced Emulation Project workflows to import or recreate machines from outside of the EaaSI platform. They are a disk image that contains a bootable and fully installed operating system, combined with an EaaSI :term:`hardware configuration` template, they can be saved as an :term:`environment`. Images are generally useful *only* in two scenarios: 1) the user has an existing VM from another emulation or virtualization platform (e.g. VirtualBox, VMWare, or similar) that they would like to run as an EaaSI Environment, or 2) the user has created a disk image of a hard drive from a unique physical machine and that they would like to use as the basis for an EaaSI Environment rather than extracting out individual files and objects (e.g. using for assessment and access to a donated machine, as seen with the efforts with `Salman Rushdie's personal Macintosh Performa <https://www.newyorker.com/tech/annals-of-technology/digital-life-salman-rushdie>`_ at the Emory University archives)
             
   Node
       A node is one installation/instance of the EaaSI platform. By default, all imported or created :term:`resources<resource>` stay
@@ -82,8 +85,8 @@ Glossary
       can run or install a stand-alone :term:`environment`).
       
   Resource
-      A resource refers broadly to a usable entity in EaaSI: an :term:`environment`, :term:`software`, or :term:`content`.
-      It is the combination of an :term:`object` and the metadata necessary to render that object.
+      A resource refers broadly to a usable entity in EaaSI: an :term:`environment`, :term:`software`, :term:`content`, or an :term:`Image`.
+      It is the combination of an :term:`object` and any metadata necessary to render that object.
 
   Software
       Software refers to application and system software, including operating systems, commercial and open source 
