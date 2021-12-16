@@ -71,3 +71,8 @@ The resulting new Environment will be referred to as a :term:`Content Environmen
 (This is in direct contrast to Software resources; if a new Environment is saved after pairing an Environment and Software resource via the Emulation Project, when running the derivative Environment in subsequent sessions the original Software resource will **not** remain mounted the emulator. In those cases the emulator's removable media drives are cleared to allow further Software or Content resources to be added to the derivative Environment.)
 
 This means that you will be unable to properly load further Software or Content resources into a Content Environment (as the original Content resource will remain bound to the emulator and block attempts to mount a new object).
+
+.. warning::
+  As of v2021.10, there is also a known issue with accessing multi-file Content resources in their equivalent Content Environment. If a multi-file Content object is saved into a new Content Environment, only the first file in the object remains accessible when running the Content Environment, and the Change Resource Media does not properly switch which file is mounted.
+
+  The EaaSI team is actively working on a fix for this issue, and users can still access multi-file Content resources in an emulation session at any time by using the Emulation Project menu to pair the Content resource with an appropriate Environment. Please contact the EaaSI team via the `Support Center <https://https://forum.eaasi.cloud/c/support-center/6>`_ at any point if you have questions or concerns with this work-around.
