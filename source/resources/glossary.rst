@@ -85,7 +85,7 @@ Glossary
       can run or install a stand-alone :term:`environment`).
 
   Resource
-      A resource refers broadly to a usable entity in EaaSI: an :term:`environment`, :term:`software`, :term:`content`, or an :term:`Image`.
+      A resource refers broadly to a usable entity in EaaSI: an :term:`environment`, :term:`software`, :term:`content`, or a :term:`computer image`.
       It is the combination of an :term:`object` and any metadata necessary to render that object.
 
   Software
