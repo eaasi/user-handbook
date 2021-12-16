@@ -273,7 +273,7 @@ script to match the most up-to-date release provided by the EaaSI team:
 
 .. code-block:: sh
 
-  $ ./git-pull.sh && ./git-pull.sh origin eaasi-release-2021.10
+  $ ./git-pull.sh && ./git-pull.sh origin v2021.10
 
 .. note::
   Running the ``git-pull.sh`` script twice, first without arguments, ensures that the script itself is up-to-date first, before fetching the current release branch.
