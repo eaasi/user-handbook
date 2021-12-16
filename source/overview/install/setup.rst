@@ -265,6 +265,9 @@ You are now ready to use EaaSI!
 Updating EaaSI
 ---------------
 
+.. warning::
+  Unpredictable behavior can always happen during an upgrade or migration process and EaaSI sysadmins should always prepare a complete server backup before performing any update or migration with the eaasi-installer.
+
 To update a previously-existing EaaSI installation, first update the `eaasi-installer`_ by running its ``git-pull.sh``
 script to match the most up-to-date release provided by the EaaSI team:
 
