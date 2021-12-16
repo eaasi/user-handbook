@@ -1,0 +1,9 @@
+{
+	"tenant_id": "org-xyz",
+	"name": "Organization XYZ",
+	"admin": {
+	   "email": "admin@xyz.internal",
+	   "username": "admin-xyz",
+	   "firstname": "Admin",
+	   "lastname": "XYZ"
+}

@@ -9,36 +9,33 @@ The Emulation Access screen allows the user to interact with a running emulation
 
   #. They select the "Run in Emulator" or "Add Software" from the :ref:`actions` on any given Environment resource
   #. They run an :ref:`emulation-project` workflow
-  
+
 .. image:: ../images/emulation_access.png
 
 The features offered on this page may vary depending on how the Environment has been configured.
 
   - *Download Print Jobs*: Only available if "Environment can Print" has been enabled for the running Environment, and the Environment contains an installed and configured PostScript driver. If so, print jobs to PostScript in the running Environment will be intercepted by the EaaSI interface and this button will become selectable. The printed document will be offered to the EaaSI user as a downloadable PDF.
-  
+
   - *Change Resource Media*: If the Environment contains a mounted Software or Content resource with more than one disk, the user may click on this button to alternate mounting them in the Environment. (In other words, the user may use this menu to mimic the behavior of ejecting and inserting multiple CD-ROMs, floppy disks, or other removable media into a physical machine)
-  
+
   - *Save Screen Image*: Takes a screenshot of the Environment screen. The user's browser will offer the screenshot for download.
-  
+
   - *Esc*: Sends an "Esc" keyboard input to the Environment. "Esc" key presses on the user's keyboard usually do not/will not pass to an EaaSI environment. Clicking this button allows the user to press the "Esc" key in the Environment if/when emulated software requires.
-  
+
   - *Ctrl/Alt/Del*: Likewise, pressing this button will send a "Ctrl + Alt + Delete" keyboard command to the emulated Environment, which may be useful for troubleshooting or rebooting an emulated operating system. Pressing this keyboard combination on the user's keyboard will likely be intercepted by the host system, and is not recommended if an Environment is displaying issues.
-  
+
 The three buttons at the top of the screen allow the EaaSI user to stop or leave the Emulation Access interface in various ways:
 
   - *Save Environment* will open a new modal screen. The EaaSI user can save any changes or edits they made to the Environment during the currently-running Emulation Access session as a new Environment. See :ref:`below <save_environment>`.
-  
+
   - *Restart Emulation* will perform a hard restart of the Emulation Access session. Any changes or edits made by the user to the Environment during the currently-running session will be discarded.
-  
+
   - *Exit Emulation* will stop the currently-running Emulation Access session and return the user to whatever menu was used to launch the session. Any changes or edits made by the user to the Environment during the currently-running session will be discarded.
-  
+
 .. note::
   If the Environment was configured with the "Relative Mouse (Pointerlock)" option, clicking on the Environment's screen will capture the user's mouse. Press the "Esc" key on your host keyboard to free your mouse and interact with your browser and host system again.
 
-.. note::
-  The metadata options ("Saved Metadata" and "Configure New") on the left side of the Emulation Access interface are placeholders and until noted otherwise, non-functional. Advanced options for describing Environments and Software *while* they are running in emulation is under development.
-  
-  
+
 .. _save_environment:
 
 Saving Environments
@@ -62,4 +59,20 @@ If the Emulation Access session began by choosing to Run a previously-existing E
   Create a Revision will **only** overwrite a Private Environment. If a user chooses Create a Revision when running an Environment marked "Saved Locally" (that is, an Environment that has been published to the Network), it will have the *same effect* as creating a New Environment. A new, derivative Private Environment resource will be created in the user's node, with the same name as the published Environment. The published/Saved Locally Environment will persist in the interface as well.
 
 
-  
+Saving Content Environments
+-----------------------------
+
+Some special considerations must be made when saving an Environment if the Emulation Access session was begun by pairing an Environment with a Content resource on the :ref:`emulation-project` page.
+
+In such cases, the "Create a Revision" option will **not** be available to the user. The only way to save an emulation session with a Content resource mounted is as a completely new Environment.
+
+The resulting new Environment will be referred to as a :term:`Content Environment` and when running the Content Environment in subsequent sessions, **the original Content resource should remain mounted in the emulator**.
+
+(This is in direct contrast to Software resources; if a new Environment is saved after pairing an Environment and Software resource via the Emulation Project, when running the derivative Environment in subsequent sessions the original Software resource will **not** remain mounted the emulator. In those cases the emulator's removable media drives are cleared to allow further Software or Content resources to be added to the derivative Environment.)
+
+This means that you will be unable to properly load further Software or Content resources into a Content Environment (as the original Content resource will remain bound to the emulator and block attempts to mount a new object).
+
+.. warning::
+  As of v2021.10, there is also a known issue with accessing multi-file Content resources in their equivalent Content Environment. If a multi-file Content object is saved into a new Content Environment, only the first file in the object remains accessible when running the Content Environment, and the Change Resource Media does not properly switch which file is mounted.
+
+  The EaaSI team is actively working on a fix for this issue, and users can still access multi-file Content resources in an emulation session at any time by using the Emulation Project menu to pair the Content resource with an appropriate Environment. Please contact the EaaSI team via the `Support Center <https://https://forum.eaasi.cloud/c/support-center/6>`_ at any point if you have questions or concerns with this work-around.

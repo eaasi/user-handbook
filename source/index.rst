@@ -18,7 +18,6 @@ EaaSI User Handbook
    :caption: User Guide
 
    guide/logging-in
-   guide/hosted_service
    guide/dashboard
    guide/explore-resources
    guide/my-resources

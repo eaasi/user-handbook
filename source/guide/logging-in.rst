@@ -5,9 +5,6 @@
 Logging In
 ===========
 
-Currently users must log in to the EaaSI interface using a basic local database for user management. Streamlined integration
-between EaaSI and Single Sign-On/local authentication services at Network instutitions is in development.
-
 Before logging in for the first time, a new EaaSI user must be added to the :term:`node` by an :term:`Admin`.
 The initial Admin must set a user/display name, email and permission level for the user; see :ref:`user_admin`).
 
@@ -16,14 +13,25 @@ The initial Admin must set a user/display name, email and permission level for t
 .. image:: ../images/landing_page.png
   :align: center
 
-New users should receive an email containing their password at the email specified by the Admin.
+When a new user is created in a node, the Admin who created them will be given a one-time password. This one-time password
+should be provided to the user. (Again, see :ref:`user_admin`)
 
-Passwords can be automatically reset, but not customized. Please keep track of your assigned password
-for logging in, preferably in a secure location such as a password manager.
+On their first login attempt, new users should provide the one-time password; once successful, the user
+will be prompted to create their own, permanent password:
+
+.. image:: ../images/set_password.png
+  :align: center
+
+The EaaSI team recommends:
+  * using a password manager to generate and store a unique password for your EaaSI hosted service node
+  * do not reuse passwords from other accounts associated with your EaaSI email/username
+  * longer passwords are better
+
+If you forget your password, it must be reset by an Admin-level user in your node.
 
 
 Logging Out
-------------
+-------------
 
 Users will remain logged in to the EaaSI interface until clearing their browser cache or manually logging
 out.
@@ -33,3 +41,18 @@ clicking "Log Out".
 
 .. image:: ../images/log_out.png
   :align: center
+
+
+Changing Your Password
+------------------------
+
+Hosted service users can change their password at any time by clicking on the Change Password button in the user menu at the top right of the EaaSI menu:
+
+.. image:: ../images/change_password.png
+  :align: center
+
+Clicking on "Change Password" will take the user to EaaSI's `Keycloak <https://www.keycloak.org/>`_ account services menu. Clicking on the "Update" password button under the "My Password" options on this page will allow the user to set and confirm a new password:
+
+.. image:: ../images/update_password.png
+
+Hosted service users also have the option to set up a third-party Two-Factor Authentication application on this page for extra security, if desired.

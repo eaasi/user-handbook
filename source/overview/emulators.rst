@@ -1,4 +1,4 @@
-.. Emulators 
+.. Emulators
 
 .. _emulators:
 
@@ -16,21 +16,26 @@ Compatibility
 
 .. list-table:: PC (x86) and some PPCs
   :header-rows: 1
-  
+
   * - EaaSI Build
     - `QEMU <https://hub.docker.com/r/eaas/qemu-eaas/tags/?page=1&ordering=last_updated>`_
+    - `PCem <https://gitlab.com/emulation-as-a-service/emulators/pcem/container_registry/739754>`_
   * - :ref:`”Try EaaSI” Dockers <container_setup>`
     - v3-0 (recommended), v2-12
+    - n/a
   * - 2019.11 and prior
     - v3-0 (recommended), v2-12, v2-5deb (some legacy installs)
+    - n/a
   * - 2020.03
     - v3-0 (recommended), v2-12
-  * - 2021.xx
-    - TBD
+    - n/a
+  * - 2021.10
+    - v3-0 (recommended), v2-12
+    - n/a
 
 .. list-table:: Apple
   :header-rows: 1
-  
+
   * - EaaSI Build
     - `SheepShaver <https://gitlab.com/emulation-as-a-service/emulators/macemu-eaas-sheepshaver/container_registry/347346>`_
     - `Basilisk II <https://gitlab.com/emulation-as-a-service/emulators/macemu-eaas-basilisk2/container_registry/347345>`_
@@ -47,14 +52,14 @@ Compatibility
     - git-587d8376f07f94ffb594bb705e3a781b46b22d47
     - git-63b01290ef6ad143100e571b5d2f1a84ad8b870a
     - n/a
-  * - 2021.xx
-    - TBD
-    - TBD
-    - TBD
+  * - 2021.10
+    - git-587d8376f07f94ffb594bb705e3a781b46b22d47
+    - git-63b01290ef6ad143100e571b5d2f1a84ad8b870a
+    - n/a
 
 .. list-table:: Other
   :header-rows: 1
-  
+
   * - EaaSI Build
     - `VICE <https://gitlab.com/emulation-as-a-service/emulators/vice-eaas/container_registry/426946>`_
     - `FS-UAE <https://gitlab.com/emulation-as-a-service/emulators/fs-uae-eaas/container_registry/367681>`_
@@ -62,7 +67,7 @@ Compatibility
   * - :ref:`”Try EaaSI” Dockers <container_setup>`
     - latest
     - n/a
-    - latest 
+    - latest
   * - 2019.11 and prior
     - latest
     - n/a
@@ -71,15 +76,16 @@ Compatibility
     - latest
     - n/a
     - latest
-  * - 2021.xx
-    - TBD
-    - TBD
-    - TBD
+  * - 2021.10
+    - latest
+    - n/a
+    - latest
 
 Links to Source Projects
 --------------------------
 
 - `QEMU <https://www.qemu.org/>`_ (x86 PC emulation/virtualization, PowerPC 9.1-10.x Mac OS emulation)
+- `PCem <https://www.pcem-emulator.co.uk/>`_ (x86 PC emulation)
 - `SheepShaver <https://sheepshaver.cebix.net/>`_ (PowerPC Mac OS 8.x-9.0 emulation)
 - `Basilisk II <https://basilisk.cebix.net/>`_ (late 68k series Mac emulation)
 - `Mini vMac <https://www.gryphel.com/c/minivmac/>`_ (late 68k series Mac emulation)
