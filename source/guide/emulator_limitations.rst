@@ -37,3 +37,21 @@ Floppy Objects (Content or Software) of Mixed Size in QEMU
 **Recommended work-around**: If looking to import a mixed-size floppy set into EaaSI as a Content or Software resource, separate disk images of the same size into separate resources. Copy and save one of the resources into a QEMU-based Environment, then mount the second resource interact with the full set.
 
 Alternatively, if it is possible or acceptable: manipulate the size of a disk image prior to import into EaaSI (e.g. padding a smaller disk image to match the size of a larger one) using a disk image manipulation program such as `WinImage <https://winimage.com/>`_, `qemu-img <https://linux.die.net/man/1/qemu-img>`_ (built-in QEMU utility), or similar.
+
+
+AppleTalk Error in Mac OS 7.0.x
+-------------------------------
+
+**Relevant emulators**: BasiliskII
+
+**Affected Environments**: Mac OS (System Software) 7.0.1 and derivatives
+
+**Problem**: Trying to run a genuine copy of Apple's System Software 7.0.1 operating system in BasiliskII results in the following AppleTalk error on boot:
+
+.. image:: ../images/appletalk_error.png
+
+This error appears regardless of host system (the EaaSI team has confirmed it running BasiliskII on both Linux and macOS hosts), regardless of BasiliskII hardware settings selected, and regardless of operating system settings selected within System Software 7.0.1 (e.g. even when AppleTalk is explicitly disabled in the OS).
+
+**Recommended work-around**: If System Software 7.0.1 is explicitly required or desired, just clicking "OK" on the error message allows the user to continue to emulate the Environment with no apparent ill affects.
+
+If this pop-up error is too inconvenient or confusing, and the Software or Content does not explicitly require 7.0.1, the EaaSI team recommends using a different Classic Macintosh Environment running on BasiliskII instead (e.g. Mac OS 7.5). This error appears unique and specific to the 7.0.x operating system.
