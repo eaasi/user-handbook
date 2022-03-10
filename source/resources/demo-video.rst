@@ -6,9 +6,9 @@ Demo Videos
 EaaSI Overview
 ----------------
 
-.. raw:: html
+  .. raw:: html
 
-  <video width="720" height="480" controls src="../_static/EaaSI_Overview.webm" type="video/webm"></video>
+    <iframe width="720" height="480" src="https://www.youtube-nocookie.com/embed/XW_RA6nUs2c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 |
 |
@@ -19,7 +19,7 @@ Running an Environment
 
   .. raw:: html
 
-    <video width="720" height="480" controls src="../_static/run_environments.webm" type="video/webm"></video>
+    <iframe width="720" height="480" src="https://www.youtube-nocookie.com/embed/1jyJSbQnvY8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 |
 |
@@ -30,4 +30,4 @@ Importing and Installing Software
 
   .. raw:: html
 
-    <video width="720" height="480" controls src="../_static/import_software.webm" type="video/webm"></video>
+    <iframe width="720" height="480" src="https://www.youtube-nocookie.com/embed/6fHeXSIT9Fk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
