@@ -31,6 +31,13 @@ EaaSI User Handbook
 
 .. toctree::
    :maxdepth: 1
+   :caption: API Documentation
+
+   api/eaas
+   api/uvi
+
+.. toctree::
+   :maxdepth: 1
    :caption: More Help
 
    resources/bugs
