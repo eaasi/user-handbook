@@ -27,6 +27,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = 'EaaSI'
+# NB: copyright statement here in config is being overwritten in custom.css to insert a proper CC0 "Public Domain" license notice; otherwise, Sphinx will automatically display an (inaccurate) copyright symbol
 copyright = '2022, EaaSI Team, CC0 (No Rights Reserved)'
 author = 'EaaSI Team'
 
