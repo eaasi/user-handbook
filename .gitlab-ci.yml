@@ -7,7 +7,7 @@ build:
   stage: build
   script:
   - apk add --no-cache make python3
-  - pip3 install sphinx==2.2.1 sphinx-rtd-theme sphinxcontrib-httpdomain
+  - pip3 install sphinx==1.8.5 sphinx-rtd-theme sphinxcontrib-httpdomain
   - make html
   artifacts:
     paths:
