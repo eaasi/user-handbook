@@ -24,7 +24,7 @@ environment.
 Node Components
 ===============
 
-Emulation-as-a-Service is a server software stack composed of a number of modules working together to accomplish the task of emulator assembly and configuration. Currently these modules must be deployed as a monolith (all on one server), but the development team is making advances to deploy the modules across multiple physical/virtual machines for ideal configuration. 
+Emulation-as-a-Service is a server software stack composed of a number of modules working together to accomplish the task of emulator assembly and configuration. Currently these modules must be deployed as a monolith (all on one server), but the development team is making advances to deploy the modules across multiple physical/virtual machines for ideal configuration.
 
 EaaSI stacks(a :term:`node`) contain additional components to allow for sharing :term:`resources <resource>` and metadata across the EaaSI Network, but core functionality is accomplished with the following components:
 
@@ -74,7 +74,7 @@ The EmuComp locates and mounts resources in file storage as directed by the Gate
 The EmuComp can connect to resources either in local file storage (i.e. on the same server) or networked storage available to the EmuComp over HTTP. Support for deploying and connecting EaaSI nodes to resources in S3-type/cloud object storage is in development.
 
 
-.. _oai-pmh:
+.. _oaipmh:
 
 OAI-PMH Synchronization
 =======================
@@ -82,8 +82,8 @@ OAI-PMH Synchronization
 The EaaSI network makes use of the `Open Archives Initiative Protocol for Metadata Harvesting (OAI-PMH) <https://www.openarchives.org/pmh/>`_
 to request, share and synchronize metadata between nodes.
 
-In addition to the node components listed above, each EaaSI installation contains an OAI-PMH *harvester* and a *provider*. 
-The harvester requests metadata (in EaaSI's case, Environment records) from the data providers 
+In addition to the node components listed above, each EaaSI installation contains an OAI-PMH *harvester* and a *provider*.
+The harvester requests metadata (in EaaSI's case, Environment records) from the data providers
 at other nodes; the remote nodes' providers query their local records and return this metadata back to the original harvester.
 
 .. image:: ../images/oai-pmh.png
