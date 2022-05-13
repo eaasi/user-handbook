@@ -108,7 +108,7 @@ After a minute or two, the new emulator image should be visible in the Emulators
 configuring environments.
 
 
-.. _OAI-PMH:
+.. _oai-pmh_management:
 
 Endpoints/Metadata Sync
 ------------------------
