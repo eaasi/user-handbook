@@ -260,6 +260,34 @@ EaaSI UI at ``https://<hostname>``. On first login, this initial Admin user will
 
 You are now ready to use EaaSI!
 
+.. _managing-eaasi:
+
+Managing EaaSI
+---------------
+
+A full EaaSI deployment incorporates a number of Docker containers related to the Emulation-as-a-Service (EaaS) back-end and the EaaSI UI. These containers are best managed in tandem via ``systemctl`` rather than individually. For example:
+
+.. code-block:: sh
+
+  $ sudo systemctl stop eaas     # to stop EaaSI
+  $ sudo systemctl start eaas    # to start EaaSI
+  $ sudo systemctl restart eaas  # to restart EaaSI
+
+.. _removing-eaasi:
+
+Removing EaaSI
+---------------
+
+If errors are encountered during Ansible deployment, it may become necessary or advisable during troubleshooting to wipe an incomplete installation before re-attempting the deploy script. Alternatively, sysadmins may want to remove EaaSI to reclaim or clean a machine after testing/demo.
+
+To remove an EaaSI installation cleanly from your server, please execute the following steps in order:
+
+.. code-block:: sh
+
+  $ sudo systemctl stop eaas                            # stop EaaSI from running
+  $ sudo rm -rf /eaasi                                  # delete the EaaSI installation directory (as specified in your eaasi.yaml configuration)
+  $ sudo systemctl rm /etc/systemd/system/eaas.service  # delete the EaaSI service
+
 .. _updating-eaasi:
 
 Updating EaaSI
