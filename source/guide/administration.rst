@@ -124,10 +124,12 @@ To add endpoints (other nodes) to this page, click the "Add New Endpoint" button
 
 Details for adding EaaSI Network nodes (i.e. the appropriate Host Location URLs for each node) will be provided to each node's
 Admins for configuration. You should use the "Endpoint Name" field to title the endpoint something quick and descriptive to remember the node or organization it represents
-(e.g. "Yale", "EaaSI-Open-Source-Sandbox", etc.)
+(e.g. "yale", "eaasi-open-source-sandbox", etc.)
 
 .. warning::
-  The "Endpoint Name" field will automatically validate input to inforce certain naming conventions - particularly whitespaces and/or certain special characters/symbols (like "*"). This naming convention is necessary to prevent errors in storage path validation during Environment replication between nodes. If you receive a "Name is invalid" message from the interface, please try removing spaces or special symbols before contacting the EaaSI team.
+  The "Endpoint Name" field will automatically validate input to inforce certain naming conventions - particularly whitespaces, certain special characters/symbols (like "*") or capital letters.
+
+  This naming convention is necessary to prevent errors in storage path validation during Environment replication between nodes. If you receive a "Name is invalid" message from the interface, please try removing spaces, capital letters, and/or special symbols before contacting the EaaSI team.
 
 To fetch the available metadata/environments from other nodes, simply click the "Synchronize" button next to the
 selected node endpoint. The *Remote* tab on the :ref:`environments overview <environments_overview>` page should update
