@@ -6,8 +6,7 @@ Glossary
 .. glossary::
 
   Admin
-      Admin users have the highest level of permissions in EaaSI. They are responsible for :term:`node` management
-      and can perform all administrative tasks, including importing emulators, syncing :term:`resources<resource>` to
+      Admin users have the highest level of permissions in EaaSI. They are responsible for user management in their :term:`organization` and have a higher level of control over :term:`resources<resource>` in the :term:`node`, including importing emulators, saving or publishing :term:`environments<environment>` to
       the :term:`network`, adding new network :term:`endpoints<endpoint>`, monitoring running tasks, etc. Admins
       also retain all the permissions/actions of :term:`Configuration Users<configuration user>`
       as well.
@@ -17,14 +16,11 @@ Glossary
       starting point for configuration and can thus be highly contextual to a workflow: e.g., an imported disk image taken of a collection donor’s
       personal computer; a Windows 95 environment created from scratch using the Emulation Project menu; an Ubuntu environment
       synced from the `EaaSI Open Source Sandbox <https://eaasi-sandbox.softwarepreservationnetwork.org/eaasi/#/portal/welcome>`_.
-      Base environments will take up the most storage space in an instance, since they require full disk images.
-
-  Computer Image
-      An Image is a very specific type of :term:`resource` that can be used in advanced Emulation Project workflows to import or recreate machines from outside of the EaaSI platform. They are a disk image that contains a bootable and fully installed operating system, combined with an EaaSI :term:`hardware configuration` template, they can be saved as an :term:`environment`. Images are generally useful *only* in two scenarios: 1) the user has an existing VM from another emulation or virtualization platform (e.g. VirtualBox, VMWare, or similar) that they would like to run as an EaaSI Environment, or 2) the user has created a disk image of a hard drive from a unique physical machine and that they would like to use as the basis for an EaaSI Environment rather than extracting out individual files and objects (e.g. using for assessment and access to a donated machine, as seen with the efforts with `Salman Rushdie's personal Macintosh Performa <https://www.newyorker.com/tech/annals-of-technology/digital-life-salman-rushdie>`_ at the Emory University archives). Also may be referred to just as an "Image."
+      Base environments will generally take up the most storage space in an instance.
 
   Configuration User
       Configuration users have the lowest set of permissions in EaaSI. They are able to configure or edit metadata for
-      existing :term:`resources<resource>` and run environments, but can not interact directly with the EaaSI Network (saving or publishing Environments) or access administrative features in the Manage Node menu.
+      existing :term:`resources<resource>` and run environments, but can not interact directly with a network (saving or publishing Environments) or access administrative features in the Manage Node menu.
 
   Content
       Content are items from a digital collection; that is, digital information or works from institutional collections intended
@@ -68,13 +64,12 @@ Glossary
 
   Node
       A node is one installation/instance of the EaaSI platform. By default, all imported or created :term:`resources<resource>` stay
-      within their node, but :term:`environments<environment>` can be published and synced to other nodes in the :term:`EaaSI Network`.
+      within their node, but :term:`environments<environment>` can be published and synced to other nodes in the :term:`EaaSI Network`. Nodes can contain one or multiple :term:`organizations<organization>` as decided by the :term:`node host`. 
 
   Node Host
       Node hosts are an institutional or organizational member of the EaaSI Network. Each host administers at least one :term:`node`;
       it controls which of that node's :term:`resources<resource>` are synced to the rest of the EaaSI Network and which remain accessible
-      only within the node. One node host could potentially run multiple nodes within the EaaSI Network; for example if they are
-      a lead infrastructure provider in a consortium, they may provide hosting for distinct nodes for their consortial members.
+      only within the node. One node host may provide hosting and EaaSI services for other/multiple instutional/organizational members of the EaaSI Network by splitting the user accounts in their node using :term:`organizations<organization>`.
 
   Object
       The collection of files that represent the materials used to transmit, install, and/or operate :term:`software` or :term:`content`
@@ -84,8 +79,11 @@ Glossary
       :term:`Software` may be labelled an Operating System if it contains bootable or installable system software (i.e. that Software
       can run or install a stand-alone :term:`environment`).
 
+  Organization
+      Since v2010.10, user accounts in an EaaSI :term:`nodes<node>` can be arranged into arbitrary groups referred to as "organizations". (Allowing, e.g. for a consortial :term:`node host` to manage one EaaSI node for multiple distinct real-world institutions/organizations). :term:`Admin`-level users can only see and control other user accounts within their organizations as configured by the node host.
+
   Resource
-      A resource refers broadly to a usable entity in EaaSI: an :term:`environment`, :term:`software`, :term:`content`, or a :term:`computer image`.
+      A resource refers broadly to a usable entity in EaaSI: an :term:`environment`, :term:`software`, or :term:`content`.
       It is the combination of an :term:`object` and any metadata necessary to render that object.
 
   Software
