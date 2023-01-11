@@ -27,6 +27,7 @@ EaaSI User Handbook
    guide/import-resource
    guide/administration
    guide/publishing
+   guide/_make_new_environment
    guide/emulator_limitations
 
 .. toctree::
