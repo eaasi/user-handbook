@@ -132,7 +132,7 @@ Admins for configuration. You should use the "Endpoint Name" field to title the 
   This naming convention is necessary to prevent errors in storage path validation during Environment replication between nodes. If you receive a "Name is invalid" message from the interface, please try removing spaces, capital letters, and/or special symbols before contacting the EaaSI team.
 
 To fetch the available metadata/environments from other nodes, simply click the "Synchronize" button next to the
-selected node endpoint. The *Remote* tab on the :ref:`environments overview <environments_overview>` page should update
+selected node endpoint. The available "Public" environments on the Explore Resources page should update
 accordingly.
 
 Running Tasks

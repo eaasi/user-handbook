@@ -6,7 +6,7 @@ Publishing and Saving Resources
 *************************************
 
 What resources *can* be published to the network?
-===============================================
+====================================================
 
 Environment and Software resources are the only types of resource that can currently be published and shared between EaaSI nodes.
 

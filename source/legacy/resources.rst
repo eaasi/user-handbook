@@ -7,7 +7,7 @@ Importing Resources
 
 .. warning::
   The EaaSI platform is currently in "beta"! At this point our goal is to test critical network functionality and
-  gather feedback for further development. We can not guarantee the persistence of any :term:`resources` in the system
+  gather feedback for further development. We can not guarantee the persistence of any :term:`resources <resource>` in the system
   when we transition from the 'beta' to our first 'official' release.
 
   In other words, **any** environments (Base, Software or Object) created and saved by the network (other than those
@@ -21,7 +21,7 @@ Importing Resources
 .. _import_object_dev:
 
 Importing an Object
-================
+====================
 
 To add a new Digital or Software Object to your EaaSI installation, navigate to the "Import Object" page using the
 sidebar menu.
@@ -109,7 +109,7 @@ here.
 
 The "Native Config" field will specify the actual flags/options passed to the underlying emulator according to the
 selected Hardware Configuration template. You can edit the Hardware Configuration here accordingly (consult each
-:ref:`emulator's <emulators_dev>`) documentation for available options.
+:ref:`emulator's <managing_emulators_dev>`) documentation for available options.
 
 .. image:: images/native_config.png
 

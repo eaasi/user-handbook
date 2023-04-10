@@ -27,7 +27,7 @@ a whole (i.e. CPU and memory usage). These may assist Admin users and systems ad
 .. image:: images/dashboard.png
 
 The EaaSI navigation sidebar allows users to investigate and interact with EaaSI's three primary types of
-:term:`resources` : Environments_, Software_ and Objects_.
+:term:`resources <resource>` : Environments_, Software_ and Objects_.
 
 .. image:: images/resources_navigation.png
 
@@ -71,7 +71,7 @@ The "Base Environments" tab is further broken down into three sub-sections: *Pri
     environments are not stored locally but are available for replication to local storage (at which point they will
     move to the *Public* sub-section)
 
-The "Object Environments" tab contains only derivative :term:`Object Environments <Object Environment>`. The
+The "Object Environments" tab contains only derivative :term:`Object Environments <Content Environment>`. The
 environments displayed here should **always** be unique to the node; no node should be able to see or interact with
 other nodes' Object Environments.
 
@@ -311,13 +311,7 @@ software" button in the top right corner of the page:
 
 .. image:: images/add_software_details.png
 
-.. note:: You can add new Software to any type of environment - Base, Software, or Object - to create a new derivative
-environment. However, this may particularly cause unexpected behavior with Object Environments, as currently adding a
-Software Object to an already-saved Object Environment may essentially eject/overwrite the saved Digital Object from
-the environment's virtual drive(s).
-
-  Development is ongoing to support adding Software to Object Environments while also keeping the original Digital
-  Object mounted in the environment as well.
+.. note:: You can add new Software to any type of environment - Base, Software, or Object - to create a new derivative environment. However, this may particularly cause unexpected behavior with Object Environments, as currently adding a Software Object to an already-saved Object Environment may essentially eject/overwrite the saved Digital Object from the environment's virtual drive(s). Development is ongoing to support adding Software to Object Environments while also keeping the original Digital Object mounted in the environment as well.
 
 Either way, the user should be presented with the "Add Software" pop-up window and a dropdown menu with all available
 Software packages.
@@ -411,7 +405,7 @@ Environments" section above.
 Creating an Object Environment
 ------------------------------
 
-To create a derivative :term:`object environment` for easy emulated access to an Object, use the Objects overview and
+To create a derivative :term:`object environment <Content Environment>` for easy emulated access to an Object, use the Objects overview and
 navigate to the details page of the desired Object.
 
 Select an appropriate Base Environment in which to try running the Object from the list of recommended

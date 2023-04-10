@@ -7,7 +7,7 @@ Glossary
 
   Admin
       Admin users have the highest level of permissions in EaaSI. They are responsible for user management in their :term:`organization` and have a higher level of control over :term:`resources<resource>` in the :term:`node`, including importing emulators, saving or publishing :term:`environments<environment>` to
-      the :term:`network`, adding new network :term:`endpoints<endpoint>`, monitoring running tasks, etc. Admins
+      the :term:`EaaSI Network`, adding new network :term:`endpoints<endpoint>`, monitoring running tasks, etc. Admins
       also retain all the permissions/actions of :term:`Configuration Users<configuration user>`
       as well.
 
@@ -51,7 +51,7 @@ Glossary
 
   Endpoint
       An endpoint allows for synchronization of :term:`environments<environment>` between two EaaSI :term:`nodes<node>`.
-      They are a URL configured during node installation to allow for exchange of metadata and files via :ref:`OAI-PMH <oai-pmh>`.
+      They are a URL configured during node installation to allow for exchange of metadata and files via :ref:`OAI-PMH <oai-pmh_management>`.
 
   Environment
       Environments are emulated computing systems - i.e., a combination of emulated hardware and software

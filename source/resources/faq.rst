@@ -20,7 +20,7 @@ EaaSI is shorthand for the Scaling Emulation and Software Preservation Infrastru
 
 | 1. The **core EaaSI platform** builds on EaaS while adding or expanding on certain pieces of functionality. For instance, the EaaSI program of work sponsored the development and addition of OAI-PMH resource exchange between separate installations of EaaS. It also designed and implemented a new EaaSI Client, updating the EaaS user interface for a more intuitive experience. Further development in this area might include but is not limited to: the Universal Virtual Interactor (an API for automated search and interaction with EaaSI resources), a Virtual Reading Room service (additions to the EaaSI Client allowing for more granular user management, permissions and patron access).
 |
-| 2. The **EaaSI Network** is a community collaboration. It greatly simplifies engagement with emulation as it avoids each organization having to acquire, install, configure and document legacy software and instead gives them access to working versions via a simple replication process. Members of the EaaSI Network also have priority access to end-user and technical support, as well as training opportunities facilitated by the EaaSI team. The EaaSI team members at Yale are seeding the Network with a large number of software titles pre-configured in working emulated|environments, while other nodes (participating organizations) investigate software titles in their |own domains of collection. EaaSI Network members also have priority for feedback and guidance on |the future direction of the EaaSI program of work.
+| 2. The **EaaSI Network** is a community collaboration. It greatly simplifies engagement with emulation as it avoids each organization having to acquire, install, configure and document legacy software and instead gives them access to working versions via a simple replication process. Members of the EaaSI Network also have priority access to end-user and technical support, as well as training opportunities facilitated by the EaaSI team. The EaaSI team members at Yale are seeding the Network with a large number of software titles pre-configured in working emulated environments, while other nodes (participating organizations) investigate software titles in their own domains of collection. EaaSI Network members also have priority for feedback and guidance on the future direction of the EaaSI program of work.
 
 |
 
@@ -93,7 +93,7 @@ Finally, the emulator's video output is streamed from the EmuComp server to your
 |
 
 Your legacy software environments can connect to the live internet...are there malware or security concerns?
-------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------
 
 Sure, but no more so than on any other modern computing system.
 
@@ -110,14 +110,14 @@ In other words, just as you should regularly update your own operating system an
 |
 
 Can I take screenshots or video of Software or Content running in emulation?
---------------------------------------------
+-----------------------------------------------------------------------------
 
 EaaSI's Emulation Access interface has a built-in feature for taking screenshots of the currently-running emulation. Video is not available out-of-the-box at this time.
 
 |
 
 What is the difference between saving a "New Environment" or a "Revision" from an existing Environment?
-----------------------------------------------
+----------------------------------------------------------------------------------------------------------
 
 The choice affects how the resource is presented to users in the EaaSI Client. 
 

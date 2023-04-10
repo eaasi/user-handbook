@@ -6,6 +6,7 @@ EaaSI Community
 *****************
 
 .. _forum:
+
 EaaSI Community Forum
 ======================
 

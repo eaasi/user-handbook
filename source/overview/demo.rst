@@ -15,7 +15,7 @@ following instructions are optimized for MacOS and Linux but can be adapted for 
 below).
 
 .. note::
-  EaaSI demo Docker deployments use the "Legacy UI" interface. Use the :ref:`legacy_ui` section of this Handbook
+  EaaSI demo Docker deployments use the "Demo Client" interface. Use the :ref:`demo_client` section of this Handbook
   for instructions for using your portable EaaSI Docker deployment!
 
 **1.** Download and unpack ``EaaSI_Demo_v1_Lite.tar.gz`` from https://s3.wasabisys.com/EaaSIDemonstrators/EaaSI_Demo_v1_Lite.tar.gz.

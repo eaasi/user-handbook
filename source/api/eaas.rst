@@ -155,7 +155,7 @@ Environments
   :>json boolean useWebRTC: When "true", enables the "WebRTC Audio" setting (see: :ref:`environment_details`)
   :>json string containerName: Name for the :ref:`Docker container <emulators>` matching the specified emulator bean
   :>json array drives: A sub-array of JSON objects, each represeting the emulated drives available for this Environment
-  :>json nested,string data: If an :term:`object` or :term:`computer image` is bound to this drive, its unique ID (UUID) will be indicated in this field (i.e. system drives or a :term:`Content Environment`)
+  :>json nested,string data: If an :term:`object` or environment image is bound to this drive, its unique ID (UUID) will be indicated in this field (i.e. system drives or a :term:`Content Environment`)
   :>json nested,string iface: Computer storage standard/interface used by the emulated drive (options are "ide" or "floppy")
   :>json nested,string bus: Computer bus address number used by the emulated drive
   :>json nested,string unit: Computer storage bus unit address number used by the emulated drive

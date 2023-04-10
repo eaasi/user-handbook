@@ -9,7 +9,7 @@ The EaaSI Dashboard provides a central hub for viewing :term:`resources <resourc
 your node, as well as links for additional support and materials from the EaaSI project.
 
 .. image:: ../images/dashboard.png
-|
+    
 **Sandbox Demo**: Will take the user to the `EaaSI Open Source Sandbox <https://www.softwarepreservationnetwork.org/eaasi-sandbox/>`_, a demonstration service for 
 showing the in-browser emulation capabilities of EaaS to those outside the EaaSI Network.
   

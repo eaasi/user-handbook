@@ -46,7 +46,6 @@ EaaSI User Handbook
    resources/faq
    resources/glossary
    resources/demo-video
-   resources/dev_ui
 
 .. toctree::
   :maxdepth: 1

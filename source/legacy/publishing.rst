@@ -12,7 +12,7 @@ Environments are the only type of resource that can be published and shared betw
 shared in the form of Software Environments)
 
 Also, this only applies to Base Environments: Object Environments can not be published.
-:term:`Digital Objects <objects>` and associated Object Environments are assumed to be collection items, unique to each
+:term:`Digital Objects <content>` and associated Object Environments are assumed to be collection items, unique to each
 node/institution, and therefore potentially subject to different terms of access, licensing, etc. than the software we
 are preserving and sharing under the guidelines of fair use.
 
@@ -86,4 +86,4 @@ overview, allowing the user to interact and create derivative environments the s
 environment.
 
 The list of environments in the *Remote* sub-section can be periodically refreshed by syncing to other nodes
-(see :ref:`OAI-PMH`).
+(see :ref:`OAI-PMH_dev`).

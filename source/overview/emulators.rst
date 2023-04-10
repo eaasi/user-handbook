@@ -3,7 +3,7 @@
 .. _emulators:
 
 Emulators
-=========
+==========
 
 Emulation-as-a-Service relies on several open source projects to actually perform emulation and virtualization. These emulators have been containerized into Docker images by the EaaS development team to allow for easily swapping in new emulators (or different versions of an emulator) to an EaaSI installation.
 
