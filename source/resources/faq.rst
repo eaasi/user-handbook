@@ -47,7 +47,7 @@ There are lots of options, depending on your level of capacity and interest!
 |
 |   - Join the `Software Preservation Network <https://www.softwarepreservationnetwork.org>`_! If you are interested in joining an active and healthy community of practice that is focused on software preservation and emulation.
 |
-|   - Encourage local and regional colleagues to play in the `EaaSI Open Source Sandbox <https://eaasi-sandbox.softwarepreservationnetwork.org/eaasi/#/portal/welcome>`_! The sandbox is currently limited to open source software and does not have the updated EaaSI Client, but it does give everyone a chance to interact with emulated environments and helps users understand the opportunities offered by EaaSI.
+|   - Encourage local and regional colleagues to play in the `EaaSI Open Source Sandbox <https://sandbox.eaasi.cloud>`_! The sandbox is currently limited to open source software and does not have the updated EaaSI Client, but it does give everyone a chance to interact with emulated environments and helps users understand the opportunities offered by EaaSI.
 |
 |   - :ref:`container_setup`, with our self-contained demo EaaSI Docker deployments. (See :ref:`demo_client` for using the "Try EaaSI" interface)
 |

@@ -10,7 +10,7 @@ your node, as well as links for additional support and materials from the EaaSI 
 
 .. image:: ../images/dashboard.png
     
-**Sandbox Demo**: Will take the user to the `EaaSI Open Source Sandbox <https://www.softwarepreservationnetwork.org/eaasi-sandbox/>`_, a demonstration service for 
+**Sandbox Demo**: Will take the user to the `EaaSI Open Source Sandbox <https://sandbox.eaasi.cloud>`_, a demonstration service for 
 showing the in-browser emulation capabilities of EaaS to those outside the EaaSI Network.
   
 **Learn and Support**: Links to the EaaSI User Handbook that you are reading right now!
