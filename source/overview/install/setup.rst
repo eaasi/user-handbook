@@ -288,6 +288,27 @@ To remove an EaaSI installation cleanly from your server, please execute the fol
   $ sudo rm -rf /eaasi                                  # delete the EaaSI installation directory (as specified in your eaasi.yaml configuration)
   $ sudo systemctl rm /etc/systemd/system/eaas.service  # delete the EaaSI service
 
+.. _renewing_ssl:
+
+Renewing Certificates
+----------------------
+
+Regardless of provider, SSL certificates must be periodically renewed to maintain proper HTTPS connections to the EaaSI web app.
+
+When renewing your EaaSI deployment's certificate, be sure to update and replace **both** the full-chain certificate *and* the corresponding private key (located at ``<eaasi-root-dir>/certificates`` on the deployed/target machine). Renewal will fail if only an updated certificate/.crt is provided without an updated private key.
+
+The EaaSI stack's ``nginx`` server runs in an isolated Docker container and **does not** automatically pick up on new or renewed certificates. Please manually restart the eaasi-nginx container after replacing a certificate to make sure nginx picks up on the new cert:
+
+.. code-block:: sh
+
+  $ sudo docker exec -it eaasi-nginx kill -SIGHUP 1
+
+If your network configuration involves a web proxy you may also need to restart the ``nghttpx`` proxy service running inside EaaSI's ``eaas`` Docker container. If encountering issues with SSL renewal, try running the following command as an initial troubleshooting step:
+
+.. code-block:: sh
+
+  $ sudo docker exec eaas sv restart nghttpx
+
 .. _updating-eaasi:
 
 Updating EaaSI
