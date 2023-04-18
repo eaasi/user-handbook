@@ -1,0 +1,1612 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, EaaSI Team, CC0 (No Rights Reserved)
+# This file is distributed under the same license as the EaaSI package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: EaaSI \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-18 09:13-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: de\n"
+"Language-Team: de <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../legacy/administration.rst:6
+msgid "Administration"
+msgstr ""
+
+#: ../../legacy/administration.rst:11
+msgid "Syncing to the Network"
+msgstr ""
+
+#: ../../legacy/administration.rst:13
+msgid ""
+"Users can fetch metadata from other nodes on the network (that is, "
+"synchronize published Base and Software Environments) using the \"OAI-"
+"PMH\" settings page in the navigation sidebar."
+msgstr ""
+
+#: ../../legacy/administration.rst:18
+msgid ""
+"To add endpoints (other nodes) to this page, click the \"Add OAI-PMH "
+"Endpoint\" button."
+msgstr ""
+
+#: ../../legacy/administration.rst:22
+msgid ""
+"Details for adding EaaSI network nodes (i.e. the appropriate URLs for "
+"each node) will be provided to node administrators for configuration."
+msgstr ""
+
+#: ../../legacy/administration.rst:25
+msgid ""
+"To fetch the available metadata/environments from other nodes, simply "
+"click the \"Synchronize\" button next to the selected node endpoint. The "
+"*Remote* tab on the :ref:`environments overview "
+"<environments_overview_dev>` page should update accordingly."
+msgstr ""
+
+#: ../../legacy/administration.rst:31
+msgid "Other settings"
+msgstr ""
+
+#: ../../legacy/administration.rst:34
+msgid "Keyboard layout"
+msgstr ""
+
+#: ../../legacy/administration.rst:36
+msgid ""
+"In order to map expected input between the user and the emulator, the "
+"EaaSI interface must know the user's keyboard layout. Under the Settings "
+"menu, the \"Change Keyboard layout\" window allows for choosing the "
+"user's appropriate language and keyboard layout from a number of provided"
+" options."
+msgstr ""
+
+#: ../../legacy/administration.rst:44
+msgid ""
+"If no options are otherwise selected, EaaSI defaults to English (US) and "
+"a generic QWERTY 105-key PC keyboard."
+msgstr ""
+
+#: ../../legacy/demo_client.rst:6
+msgid "Demo Client"
+msgstr ""
+
+#: ../../legacy/demo_client.rst:8
+msgid ""
+"Starting with the 2020.03-beta release, the EaaSI platform merged "
+"PortalMedia's work to create a new \"EaaSI Client\" for the Emulation-"
+"as-a-Service stack. The User Guide section of this Handbook reflects "
+"those changes and available features."
+msgstr ""
+
+#: ../../legacy/demo_client.rst:12
+msgid ""
+"However, the \"Demo Client\" originally developed by the bwFLA project "
+"(and still used by the OpenSLX team for developing new features for the "
+"core EaaS stack) may remain relevant in some cases."
+msgstr ""
+
+#: ../../legacy/demo_client.rst:15
+msgid ""
+"For this reason, legacy materials from the User Handbook will be "
+"maintained in this section, for reference."
+msgstr ""
+
+#: ../../legacy/emulators.rst:6
+msgid "Managing Emulators"
+msgstr ""
+
+#: ../../legacy/emulators.rst:8
+msgid ""
+"The EaaSI platform relies on a number of open-source emulator projects to"
+" perform the emulation aspect of software and environment management. "
+"Replicating environments, troubleshooting, and expanding a node's "
+"functionality all may involve some management of the emulators "
+"themselves."
+msgstr ""
+
+#: ../../legacy/emulators.rst:14
+msgid "\"Emulators\" in the EaaSI Interface"
+msgstr ""
+
+#: ../../legacy/emulators.rst:16
+msgid ""
+"Available emulators can be reviewed and managed via the \"Emulators\" tab"
+" in the navigation menu."
+msgstr ""
+
+#: ../../legacy/emulators.rst:22
+msgid ""
+"\"Available emulators\" refers to emulation applications that have been "
+"containerized and made easily available to the EaaSI network by the "
+"development team via the OpenSLX team's `GitLab repo <https://gitlab.com"
+"/emulation-as-a-service/emulators>`_. This does **not** mean they are "
+"necessarily available for immediate use in the current node installation."
+" The presence/availability of the emulator in the node is determined by "
+"the \"Number of images\"."
+msgstr ""
+
+#: ../../legacy/emulators.rst:27
+msgid ""
+"For instance, in the above screenshot, the example node contains QEMU "
+"(two versions/images), BasiliskII and SheepShaver."
+msgstr ""
+
+#: ../../legacy/emulators.rst:29
+msgid ""
+"Details for each emulator - version number(s), Docker source info, etc. -"
+" can be reviewed by clicking the \"Details\" button."
+msgstr ""
+
+#: ../../legacy/emulators.rst:36
+msgid ""
+"Again, in the above example, the node installation has two "
+"images/versions of QEMU available: 2.12 and 3.1. This can be convenient "
+"for troubleshooting environments, as certain versions of an emulator may "
+"be more compatible with certain legacy operating systems or hardware than"
+" others."
+msgstr ""
+
+#: ../../legacy/emulators.rst:40
+msgid ""
+"If an emulator has multiple images/versions in a node, the version that "
+"EaaSI uses to run an environment can be viewed and edited on any given "
+"environment details page under \"Environment Settings\":"
+msgstr ""
+
+#: ../../legacy/emulators.rst:46
+msgid ""
+"The \"Latest\" tag should be read as \"default\". You can tag a specific "
+"image/version to be the default version offered when creating and running"
+" environments using that emulator by clicking the \"Make Latest\" button "
+"in the emulator detail page."
+msgstr ""
+
+#: ../../legacy/emulators.rst:50
+msgid ""
+"The \"latest\" (most recent available) version of an emulator is "
+"generally the EaaSI team's *recommended* default, to allow for the most "
+"up-to-date feature and security updates from these outside projects!"
+msgstr ""
+
+#: ../../legacy/emulators.rst:55
+msgid "Emulator Templates"
+msgstr ""
+
+#: ../../legacy/emulators.rst:57
+msgid ""
+"Emulator images contain the template files used to assist with "
+":term:`Hardware Configuration`. These templates provide common system "
+"configurations for recommended emulators, and are visible in the UI when "
+"either creating or importing a new environment:"
+msgstr ""
+
+#: ../../legacy/emulators.rst:63
+msgid ""
+"In the above image, for instance, the configurations for \"Generic 90s "
+"PC\" and \"Generic 2000s PC\" are defined in templates contained in an "
+"imported QEMU image; the \"Apple (Motorola)(7.x-8.x)\" was provided with "
+"a BasiliskII container."
+msgstr ""
+
+#: ../../legacy/emulators.rst:66
+msgid ""
+"To start a new environment from scratch rather than replicating and "
+"deriving from a remote node, these templates *must* be present, to "
+"populate these menus in the UI. The target emulator must thus be imported"
+" first (see below)."
+msgstr ""
+
+#: ../../legacy/emulators.rst:73
+msgid "Adding New Emulator Containers"
+msgstr ""
+
+#: ../../legacy/emulators.rst:75
+msgid ""
+"New emulator containers can be added to the node in two ways: either "
+"through environment replication or manual adding of Docker images."
+msgstr ""
+
+#: ../../legacy/emulators.rst:78
+msgid ""
+"Emulator images are automatically imported into a node if a node user "
+"attempts to replicate an environment from a remote node in the network, "
+"and the host node does not have the emulator image the remote node used "
+"to originally create and configure that environment."
+msgstr ""
+
+#: ../../legacy/emulators.rst:82
+msgid ""
+"For example: a user at Node A sees a remote Mac OS 9.0.4 environment "
+"configured using SheepShaver available from Node B. Node A does not "
+"currently have a SheepShaver image installed. But, when the user chooses "
+"to replicate, the appropriate SheepShaver image will be imported as part "
+"of the environment replication process, with no extra input needed. "
+"SheepShaver will now be available in Node A for future environment "
+"creation and configuration as well."
+msgstr ""
+
+#: ../../legacy/emulators.rst:87
+msgid ""
+"The above method requires little to no direct management from the EaaSI "
+"user. Node admins can also manually add emulator images as well by "
+"clicking the \"Import Emulator\" button on the Emulators page:"
+msgstr ""
+
+#: ../../legacy/emulators.rst:92
+msgid "This will bring up the Import Emulator pop-up menu:"
+msgstr ""
+
+#: ../../legacy/emulators.rst:96
+msgid ""
+"Instructions for filling out the Name and Tag fields diverge slightly "
+"depending whether the user is attempting to import a new QEMU image, or "
+"any other emulator container:"
+msgstr ""
+
+#: ../../legacy/emulators.rst:99
+msgid ""
+"**QEMU**: EaaS QEMU images are pushed to DockerHub. For the \"Name\" "
+"field, fill in \"eaas/qemu-eaas\", then use the list of available tags on"
+" DockerHub to specify the desired QEMU container: "
+"`<https://hub.docker.com/r/eaas/qemu-eaas/tags/>`_."
+msgstr ""
+
+#: ../../legacy/emulators.rst:102
+msgid ""
+"**All others**: All other emulator images are hosted directly on GitLab. "
+"To obtain the reference information for a Docker image, first choose the "
+"appropriate emulator from the list of available projects on the EaaS "
+"GitLab: `<https://gitlab.com/emulation-as-a-service/emulators>`_"
+msgstr ""
+
+#: ../../legacy/emulators.rst:106
+msgid ""
+"Once inside the relevant emulator project (e.g. `<https://gitlab.com"
+"/emulation-as-a-service/emulators/vice-eaas>`_), click \"Registry\" on "
+"the left-hand side GitLab menu. From this screen, you can find the link "
+"to the containerized emulator (**use the full registy.gitlab.com address "
+"as the \"Name\" of the emulator in the Import Emulator menu**) and "
+"specific tagged versions, if desired."
+msgstr ""
+
+#: ../../legacy/emulators.rst:114
+msgid ""
+"If no tag is specified, the EaaSI import function will default to the "
+"\"latest\" image as specified in each emulator's Dockerfile."
+msgstr ""
+
+#: ../../legacy/emulators.rst:117
+msgid ""
+"The optional \"alias\" field will populate the \"User version\" "
+"information in the emulator details page and helps to differentiate when "
+"there are multiple images for any one emulator in a node."
+msgstr ""
+
+#: ../../legacy/emulators.rst:120
+msgid ""
+"When Name, Tag, and Emulator alias fields have all been filled out as "
+"desired, click the \"Import Emulator\" button. After a minute or two, the"
+" new emulator image should be visible in the Emulators menu and available"
+" for creating and configuring environments."
+msgstr ""
+
+#: ../../legacy/interface.rst:5
+msgid "Navigating and Using the Legacy Interface"
+msgstr ""
+
+#: ../../legacy/interface.rst:7
+msgid ""
+"These guidelines and screenshots refer to the EaaSI Dev UI, as of April "
+"2020. The Dev UI is intended for legacy support and gradual introduction "
+"of cutting-edge features into the EaaSI stack, so the contents may not "
+"reflect user experience. Please contact the EaaSI team for support if "
+"needed."
+msgstr ""
+
+#: ../../legacy/interface.rst:13
+msgid "Logging In"
+msgstr ""
+
+#: ../../legacy/interface.rst:15
+msgid ""
+"To log in to the EaaSI beta interface, navigate to the URL and provide "
+"the login credentials provided by your node's system administrators."
+msgstr ""
+
+#: ../../legacy/interface.rst:22
+msgid "Landing Page"
+msgstr ""
+
+#: ../../legacy/interface.rst:24
+msgid ""
+"The Dev UI landing page features live statistics regarding the health of "
+"the local EaaSI node and the network as a whole (i.e. CPU and memory "
+"usage). These may assist Admin users and systems administrators with "
+"troubleshooting."
+msgstr ""
+
+#: ../../legacy/interface.rst:29
+msgid ""
+"The EaaSI navigation sidebar allows users to investigate and interact "
+"with EaaSI's three primary types of :term:`resources <resource>` : "
+"Environments_, Software_ and Objects_."
+msgstr ""
+
+#: ../../legacy/interface.rst:34
+msgid ""
+"The sidebar can also be used to access various pages for :ref:`importing "
+"resources <add_resources_dev>`, :ref:`adding emulators "
+"<managing_emulators_dev>`, and :ref:`adminstrative settings "
+"<administration_dev>`."
+msgstr ""
+
+#: ../../legacy/interface.rst:44
+msgid "Environments"
+msgstr ""
+
+#: ../../legacy/interface.rst:47 ../../legacy/interface.rst:251
+#: ../../legacy/interface.rst:372
+msgid "Overview page"
+msgstr ""
+
+#: ../../legacy/interface.rst:49
+msgid "Environments are sorted into tabs and sub-sections depending on:"
+msgstr ""
+
+#: ../../legacy/interface.rst:51
+msgid "Derivative status (i.e. if it is a Base or Object Environment)"
+msgstr ""
+
+#: ../../legacy/interface.rst:52
+msgid "Published status (its visibility to other users in the network)"
+msgstr ""
+
+#: ../../legacy/interface.rst:56
+msgid ""
+"\"Vanilla\" operating system environments have typically been marked as a"
+" \"Base\" in their name. The notation \"V#\" has been used internally by "
+"EaaSI staff to mark \"version\" number for base environments - e.g. "
+"\"V1\" for the first attempt at importing a base image, \"V2\" for the "
+"second attempt at importing a base image of the same system, etc. These "
+"are usually the starting points for importing Software and building "
+"derivative environment chains."
+msgstr ""
+
+#: ../../legacy/interface.rst:61
+msgid ""
+"Derivative environments can typically be identified by a name that "
+"connotes its original base environment and the name of the Software added"
+" (e.g. \"Windows 98 SE + Microsoft Office 97\")."
+msgstr ""
+
+#: ../../legacy/interface.rst:64
+msgid ""
+"The \"Base Environments\" tab is further broken down into three sub-"
+"sections: *Private*, *Public* and *Remote*."
+msgstr ""
+
+#: ../../legacy/interface.rst:66
+msgid ""
+"*Private* environments are visible only to the currently logged-in node "
+"user (see `Logging In`_). They are stored locally at the node."
+msgstr ""
+
+#: ../../legacy/interface.rst:68
+msgid ""
+"*Public* environments are visible and available for replication to all "
+"users on the network. They are stored locally at the source node. (Users "
+"at other nodes will see your *Public* environments in their *Remote* sub-"
+"section)"
+msgstr ""
+
+#: ../../legacy/interface.rst:70
+msgid ""
+"*Remote* environments are all :ref:`published <publishing_dev>` "
+"environments from other nodes on the network. These environments are not "
+"stored locally but are available for replication to local storage (at "
+"which point they will move to the *Public* sub-section)"
+msgstr ""
+
+#: ../../legacy/interface.rst:74
+msgid ""
+"The \"Object Environments\" tab contains only derivative :term:`Object "
+"Environments <Content Environment>`. The environments displayed here "
+"should **always** be unique to the node; no node should be able to see or"
+" interact with other nodes' Object Environments."
+msgstr ""
+
+#: ../../legacy/interface.rst:80
+msgid "For each tab and sub-section, the environments display table shows:"
+msgstr ""
+
+#: ../../legacy/interface.rst:82
+msgid "*Name*: a descriptive human-readable name for the environment"
+msgstr ""
+
+#: ../../legacy/interface.rst:83
+msgid ""
+"*ID*: a unique UUID assigned to the environment to allow for sharing and "
+"consistency across the network"
+msgstr ""
+
+#: ../../legacy/interface.rst:84
+msgid ""
+"*Owner*: will indicate ownership status of the environment within one "
+"node when multi-user login functionality is added to the platform; for "
+"now, all environments should list \"shared\""
+msgstr ""
+
+#: ../../legacy/interface.rst:86
+msgid ""
+"*Actions*: dropdown menu allowing for user and administrative actions "
+"related to that environment"
+msgstr ""
+
+#: ../../legacy/interface.rst:90
+msgid "Running environments"
+msgstr ""
+
+#: ../../legacy/interface.rst:91
+msgid ""
+"To run a selected environment in emulation, choose the \"Run "
+"Environment\" option from the Actions dropdown menu."
+msgstr ""
+
+#: ../../legacy/interface.rst:95
+msgid "Your emulation session should load immediately."
+msgstr ""
+
+#: ../../legacy/interface.rst:99
+msgid ""
+"Clicking on the emulation window will capture your mouse and keyboard "
+"input to the emulated system. If Pointerlock is enabled, press \"Esc\" at"
+" any point during the session to free your mouse to interact with your "
+"host system."
+msgstr ""
+
+#: ../../legacy/interface.rst:102
+msgid ""
+"During the session, the EaaSI Action Menu will appear below the "
+"navigation sidebar:"
+msgstr ""
+
+#: ../../legacy/interface.rst:109
+msgid "Download Print Jobs"
+msgstr ""
+
+#: ../../legacy/interface.rst:108
+msgid ""
+"This button will appear contextually depending on whether \"Environment "
+"can print\" has been selected in the environment record (see `Viewing and"
+" editing environment records`_). If enabled, PostScript print jobs from "
+"the emulated system should be converted and available here as "
+"downloadable PDFs."
+msgstr ""
+
+#: ../../legacy/interface.rst:113
+msgid "Change Media"
+msgstr ""
+
+#: ../../legacy/interface.rst:112
+msgid ""
+"This button will appear contextually depending on whether a multi-disk-"
+"image Software or Digital Object has been loaded into the environment. "
+"The user can switch between images within the emulation session, "
+"mimicking the behavior of inserting and ejecting floppy disks or CD-ROMs "
+"in physical drives."
+msgstr ""
+
+#: ../../legacy/interface.rst:117
+msgid "Save Environment"
+msgstr ""
+
+#: ../../legacy/interface.rst:116
+msgid ""
+"Saves the current emulation session state as a new revision or derivative"
+" environment; changes are isolated from the base image that began the "
+"session. The guest operating system must be shut down before the "
+"environment changes can be saved (see `Creating new environments`_)"
+msgstr ""
+
+#: ../../legacy/interface.rst:120
+msgid "Send Ctrl-Alt-Del"
+msgstr ""
+
+#: ../../legacy/interface.rst:120
+msgid ""
+"Shortcut for sending the `\"Ctrl+Alt+Delete\" "
+"<https://en.wikipedia.org/wiki/Control-Alt-Delete>`_ keyboard input to "
+"the emulated operating system"
+msgstr ""
+
+#: ../../legacy/interface.rst:122
+msgid "Send Esc"
+msgstr ""
+
+#: ../../legacy/interface.rst:123
+msgid "Sends the \"Esc\" keyboard input to the emulated operating system"
+msgstr ""
+
+#: ../../legacy/interface.rst:125
+msgid "Restart Session"
+msgstr ""
+
+#: ../../legacy/interface.rst:125
+msgid ""
+"Reloads the emulation session; any changes made to the environment during"
+" the current session will be discarded"
+msgstr ""
+
+#: ../../legacy/interface.rst:129
+msgid "Stop"
+msgstr ""
+
+#: ../../legacy/interface.rst:128
+msgid ""
+"Shuts down the emulation program and quits emulation session altogether; "
+"any changes made to the environment during the session will be discarded"
+msgstr ""
+
+#: ../../legacy/interface.rst:131
+msgid ""
+"An emulation session can be ended in several ways: using the \"Stop\" "
+"button from the Action Menu, shutting down the emulated operating system,"
+" or simply navigating away from the page in your browser. In all "
+"scenarios, the changes to the environment are not saved and running the "
+"environment again will return the emulation session to its original "
+"state."
+msgstr ""
+
+#: ../../legacy/interface.rst:137
+msgid "Viewing and editing environment records"
+msgstr ""
+
+#: ../../legacy/interface.rst:139
+msgid ""
+"To view and edit a selected environment's metadata, choose the "
+"\"Details\" option from the Actions dropdown menu in the environment "
+"overview."
+msgstr ""
+
+#: ../../legacy/interface.rst:144
+msgid ""
+"An environment record will display several categories of "
+"available/editable options:"
+msgstr ""
+
+#: ../../legacy/interface.rst:150
+msgid "Description"
+msgstr ""
+
+#: ../../legacy/interface.rst:149
+msgid ""
+"allows for some brief description of the environment's content and "
+"purpose. By default it is populated by the environment's most recent "
+"save/revision message."
+msgstr ""
+
+#: ../../legacy/interface.rst:155
+msgid "System"
+msgstr ""
+
+#: ../../legacy/interface.rst:153
+msgid ""
+"settings determine the :term:`Hardware Configuration`; users can see "
+"which emulator (and version, if an emulator has multiple imported "
+":ref:`containers <emulator_containers_dev>`) have been selected the run "
+"the environment, as well as specific configuration options/arguments "
+"passed to the underlying emulator."
+msgstr ""
+
+#: ../../legacy/interface.rst:161
+msgid "Configured Drives"
+msgstr ""
+
+#: ../../legacy/interface.rst:158
+msgid ""
+"allow advanced users to determine which and how many drives (hard disk, "
+"CD-ROM, floppy) are attached to the emulated machine, which may allow for"
+" mounting multiple software/digital objects. This requires advanced "
+"knowledge of the Hardware Configuration, compatible data binding "
+"protocols and filesystems, etc. to properly fill out. Consult with the "
+"EaaSI team if necessary."
+msgstr ""
+
+#: ../../legacy/interface.rst:164
+msgid "UI Options"
+msgstr ""
+
+#: ../../legacy/interface.rst:164
+msgid ""
+"allow for more user-friendly, checkbox-style enabling of certain common "
+"features:"
+msgstr ""
+
+#: ../../legacy/interface.rst:166
+msgid ""
+"*Environment can print* enables the EaaSI UI to intercept PostScript "
+"printing jobs from the emulated operating system, convert them to PDF and"
+" offer them to download from the host browser. Requires a compatible "
+"PostScript printer driver to have been set up in the emulated operating "
+"system."
+msgstr ""
+
+#: ../../legacy/interface.rst:170
+msgid ""
+"*Relative Mouse (Pointerlock)* allows the EaaSI interface to capture the "
+"mouse for use of the emulated operating system only, if the user clicks "
+"on the emulation window. (Press \"Esc\" at any time to free the mouse for"
+" use in your host system/browser again)."
+msgstr ""
+
+#: ../../legacy/interface.rst:174
+msgid ""
+"*User file upload* is an experimental feature allowing end users to "
+"import an arbitrary file from their host into the emulated machine. "
+"Currently not functional in EaaSI installations."
+msgstr ""
+
+#: ../../legacy/interface.rst:177
+msgid ""
+"*XPRA Video (Experimental)* is an experimental feature for alternative "
+"browser delivery of graphics/video. Not stable in EaaSI installations."
+msgstr ""
+
+#: ../../legacy/interface.rst:180
+msgid ""
+"*Requires clean shutdown* forces clean completion of an ACPI \"shutdown\""
+" within the emulated operating system before the EaaSI Action Menu will "
+"allow the user to save the environment. Can be enabled to encourage "
+"healthy saving habits."
+msgstr ""
+
+#: ../../legacy/interface.rst:188
+msgid "Networking"
+msgstr ""
+
+#: ../../legacy/interface.rst:185
+msgid ""
+"options are mostly included from OpenSLX's exploration into emulating "
+"networked environments. EaaSI users will probably primarily be interested"
+" in \"Enable networking\" and \"Enable internet access\" options to "
+"connect emulated environments to the live web (requires an emulated "
+"network adapter, and compatible hardware and TCP/IP drivers). For details"
+" on EaaS's advanced server/network emulation, consult OpenSLX via the "
+"EaaSI Tech Talk list."
+msgstr ""
+
+#: ../../legacy/interface.rst:191
+msgid "Configured Software"
+msgstr ""
+
+#: ../../legacy/interface.rst:191
+msgid ""
+"lists any Software Objects that were loaded and saved into this "
+"environment."
+msgstr ""
+
+#: ../../legacy/interface.rst:195
+msgid "Revision History"
+msgstr ""
+
+#: ../../legacy/interface.rst:194
+msgid ""
+"describes the history of the environment in EaaSI, including any "
+"revisions made to this environment *and* the environment(s) it was "
+"derived from, if applicable."
+msgstr ""
+
+#: ../../legacy/interface.rst:197
+msgid ""
+"To edit settings and descriptive metadata, click the \"Edit\" button at "
+"the top right corner of the page to open the record in editable mode."
+msgstr ""
+
+#: ../../legacy/interface.rst:204
+msgid ""
+"After making any changes to an environment record, be sure to click "
+"\"Save\" at the bottom of the page to save your edits."
+msgstr ""
+
+#: ../../legacy/interface.rst:208
+msgid ""
+"An environment can also be run at any given time from its record page by "
+"selecting the \"Run\" button at the top of the page."
+msgstr ""
+
+#: ../../legacy/interface.rst:212
+msgid "Creating new environments"
+msgstr ""
+
+#: ../../legacy/interface.rst:214
+msgid ""
+"Adding new environments to the overview will depend on the type of "
+"environment being created. See:"
+msgstr ""
+
+#: ../../legacy/interface.rst:216
+msgid ":ref:`import_base_dev`"
+msgstr ""
+
+#: ../../legacy/interface.rst:217
+msgid "`Creating a Derivative Environment with a Software Object`_"
+msgstr ""
+
+#: ../../legacy/interface.rst:218
+msgid "`Creating an Object Environment`_"
+msgstr ""
+
+#: ../../legacy/interface.rst:222
+msgid "Deleting environments"
+msgstr ""
+
+#: ../../legacy/interface.rst:225
+msgid ""
+"Only *Private* Base Environments and Object Environments can be deleted. "
+"Any *Public* or *Remote* environments can not be deleted through the "
+"interface, as doing so will disrupt functionality across the entire "
+"network. See :ref:`publishing_dev`."
+msgstr ""
+
+#: ../../legacy/interface.rst:229
+msgid ""
+"Deleting even a local, private environment will likewise break any local,"
+" private derivative environments that have been created from that "
+"environment. Use caution whenever exercising this feature."
+msgstr ""
+
+#: ../../legacy/interface.rst:232
+msgid ""
+"Private environments can be deleted by node admin users in two locations "
+"in the EaaSI interface: either through the Environments overview page, or"
+" on any given environment's details page."
+msgstr ""
+
+#: ../../legacy/interface.rst:235
+msgid ""
+"To delete a private Base Environment from the Environments overview page,"
+" select the \"Delete\" option from the Actions dropdown list for the "
+"selected environment."
+msgstr ""
+
+#: ../../legacy/interface.rst:240
+msgid ""
+"To delete a private Base or Object Environment from its details page, "
+"first select \"Details\" from the Actions dropdown list for the selected "
+"environment, then click on the red \"Delete Environment\" button at the "
+"bottom of the relevant details page."
+msgstr ""
+
+#: ../../legacy/interface.rst:248
+msgid "Software"
+msgstr ""
+
+#: ../../legacy/interface.rst:253
+msgid ""
+"The Software overview page allows for browsing and adding Software "
+"Objects within the node."
+msgstr ""
+
+#: ../../legacy/interface.rst:257
+msgid ""
+"*ID* and *Label* fields are currently the same descriptive value. Updates"
+" will come with further front-end development."
+msgstr ""
+
+#: ../../legacy/interface.rst:259
+msgid ""
+"*Operating System* indicates whether the Software Object has been marked "
+"as containing a bootable OS (e.g. is an operating system installation "
+"disc)"
+msgstr ""
+
+#: ../../legacy/interface.rst:263
+msgid "Viewing/editing records"
+msgstr ""
+
+#: ../../legacy/interface.rst:265
+msgid ""
+"Click the \"Edit\" button next to a selected Software Object to view its "
+"metadata and details."
+msgstr ""
+
+#: ../../legacy/interface.rst:269
+msgid ""
+"Software metadata input is currently minimal. Free text fields allow for "
+"input of license information and `WikiData QIDs "
+"<https://www.wikidp.org/>`_ if desired or convenient for reference."
+msgstr ""
+
+#: ../../legacy/interface.rst:272
+msgid ""
+"You can also manually add PRONOM file format PUIDs to describe the "
+"Software's rendering capabilities, if known/desired."
+msgstr ""
+
+#: ../../legacy/interface.rst:278
+msgid "Adding Software"
+msgstr ""
+
+#: ../../legacy/interface.rst:280
+msgid ""
+"To add to the Software archive, software/installation media must first be"
+" imported as an Object to the EaaSI platform using the "
+":ref:`import_object_dev` process. The Object can then be labeled as "
+"Software."
+msgstr ""
+
+#: ../../legacy/interface.rst:283
+msgid ""
+"To label an Object as Software, click the \"Add New Software\" button at "
+"the top right of the Software overview page."
+msgstr ""
+
+#: ../../legacy/interface.rst:287
+msgid ""
+"This will take you to the Software Ingest page. The \"Choose Object\" "
+"dropdown menu should offer you all available Objects."
+msgstr ""
+
+#: ../../legacy/interface.rst:291
+msgid ""
+"Search for and select your desired Software Object, then fill in the "
+"various Software details as available/desired. Once an Object has been "
+"selected you may click the \"Save\" button at the bottom of the screen to"
+" move the Software Object from the Objects overview to the Software "
+"overview."
+msgstr ""
+
+#: ../../legacy/interface.rst:295
+msgid ""
+"The new Software Object should now be available in any \"Add Software\" "
+"options for environments."
+msgstr ""
+
+#: ../../legacy/interface.rst:299
+msgid "Creating a Derivative Environment with a Software Object"
+msgstr ""
+
+#: ../../legacy/interface.rst:301
+msgid ""
+"There are two paths to load Software into an environment: from the "
+"Environments overview page, or any given environment Details page."
+msgstr ""
+
+#: ../../legacy/interface.rst:304
+msgid ""
+"To start from the overview page, use the \"Actions\" column dropdown menu"
+" to select \"Add Software\" for the selected environment."
+msgstr ""
+
+#: ../../legacy/interface.rst:309
+msgid ""
+"To start from an environment record, navigate to the selected "
+"environment's Details page and then click the \"Add software\" button in "
+"the top right corner of the page:"
+msgstr ""
+
+#: ../../legacy/interface.rst:314
+msgid ""
+"You can add new Software to any type of environment - Base, Software, or "
+"Object - to create a new derivative environment. However, this may "
+"particularly cause unexpected behavior with Object Environments, as "
+"currently adding a Software Object to an already-saved Object Environment"
+" may essentially eject/overwrite the saved Digital Object from the "
+"environment's virtual drive(s). Development is ongoing to support adding "
+"Software to Object Environments while also keeping the original Digital "
+"Object mounted in the environment as well."
+msgstr ""
+
+#: ../../legacy/interface.rst:316
+msgid ""
+"Either way, the user should be presented with the \"Add Software\" pop-up"
+" window and a dropdown menu with all available Software packages."
+msgstr ""
+
+#: ../../legacy/interface.rst:321
+msgid ""
+"Once the user selects their desired Software package and clicks \"Next\","
+" an emulation session will load with that Software mounted into the "
+"selected environment."
+msgstr ""
+
+#: ../../legacy/interface.rst:326
+msgid ""
+"When the user has installed the software and/or configured the "
+"environment to their satisfaction (using the \"Change Media\" function if"
+" necessary), shut down the emulated operating system to end the emulation"
+" session (but **do not** yet navigate away from this page)"
+msgstr ""
+
+#: ../../legacy/interface.rst:334 ../../legacy/interface.rst:444
+msgid ""
+"Click on \"Save Environment\" in the Action Menu (a reminder will display"
+" to shut down the emulated operating system, even if the user has already"
+" done so)"
+msgstr ""
+
+#: ../../legacy/interface.rst:339
+msgid ""
+"Use the WSYWIG free-text editor to describe the changes made to the "
+"environment (EaaSI staff recommend devising a standardized change log "
+"template/structure at the local node for internal consistency)."
+msgstr ""
+
+#: ../../legacy/interface.rst:345 ../../legacy/interface.rst:455
+msgid ""
+"The user **must** input some text here or the interface will not allow "
+"the user to save changes."
+msgstr ""
+
+#: ../../legacy/interface.rst:347
+msgid ""
+"If the user selects the *Revision* radio button, the changes will stay "
+"associated with the original Base or Software Environment - no new "
+"environment will be created. This should only be selected if the user "
+"truly wants **all** future derived environments to have these changes "
+"(generally EaaSI staff recommends creating new environments, with the "
+"exception of perhaps adding driver or system software packages to help an"
+" emulated operating system perform minimum, expected functionality)"
+msgstr ""
+
+#: ../../legacy/interface.rst:353
+msgid ""
+"If the user selects the *New Environment* button, the changes will be "
+"saved and \"forked\" into a new Software Environment. The original Base "
+"or Software Environment will still be accessible in its unchanged state "
+"(without the installed Software package). The user must name the new "
+"Software Environment."
+msgstr ""
+
+#: ../../legacy/interface.rst:357
+msgid ""
+"Once a new Software Environment has been saved, it should immediately be "
+"available in the *Private* sub-section of the Base Environments overview,"
+" for interaction, editing, further derivation, etc."
+msgstr ""
+
+#: ../../legacy/interface.rst:361
+msgid ""
+"If the user derived the new Software Environment from a Base or Software "
+"Environment in the *Public* image archive, the new derived environment "
+"will still be found in the *Private* archive and be accessible only at "
+"the local node. The decision can/must be made again to publish the "
+"derivative if desired."
+msgstr ""
+
+#: ../../legacy/interface.rst:369
+msgid "Objects"
+msgstr ""
+
+#: ../../legacy/interface.rst:374
+msgid ""
+"The Objects overview page allows for searching and browsing all uploaded "
+"Digital Objects within the node."
+msgstr ""
+
+#: ../../legacy/interface.rst:378
+msgid ""
+"The displayed Object ID and description are currently the same value "
+"(object name/ID). Updates will come with further front-end development."
+msgstr ""
+
+#: ../../legacy/interface.rst:383
+msgid "Viewing/editing page"
+msgstr ""
+
+#: ../../legacy/interface.rst:385
+msgid "Click on an Object title to view its metadata and details."
+msgstr ""
+
+#: ../../legacy/interface.rst:389
+msgid ""
+"The \"Object Details\" section currently displays the Object ID as "
+"assigned during :ref:`import <import_object_dev>`."
+msgstr ""
+
+#: ../../legacy/interface.rst:391
+msgid ""
+"\"Configured Environments\" displays environments (Base or Object) that "
+"are either automatically recommended by the EaaS system or have already "
+"been manually assigned by the user to this object."
+msgstr ""
+
+#: ../../legacy/interface.rst:394
+msgid ""
+"\"Classification Details\" displays `Siegfried "
+"<https://www.itforarchivists.com/siegfried>`_ file format identification "
+"information for all files contained in the Object (currently works best "
+"with file set :ref:`media types <media_types_dev>`). Siegfried "
+"classification is run at the time of Object :ref:`import "
+"<import_object_dev>`; at any point the user can re-run classification by "
+"clicking the \"Re-classify object\" button (to take advantage of updates "
+"to the PRONOM registry, e.g.)"
+msgstr ""
+
+#: ../../legacy/interface.rst:401
+msgid ""
+"This classification information is used to help generate the "
+"automatically-recommended suggestions in the \"Configured Environments\" "
+"section above."
+msgstr ""
+
+#: ../../legacy/interface.rst:406
+msgid "Creating an Object Environment"
+msgstr ""
+
+#: ../../legacy/interface.rst:408
+msgid ""
+"To create a derivative :term:`object environment <Content Environment>` "
+"for easy emulated access to an Object, use the Objects overview and "
+"navigate to the details page of the desired Object."
+msgstr ""
+
+#: ../../legacy/interface.rst:411
+msgid ""
+"Select an appropriate Base Environment in which to try running the Object"
+" from the list of recommended options. The user can also always manually "
+"select an environment, out of **all** available environments (including "
+"*Remote* environments, which can be an excellent method of testing "
+"whether a node wishes to replicate an environment from another node) by "
+"clicking the \"Add environment\" button and searching/selecting from the "
+"provided dropdown menu."
+msgstr ""
+
+#: ../../legacy/interface.rst:420
+msgid ""
+"You can add new Objects to any type of environment - Base or Object - to "
+"create a new derivative environment. However, this may particularly cause"
+" unexpected behavior with Object Environments, as currently adding an "
+"Object to an already-saved Object Environment may essentially "
+"eject/overwrite the original saved Digital Object from the environment's "
+"virtual drive(s)."
+msgstr ""
+
+#: ../../legacy/interface.rst:425
+msgid ""
+"Development is ongoing to support adding new Objects to Object "
+"Environments while also keeping the original Digital Object mounted in "
+"the environment as well."
+msgstr ""
+
+#: ../../legacy/interface.rst:428
+msgid ""
+"When the desired environment is available, click \"Run\" to load an "
+"emulation session with the Object mounted in the selected environment. "
+"(Objects should mount in the emulated environment according to their "
+":ref:`media type <media_types_dev>`, selected during object import)"
+msgstr ""
+
+#: ../../legacy/interface.rst:436
+msgid ""
+"When the user has tested, installed, and/or configured the new "
+"environment to their satisfaction (using the \"Change Media\" function if"
+" necessary), shut down the emulated operating system to end the emulation"
+" session (but **do not** yet navigate away from this page)"
+msgstr ""
+
+#: ../../legacy/interface.rst:449
+msgid ""
+"Use the WSYWIG free-text editor to name the new Object Environment and "
+"describe the changes made to the environment (EaaSI staff recommend "
+"devising a standardized change log template/structure at the local node "
+"for internal consistency)."
+msgstr ""
+
+#: ../../legacy/interface.rst:457
+msgid ""
+"Once a new Object Environment has been saved, it should immediately be "
+"available to local node users in the \"Object Environments\" tab of the "
+"Environments overview page for interaction and further "
+"editing/configuration, if desired."
+msgstr ""
+
+#: ../../legacy/mac_environments.rst:6
+msgid "Special Consideration for Mac/Apple Environments"
+msgstr ""
+
+#: ../../legacy/mac_environments.rst:8
+msgid ""
+"Mac emulation presents additional challenges compared to general PC/x86 "
+"systems (e.g. our Windows or Linux environments). Apple operating systems"
+" and emulators are often tied to very particular Mac machines/models "
+"rather than being able to run on a \"generic\" emulated processor. For "
+"instance, the Mini vMac emulator is designed rather specifically to "
+"emulate a Macintosh Plus and handle the operating systems available for "
+"that model, while BasiliskII can potentially recreate a slightly broader "
+"range of Motorola 68K-based Macs (Quadras, Performas, etc.)"
+msgstr ""
+
+#: ../../legacy/mac_environments.rst:10
+msgid ""
+"In order to recreate a particular Mac machine, several of these emulators"
+" (including Mini vMac, BasiliskII, and SheepShaver) require a \"ROM\" "
+"(read-only memory) file, containing firmware dumped from an original "
+"machine's motherboard. So in addition to the emulator container, hardware"
+" template, and bootable operating system that are necessary to create any"
+" environment in EaaSI, a ROM file must also be provided for Mac "
+"environments based on these emulators/templates to run correctly."
+msgstr ""
+
+#: ../../legacy/mac_environments.rst:13
+msgid ""
+"ROM files are not provided along with emulators and templates in the open"
+" `emulation-as-a-service/emulators <https://gitlab.com/emulation-"
+"as-a-service/emulators>`_ repository because they contain proprietary "
+"Apple firmware. We cannot distribute these files, except as internal "
+"assets within the EaaSI Network."
+msgstr ""
+
+#: ../../legacy/mac_environments.rst:15
+msgid ""
+"Importing a new or custom ROM file into EaaSI in order to create or "
+"import a new Mac environment requires access to the top-level directory "
+"of Emulation-as-a-Service (``eaas-home``):"
+msgstr ""
+
+#: ../../legacy/mac_environments.rst:17
+msgid ""
+"Copy the desired ROM file into the ``roms`` directory inside ``eaas-"
+"home``."
+msgstr ""
+
+#: ../../legacy/mac_environments.rst:19
+msgid ""
+"Log in to the demo UI. If you have a bootable hard drive containing a Mac"
+" operating system, use the :ref:`Import Environment <import_base_dev>` "
+"workflow. If you have a bootable Mac operating system installer (floppy, "
+"CD-ROM image), use the \"Create Environment\" workflow to create a blank "
+"hard disk drive on which to install from scratch. Otherwise, all further "
+"steps related to ROM and emulator configuration are the same."
+msgstr ""
+
+#: ../../legacy/mac_environments.rst:21
+msgid ""
+"Choose an appropriate hardware template from the \"Choose system\" "
+"dropdown menu - e.g. \"Apple PPC (8.x-9.0)\", which specifies a "
+"SheepShaver emulator configuration, appropriate for Mac OS 8.x up to 9.0 "
+"running on a PowerPC processor."
+msgstr ""
+
+#: ../../legacy/mac_environments.rst:23
+msgid ""
+"Check the box that says \"ROM File\", and in the text field enter **the "
+"exact file name** of the ROM file you copied into the ``roms`` folder - "
+"e.g. ``PowerMac.ROM``. This step allows the EaaS server to import a new "
+"ROM file into the system for use with environments."
+msgstr ""
+
+#: ../../legacy/mac_environments.rst:25
+msgid ""
+"Under \"Native Config\", specify the name of the ROM file **again** where"
+" guided by the template: e.g. the Native Config field should look like "
+"``rom rom://PowerMac.ROM`` This step *associates the newly imported ROM "
+"file to the environment*."
+msgstr ""
+
+#: ../../legacy/mac_environments.rst:30
+msgid ""
+"Click \"Start\". If the ROM file is indeed appropriate for the "
+"SheepShaver emulator and a bootable operating system or installer is "
+"found, the Environment should run, and the user can Save the environment "
+"for future use."
+msgstr ""
+
+#: ../../legacy/mac_environments.rst:32
+msgid ""
+"Note: once a ROM file has been successfully imported and associated with "
+"at least one environment, it is available in the EaaS system for use with"
+" others. For instance, if a Mac OS 8.5 environment was created with the "
+"above workflow, a Mac OS 9.0 environment could be created by using the "
+"same procedure above, **but omitting the \"ROM File\" field.** The user "
+"would only have to specify the ``rom rom:\\\\PowerMac.ROM`` line under "
+"\"Native Config\", since the \"PowerMac.ROM\" file *has already been "
+"imported.*"
+msgstr ""
+
+#: ../../legacy/mac_environments.rst:34
+msgid ""
+"For more guidance on ROM files (including exactly what kind of ROM "
+"files/Mac models are appropriate for use with which emulators and "
+"operating systems), you may refer to sites like Emaculation or Macintosh "
+"Repository, or contact the Software Preservation Analyst:"
+msgstr ""
+
+#: ../../legacy/mac_environments.rst:36
+msgid "`Emaculation <https://emaculation.com/doku.php>`_"
+msgstr ""
+
+#: ../../legacy/mac_environments.rst:37
+msgid "`Macintosh Repository <https://www.macintoshrepository.org/>`_"
+msgstr ""
+
+#: ../../legacy/mac_environments.rst:38
+msgid ""
+"`EG-tech/emulation-resources <https://github.com/eg-tech/emulation-"
+"resources>`_"
+msgstr ""
+
+#: ../../legacy/publishing.rst:6
+msgid "Publishing and Replicating Resources"
+msgstr ""
+
+#: ../../legacy/publishing.rst:9
+msgid "What resources can be published to the network?"
+msgstr ""
+
+#: ../../legacy/publishing.rst:11
+msgid ""
+"Environments are the only type of resource that can be published and "
+"shared between EaaSI nodes. (Software can/must be shared in the form of "
+"Software Environments)"
+msgstr ""
+
+#: ../../legacy/publishing.rst:14
+msgid ""
+"Also, this only applies to Base Environments: Object Environments can not"
+" be published. :term:`Digital Objects <content>` and associated Object "
+"Environments are assumed to be collection items, unique to each "
+"node/institution, and therefore potentially subject to different terms of"
+" access, licensing, etc. than the software we are preserving and sharing "
+"under the guidelines of fair use."
+msgstr ""
+
+#: ../../legacy/publishing.rst:19
+msgid ""
+"Each node is responsible for determining terms of access to their Objects"
+" and Object Environments, within the tools provided by EaaSI."
+msgstr ""
+
+#: ../../legacy/publishing.rst:24
+msgid "What resources *should* be published?"
+msgstr ""
+
+#: ../../legacy/publishing.rst:27
+msgid ""
+"Once published to the network, removing or deleting an environment may "
+"have severe technical repercussions, since users at other nodes may have "
+"generated derivatives from that environment, which would break."
+msgstr ""
+
+#: ../../legacy/publishing.rst:30
+msgid ""
+"Nodes and users are advised to use the beta testing period to consider "
+"how to design and enforce local workflows for publishing resources, given"
+" these technical restrictions."
+msgstr ""
+
+#: ../../legacy/publishing.rst:33
+msgid ""
+"When selecting Base and Software Environments to share with the rest of "
+"the network, EaaSI users and admins can consider questions posed by the "
+"`Code of Best Practices in Fair Use for Software Preservation "
+"<https://www.arl.org/storage/documents/publications/2018.09.24_softwarepreservationcode.pdf>`_:"
+msgstr ""
+
+#: ../../legacy/publishing.rst:36
+msgid ""
+"Did you lawfully acquire your copy of the software included in the "
+"environment?"
+msgstr ""
+
+#: ../../legacy/publishing.rst:37
+msgid "Is the software still reasonably available in the commercial marketplace?"
+msgstr ""
+
+#: ../../legacy/publishing.rst:38
+msgid ""
+"Are there any limitations present in donation or acquisition agreements "
+"that might preclude fair use?"
+msgstr ""
+
+#: ../../legacy/publishing.rst:39
+msgid "What license(s) was the software distributed under?"
+msgstr ""
+
+#: ../../legacy/publishing.rst:41
+msgid ""
+"The resources and environments provided by Yale University Library will "
+"hopefully provide illustrative examples for the type of content that "
+"might be appropriate to share, but this will also be an ongoing, "
+"collaborative conversation within the network."
+msgstr ""
+
+#: ../../legacy/publishing.rst:48
+msgid "How to publish Base and Software Environments"
+msgstr ""
+
+#: ../../legacy/publishing.rst:50
+msgid ""
+"To publish a Base Environment from your local node to the network, locate"
+" the selected environment in the *Private* sub-section of the \"Base "
+"Environment\" tab of the Environments overview page. In the \"Actions\" "
+"dropdown menu, select \"Details\":"
+msgstr ""
+
+#: ../../legacy/publishing.rst:56
+msgid ""
+"In the top right corner of the environment detail page, click the "
+"\"Publish\" button:"
+msgstr ""
+
+#: ../../legacy/publishing.rst:59
+msgid ""
+"Once you click \"Publish\", you will lose the \"Delete\" environment "
+"option in the *Public* tab. Publishing cannot be undone via the EaaSI "
+"interface, and it can not be easily undone (if it can at all) by systems "
+"administrators or the EaaSI development team."
+msgstr ""
+
+#: ../../legacy/publishing.rst:65
+msgid ""
+"When the environment has been successfully published, it will move to the"
+" *Public* sub-section of the environments overview. After their next sync"
+" to the network, other nodes will be able to see and replicate this "
+"environment via their *Remote* sub-section."
+msgstr ""
+
+#: ../../legacy/publishing.rst:73
+msgid "How to replicate published Base Environments to a local node"
+msgstr ""
+
+#: ../../legacy/publishing.rst:75
+msgid ""
+"In the *Remote* sub-section of the environments overview, locate the "
+"selected environment from another node to replicate to your local node, "
+"and select \"Details\" from the Actions dropdown menu:"
+msgstr ""
+
+#: ../../legacy/publishing.rst:80
+msgid ""
+"On the environment details page, click the \"Replicate\" button in the "
+"top right corner of the screen:"
+msgstr ""
+
+#: ../../legacy/publishing.rst:84
+msgid ""
+"On successful replication, the environment should now be available in the"
+" *Public* sub-section of the environments overview, allowing the user to "
+"interact and create derivative environments the same as any locally-"
+"imported or created environment."
+msgstr ""
+
+#: ../../legacy/publishing.rst:88
+msgid ""
+"The list of environments in the *Remote* sub-section can be periodically "
+"refreshed by syncing to other nodes (see :ref:`OAI-PMH_dev`)."
+msgstr ""
+
+#: ../../legacy/resources.rst:6
+msgid "Importing Resources"
+msgstr ""
+
+#: ../../legacy/resources.rst:9
+msgid ""
+"The EaaSI platform is currently in \"beta\"! At this point our goal is to"
+" test critical network functionality and gather feedback for further "
+"development. We can not guarantee the persistence of any :term:`resources"
+" <resource>` in the system when we transition from the 'beta' to our "
+"first 'official' release."
+msgstr ""
+
+#: ../../legacy/resources.rst:13
+msgid ""
+"In other words, **any** environments (Base, Software or Object) created "
+"and saved by the network (other than those sourced from and maintained by"
+" Yale University Library) during the beta may be deleted at the end of "
+"the beta, and Software or Digital Objects may need to be re-imported from"
+" storage."
+msgstr ""
+
+#: ../../legacy/resources.rst:17
+msgid ""
+"EaaSI staff will communicate details of this transition well ahead of "
+"time to allow node hosts to plan accordingly."
+msgstr ""
+
+#: ../../legacy/resources.rst:24
+msgid "Importing an Object"
+msgstr ""
+
+#: ../../legacy/resources.rst:26
+msgid ""
+"To add a new Digital or Software Object to your EaaSI installation, "
+"navigate to the \"Import Object\" page using the sidebar menu."
+msgstr ""
+
+#: ../../legacy/resources.rst:31
+msgid ""
+"The Object Upload page displays two options: uploading Objects \"From "
+"File\" (anywhere on the local filesystem of the computer the user is "
+"accessing the interface from), or \"From Repository\". Only \"From File\""
+" is supported during the beta; connections to digital repositories at "
+"node hosts will require further development."
+msgstr ""
+
+#: ../../legacy/resources.rst:35
+msgid ""
+"Use the Object ID field to name the Object. Avoid using special "
+"characters or spaces in the Object ID to prevent unexpected system "
+"behavior (hyphens and underscores are OK)."
+msgstr ""
+
+#: ../../legacy/resources.rst:43
+msgid ""
+"There are four Media Types available to describe the file(s) being "
+"uploaded. The Media Type will be used by EaaS to communicate to emulators"
+" where/how to mount an object into an environment (i.e. relevant file "
+"system and/or virtual drive)."
+msgstr ""
+
+#: ../../legacy/resources.rst:50
+msgid ""
+"*ISO* - Mounts the object in an environment's virtual optical/CD-ROM "
+"drive. Should accept any file extension."
+msgstr ""
+
+#: ../../legacy/resources.rst:52
+msgid ""
+"*Floppy* - Mounts the object in an environment's virtual floppy drive. "
+"Should accept any file extension."
+msgstr ""
+
+#: ../../legacy/resources.rst:54
+msgid ""
+"*Disk* - Attempts to mount the object as a hard drive (success may thus "
+"be highly variable depending on an environment's configured hardware, the"
+" operating system's compatibility with the image's file system, etc.). "
+"Should accept most if not all hard disk image formats (IMG, DMG, DD/raw, "
+"QCOW, VDI, VMDK, E01/EWF, etc.)"
+msgstr ""
+
+#: ../../legacy/resources.rst:56
+msgid ""
+"*Files* - This option will accept any set of non-disk-image files. To "
+"allow for maximum compatibility, imported file sets are currently "
+"packaged by EaaSI into an ISO file and file set objects will thus mount "
+"in an environment's virtual optical/CD-ROM drive."
+msgstr ""
+
+#: ../../legacy/resources.rst:59
+msgid ""
+"Click the \"Add Files\" button to pull up a file browser and select the "
+"file(s) that make up your desired Object. You can add as many individual "
+"files to an import as desired to create multi-file Objects. The files "
+"that make up an Object should be of a consistent Media Type to allow for "
+"successful mounting into an emulator."
+msgstr ""
+
+#: ../../legacy/resources.rst:66
+msgid ""
+"For example, An operating system installer might contain a boot floppy "
+"and then multiple CD-ROMs. The floppy image and the CD-ROM images must be"
+" considered and imported as different Objects, but the CD-ROM images "
+"should likely be imported together as a single Object."
+msgstr ""
+
+#: ../../legacy/resources.rst:70
+msgid ""
+"Once all desired files have been selected, click \"Import\" at the bottom"
+" of the page. A pop-up window should display the progress and success of "
+"the Object import."
+msgstr ""
+
+#: ../../legacy/resources.rst:73
+msgid ""
+"On successful import, the new Object will be available in the "
+":ref:`Objects overview <objects_overview_dev>`. If the imported Object is"
+" considered a Software Object (rather than a Digital Object/collection "
+"item) see :ref:`adding_software_dev`."
+msgstr ""
+
+#: ../../legacy/resources.rst:81
+msgid "Importing Base Environments"
+msgstr ""
+
+#: ../../legacy/resources.rst:84
+msgid ""
+"To import a new Base Environment into EaaSI using the demo interface, the"
+" base disk image file must first be directly accessible at an HTTP web "
+"address. This could include cloud storage services (Google Drive, "
+"Dropbox, Box, etc.)"
+msgstr ""
+
+#: ../../legacy/resources.rst:87
+msgid ""
+"If this is not possible, environments must be directly uploaded into the "
+"EaaSI container's file system and synced into the system. Contact the "
+"EaaSI team for instructions."
+msgstr ""
+
+#: ../../legacy/resources.rst:90
+msgid ""
+"To import a new Base Environment, navigate to the \"Import/Create "
+"Environment\" page using the sidebar menu."
+msgstr ""
+
+#: ../../legacy/resources.rst:94
+msgid ""
+"Choose the most appropriate system for the environment from the available"
+" dropdown menu. These options are provided :term:`Hardware Configurations"
+" <Hardware Configuration>` that will determine the emulator program and "
+"settings EaaSI uses for this environment (the displayed \"System "
+"Properties\" will change accordingly)."
+msgstr ""
+
+#: ../../legacy/resources.rst:100
+msgid ""
+"Under the \"Disk\" section, copy the HTTP link to the base image file "
+"(accepted disk image types are raw/dd, VDI, E01/EWF and QCOW2; VHD and "
+"VDMK are also accepted but will be converted to QCOW2). If importing from"
+" a cloud storage service, this *must* be a direct link; consult your "
+"service's sharing settings."
+msgstr ""
+
+#: ../../legacy/resources.rst:105
+msgid ""
+"If importing an EWF image, this must be contained in a single E01 file. "
+"Multi-file forensic images are not supported."
+msgstr ""
+
+#: ../../legacy/resources.rst:107
+msgid ""
+"If the Base Environment is running a KVM-compatible operating system "
+"(e.g. Windows XP), you can enable virtualization here."
+msgstr ""
+
+#: ../../legacy/resources.rst:110
+msgid ""
+"The \"Native Config\" field will specify the actual flags/options passed "
+"to the underlying emulator according to the selected Hardware "
+"Configuration template. You can edit the Hardware Configuration here "
+"accordingly (consult each :ref:`emulator's <managing_emulators_dev>`) "
+"documentation for available options."
+msgstr ""
+
+#: ../../legacy/resources.rst:116
+msgid ""
+"Click \"Start\" to begin the import process. The base image will first be"
+" cached into EaaSI's temporary storage. Once the base image has been "
+"cached, an emulation session will load to allow the user to preview the "
+"new environment before saving. The length of the import process will "
+"depend on the size of the base image, data rate and bandwidth of the "
+"local network, etc."
+msgstr ""
+
+#: ../../legacy/resources.rst:121
+msgid ""
+"When the user is satisfied with the new environment's operation, shut "
+"down the emulated operating system and select \"Save Environment\" from "
+"the Action Menu. When the new base has been named, described and saved, "
+"it will be available in the *Private* sub-section of the Base "
+"Environments overview."
+msgstr ""
+
+#: ../../legacy/resources.rst:126
+msgid ""
+"If creating an Apple/Mac OS environment using Mini vMac, BasiliskII or "
+"SheepShaver emulators, additional steps are required. Please see "
+":ref:`mac_envs`."
+msgstr ""
+
+#: ../../legacy/resources.rst:130
+msgid "Importing Emulators"
+msgstr ""
+
+#: ../../legacy/resources.rst:132
+msgid ""
+"Please see :ref:`managing_emulators_dev` for more detailed instructions "
+"on managing and importing new emulators into an EaaSI node."
+msgstr ""
+
