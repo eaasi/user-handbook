@@ -21,13 +21,15 @@ msgstr ""
 
 #: ../../overview/architecture.rst:4
 msgid "System Architecture"
-msgstr ""
+msgstr "Architectura"
 
 #: ../../overview/architecture.rst:6
 msgid ""
 "Emulation-as-a-Service uses configuration templates (stored in XML) to "
 "assemble emulated hardware and data as specified by the user."
 msgstr ""
+"This is fake Spanish "
+"does it work"
 
 #: ../../overview/architecture.rst:9
 msgid ""
