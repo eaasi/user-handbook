@@ -9,6 +9,20 @@ While Emulation-as-a-Service and the EaaSI platform provide a centralized, singl
 
 This page details some of these limitations, along with recommended work-arounds, to help manage user expectations.
 
+.. _print-jobs-qemu-limitation:
+
+"Download Print Jobs" Only Works in QEMU-based Environments
+-------------------------------------------------------------
+
+**Relevant emulators**: BasiliskII, SheepShaver, VICE, any and all other emulators besides QEMU
+
+**Affected Environments**: Classic Mac OS systems, Commodore 64, various other non-PC systems (anything **not** emulated by QEMU)
+
+**Problem**: Emulation-as-a-Service's `strategy <https://gitlab.com/emulation-as-a-service/eaas-server/-/blob/master/src/eaas/components/impl/src/main/java/de/bwl/bwfla/emucomp/components/emulators/PostScriptPrinter.java>`_ for creating a virtual PostScript printing device to intercept print jobs from within a running emulation and convert them to PDF for an EaaS user to download via their browser relies on QEMU's character device emulation. This approach is not generic/replicable to other emulators.
+
+**Recommended work-around**: Unfortunately there is no other method for directly exporting files or content from non-QEMU emulators available in EaaSI at this time. You can use the "Save Screen Image" feature to take a screenshot of the content running in emulation in PNG format to share emulated content externally.
+
+
 Multi-file Content and Software resources and "Change Media" in Apple Environments
 -----------------------------------------------------------------------------------
 

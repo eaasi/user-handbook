@@ -43,9 +43,9 @@ By default, PC-based EaaSI Environments should have at least: a Disk drive (for 
 
 .. image:: ../images/emulator_details.png
 
-**Runtime Options**: Enables (or disables) various options for running the Environment in the Emulation Access Interface.
+**Environment Options**: Enables (or disables) various options for running the Environment in the Emulation Access Interface.
 
-"Environment can Print" enables the "Download Print Jobs" feature. If an emulated operating system is configured with a PostScript-enabled virtual printer, print jobs sent to that printer within the emulation session will be intercepted by the EaaSI client and offered to the user to download as a PDF. This is currently the only method of extracting data/files from within EaaSI Environments.
+"Environment can Print" enables the "Download Print Jobs" feature. If an emulated operating system is configured with a PostScript-enabled virtual printer, print jobs sent to that printer within the emulation session will be intercepted by the EaaSI client and offered to the user to download as a PDF. This is currently the only method of extracting data/files from within EaaSI Environments and :ref:`only available in QEMU-based Environments <print-jobs-qemu-limitation>`.
 
 "Relative Mouse (Pointerlock)" enables a running Environment to capture the user's mouse input.
 
