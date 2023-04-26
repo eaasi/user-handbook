@@ -1,14 +1,40 @@
-.. Metrics
+.. System Monitoring
+
+.. _monitoring:
+
+Monitoring EaaSI Systems
+*************************
+
+The EaaSI platform does not currently provide much in the way of advanced methods for monitoring system health or usage. The following page contains current recommendations for methods or work-arounds for EaaSI system administrators to gain some basic insight in regard to their EaaSI installation.
+
+System Health
+##############
+
+OpenSLX is actively investigating the use of `Microsoft Playwright <https://github.com/microsoft/playwright>`_ to allow for headless testing of particular Emulation-as-a-Service API endpoints and services; these tests would be broadly applicable to EaaSI deployments as well. In the meantime, administrators interested in active or automated monitoring of the health of their EaaSI installation can at least use HTTP GET requests to poll a handful of API endpoints; a ``200 OK`` request from any of the following URLs indicate that the relevant EaaSI stack component is nominally up and reachable:
+
+- ``https://<eaasi-domain>/emil/admin/buildInfo``
+
+    can be used to poll the EaaS Java server
+
+- ``https://<eaasi-domain>/auth/realms/master/.well-known/openid-configuration``
+
+    can be used to poll the Keycloak user management component
+
+- ``https://<eaasi-domain>/dashboard``
+
+    can be used to poll the EaaSI UI
+    
+- ``https://<eaasi-domain>/admin``
+
+    can be used to poll the Demo UI (if relevant)
 
 .. _metrics:
 
-EaaSI Metrics
---------------
-
-The EaaSI platform does not currently provide much in the way of advanced methods for capturing or tracking system usage data. The following are a few recommendations for methods or work-arounds for EaaSI system administrators to acquire some basic insight/metrics in regard to their EaaSI installation.
+Usage Metrics
+##############
 
 Demo UI Dashboard
-******************
+===================
 
 The Demo UI dashboard (usually visible/accessible to sysadmins by logging in at the URL ``https://<eaasi-domain>/admin``) provides basic, though potentially imprecise, information regarding an EaaSI node's usage.
 
@@ -30,7 +56,7 @@ The graphs on the Demo UI dashboard are imprecise, but the "CPU" and "Memory" gr
 .. _sessions-metadata:
 
 Sessions Metadata
-******************
+==================
 
 The Emulation-as-a-Service application logs minimal, anonymized metadata on emulation sessions to allow system administrators some insight into which Environment resources have been run on their deployment, how often, and for how long.
 
@@ -47,7 +73,7 @@ This file logs the following metadata points for *every emulation session ever r
 System administrators can map UUIDs for Environment and Content resources to human-readable resource names and other helpful/identifying metadata via the :ref:`eaasi-api`.
 
 Using ``stats-sessions.py``
-#############################
+----------------------------
 
 The OpenSLX team has also created a `simple Python script <https://gitlab.com/emulation-as-a-service/eaas-debug/-/blob/main/stats-sessions.py>`_ to assist with quickly parsing the metadata logged in ``sessions.csv`` to a couple of commonly-requested datapoints.
 
