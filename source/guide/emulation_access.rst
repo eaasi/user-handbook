@@ -14,7 +14,7 @@ The Emulation Access screen allows the user to interact with a running emulation
 
 The features offered on this page may vary depending on how the Environment has been configured.
 
-  - *Download Print Jobs*: Only available if "Environment can Print" has been enabled for the running Environment, and the Environment contains an installed and configured PostScript driver. If so, print jobs to PostScript in the running Environment will be intercepted by the EaaSI interface and this button will become selectable. The printed document will be offered to the EaaSI user as a downloadable PDF.
+  - *Download Print Jobs*: Only available in :ref:`QEMU-based Environments <print-jobs-qemu-limitation>` where "Environment can Print" has been enabled in Environment Options, and the Environment contains an installed and configured PostScript driver. If all these conditions are met, print jobs to a PostScript-enabled device in the running Environment will be intercepted by the EaaSI interface and this button will become selectable. The printed document will be offered to the EaaSI user as a downloadable PDF.
 
   - *Change Resource Media*: If the Environment contains a mounted Software or Content resource with more than one disk, the user may click on this button to alternate mounting them in the Environment. (In other words, the user may use this menu to mimic the behavior of ejecting and inserting multiple CD-ROMs, floppy disks, or other removable media into a physical machine)
 

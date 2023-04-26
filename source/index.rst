@@ -12,7 +12,7 @@ EaaSI User Handbook
    overview/emulators
    overview/demo
    overview/install/setup
-   overview/metrics
+   overview/monitoring
 
 .. toctree::
    :maxdepth: 1
@@ -28,6 +28,7 @@ EaaSI User Handbook
    guide/import-resource
    guide/administration
    guide/publishing
+   guide/embedding_public_envs
    guide/make_new_environment
    guide/emulator_limitations
 
