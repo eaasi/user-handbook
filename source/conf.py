@@ -139,10 +139,8 @@ html_context['display_lower_left'] = True
 
 templates_path = ['_templates']
 
-if 'REPO_NAME' in os.environ:
-   REPO_NAME = os.environ['REPO_NAME']
-else:
-   REPO_NAME = ''
+
+REPO_NAME = 'eaasi_user_handbook'
 
 # SET CURRENT_LANGUAGE
 if 'current_language' in os.environ:
