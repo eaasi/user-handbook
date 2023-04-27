@@ -152,11 +152,11 @@ else:
 html_context['current_language'] = current_language
  
 # POPULATE LINKS TO OTHER LANGUAGES
-html_context['languages'] = [ ('en', '/en/') ]
+html_context['languages'] = [ ('en', '/' +REPO_NAME+ '/en/') ]
  
 languages = [lang.name for lang in os.scandir('locale') if lang.is_dir()]
 for lang in languages:
-   html_context['languages'].append( (lang, '/' +lang+ '/') )
+   html_context['languages'].append( (lang, '/' +REPO_NAME+ '/' +lang+ '/') )
 
 # Change "view source" to "Edit on GitLab"
 html_context['display_gitlab'] = True
