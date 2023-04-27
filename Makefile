@@ -10,6 +10,7 @@ BUILDDIR      = build
 # For additional options/flags see:
 # http://www.sphinx-doc.org/en/stable/invocation.html#invocation-of-sphinx-build
 SPHINXOPTS    = -n -j 4
+LANGCODES	  = de
 
 version:
 	@$(SPHINXBUILD) --version
@@ -23,3 +24,4 @@ clean:
 # "make mode" option.  $(O) is meant as a shortcut for $(SPHINXOPTS).
 %: Makefile
 	@$(SPHINXBUILD) -b $@ $(SPHINXOPTS) $(O) "$(SOURCEDIR)" "$(BUILDDIR)"
+	@$(foreach lang,$(LANGCODES),$(SPHINXBUILD) -b $@ $(SPHINXOPTS) -D language=$(lang) $(0) "$(SOURCEDIR)" "$(BUILDDIR)/$(lang)";)
