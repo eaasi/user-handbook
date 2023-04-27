@@ -157,3 +157,9 @@ html_context['languages'] = [ ('en', '/en/') ]
 languages = [lang.name for lang in os.scandir('locale') if lang.is_dir()]
 for lang in languages:
    html_context['languages'].append( (lang, '/' +lang+ '/') )
+
+# Change "view source" to "Edit on GitLab"
+html_context['display_gitlab'] = True
+html_context['gitlab_user'] = 'eaasi'
+html_context['gitlab_repo'] = 'eaasi_user_handbook'
+html_context['gitlab_version'] = 'main/source/'
