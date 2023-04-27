@@ -1,0 +1,31 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0\n"
+"Report-Msgid-Bugs-To: EaaSI\n"
+"POT-Creation-Date: 2023-04-27 14:39-0400\n"
+"PO-Revision-Date: 2023-04-27 14:39-0400\n"
+"Last-Translator: Argos-Translate\n"
+"Language-Team: EaaSI\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Overview"
+msgstr "Überblick"
+
+msgid "User Guide"
+msgstr "Benutzerhandbuch"
+
+msgid "API Documentation"
+msgstr "API Dokumentation"
+
+msgid "More Help"
+msgstr "Mehr Hilfe"
+
+msgid "Demo Client"
+msgstr "Demo Client"
+
+msgid "EaaSI User Handbook"
+msgstr "EaaSI Benutzerhandbuch"

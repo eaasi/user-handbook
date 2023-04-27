@@ -47,6 +47,7 @@ release = ''
 # This is also used if you do content translation via gettext catalogs.
 # Usually you set "language" from the command line for these cases.
 language = 'en'
+locale_dirs = ["locale"]
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
@@ -83,6 +84,8 @@ html_static_path = ['_static']
 
 html_css_files= ['custom.css']
 
+html_js_files= ['jquery.js']
+
 html_logo = "_static/logo.svg"
 
 # Custom sidebar templates, must be a dictionary that maps document names
@@ -96,6 +99,7 @@ html_sidebars = {
         'navigation.html',
         'relations.html',  # needs 'show_related': True theme option to display
         'searchbox.html',
+        'versions.html'
     ]
 }
 
@@ -120,3 +124,42 @@ def setup(app):
             Field('default', label='Default', names=('default'), has_arg=True),
         ]
     )
+ 
+############################
+# SETUP THE RTD LOWER-LEFT #
+############################
+
+import os
+
+try:
+   html_context
+except NameError:
+   html_context = dict()
+html_context['display_lower_left'] = True
+
+templates_path = ['_templates']
+
+# SET CURRENT_LANGUAGE
+if 'current_language' in os.environ:
+   # get the current_language env var set by buildDocs.sh
+   current_language = os.environ['current_language']
+else:
+   # the user is probably doing `make html`
+   # set this build's current language to english
+   current_language = 'en'
+ 
+# tell the theme which language to we're currently building
+html_context['current_language'] = current_language
+ 
+# POPULATE LINKS TO OTHER LANGUAGES
+html_context['languages'] = [ ('en', '/en/') ]
+ 
+languages = [lang.name for lang in os.scandir('locale') if lang.is_dir()]
+for lang in languages:
+   html_context['languages'].append( (lang, '/' +lang+ '/') )
+
+# Change "view source" to "Edit on GitLab"
+html_context['display_gitlab'] = True
+html_context['gitlab_user'] = 'eaasi'
+html_context['gitlab_repo'] = 'eaasi_user_handbook'
+html_context['gitlab_version'] = 'main/source/'
