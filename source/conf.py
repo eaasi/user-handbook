@@ -139,9 +139,6 @@ html_context['display_lower_left'] = True
 
 templates_path = ['_templates']
 
-
-REPO_NAME = 'eaasi_user_handbook'
-
 # SET CURRENT_LANGUAGE
 if 'current_language' in os.environ:
    # get the current_language env var set by buildDocs.sh
@@ -155,11 +152,11 @@ else:
 html_context['current_language'] = current_language
  
 # POPULATE LINKS TO OTHER LANGUAGES
-html_context['languages'] = [ ('en', '/' +REPO_NAME+ '/en/') ]
+html_context['languages'] = [ ('en', '/eaasi_user_handbook/en/') ]
  
 languages = [lang.name for lang in os.scandir('locale') if lang.is_dir()]
 for lang in languages:
-   html_context['languages'].append( (lang, '/' +REPO_NAME+ '/' +lang+ '/') )
+   html_context['languages'].append( (lang, '/eaasi_user_handbook/' +lang+ '/') )
 
 # Change "view source" to "Edit on GitLab"
 html_context['display_gitlab'] = True
