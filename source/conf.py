@@ -152,7 +152,7 @@ else:
 html_context['current_language'] = current_language
  
 # POPULATE LINKS TO OTHER LANGUAGES
-html_context['languages'] = [ ('en', '/eaasi_user_handbook/en/') ]
+html_context['languages'] = [ ('en', '/eaasi_user_handbook/') ]
  
 languages = [lang.name for lang in os.scandir('locale') if lang.is_dir()]
 for lang in languages:
