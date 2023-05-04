@@ -10,7 +10,7 @@ BUILDDIR      = build
 # For additional options/flags see:
 # http://www.sphinx-doc.org/en/stable/invocation.html#invocation-of-sphinx-build
 SPHINXOPTS    = -n -j 4
-LANGCODES	  = de
+LANGCODES	  = de es fr nl ko
 
 version:
 	@$(SPHINXBUILD) --version
