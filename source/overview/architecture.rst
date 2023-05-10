@@ -48,6 +48,13 @@ The EaaSI Client is built using the Vue.js framework, on a LNPP (Linux-Nginx-Pos
   :align: center
 
 
+Keycloak
+---------
+
+As of v2021.10, EaaSI deployments also include a `Keycloak <https://www.keycloak.org/>`_ module for user management, including storing user account metadata and authentication services.
+
+(Node Component and Client diagrams have not yet been updated to reflect the addition of the Keycloak module. Updated system diagrams are forthcoming)
+
 Gateway
 --------
 
@@ -67,11 +74,16 @@ The EmuComp locates and mounts resources in file storage as directed by the Gate
 
 - Image Archive: Disk images and XML that make up :term:`Environment` resources (system drives containing bootable software, and the neccesary hardware/emulator configuration desired to run them). All Environment resources in the Image Archive are stored in the `QCOW2 disk image format <https://en.wikipedia.org/wiki/Qcow>`_.
 
-- Software Archive: Disk images and files that make up :term:`Software` resources.
+- Software Archive: Disk images and/or files and XML that make up :term:`Software` resources.
 
-- Content Archive: Disk images and files that make up :term:`Content` resources.
+- Content Archive: Disk images and/or files and XML that make up :term:`Content` resources.
 
-The EmuComp can connect to resources either in local file storage (i.e. on the same server) or networked storage available to the EmuComp over HTTP. Support for deploying and connecting EaaSI nodes to resources in S3-type/cloud object storage is in development.
+The EmuComp can connect to resources either in local file storage (i.e. on the same server) or networked storage available to the EmuComp over HTTP. 
+
+Recent development has focused on making the Archives fully S3-compatible object stores via implementation of `MinIO <https://min.io/>`_:
+
+  - in **v2021.10** deployments of EaaSI, Image Archive resources can be stored in S3-compatible storage
+  - as of **v2023.spring** (public release pending) of EaaSI, all Archives can be stored in S3-compatible storage
 
 
 .. _oaipmh:
