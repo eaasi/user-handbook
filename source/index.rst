@@ -50,6 +50,7 @@ EaaSI User Handbook
    resources/faq
    resources/glossary
    resources/demo-video
+   resources/open-source-repo
 
 .. toctree::
   :maxdepth: 1
