@@ -12,6 +12,7 @@ EaaSI User Handbook
    overview/emulators
    overview/demo
    overview/install/setup
+   overview/install/kvm
    overview/monitoring
 
 .. toctree::
@@ -26,6 +27,7 @@ EaaSI User Handbook
    guide/emulation_project
    guide/emulation_access
    guide/import-resource
+   guide/import_isos
    guide/administration
    guide/publishing
    guide/embedding_public_envs
