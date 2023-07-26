@@ -69,3 +69,15 @@ This error appears regardless of host system (the EaaSI team has confirmed it ru
 **Recommended work-around**: If System Software 7.0.1 is explicitly required or desired, just clicking "OK" on the error message allows the user to continue to emulate the Environment with no apparent ill affects.
 
 If this pop-up error is too inconvenient or confusing, and the Software or Content does not explicitly require 7.0.1, the EaaSI team recommends using a different Classic Macintosh Environment running on BasiliskII instead (e.g. Mac OS 7.5). This error appears unique and specific to the 7.0.x operating system.
+
+
+Running Macromedia Director Crashes Mac Emulators
+--------------------------------------------------
+
+**Relevant emulators**: BasiliskII, SheepShaver
+
+**Affected Environments**: Possibly any with Macromedia Director installed (specific versions uncertain)
+
+**Problem**: Users in the AusEaaSI network have reported problems with emulator crashes when trying to run Macromedia Director in SheepShaver-based Environments. The issue has been traced to an upstream error likely present in both the SheepShaver and BasiliskII codebase.
+
+**Recommended work-around**: Disable the emulator's "JIT" (just-in-time) compiler setting by navigating to the relevant Environment's Details page and then editing the Emulator Configuration line to add "jit false". (You must insert a line break between the end of the previous emulator setting, which is probably the ROM specification, and the "jit false" string)
