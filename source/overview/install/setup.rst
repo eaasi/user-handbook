@@ -301,7 +301,7 @@ The EaaSI stack's ``nginx`` server runs in an isolated Docker container and **do
 
 .. code-block:: sh
 
-  $ sudo docker exec -it eaasi-nginx kill -SIGHUP 1
+  $ sudo docker kill -s SIGHUP eaasi-nginx
 
 If your network configuration involves a web proxy you may also need to restart the ``nghttpx`` proxy service running inside EaaSI's ``eaas`` Docker container. If encountering issues with SSL renewal, try running the following command as an initial troubleshooting step:
 
