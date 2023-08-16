@@ -59,21 +59,26 @@ Compatibility
     - `VICE <https://gitlab.com/emulation-as-a-service/emulators/vice-eaas/container_registry/426946>`_
     - `FS-UAE <https://gitlab.com/emulation-as-a-service/emulators/fs-uae-eaas/container_registry/367681>`_
     - `Contralto <https://gitlab.com/emulation-as-a-service/emulators/contralto-eaas/container_registry/360670>`_
+    - `Visual Boy Advance <https://gitlab.com/emulation-as-a-service/emulators/visualboyadvance-eaas>`_
   * - :ref:`”Try EaaSI” Dockers <container_setup>`
     - latest
     - n/a
+    - latest
     - latest
   * - 2019.11 and prior
     - latest
     - n/a
     - latest
+    - latest
   * - 2020.03
     - latest
     - n/a
     - latest
+    - latest
   * - 2021.10
     - latest
     - n/a
+    - latest
     - latest
 
 Links to Source Projects
@@ -86,3 +91,4 @@ Links to Source Projects
 - `VICE (Versatile Commodore Emulator) <http://vice-emu.sourceforge.net/>`_ (Commodore series emulation)
 - `FS-UAE <https://fs-uae.net/>`_ (Amiga series emulation)
 - `ContrAlto <https://github.com/livingcomputermuseum/ContrAlto>`_ (Xerox Alto emulation)
+- `Visual Game Boy Advance <https://visualboyadvance.org/>`_ (Nintendo Game Boy Advance emulation)
