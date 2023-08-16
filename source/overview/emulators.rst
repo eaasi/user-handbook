@@ -39,23 +39,18 @@ Compatibility
   * - EaaSI Build
     - `SheepShaver <https://gitlab.com/emulation-as-a-service/emulators/macemu-eaas-sheepshaver/container_registry/347346>`_
     - `Basilisk II <https://gitlab.com/emulation-as-a-service/emulators/macemu-eaas-basilisk2/container_registry/347345>`_
-    - Mini vMac
   * - :ref:`”Try EaaSI” Dockers <container_setup>`
     - git-587d8376f07f94ffb594bb705e3a781b46b22d47
     - git-63b01290ef6ad143100e571b5d2f1a84ad8b870a
-    - n/a
   * - 2019.11 and prior
     - git-587d8376f07f94ffb594bb705e3a781b46b22d47
     - git-63b01290ef6ad143100e571b5d2f1a84ad8b870a
-    - n/a
   * - 2020.03
     - git-587d8376f07f94ffb594bb705e3a781b46b22d47
     - git-63b01290ef6ad143100e571b5d2f1a84ad8b870a
-    - n/a
   * - 2021.10
     - git-587d8376f07f94ffb594bb705e3a781b46b22d47
     - git-63b01290ef6ad143100e571b5d2f1a84ad8b870a
-    - n/a
 
 .. list-table:: Other
   :header-rows: 1
@@ -88,7 +83,6 @@ Links to Source Projects
 - `PCem <https://www.pcem-emulator.co.uk/>`_ (x86 PC emulation)
 - `SheepShaver <https://sheepshaver.cebix.net/>`_ (PowerPC Mac OS 8.x-9.0 emulation)
 - `Basilisk II <https://basilisk.cebix.net/>`_ (late 68k series Mac emulation)
-- `Mini vMac <https://www.gryphel.com/c/minivmac/>`_ (late 68k series Mac emulation)
 - `VICE (Versatile Commodore Emulator) <http://vice-emu.sourceforge.net/>`_ (Commodore series emulation)
 - `FS-UAE <https://fs-uae.net/>`_ (Amiga series emulation)
 - `ContrAlto <https://github.com/livingcomputermuseum/ContrAlto>`_ (Xerox Alto emulation)
