@@ -33,6 +33,7 @@ EaaSI User Handbook
    guide/embedding_public_envs
    guide/make_new_environment
    guide/emulator_limitations
+   guide/creating_environment_recs
 
 .. toctree::
    :maxdepth: 1
