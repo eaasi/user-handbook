@@ -22,7 +22,7 @@ To embed a published Environment into arbitrary HTML, first the eaas-client Java
 
 
 .. note::
-    The necessary ``webcomponent.js`` can also be sourced from ``https://purl.org/eaas/eaas.js`` for a stable link using the Internet Archive's PURL (Persistent URL) service.
+    The necessary ``webcomponent.js`` can also be sourced from ``https://purl.archive.org/eaas/eaas.js`` for a stable link using the Internet Archive's PURL (Persistent URL) service.
 
 You can then include an ``<eaas-environment>`` element on your web page to select and style the Environment you would link to embed, e.g.:
 
