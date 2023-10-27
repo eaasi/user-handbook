@@ -74,7 +74,7 @@ Glossary
       can run or install a stand-alone :term:`environment`).
 
   Organization
-      Since v2010.10, user accounts in an EaaSI :term:`nodes<node>` can be arranged into arbitrary groups referred to as "organizations". (Allowing, e.g. for a consortial :term:`node host` to manage separate pools of EaaSI resources for multiple distinct real-world institutions/organizations, all from within a single installation of the EaaSI platform). :term:`Admin`-level users can only see and control other user accounts within their organizations as configured by the node host. Real-world institutions are still considered members of the EaaSI Network in an administrative capacity even if they are not a :term:`node host` themselves, but are provided an organization in a hosted :term:`node` by a node host.
+      Since v2021.10, user accounts in an EaaSI :term:`nodes<node>` can be arranged into arbitrary groups referred to as "organizations". (Allowing, e.g. for a consortial :term:`node host` to manage separate pools of EaaSI resources for multiple distinct real-world institutions/organizations, all from within a single installation of the EaaSI platform). :term:`Admin`-level users can only see and control other user accounts within their organizations as configured by the node host. Real-world institutions are still considered members of the EaaSI Network in an administrative capacity even if they are not a :term:`node host` themselves, but are provided an organization in a hosted :term:`node` by a node host.
 
   Resource
       A resource refers broadly to a usable entity in EaaSI: an :term:`environment`, :term:`software`, or :term:`content`.
