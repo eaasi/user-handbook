@@ -9,6 +9,7 @@ EaaSI User Handbook
 
    overview/introduction
    overview/architecture
+   overview/roadmap
    overview/emulators
    overview/demo
    overview/install/setup
