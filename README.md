@@ -16,3 +16,21 @@ Current automatically-generated translations are based on argos-translate's comp
 - French (fr)
 - Dutch (nl)
 - Korean (ko)
+
+Once changes are committed to the English version of the Handbook, steps to generate and build auto-translations for the live site:
+
+1. Working in a local copy of the `eaasi_user_handbook` repository, navigate to the `source` directory and then run:
+
+``$ sphinx-build -b gettext . _build/gettext``
+
+2. Use the `sphinx-intl` module (not included by default with sphinx installations, use `pip` to install manually if missing) to generate translation files for each target language. All target languages can be specified at once as an argument list, e.g.
+
+`` $ sphinx-intl update -p _build/gettext -l de -l es -l fr -l nl -l ko``
+
+3. Run the `translate_po.py` script (depends on `polib` and `argostranslate` Python modules, install with `pip` first if missing) one-by-one to run Argos-Translate over translation files for each language, e.g.
+
+`` $ python translate_po.py --input locale/de/LC_MESSAGES/*.po --src_lang en --target-lang de`` 
+
+Note: translation may take some time. Translation script is currently designed for the Handbook authors to go language-by-language to allow the opportunity to periodically check success of the process rather than translating all languages at once and thus going a very long time (~a whole day) without feedback from the terminal, but the `translate_po.py` script could potentially be optimized to translate all directories under the `locale` directory automatically.
+
+4. Once .po files for all desired languages have been translated, commit the updated translations to the `main` branch of the repository. GitLab Pages should automatically use the `Makefile` in the root directory of the `eaasi_user_handbook` repository to build and deploy all translated pages to the live site.
