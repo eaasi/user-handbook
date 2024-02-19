@@ -5,11 +5,17 @@
 Embedding Published Environments
 *********************************
 
-EaaSI users can embed published Environments from their node into other web pages using the `Emulation-as-a-Service JavaScript client library <https://gitlab.com/emulation-as-a-service/eaas-client>`_ developed the OpenSLX team.
+EaaSI users may embed published Environments from their node into other web pages using the `Emulation-as-a-Service JavaScript client library <https://gitlab.com/emulation-as-a-service/eaas-client>`_ developed the OpenSLX team.
+
+This method is currently brittle and pending improvements to the back-end EaaS server codebase may break existing embed links if/when the host server is updated. Support for this method is limited, employ at your own risk.
 
 .. note::
 
     For the eaas-client code to work, the target Environment **must** be first published via OAI-PMH. (In other words, have a Network Status of both "Public" and "Saved Locally" in the host/source node). Please consult :ref:`publishing` for guidance and ramifications of choosing to publish an Environment from your EaaSI node.
+
+.. warning::
+
+    Issues with the methods described on this page may occur if there is a version mismatch between the `eaas-client` library used and the `eaas-server` on the EaaSI deployment hosting the target Environment. Future EaaSI deployments will co-locate and expose the relevant `eaas-client` JavaScript component on the same deployment to prevent mismatch rather than fetching the JS from source repo on GitLab.
 
 Using Custom EaaS JavaScript Elements in HTML
 -----------------------------------------------
@@ -22,7 +28,7 @@ To embed a published Environment into arbitrary HTML, first the eaas-client Java
 
 
 .. note::
-    The necessary ``webcomponent.js`` can also be sourced from ``https://purl.archive.org/eaas/eaas.js`` for a stable link using the Internet Archive's PURL (Persistent URL) service.
+    The ``webcomponent.js`` can also be sourced from ``https://purl.archive.org/eaas/eaas.js`` for a stable link using the Internet Archive's PURL (Persistent URL) service.
 
 You can then include an ``<eaas-environment>`` element on your web page to select and style the Environment you would link to embed, e.g.:
 
