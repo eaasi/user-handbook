@@ -65,8 +65,5 @@ Each individual user may set the layout and language of the keyboard of the keyb
 
 To change these settings, users can click on the user icon at the top right of the EaaSI menu, select "Keyboard Preferences", then use the dropdown menus in the Keyboard Preferences modal to select the most appropriate option matching their hardware.
 
-.. image:: ../images/keyboard_preferences.png
-  :align: center
-
 .. image:: ../images/keyboard_modal.png
   :align: center
