@@ -56,3 +56,17 @@ Clicking on "Change Password" will take the user to EaaSI's `Keycloak <https://w
 .. image:: ../images/update_password.png
 
 Hosted service users also have the option to set up a third-party Two-Factor Authentication application on this page for extra security, if desired.
+
+
+Keyboard Preferences
+----------------------
+
+Each individual user may set the layout and language of the keyboard of the keyboard they are currently using when logged into the EaaSI UI. This is necessary to help map user input (keyboard presses) to a running Environment. These settings default to a generic 105-key PC keyboard layout and English (US).
+
+To change these settings, users can click on the user icon at the top right of the EaaSI menu, select "Keyboard Preferences", then use the dropdown menus in the Keyboard Preferences modal to select the most appropriate option matching their hardware.
+
+.. image:: ../images/keyboard_preferences.png
+  :align: center
+
+.. image:: ../images/keyboard_modal.png
+  :align: center

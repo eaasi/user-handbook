@@ -1,0 +1,14 @@
+flowchart TD;
+    A(eaasi-front-end) <--> H(keycloak);
+    A --> B;
+    B(eaasi-nginx) <--> C(eaasi-web-api);
+    B --> D(nginx);
+    D <--> E(eaas);
+    C <--> F;
+    E <--> G(minio);
+    H <--> E;
+    E --> I;
+
+    I("<img src='https://iconscout.com/ms-icon-310x310.png'; width='30' /> blablabla")
+
+    F("<img src='<img src='logo.svg'; width='40' /> eaasi-database")

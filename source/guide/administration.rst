@@ -145,13 +145,6 @@ etc)
 
 .. image:: ../images/running_tasks.png
 
-Node Preferences
-------------------
-
-Under Node Preferences, Admin users may set the local keyboard layout and language for their node. This is necessary to map user input (keyboard presses) to a running Environment.
-
-The EaaSI UI itself is currently only available in English (US).
-
 Install & Updates
 -------------------
 
