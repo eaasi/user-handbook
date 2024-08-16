@@ -11,7 +11,6 @@ EaaSI User Handbook
    overview/architecture
    overview/roadmap
    overview/emulators
-   overview/demo
    overview/install/setup
    overview/install/kvm
    overview/monitoring
