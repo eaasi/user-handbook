@@ -8,10 +8,8 @@ EaaSI User Handbook
    :caption: Overview
 
    overview/introduction
-   overview/architecture
    overview/roadmap
    overview/emulators
-   overview/install/setup
    overview/install/kvm
    overview/monitoring
 
@@ -40,7 +38,6 @@ EaaSI User Handbook
    :caption: API Documentation
 
    api/eaas
-   api/uvi
 
 .. toctree::
    :maxdepth: 1
@@ -52,14 +49,3 @@ EaaSI User Handbook
    resources/glossary
    resources/demo-video
    resources/open-source-repo
-
-.. toctree::
-  :maxdepth: 1
-  :caption: Demo Client
-
-  legacy/demo_client
-  legacy/interface
-  legacy/resources
-  legacy/publishing
-  legacy/emulators
-  legacy/administration

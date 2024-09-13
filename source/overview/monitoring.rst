@@ -33,26 +33,6 @@ OpenSLX is actively investigating the use of `Microsoft Playwright <https://gith
 Usage Metrics
 ##############
 
-Demo UI Dashboard
-===================
-
-The Demo UI dashboard (usually visible/accessible to sysadmins by logging in at the URL ``https://<eaasi-domain>/admin``) provides basic, though potentially imprecise, information regarding an EaaSI node's usage.
-
-.. image:: ../legacy/images/dashboard.png
-
-At the top of the dashboard, **"requests"** can be considered equivalent to emulation sessions. "Total requests" indicates a running tally of sessions run by the server, while any numbers in the "deferred", "expired", and "failed" requests fields are indicative of a configuration error in the deployment and sysadmins should investigate their error logs further.
-
-.. warning:: 
-    The number of "Total Requests" on the Demo UI Dashboard will **reset** if the server is rebooted or the ``eaas`` service is restarted for any reason, e.g. for troubleshooting. Thus this number **should not** necessarily be trusted as an accurate total of the number of emulation sessions ever run on the server. See :ref:`below <sessions-metadata>` for a way to fetch a more precise version of this information.
-
-**CPU Capacity** and **Memory Capacity** should be quick and accurate summaries of the total computing power available to EaaSI based on the deployed server configuration.
-
-The graphs on the Demo UI dashboard are imprecise, but the "CPU" and "Memory" graphs in particular can be used to estimate the number of active emulation sessions in the node. **These graphs assume that every emulation session will consume 1 CPU core (1000 mcores) and 512 MB of RAM.** So, if the Demo UI dashboard displays "4000 mcores Used" and "2048 MB Used" for CPU and Memory, there are 4 actively-running emulation sessions.
-
-.. warning:: 
-    These estimations (1000 mcores and 512 MB RAM per single running emulation session) are **hard-coded** into the dashboard and not actually calculated by polling the server's available/consumed computing resources. The *actual* CPU/RAM consumed by running emulation sessions may be higher. 
-
-
 .. _sessions-metadata:
 
 Sessions Metadata
