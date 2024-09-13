@@ -5,24 +5,19 @@
 EaaSI API
 ===========
 
-Emulation-as-a-Service exposes a number of RESTful API endpoints users can employ with an API client (including ``curl`` or any other HTTP request tooling) to get information and interact with the resources present in an EaaSI node.
+Emulation-as-a-Service exposes a number of RESTful API endpoints users can employ with an API client (including ``curl`` or any other HTTP request tooling) to get some descriptive and technical information on the resources present in an EaaSI installation.
 
-The EaaS/EaaSI API can be useful to:
-
-  - query and gather metadata
-  - interact with the experimental "UVI"; see :ref:`uvi`
-  - control and perform resource exchange between EaaSI nodes via OAI-PMH (it is recommended to interact with OAI-PMH endpoints via the EaaSI UI's built-in functionality, see :ref:`oaipmh` and :ref:`oai-pmh_management`)
 
 Authentication and Access Tokens
 ----------------------------------
 
-EaaS's public API can return information about Environments and Software present in a specified EaaSI node. Users with an account in that node can query the API based on their unique user context (for example, to receive metadata about Private Environments or imported Software resources) by obtaining an access token from EaaSI's `Keycloak <https://www.keycloak.org/>`_ authentication module.
+Users with an account on an EaaSI server can query the API based on their unique user context (for example, to receive metadata about Private Environments or imported Software resources) by obtaining an access token from EaaSI's `Keycloak <https://www.keycloak.org/>`_ authentication module.
 
 .. note::
 
-  If no access token/user context is provided, GET requests to the public API may still return metadata on a node's published/public resources (Public Environments)
+  If no access token/user context is provided, GET requests to the public API may still return metadata on a server's published/public resources (Public Environments)
 
-Users with an EaaSI account can acquire an access token from their node by sending a POST request to ``https://[eaasi.domain]/auth/realms/master/protocol/openid-connect/token``, for example:
+Users with an EaaSI account can acquire an access token from their server by sending a POST request to ``https://[eaasi.domain]/auth/realms/master/protocol/openid-connect/token``, for example:
 
 .. code-block:: sh
 
@@ -55,12 +50,12 @@ Environments
 
 .. http:get:: /environment-repository/environments
 
-  Retrieves a list of all available Environments in the node
+  Retrieves a list of all available Environments in the server
 
   :reqheader Accept: Should define response content type as `application/json`
   :reqheader Authorization: optional OAuth token to authenticate (necessary to retrieve Private Environments)
   :query boolean detailed: If set to "true", can be used to display *all* metadata associated with each Environment rather than an overview (see ``environment-repository/environments/[envId]`` endpoint documentation below for full details included; "false" by default)
-  :query boolean localOnly: If set to "false", returns metadata associated with Public Environments visible but **not** Saved Locally to the node ("true" by default)
+  :query boolean localOnly: If set to "false", returns metadata associated with Public Environments visible but **not** Saved Locally to the server ("true" by default)
   :status 200: An array of Environments
   :>json string envId: Unique ID (UUID) for an Environment resource
   :>json string title: Human-readable name for an Environment resource
