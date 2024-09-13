@@ -6,59 +6,6 @@ FAQ
 .. contents:: Table of Contents
   :depth: 3
 
-EaaSI Program of Work
-=======================
-
-Are EaaSI and EaaS the same thing?
----------------------------------------
-
-Not exactly!
-
-Emulation-as-a-Service (EaaS) is an open source software stack, originally developed by the `bwFLA <http://eaas.uni-freiburg.de/>`_ project at the University of Freiburg, now maintained by OpenSLX. It allows for emulated computing environments to be assembled, configured and accessed via a modern web browser.
-
-EaaSI is shorthand for the Scaling Emulation and Software Preservation Infrastructure program of work. The EaaSI project has two key components:
-
-| 1. The **core EaaSI platform** builds on EaaS while adding or expanding on certain pieces of functionality. For instance, the EaaSI program of work sponsored the development and addition of OAI-PMH resource exchange between separate installations of EaaS. It also designed and implemented a new EaaSI Client, updating the EaaS user interface for a more intuitive experience. Further development in this area might include but is not limited to: the Universal Virtual Interactor (an API for automated search and interaction with EaaSI resources), a Virtual Reading Room service (additions to the EaaSI Client allowing for more granular user management, permissions and patron access).
-|
-| 2. The **EaaSI Network** is a community collaboration. It greatly simplifies engagement with emulation as it avoids each organization having to acquire, install, configure and document legacy software and instead gives them access to working versions via a simple replication process. Members of the EaaSI Network also have priority access to end-user and technical support, as well as training opportunities facilitated by the EaaSI team. The EaaSI team members at Yale are seeding the Network with a large number of software titles pre-configured in working emulated environments, while other nodes (participating organizations) investigate software titles in their own domains of collection. EaaSI Network members also have priority for feedback and guidance on the future direction of the EaaSI program of work.
-
-|
-
-(How) is this legal?
----------------------
-
-EaaSI adheres to principles of fair use in United States copyright law, as recommended for academic, cultural, and non-profit institutions by the SPN-affiliate project `Code of Best Practices for Fair Use in Software Preservation <https://www.softwarepreservationnetwork.org/bp-fair-use/>`_.
-Our Network's members have countless files in digital collections that are inaccessible without appropriate software - by sharing our acquired *software* collections (with measures for network authentication and object control baked in to our platform), we can offer long-term access to these files for scholarly research and discovery in cases where current commercial options no longer functionally or contextually support them.
-
-We also rely on the provisions of the 2018 DMCA exemption for software preservation in cases where legacy software DRM might otherwise prevent us from exercising right to fair use. Please see the
-`Preservationist's Guide to the DMCA Exemption for Software Preservation <http://softwarepn.webmasters21.com/wp-content/uploads/2019/01/2018-12_DMCAchecklist_updated_12132018.pdf>`_
-for more details and guidance.
-
-These guidelines are dependent on United States copyright law - EaaSI Network :term:`node hosts <node>` are therefore currently limited to US-based servers. We are actively exploring possibilities for international partnership, including cross-compatibility between U.S. fair use and "fair dealing" in Commonwealth nations, and assisting the creation of localized EaaSI networks elsewhere in the world.
-
-|
-
-How can I get involved with EaaSI?
------------------------------------
-
-There are lots of options, depending on your level of capacity and interest!
-
-|   - Join the `EaaSI Community Forum <https://forum.eaasi.cloud>`_! The Forum is open to all interested in software preservation as well as using emulation for preservation purposes.
-|
-|   - Join the `Software Preservation Network <https://www.softwarepreservationnetwork.org>`_! If you are interested in joining an active and healthy community of practice that is focused on software preservation and emulation.
-|
-|   - Encourage local and regional colleagues to play in the `EaaSI Open Source Sandbox <https://sandbox.eaasi.cloud>`_! The sandbox is currently limited to open source software and does not have the updated EaaSI Client, but it does give everyone a chance to interact with emulated environments and helps users understand the opportunities offered by EaaSI.
-|
-|   - :ref:`container_setup`, with our self-contained demo EaaSI Docker deployments. (See :ref:`demo_client` for using the "Try EaaSI" interface)
-|
-|   - Check out the `EaaSI project site <https://www.softwarepreservationnetwork.org/projects/emulation-as-a-service-infrastructure/>`_! Our site is home to Capacity-Building Templates, Presentations, Training Modules, Roundtable discussion recordings, and more, all designed to educate and engage digital preservation practictioners in the problems EaaSI is trying to address.
-|
-|   - Request a demo or presentation! If you are a member or representative of a professional community or association that you think would be interested in EaaSI - we are happy to join periodic or ad hoc community calls to provide technical overviews, share demos, and answer questions as capacity allows. (Please email eaasi@yale.edu for details)
-|
-|   - Partner with SPN on an international grant project on the legal framework for sharing software and emulation environments across borders. SPN is currently seeking collaborators for a grant project that will determine the legal basis for an international EaaSI network. This project will explore the terms of existing international treaties, as well as compare legal tools available in three distinct intellectual property regimes. Please let `Jessica Meyerson <mailto:jessica@educopia.org>`_ know if you are interested in collaborating.
-
-|
-
 Technical Concerns
 ===================
 
