@@ -5,13 +5,13 @@
 
 /* changes color under the logo and search box */
 .wy-side-nav-search {
-  background-color: #133f47;
+  background-color: #00d33e;
   border: 1px;
 }
 
 /* changes color of the top nav bar on mobile */
 .wy-nav-top {
-  background-color: #133f47;
+  background-color: #00d33e;
 }
 
 /* changes defualt background color for main body/text */
@@ -21,7 +21,7 @@
 
 /* changes background color of side nav bar */
 .wy-nav-side {
-  background-color: #f6eee6;
+  background-color: #e6e6e6;
 }
 
 /* changes text and hover colors to make nav bar legible */
@@ -30,7 +30,7 @@
 }
 
 .wy-menu-vertical a:hover {
-  background-color: #e4cab5;
+  background-color: #cdcdcd;
 }
 
 /* replace the copyright to eliminate the copyright symbol enforced by
