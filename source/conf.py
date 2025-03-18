@@ -27,10 +27,9 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = 'EaaSI'
-# NB: copyright statement here in config is being overwritten in custom.css to insert a proper CC0 "Public Domain" license notice; otherwise, Sphinx will automatically display an (inaccurate) copyright symbol
-copyright = '2022, EaaSI Team, CC0 (No Rights Reserved)'
-author = 'EaaSI Team'
+project = 'EAASI'
+copyright = '2025, Yale University, CC BY-NC-SA 4.0'
+author = 'EAASI Team'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
