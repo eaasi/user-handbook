@@ -13,7 +13,7 @@
   color: black;
 }
 
-.wy-side-nav-search div.switch-menus div.version-switch :hover {
+.wy-side-nav-search div.switch-menus div.version-switch select {
   color: black;
 }
 
