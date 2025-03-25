@@ -7,6 +7,9 @@
 .wy-side-nav-search {
   background-color: #00d33e;
   border: 1px;
+}
+
+.wy-side-nav-search div.switch-menus div.version-switch select {
   color: black;
 }
 
