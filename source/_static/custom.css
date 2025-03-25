@@ -9,7 +9,11 @@
   border: 1px;
 }
 
-.wy-side-nav-search div.switch-menus div.version-switch select {
+.wy-side-nav-search div.switch-menus {
+  color: black;
+}
+
+.wy-side-nav-search div.switch-menus div.version-switch :hover {
   color: black;
 }
 
