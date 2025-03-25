@@ -5,7 +5,7 @@
 My Resources
 =============
 
-The My Resources page is unique for every EaaSI user account. It tracks and displays bookmarked and imported resources by the logged-in user.
+The My Resources page is unique for every EAASI user account. It tracks and displays bookmarked and imported resources by the logged-in user.
 
 As on the :ref:`explore` page, you can use the Refine Your Results page to sort quickly through either My Bookmarks or Imported Resources based on Resource Type and Network Status.
 

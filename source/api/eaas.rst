@@ -2,22 +2,22 @@
 
 .. _eaasi-api:
 
-EaaSI API
+EAASI API
 ===========
 
-Emulation-as-a-Service exposes a number of RESTful API endpoints users can employ with an API client (including ``curl`` or any other HTTP request tooling) to get some descriptive and technical information on the resources present in an EaaSI installation.
+Emulation-as-a-Service exposes a number of RESTful API endpoints users can employ with an API client (including ``curl`` or any other HTTP request tooling) to get some descriptive and technical information on the resources present in an EAASI installation.
 
 
 Authentication and Access Tokens
 ----------------------------------
 
-Users with an account on an EaaSI server can query the API based on their unique user context (for example, to receive metadata about Private Environments or imported Software resources) by obtaining an access token from EaaSI's `Keycloak <https://www.keycloak.org/>`_ authentication module.
+Users with an account on an EAASI server can query the API based on their unique user context (for example, to receive metadata about Private Environments or imported Software resources) by obtaining an access token from EAASI's `Keycloak <https://www.keycloak.org/>`_ authentication module.
 
 .. note::
 
   If no access token/user context is provided, GET requests to the public API may still return metadata on a server's published/public resources (Public Environments)
 
-Users with an EaaSI account can acquire an access token from their server by sending a POST request to ``https://[eaasi.domain]/auth/realms/master/protocol/openid-connect/token``, for example:
+Users with an EAASI account can acquire an access token from their server by sending a POST request to ``https://[eaasi.domain]/auth/realms/master/protocol/openid-connect/token``, for example:
 
 .. code-block:: sh
 
@@ -66,10 +66,10 @@ Environments
   :>json string envType: Returns "object" if Environment is a :term:`Content Environment`, returns "base" for all others
   :>json string timestamp: ISO 8601 full-time timestamp for when the Environment was created
   :>json string description: The most recent description of the Environment from its History (displayed during running Emulation Access sessions)
-  :>json boolean linuxRuntime: Indicates if the Environment is a Linux runtime appropriate for importing and running containers (an EaaS feature not yet implemented in EaaSI nodes)
-  :>json boolean networkEnabled: Indicates if the Environment is capable of networking with the live internet or other Environments (the latter is an EaaS feature not yet implemented in EaaSI nodes)
+  :>json boolean linuxRuntime: Indicates if the Environment is a Linux runtime appropriate for importing and running containers (an EaaS feature not yet implemented in EAASI nodes)
+  :>json boolean networkEnabled: Indicates if the Environment is capable of networking with the live internet or other Environments (the latter is an EaaS feature not yet implemented in EAASI nodes)
   :>json boolean internetEnabled: Indicates if the Environment is allowed to connect to the live internet (can only be "true" if ``networkEnabled`` is also "true")
-  :>json boolean serviceContainer: Indicates if the Environment represents a container service (an EaaS feature not yet implemented in EaaSI nodes)
+  :>json boolean serviceContainer: Indicates if the Environment represents a container service (an EaaS feature not yet implemented in EAASI nodes)
 
   **Example response**:
 
@@ -119,10 +119,10 @@ Environments
   :status 400: No Environment with the specified UUID found
   :>json object networking: a nested JSON object literal describing the Environment's emulated networking capabilities
   :>json nested,boolean enableInternet: Indicates if the Environment is allowed to connect to the live internet (can only be "true" if ``networkEnabled`` is also "true")
-  :>json nested,boolean serverMode: *EaaS feature not yet implemented in EaaSI nodes*
-  :>json nested,boolean localServerMode: *EaaS feature not yet implemented in EaaSI nodes*
-  :>json nested,boolean enableSocks: *EaaS feature not yet implemented in EaaSI nodes*
-  :>json nested,boolean connectEnvs: *EaaS feature not yet implemented in EaaSI nodes*
+  :>json nested,boolean serverMode: *EaaS feature not yet implemented in EAASI nodes*
+  :>json nested,boolean localServerMode: *EaaS feature not yet implemented in EAASI nodes*
+  :>json nested,boolean enableSocks: *EaaS feature not yet implemented in EAASI nodes*
+  :>json nested,boolean connectEnvs: *EaaS feature not yet implemented in EAASI nodes*
   :>json string parentEnvId: If the Environment is a :term:`derivative`, this references the unique ID (UUID) of the base Environment this derivative was directly saved from
   :>json string envId: Unique ID (UUID) for the Environment resource
   :>json string title: Human-readable name for the Environment resource
@@ -132,7 +132,7 @@ Environments
   :>json boolean enablePrinting: When "true", enables the "Environment Can Print" setting (see: :ref:`environment_details`)
   :>json boolean shutdownByOs: When "true", enables the "Requires Clean Shutdown" setting (see: :ref:`environment_details`)
   :>json string timeContext:
-  :>json boolean canProcessAdditionalFiles: *EaaS feature not yet implemented in EaaSI nodes*
+  :>json boolean canProcessAdditionalFiles: *EaaS feature not yet implemented in EAASI nodes*
   :>json string archive: Indicates the Environment's storage archive, one of three options depending on its Network Status (returns "remote" for Public, "public" for Saved Locally, "default" for Private)
   :>json string xpraEncoding: When ``useXpra`` is set to "true", this string determines the type of image encoding used by the Xpra display server and client ("jpeg" by default)
   :>json string owner: Indicates user account that owns the Environment resource (either returns "shared" for Public or Saved Locally, or a UUID for provided user account's Private Environments)
@@ -159,8 +159,8 @@ Environments
   :>json nested,boolean boot: Communicates to the emulator (if possible) that this drive should be indicated as the system/boot drive (only one drive in the Environment configuration should be marked "true", otherwise behavior will be unpredictable)
   :>json nested,boolean plugged:
   :>json string timestamp: ISO 8601 full-time timestamp for when the Environment was created
-  :>json boolean linuxRuntime: Indicates if the Environment is a Linux runtime appropriate for importing and running containers (*EaaS feature not yet implemented in EaaSI nodes*)
-  :>json boolean isServiceContainer: Indicates if the Environment represents a container service (*EaaS feature not yet implemented in EaaSI nodes*)
+  :>json boolean linuxRuntime: Indicates if the Environment is a Linux runtime appropriate for importing and running containers (*EaaS feature not yet implemented in EAASI nodes*)
+  :>json boolean isServiceContainer: Indicates if the Environment represents a container service (*EaaS feature not yet implemented in EAASI nodes*)
 
   **Example response:**
 
@@ -271,9 +271,9 @@ Software
   :status 200: An array of Software
   :>json string id: Unique ID (UUID) for this Software resource
   :>json string label: Human-readable name for a Software resource
-  :>json boolean isPublic: Indicates if the Software resource has been published (publishing Software resources has not yet been properly implemented in EaaSI; this value should be "false")
+  :>json boolean isPublic: Indicates if the Software resource has been published (publishing Software resources has not yet been properly implemented in EAASI; this value should be "false")
   :>json string archiveId: Name for the storage archive where the Software object is kept; should be "zero conf" for all private Software resources
-  :>json boolean isOperatingSystem: Indicates if the Software resource has been identified as an operating system installer during resource import (available via Demo UI but not yet re-incorporated into EaaSI UI import process; should be "false" but certain legacy objects may display "true")
+  :>json boolean isOperatingSystem: Indicates if the Software resource has been identified as an operating system installer during resource import (available via Demo UI but not yet re-incorporated into EAASI UI import process; should be "false" but certain legacy objects may display "true")
 
   **Example response**:
 
@@ -309,9 +309,9 @@ Software
   :status 500: No Software object with the specified UUID found
   :>json string id: Unique ID (UUID) for this Software resource
   :>json string label: Human-readable name for this Software resource
-  :>json boolean isPublic: Indicates if this Software resource has been published (publishing Software resources has not yet been properly implemented in EaaSI; this value should be "false")
+  :>json boolean isPublic: Indicates if this Software resource has been published (publishing Software resources has not yet been properly implemented in EAASI; this value should be "false")
   :>json string archiveId: Name for the storage archive where the Software object is kept; should be "zero conf" for all private Software resources
-  :>json boolean isOperatingSystem: Indicates if the Software resource has been identified as an operating system installer during resource import (available via Demo UI but not yet re-incorporated into EaaSI UI import process; should be "false" but certain legacy objects may display "true")
+  :>json boolean isOperatingSystem: Indicates if the Software resource has been identified as an operating system installer during resource import (available via Demo UI but not yet re-incorporated into EAASI UI import process; should be "false" but certain legacy objects may display "true")
 
 **Example response**:
 
@@ -344,8 +344,8 @@ Software
   :>json array importFMTs: An array of file format PUIDs that have been manually assigned with this Software object as formats that can specifically be *imported* in Environments associated with this Software resource (primarily experimental, for investigating automated migration)
   :>json array exportFMTs: An array of file format PUIDs that have been manually assigned with this Software object as formats that can specifically be *exported* from Environments associated with this Software resource (primarily experimental, for investigating automated migration)
   :>json string archiveId: Name for the storage archive where the Software object is kept; should be "zero conf" for all private Software resources
-  :>json boolean isPublic: Indicates if the Software resource has been published (publishing Software resources has not yet been properly implemented in EaaSI; this value should be "false")
-  :>json boolean isOperatingSystem: Indicates if the Software resource has been identified as an operating system installer during resource import (available via Demo UI but not yet re-incorporated into EaaSI UI import process; should be "false" but certain legacy objects may display "true")
+  :>json boolean isPublic: Indicates if the Software resource has been published (publishing Software resources has not yet been properly implemented in EAASI; this value should be "false")
+  :>json boolean isOperatingSystem: Indicates if the Software resource has been identified as an operating system installer during resource import (available via Demo UI but not yet re-incorporated into EAASI UI import process; should be "false" but certain legacy objects may display "true")
 
   **Example response**:
 
@@ -400,8 +400,8 @@ Software
   :>json array importFMTs: An array of file format PUIDs that have been manually assigned with this Software object as formats that can specifically be *imported* in Environments associated with this Software resource (primarily experimental, for investigating automated migration)
   :>json array exportFMTs: An array of file format PUIDs that have been manually assigned with this Software object as formats that can specifically be *exported* from Environments associated with this Software resource (primarily experimental, for investigating automated migration)
   :>json string archiveId: Name for the storage archive where the Software object is kept; should be "zero conf" for all private Software resources
-  :>json boolean isPublic: Indicates if the Software resource has been published (publishing Software resources has not yet been properly implemented in EaaSI; this value should be "false")
-  :>json boolean isOperatingSystem: Indicates if the Software resource has been identified as an operating system installer during resource import (available via Demo UI but not yet re-incorporated into EaaSI UI import process; should be "false" but certain legacy objects may display "true")
+  :>json boolean isPublic: Indicates if the Software resource has been published (publishing Software resources has not yet been properly implemented in EAASI; this value should be "false")
+  :>json boolean isOperatingSystem: Indicates if the Software resource has been identified as an operating system installer during resource import (available via Demo UI but not yet re-incorporated into EAASI UI import process; should be "false" but certain legacy objects may display "true")
 
 **Example response**:
 

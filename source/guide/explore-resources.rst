@@ -5,7 +5,7 @@
 Explore Resources
 ====================
 
-The "Explore Resources" page is the EaaSI platform's main portal for discovery. From this overview, users can find resources saved in their node or available across the EaaSI Network.
+The "Explore Resources" page is the EAASI platform's main portal for discovery. From this overview, users can find resources saved in their node or available across the EAASI Network.
 
 Each resource card has visual tags to quickly display relevant information like the Resource Type (Environment, Software, or Content) and Network status (Public, Public + Saved Locally, Private).
 
@@ -16,7 +16,7 @@ Each resource card has visual tags to quickly display relevant information like 
 The Explore Resources page will display the first 10 resources within each resource category - Environments (which includes both Base and Content Environments), Software and Content. If there are more than 10 resources available in any given category, users can use the "Refine Your Results" sidebar to more narrowly browse, or use the search bar at the top of the screen to find a particular resource.
 
 .. note::
-  The "Search resources" bar currently only performs a free-text search based on resource names. Advanced search based on particular metadata fields (Description, Operating System, etc.) is under development with the implementation of the EaaSI metadata application profile.
+  The "Search resources" bar currently only performs a free-text search based on resource names. Advanced search based on particular metadata fields (Description, Operating System, etc.) is under development with the implementation of the EAASI metadata application profile.
   
 Any resource on the Explore Resources page can be bookmarked by the logged-in user by clicking the bookmark icon at the top right corner of the resource card:
 
@@ -46,10 +46,10 @@ Software Results
 
 .. image:: ../images/refine_results_software.png
 
-Software resource results can only be minimally sorted and refined until implementation of the EaaSI metadata application profile.
+Software resource results can only be minimally sorted and refined until implementation of the EAASI metadata application profile.
 
 .. note::
-  In the screenshot above, the "Source Location" field refers to an experimental implementation of sharing Software resources between nodes in the EaaSI Network (mimicking the publishing functionality available with Environments). This feature is not functional in EaaSI v2020.03 and can be ignored by users.
+  In the screenshot above, the "Source Location" field refers to an experimental implementation of sharing Software resources between nodes in the EAASI Network (mimicking the publishing functionality available with Environments). This feature is not functional in EAASI v2020.03 and can be ignored by users.
   
   
 Content Results
@@ -57,7 +57,7 @@ Content Results
 
 .. image:: ../images/content_results.png
 
-Content results can only be minimally sorted and refined until implementation of the EaaSI metadata application profile.
+Content results can only be minimally sorted and refined until implementation of the EAASI metadata application profile.
 
 
 .. _actions:

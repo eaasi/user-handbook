@@ -1,6 +1,6 @@
-.. EaaSI docs
+.. EAASI docs
 
-EaaSI User Handbook
+EAASI User Handbook
 ====================================
 
 .. toctree::

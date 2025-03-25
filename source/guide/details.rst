@@ -5,7 +5,7 @@
 Resource Detail Pages
 ======================
 
-:term:`Resource` Detail pages provide some additional descriptive information for EaaSI resources. Depending on permissions and the resource's Network status, users may be also be able to edit teh resource's configuration settings for Emulation Access sessions.
+:term:`Resource` Detail pages provide some additional descriptive information for EAASI resources. Depending on permissions and the resource's Network status, users may be also be able to edit teh resource's configuration settings for Emulation Access sessions.
 
 
 .. _environment_details:
@@ -21,10 +21,10 @@ Metadata
 In "Review Mode", users can view current descriptive metadata and configured emulator settings. Click on "Edit Mode" to edit and save changes to compatible fields in Private Environments.
 
 .. warning::
-  Resources marked "Public" and "Saved Locally" **are not editable**. Once published to the EaaSI Network, neither their descriptive metadata nor emulator configuration settings can be altered. Editing **any** fields on a Public/Saved Locally Environment will create a new, derivative, Private Environment. Take care to change Resource Names or other fields to indicate new Environments created from changing settings on the Details page.
+  Resources marked "Public" and "Saved Locally" **are not editable**. Once published to the EAASI Network, neither their descriptive metadata nor emulator configuration settings can be altered. Editing **any** fields on a Public/Saved Locally Environment will create a new, derivative, Private Environment. Take care to change Resource Names or other fields to indicate new Environments created from changing settings on the Details page.
 
 .. note::
-  All resources are assigned a unique identifier (UUID) by the EaaS back-end on creation. UUIDs are not viewable in the EaaSI interface or editable.
+  All resources are assigned a unique identifier (UUID) by the EaaS back-end on creation. UUIDs are not viewable in the EAASI interface or editable.
 
 **Resource Name**: This is an arbitrary, free text field for users to identify the resource.
 
@@ -32,10 +32,10 @@ In "Review Mode", users can view current descriptive metadata and configured emu
 
 **Configured Drives**: Storage drives must be added and configured properly for Environments in order to allow mounting Software and Content resources in emulation. Drive configuration requires a Media Type (CD-ROM/ISO, Floppy, or Disk) corresponding to the three available :ref:`Media Types <media_types>` for Software and Content resources). Depending on the underlying emulator, additional storage interface and bus/address numbers must be specified to function properly. (editable)
 
-By default, PC-based EaaSI Environments should have at least: a Disk drive (for the Environment's system drive/operating system), a CDROM drive (for mounting ISO and Files type resources), and a Floppy drive (for mounting Floppy type resources). Adding additional Configured Drives, particularly with Macintosh or other non-PC hardware, may allow for Software and Content resources with multiple CD-ROM or Floppy type objects to be properly mounted.
+By default, PC-based EAASI Environments should have at least: a Disk drive (for the Environment's system drive/operating system), a CDROM drive (for mounting ISO and Files type resources), and a Floppy drive (for mounting Floppy type resources). Adding additional Configured Drives, particularly with Macintosh or other non-PC hardware, may allow for Software and Content resources with multiple CD-ROM or Floppy type objects to be properly mounted.
 
 .. warning::
-  There can be severe limitations to the Configured Drive feature depending on the underlying emulator and the Environment's operating system. Please raise specific examples/concerns in the `Support Center <https://forum.eaasi.cloud/c/support-center/6>`_ in the EaaSI Community Forum for help and guidance if needed.
+  There can be severe limitations to the Configured Drive feature depending on the underlying emulator and the Environment's operating system. Please raise specific examples/concerns in the `Support Center <https://forum.eaasi.cloud/c/support-center/6>`_ in the EAASI Community Forum for help and guidance if needed.
 
 .. image:: ../images/configured_drives.png
 
@@ -45,7 +45,7 @@ By default, PC-based EaaSI Environments should have at least: a Disk drive (for 
 
 **Environment Options**: Enables (or disables) various options for running the Environment in the Emulation Access Interface.
 
-"Environment can Print" enables the "Download Print Jobs" feature. If an emulated operating system is configured with a PostScript-enabled virtual printer, print jobs sent to that printer within the emulation session will be intercepted by the EaaSI client and offered to the user to download as a PDF. This is currently the only method of extracting data/files from within EaaSI Environments and :ref:`only available in QEMU-based Environments <print-jobs-qemu-limitation>`.
+"Environment can Print" enables the "Download Print Jobs" feature. If an emulated operating system is configured with a PostScript-enabled virtual printer, print jobs sent to that printer within the emulation session will be intercepted by the EAASI client and offered to the user to download as a PDF. This is currently the only method of extracting data/files from within EAASI Environments and :ref:`only available in QEMU-based Environments <print-jobs-qemu-limitation>`.
 
 "Relative Mouse (Pointerlock)" enables a running Environment to capture the user's mouse input.
 
@@ -57,7 +57,7 @@ By default, PC-based EaaSI Environments should have at least: a Disk drive (for 
   "Requires clean shutdown" is recommended for most Environments from approximately 1998 and later (e.g. Windows 98 and up) to make sure emulation sessions save cleanly as a new Environment or revision without operating system errors. It should **not** be enabled for Environments and operating systems prior to this. See `Advanced Configuration and Power Interface <https://en.wikipedia.org/wiki/Advanced_Configuration_and_Power_Interface>`_.
 
 .. warning::
-  For "Environment can  print" and "Enable Internet access" features to work correctly, the Environment's operating system must have been properly configured with a functional PostScript printer drive (for "Environment can print") or an installed TCP/IP networking stack ("Enable Internet access"). Please consult the `Software Help <https://forum.eaasi.cloud/c/software-help/10>`_ section of the EaaSI Community Forum if needing assistance in this area for the Environment or legacy operating system of your choice.
+  For "Environment can  print" and "Enable Internet access" features to work correctly, the Environment's operating system must have been properly configured with a functional PostScript printer drive (for "Environment can print") or an installed TCP/IP networking stack ("Enable Internet access"). Please consult the `Software Help <https://forum.eaasi.cloud/c/software-help/10>`_ section of the EAASI Community Forum if needing assistance in this area for the Environment or legacy operating system of your choice.
 
 .. image:: ../images/ui_options.png
 
@@ -68,7 +68,7 @@ History
 The History tab displays prior revisions of the Environment, if any. Revisions are displayed and sorted according to the "Description" field for that revision.
 
 .. note::
-  The EaaSI team recommends using the "Description" field in a similar manner to git commit messages, providing a brief but descriptive message to other users regarding the configuration or metadata change to create that revision.
+  The EAASI team recommends using the "Description" field in a similar manner to git commit messages, providing a brief but descriptive message to other users regarding the configuration or metadata change to create that revision.
 
 The user can choose to "Fork" any previous revision. Forking will create a new, Private Environment resource based on that revision. This essentially allows node users to revert Environment revisions.
 
@@ -85,7 +85,7 @@ In "Review Mode", users can view current properties of Software resources and so
   "Allowed Number of Instances" is set by default to "unlimited", allowing an unlimited number of concurrent emulation sessions. Future updates will allow editing of this field to limit simultaneous sessions using that resource.
 
 .. note::
-  "Is Operating System" is currently a descriptive distinction but will be important information to communicate to emulators in planned EaaSI workflows. The EaaSI team recommends setting this accurately and choosing a relevant OS preset for the future.
+  "Is Operating System" is currently a descriptive distinction but will be important information to communicate to emulators in planned EAASI workflows. The EAASI team recommends setting this accurately and choosing a relevant OS preset for the future.
 
 .. image:: ../images/software_properties.png
 
@@ -95,4 +95,4 @@ Content Details
 .. warning::
   Content metadata is **not** editable after import.
 
-The EaaSI system currently gathers very little metadata or description about Content resources, except for its name/label. Therefore there are no Details pages for Content resources.
+The EAASI system currently gathers very little metadata or description about Content resources, except for its name/label. Therefore there are no Details pages for Content resources.

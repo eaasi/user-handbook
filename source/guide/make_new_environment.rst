@@ -5,14 +5,14 @@
 New Environments from Scratch
 ==============================
 
-Users in the EaaSI Network are encouraged to make new environments using the :ref:`emulation-project` menu and the existing corpus of pre-configured :term:`base` environments published to the Network to reduce redundant dependencies and troubleshooting. However, this is not an acceptable solution for self-hosted EaaSI users outside of the EaaSI Network or another consortial partnership.
+Users in the EAASI Network are encouraged to make new environments using the :ref:`emulation-project` menu and the existing corpus of pre-configured :term:`base` environments published to the Network to reduce redundant dependencies and troubleshooting. However, this is not an acceptable solution for self-hosted EAASI users outside of the EAASI Network or another consortial partnership.
 
-Functionality to create new environments completely from scratch is under development for the Emulation Project interface with expected release date in the first half of 2023. In the meantime, EaaSI users can create new environments using the follow work-around, temporarily accessing their installation's Demo UI at ``<https://<your-eaasi-url>/admin``.
+Functionality to create new environments completely from scratch is under development for the Emulation Project interface with expected release date in the first half of 2023. In the meantime, EAASI users can create new environments using the follow work-around, temporarily accessing their installation's Demo UI at ``<https://<your-eaasi-url>/admin``.
 
 Import Bootable Object
 ------------------------
 
-Assuming you have not done so already: to create a new environment, you must first obtain a piece of bootable software (e.g. installation media) and upload it to EaaSI.
+Assuming you have not done so already: to create a new environment, you must first obtain a piece of bootable software (e.g. installation media) and upload it to EAASI.
 
 Log in using your same Admin user credentials at ``https://<your-eaasi-url>/admin>``.
 
@@ -88,10 +88,10 @@ Click OK to save the object selection for the drive. Then click "Save" at the bo
 Wrapping Up
 -------------
 
-At this point, the user will be returned to the Environments overview in the Demo UI. You should see the newly created Environment in both the Demo UI Environments overview *and*, returning to the EaaSI UI (by navigating to ``https://<your_eaasi_url>``), it should also be available in the user's account as a "Private" Environment:
+At this point, the user will be returned to the Environments overview in the Demo UI. You should see the newly created Environment in both the Demo UI Environments overview *and*, returning to the EAASI UI (by navigating to ``https://<your_eaasi_url>``), it should also be available in the user's account as a "Private" Environment:
 
 .. image:: ../images/new_environment_from_scratch.png
 
-You can now use the EaaSI UI to run, complete operating system installation, save derivative environments, add the environment to the Emulation Project interface, or complete any other Environment action as usual.
+You can now use the EAASI UI to run, complete operating system installation, save derivative environments, add the environment to the Emulation Project interface, or complete any other Environment action as usual.
 
 .. image:: ../images/freedos_demo.png

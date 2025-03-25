@@ -19,11 +19,11 @@ for input_file in args.input:
 
         output_file.metadata = {
                 'Project-Id-Version': '1.0',
-                'Report-Msgid-Bugs-To': 'EaaSI',
+                'Report-Msgid-Bugs-To': 'EAASI',
                 'POT-Creation-Date': time.strftime("%Y-%m-%d %H:%M%z"),
                 'PO-Revision-Date': time.strftime("%Y-%m-%d %H:%M%z"),
                 'Last-Translator': 'Argos-Translate',
-                'Language-Team': 'EaaSI',
+                'Language-Team': 'EAASI',
                 'Language': args.target_lang,
                 'MIME-Version': '1.0',
                 'Content-Type': 'text/plain; charset=utf-8',

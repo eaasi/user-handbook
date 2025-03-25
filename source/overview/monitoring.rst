@@ -2,15 +2,15 @@
 
 .. _monitoring:
 
-Monitoring EaaSI Systems
+Monitoring EAASI Systems
 *************************
 
-The EaaSI platform does not currently provide much in the way of advanced methods for monitoring system health or usage. The following page contains current recommendations for methods or work-arounds for EaaSI system administrators to gain some basic insight in regard to their EaaSI installation.
+The EAASI platform does not currently provide much in the way of advanced methods for monitoring system health or usage. The following page contains current recommendations for methods or work-arounds for EAASI system administrators to gain some basic insight in regard to their EAASI installation.
 
 System Health
 ##############
 
-OpenSLX is actively investigating the use of `Microsoft Playwright <https://github.com/microsoft/playwright>`_ to allow for headless testing of particular Emulation-as-a-Service API endpoints and services; these tests would be broadly applicable to EaaSI deployments as well. In the meantime, administrators interested in active or automated monitoring of the health of their EaaSI installation can at least use HTTP GET requests to poll a handful of API endpoints; a ``200 OK`` request from any of the following URLs indicate that the relevant EaaSI stack component is nominally up and reachable:
+OpenSLX is actively investigating the use of `Microsoft Playwright <https://github.com/microsoft/playwright>`_ to allow for headless testing of particular Emulation-as-a-Service API endpoints and services; these tests would be broadly applicable to EAASI deployments as well. In the meantime, administrators interested in active or automated monitoring of the health of their EAASI installation can at least use HTTP GET requests to poll a handful of API endpoints; a ``200 OK`` request from any of the following URLs indicate that the relevant EAASI stack component is nominally up and reachable:
 
 - ``https://<eaasi-domain>/emil/admin/buildInfo``
 
@@ -22,7 +22,7 @@ OpenSLX is actively investigating the use of `Microsoft Playwright <https://gith
 
 - ``https://<eaasi-domain>/dashboard``
 
-    can be used to poll the EaaSI UI
+    can be used to poll the EAASI UI
     
 - ``https://<eaasi-domain>/admin``
 
@@ -40,7 +40,7 @@ Sessions Metadata
 
 The Emulation-as-a-Service application logs minimal, anonymized metadata on emulation sessions to allow system administrators some insight into which Environment resources have been run on their deployment, how often, and for how long.
 
-This metadata is logged to a CSV file located at ``<eaasi-home-dir>/server-data/sessions.csv``. Only system administrators/users with direct (e.g. SSH) access to the server EaaSI is deployed on can access this file; it is not accessible via a public-facing interface (EaaSI UI, Demo UI, or API).
+This metadata is logged to a CSV file located at ``<eaasi-home-dir>/server-data/sessions.csv``. Only system administrators/users with direct (e.g. SSH) access to the server EAASI is deployed on can access this file; it is not accessible via a public-facing interface (EAASI UI, Demo UI, or API).
 
 This file logs the following metadata points for *every emulation session ever run on the server* (unlike the request stats on the Demo UI dashboard, this session data persists between restarts of the ``eaas`` service, so represents a complete picture of the server's usage):
 
@@ -61,7 +61,7 @@ The OpenSLX team has also created a `simple Python script <https://gitlab.com/em
 
     $ stats-session.py [--filename sessions.csv] [sessions/max-sessions]
 
-By default, ``stats-session.py`` will assume the user is running the script on their EaaSI server and run on the file location ``/eaas*/server-data/sessions.csv``. Use the ``--filename`` directive as shown above to specify a different file location/path.
+By default, ``stats-session.py`` will assume the user is running the script on their EAASI server and run on the file location ``/eaas*/server-data/sessions.csv``. Use the ``--filename`` directive as shown above to specify a different file location/path.
 
 Users can then specify one of two reports to generate from the ``sessions.csv``.
 
@@ -77,7 +77,7 @@ Where these values represent:
     - The UUID for the environment run in the session
     - The duration of the session, in seconds
 
-The *max-sessions* action quickly calculates the **maximum number of simultaneous sessions** for every day that the EaaSI server has been active, e.g.:
+The *max-sessions* action quickly calculates the **maximum number of simultaneous sessions** for every day that the EAASI server has been active, e.g.:
 
 .. code-block:: text
 
@@ -86,7 +86,7 @@ The *max-sessions* action quickly calculates the **maximum number of simultaneou
     2021-05-27 01:37:35.529000+00:00 0
     2021-05-28 04:28:34.209000+00:00 7
 
-This information is primarily useful for resource allocation for the EaaSI deployment (i.e. calculating whether more CPU/RAM should be allocated to the server given any patterns of heavy simultaneous usage).
+This information is primarily useful for resource allocation for the EAASI deployment (i.e. calculating whether more CPU/RAM should be allocated to the server given any patterns of heavy simultaneous usage).
 
 By default, ``stats-session.py`` will simply write these reports as tab-separated values to standard output. If you would like to save the reports, redirect the output to file, e.g.
 

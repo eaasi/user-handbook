@@ -11,7 +11,7 @@ Manage Node
 The Manage Node page has two primary sections: :ref:`node_management` for controlling the :term:`node` itself (emulators, OAI-PMH, computing
 resources) and :ref:`user_admin` for managing the users who can access the node. See each section below for more details.
 
-This page also displays the node's EaaSI Application Version number, which is important information to include
+This page also displays the node's EAASI Application Version number, which is important information to include
 when :ref:`bugs`.
 
 
@@ -25,7 +25,7 @@ Node Management
 Emulators
 -----------
 
-The EaaSI platform relies on a number of open-source emulators. Replicating environments, troubleshooting,
+The EAASI platform relies on a number of open-source emulators. Replicating environments, troubleshooting,
 and expanding a node's functionality all may involve some management of the emulators themselves.
 
 :term:`Admin` users can review and manage emulators via the "Emulators" section of the Manage Node page.
@@ -33,7 +33,7 @@ and expanding a node's functionality all may involve some management of the emul
 .. image:: ../images/emulators_menu.png
 
 The list on this page represents the whole range of emulators that have been containerized and made available to the
-EaaSI network by the development team via the OpenSLX team's `GitLab repository <https://gitlab.com/emulation-as-a-service/emulators>`_.
+EAASI network by the development team via the OpenSLX team's `GitLab repository <https://gitlab.com/emulation-as-a-service/emulators>`_.
 
 .. warning::
   This does **not** mean that all listed emulators are necessarily available for immediate use in the current node. The presence/availability of the emulator in the node is determined by the "Number of Images".
@@ -49,7 +49,7 @@ Again, in the above example, the node installation has four images/versions of Q
 be convenient for troubleshooting environments, as certain versions of an emulator may be more compatible with certain
 legacy operating systems or hardware than others.
 
-If an emulator has multiple images/versions in a node, the version that EaaSI uses to run an environment can be viewed
+If an emulator has multiple images/versions in a node, the version that EAASI uses to run an environment can be viewed
 and edited on any given environment details page under "Emulator" settings:
 
 .. image:: ../images/emulator_version_settings.png
@@ -70,7 +70,7 @@ Node A does not currently have a SheepShaver image installed. But, when the user
 SheepShaver image will be imported as part of the environment replication process, with no extra input needed.
 SheepShaver will now be available in Node A for future environment creation and configuration as well.*
 
-The replication method requires little to no direct management from an EaaSI Admin. But Admins can also manually add
+The replication method requires little to no direct management from an EAASI Admin. But Admins can also manually add
 emulator images as well by clicking the "Import Emulator" button on the Emulators page:
 
   .. image:: ../images/import_emulator_button.png
@@ -97,7 +97,7 @@ specific tagged versions, if desired.
 .. image:: ../images/container_registry_link.png
 
 .. note::
-  If no Tag is specified, the EaaSI import function will default to the "latest" image as specified in each
+  If no Tag is specified, the EAASI import function will default to the "latest" image as specified in each
   emulator's Dockerfile.
 
 The optional "Emulator Alias" field will populate the "User version" information in the emulator's Details page and helps to
@@ -122,14 +122,14 @@ To add endpoints (other nodes) to this page, click the "Add New Endpoint" button
 
 .. image:: ../images/add_endpoint.png
 
-Details for adding EaaSI Network nodes (i.e. the appropriate Host Location URLs for each node) will be provided to each node's
+Details for adding EAASI Network nodes (i.e. the appropriate Host Location URLs for each node) will be provided to each node's
 Admins for configuration. You should use the "Endpoint Name" field to title the endpoint something quick and descriptive to remember the node or organization it represents
 (e.g. "yale", "eaasi-open-source-sandbox", etc.)
 
 .. warning::
   The "Endpoint Name" field will automatically validate input to inforce certain naming conventions - particularly whitespaces, certain special characters/symbols (like "*") or capital letters.
 
-  This naming convention is necessary to prevent errors in storage path validation during Environment replication between nodes. If you receive a "Name is invalid" message from the interface, please try removing spaces, capital letters, and/or special symbols before contacting the EaaSI team.
+  This naming convention is necessary to prevent errors in storage path validation during Environment replication between nodes. If you receive a "Name is invalid" message from the interface, please try removing spaces, capital letters, and/or special symbols before contacting the EAASI team.
 
 To fetch the available metadata/environments from other nodes, simply click the "Synchronize" button next to the
 selected node endpoint. The available "Public" environments on the Explore Resources page should update
@@ -148,17 +148,17 @@ etc)
 Install & Updates
 -------------------
 
-Using this menu, EaaSI Admins can perform two maintenance tasks that may be necessary following a new update or release of the EaaSI platform.
+Using this menu, EAASI Admins can perform two maintenance tasks that may be necessary following a new update or release of the EAASI platform.
 
-"Synchronize Backend" will refresh the API connection between EaaSI's front-end and back-end components (recommended after an update to the EaaSI UI)
+"Synchronize Backend" will refresh the API connection between EAASI's front-end and back-end components (recommended after an update to the EAASI UI)
 
 "Migrate Old DB Data" will convert existing resource metadata following any changes to the node's database.
-(recommended to perform only on request by the EaaSI dev team; metadata migrations will only be required after major updates to both front-end and back-end infrastructure)
+(recommended to perform only on request by the EAASI dev team; metadata migrations will only be required after major updates to both front-end and back-end infrastructure)
 
 Troubleshooting
 -----------------
 
-In the event that EaaSI users encounter bugs or unexpected behavior, Admin users can use this menu to download server and web API logs. These logs may provide guidance to local IT or to the EaaSI support team. Please attach these logs when :ref:`bugs` if possible.
+In the event that EAASI users encounter bugs or unexpected behavior, Admin users can use this menu to download server and web API logs. These logs may provide guidance to local IT or to the EAASI support team. Please attach these logs when :ref:`bugs` if possible.
 
 
 .. _user_admin:
@@ -169,7 +169,7 @@ Node User Administration
 Manage Users
 -------------
 
-EaaSI users must for now be added manually by a node :term:`Admin` before they can :ref:`log in <logging_in>` to a node. The Manage Users page lists all individuals that are present on the node, including their given username and their role/permission
+EAASI users must for now be added manually by a node :term:`Admin` before they can :ref:`log in <logging_in>` to a node. The Manage Users page lists all individuals that are present on the node, including their given username and their role/permission
 level.
 
 .. image:: ../images/node_users.png
@@ -224,12 +224,12 @@ Once the Admin has provided the user with the temporary password, the user in qu
 Permission Levels
 --------------------
 
-Lower-level ("Configuration") users may be restricted by the EaaSI client from performing certain actions described in this Handbook. To summarize:
+Lower-level ("Configuration") users may be restricted by the EAASI client from performing certain actions described in this Handbook. To summarize:
 
 **Admin**-level users can:
-  - Save public Environments (published from other nodes/sources in the EaaSI Network) to their local node's storage
+  - Save public Environments (published from other nodes/sources in the EAASI Network) to their local node's storage
   - Add new users to the local node and change their permissions level (e.g. promote a Configuration user to an Admin)
-  - Publish Environments and Software resources that are local to their node to the wider EaaSI Network
+  - Publish Environments and Software resources that are local to their node to the wider EAASI Network
   - Access administrative features, such as OAI-PMH settings, emulator management, etc.
   - All features and actions available to Configuration-level users
 

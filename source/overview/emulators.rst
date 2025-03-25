@@ -5,11 +5,11 @@
 Emulators
 ==========
 
-Emulation-as-a-Service relies on several open source projects to actually perform emulation and virtualization. These emulators have been containerized into Docker images by the EaaS development team to allow for easily swapping in new emulators (or different versions of an emulator) to an EaaSI installation.
+Emulation-as-a-Service relies on several open source projects to actually perform emulation and virtualization. These emulators have been containerized into Docker images by the EaaS development team to allow for easily swapping in new emulators (or different versions of an emulator) to an EAASI installation.
 
-Due to changes in the EaaS framework and ongoing development on the EaaSI Client, not all of OpenSLX's emulator images are compatible with every EaaSI release. Please consult the following compatibility matrices for matching your EaaSI deployment with appropriate or recommended emulator images that are known to function.
+Due to changes in the EaaS framework and ongoing development on the EAASI Client, not all of OpenSLX's emulator images are compatible with every EAASI release. Please consult the following compatibility matrices for matching your EAASI deployment with appropriate or recommended emulator images that are known to function.
 
-Please see :ref:`managing_emulators` for detailed instructions to actually import or manage emulator images in the EaaSI Client.
+Please see :ref:`managing_emulators` for detailed instructions to actually import or manage emulator images in the EAASI Client.
 
 Compatibility
 ---------------
@@ -17,7 +17,7 @@ Compatibility
 .. list-table:: PC (x86) and some PPCs
   :header-rows: 1
 
-  * - EaaSI Build
+  * - EAASI Build
     - `QEMU <https://hub.docker.com/r/eaas/qemu-eaas/tags/?page=1&ordering=last_updated>`_
   * - 2021.10
     - v3-0 (recommended), v2-12
@@ -25,7 +25,7 @@ Compatibility
 .. list-table:: Apple
   :header-rows: 1
 
-  * - EaaSI Build
+  * - EAASI Build
     - `SheepShaver <https://gitlab.com/emulation-as-a-service/emulators/macemu-eaas-sheepshaver/container_registry/347346>`_
     - `Basilisk II <https://gitlab.com/emulation-as-a-service/emulators/macemu-eaas-basilisk2/container_registry/347345>`_
   * - 2021.10
@@ -35,7 +35,7 @@ Compatibility
 .. list-table:: Other
   :header-rows: 1
 
-  * - EaaSI Build
+  * - EAASI Build
     - `VICE <https://gitlab.com/emulation-as-a-service/emulators/vice-eaas/container_registry/426946>`_
     - `Contralto <https://gitlab.com/emulation-as-a-service/emulators/contralto-eaas/container_registry/360670>`_
     - `Visual Boy Advance <https://gitlab.com/emulation-as-a-service/emulators/visualboyadvance-eaas>`_

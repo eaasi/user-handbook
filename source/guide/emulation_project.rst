@@ -5,7 +5,7 @@
 Emulation Project
 ===================
 
-The Emulation Project menu allows EaaSI users the opportunity to build new Environments using existing Environment, Software and Content resources in their node.
+The Emulation Project menu allows EAASI users the opportunity to build new Environments using existing Environment, Software and Content resources in their node.
 
 To create a new (derivative) Environment resource, you **must** start by selecting an existing "base environment" (an available resource from the network that has been Saved Locally to your node).
 
