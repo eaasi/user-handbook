@@ -17,6 +17,10 @@
   color: black;
 }
 
+.wy-side-nav-search div.switch-menus div.version-switch select :hover {
+  color: black;
+}
+
 /* changes color of the top nav bar on mobile */
 .wy-nav-top {
   background-color: #00d33e;
