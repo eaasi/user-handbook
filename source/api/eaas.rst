@@ -5,45 +5,17 @@
 EAASI API
 ===========
 
-Emulation-as-a-Service exposes a number of RESTful API endpoints users can employ with an API client (including ``curl`` or any other HTTP request tooling) to get some descriptive and technical information on the resources present in an EAASI installation.
+EAASI exposes a number of RESTful API endpoints that authenticated users can employ with an API client (including ``curl`` or any other HTTP request tooling) to get some descriptive and technical information on the resources present in an EAASI installation.
 
 
 Authentication and Access Tokens
 ----------------------------------
 
-Users with an account on an EAASI server can query the API based on their unique user context (for example, to receive metadata about Private Environments or imported Software resources) by obtaining an access token from EAASI's `Keycloak <https://www.keycloak.org/>`_ authentication module.
-
-.. note::
-
-  If no access token/user context is provided, GET requests to the public API may still return metadata on a server's published/public resources (Public Environments)
-
-Users with an EAASI account can acquire an access token from their server by sending a POST request to ``https://[eaasi.domain]/auth/realms/master/protocol/openid-connect/token``, for example:
-
-.. code-block:: sh
-
-    $ curl --request POST \
-    --url https://[eaasi.domain]/auth/realms/master/protocol/openid-connect/token \
-    --header 'Content-Type: application/x-www-form-urlencoded' \
-    --data client_id=eaas \
-    --data grant_type=password \
-    --data username=[user] \
-    --data password=[password]
-
-Being sure to replace all information in ``[]`` with the appropriate values/credentials. Tokens are valid for an hour by default, after which they must be regenerated or refreshed.
-
-A valid request should receive an `OAuth 2.0 access token response <https://www.oauth.com/oauth2-servers/access-tokens/access-token-response/>`_. The received ``access_token`` property value can then be provided in the header of subsequent requests to the EaaS API, for example:
-
-.. code-block:: sh
-
-  curl --request GET \
-  --url 'https://[eaasi.domain]/emil/environment-repository/environments' \
-  --header 'Authorization: Bearer [access_token]' \
-  --header 'accept: application/json'
+[TBD]
 
 Public API
 ------------
 
-**All public EaaS API endpoints are located under the base URL:** ``https://[eaasi.domain]/emil``
 
 Environments
 ^^^^^^^^^^^^^
