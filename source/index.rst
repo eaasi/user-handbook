@@ -10,8 +10,6 @@ EAASI User Handbook
    overview/introduction
    overview/roadmap
    overview/emulators
-   overview/install/kvm
-   overview/monitoring
 
 .. toctree::
    :maxdepth: 1
@@ -48,4 +46,3 @@ EAASI User Handbook
    resources/faq
    resources/glossary
    resources/demo-video
-   resources/open-source-repo
