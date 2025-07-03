@@ -55,7 +55,6 @@ Examples of desktop environments:
 
       - If emulated system is `KVM <https://en.wikipedia.org/wiki/Kernel-based_Virtual_Machine>`_ compatible, *enable* Virtualize CPU
       - If emulated system is **not** KVM compatible, *disable* Virtualize CPU
-      - Please note that KVM compatibility and the Virtualize CPU function may silently fail or even eventually break, depending on configuration of the EaaSI :term:`node` and future updates to the KVM project; see :ref:`enable-kvm`
   
     - WebRTC Audio
 

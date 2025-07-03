@@ -10,7 +10,6 @@ EaaSI User Handbook
    overview/introduction
    overview/roadmap
    overview/emulators
-   overview/install/kvm
    overview/monitoring
 
 .. toctree::
