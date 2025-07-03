@@ -145,16 +145,6 @@ etc)
 
 .. image:: ../images/running_tasks.png
 
-Install & Updates
--------------------
-
-Using this menu, EaaSI Admins can perform two maintenance tasks that may be necessary following a new update or release of the EaaSI platform.
-
-"Synchronize Backend" will refresh the API connection between EaaSI's front-end and back-end components (recommended after an update to the EaaSI UI)
-
-"Migrate Old DB Data" will convert existing resource metadata following any changes to the node's database.
-(recommended to perform only on request by the EaaSI dev team; metadata migrations will only be required after major updates to both front-end and back-end infrastructure)
-
 Troubleshooting
 -----------------
 
