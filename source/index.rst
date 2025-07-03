@@ -27,7 +27,6 @@ EaaSI User Handbook
    guide/import_isos
    guide/administration
    guide/publishing
-   guide/embedding_public_envs
    guide/make_new_environment
    guide/emulator_limitations
    guide/creating_environment_recs
