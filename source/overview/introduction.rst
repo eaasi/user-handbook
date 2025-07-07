@@ -1,22 +1,16 @@
-.. Introduction to EaaSI
+.. Introduction to EAASI
 
 Introduction
 ************
 
-This User Handbook is a product of the `Scaling Emulation and Software Preservation Infrastructure <https://softwarepreservationnetwork.org/eaasi>`_
-program. It is intended to help new users navigate and perform common tasks within the EaaSI user interface.
+This User Handbook is a product of the EAASI Research Alliance and an exclusive benefit of membership in the Software Preservation Network. It is intended to help new users navigate and perform common tasks within the EAASI platform.
 
-The EaaSI platform is built on top of Emulation-as-a-Service (EaaS). EaaSI's "flavor" of EaaS contains features and
-functionality unique to the needs of the EaaSI network, and a fresh client design by `PortalMedia <https://www.portalmedia.com/>`_. For more detail on the distinction between the two, please consult the EaaSI Training Module, `"The EaaS | EaaSI Software Stack" <https://www.softwarepreservationnetwork.org/eaasi-training-module-3-the-eaas-eaasi-stack/>`_.
+This section of the EAASI User Handbook refers to the ``v2021-10`` version of EAASI that is actively available to EAASI Research Alliance members as of mid-2025. To preview the new look, feel, and features of the re-architected "Next-Gen EAASI", use the version switcher (either under the logo at top left of the sidebar, or in the flyout menu at the bottom right of your screen) and select the ``latest`` `version <https://eaasi-user-handbook.readthedocs-hosted.com/en/latest/>`_ of the User Handbook.
 
-We hope that the User Handbook will be of help, not just to members and users within the EaaSI network, but more
-broadly to all those interested in workflows for deploying emulation as an access service for digital preservation.
-
-The EaaSI User Handbook is hosted and published through GitLab Pages. For any technical issues encountered
-*with this site* or suggestions/requests for expanded documentation, please feel free to start a thread in the `EaaSI Community Forum <https://forum.eaasi.cloud>`_ or contact the
-`EaaSI Software Preservation Analyst <https://web.library.yale.edu/sd/staff/45476>`_.
+The EAASI User Handbook is hosted and published through `Read the Docs <https://about.readthedocs.com/>`_. For any technical issues encountered
+*with this site* or suggestions/requests for expanded documentation, please feel free to start a thread in the `EAASI Community Forum <https://forum.EAASI.cloud>`_ or contact Yale's
+`Senior Software Preservation and Emulation Technologist <https://web.library.yale.edu/sd/staff/45476>`_, who maintains this site.
 
 .. warning::
-  The EaaSI platform is maintained by a small team and remains reliant on grant/seed funding for staffing and support. Users will experience bugs and inconsistencies not described in this
-  documentation. Please see :ref:`bugs` and :ref:`community` for assistance. 
-  
+  The EAASI platform is maintained by a small team. Users will experience bugs and inconsistencies not described in this
+  documentation. Please see :ref:`bugs` and :ref:`community` for assistance.
