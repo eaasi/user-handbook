@@ -27,10 +27,9 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = 'EaaSI'
-# NB: copyright statement here in config is being overwritten in custom.css to insert a proper CC0 "Public Domain" license notice; otherwise, Sphinx will automatically display an (inaccurate) copyright symbol
-copyright = '2022, EaaSI Team, CC0 (No Rights Reserved)'
-author = 'EaaSI Team'
+project = 'EAASI'
+copyright = '2025, Yale University, CC BY-NC-SA 4.0'
+author = 'EAASI Team'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -157,9 +156,3 @@ html_context['languages'] = [ ('en', '/eaasi_user_handbook/') ]
 languages = [lang.name for lang in os.scandir('locale') if lang.is_dir()]
 for lang in languages:
    html_context['languages'].append( (lang, '/eaasi_user_handbook/' +lang+ '/') )
-
-# Change "view source" to "Edit on GitLab"
-html_context['display_gitlab'] = True
-html_context['gitlab_user'] = 'eaasi'
-html_context['gitlab_repo'] = 'eaasi_user_handbook'
-html_context['gitlab_version'] = 'main/source/'
