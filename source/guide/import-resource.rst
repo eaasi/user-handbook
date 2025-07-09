@@ -96,7 +96,7 @@ Importing Computer Images
 
   Due to these limitations, the EAASI team **STRONGLY URGES** users **DO NOT USE** the "Import Computer Image" workflow.
 
-  Some context is provided below, but please `contact <https://forum.eaasi.cloud/6/support>`_ the EAASI support team for *any* questions regarding importing computer images. We apologize for any confusion.
+  Some context is provided below, but please `contact <https://forum.eaasi.cloud/c/support/6>`_ the EAASI support team for *any* questions regarding importing computer images. We apologize for any confusion.
 
 "Computer Images" are a special kind of EAASI resource, referring to a disk image of a pre-existing machine that the user might want to import into EAASI: either a virtual machine originally created in another emulation/virtualization application, or taken from the hard drive of a physical computer.
 
