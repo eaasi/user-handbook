@@ -139,7 +139,7 @@ Select the general "family" of operating systems that is installed on your Compu
 .. image:: ../images/choose_system.png
   :align: center
 
-Name the Environment you want to create with your Computer Image, and then use the "Select operating system/System" dropdown menu to select the closest equivalent of your specific operating system. These options are templates that will auto-populate your Environment with an appropriate :term:`hardware configuration`. (To have templates in this menu, you must have imported Emulator images first; see :ref:`Managing Emulators <managing_emulators>` and :ref:`emulator compatility <emulators>` for process and recommendations)
+Name the Environment you want to create with your Computer Image, and then use the "Select operating system/System" dropdown menu to select the closest equivalent of your specific operating system. These options are templates that will auto-populate your Environment with an appropriate :term:`hardware configuration`.
 
 .. image:: ../images/machine_name.png
   :align: center

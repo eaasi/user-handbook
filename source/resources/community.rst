@@ -7,10 +7,10 @@ EAASI Community
 
 .. _forum:
 
-EAASI Community Forum
-======================
+EAASI User Forum
+===================
 
-The `EAASI Community <https://forum.eaasi.cloud/>`_ Discourse forum is an open space, not just for reporting bugs, but also public discussion regarding emulation, software preservation, configuration workflows, assistance with using legacy software applications, and other topics related to the EAASI program of work. Please sign up for an account today and join in the conversation!
+The `EAASI User <https://forum.eaasi.cloud/>`_ Discourse forum is an open space, not just for reporting bugs, but also public discussion regarding emulation, software preservation, configuration workflows, assistance with using legacy software applications, and other topics related to the EAASI program of work. Please sign up for an account today and join in the conversation!
 
 .. _feedback_form:
 

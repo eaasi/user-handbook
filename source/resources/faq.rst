@@ -15,7 +15,7 @@ Can EAASI emulate (Amiga, Mac OS, Commodore, DOS, Atari...)?
 EAASI is a platform that allows for configuring, sharing and accessing emulated environments - but the emulation
 itself relies on a number of underlying open source :ref:`emulation projects <emulators>`. In theory, any Linux-compatible open-source emulator can be incorporated into EAASI, along with the hardware it is meant to recreate.
 
-However, to be incorporated into EAASI, emulators must be configured and containerized in a particular configuration to communicate with the EaaS framework. If you are interested in emulating a particular hardware system or incorporating a specific emulator not mentioned in this Handbook, please contact the EAASI team.
+However, to be incorporated into EAASI, emulators must be configured and containerized in a particular configuration to communicate with the Emulation-as-a-Service framework. If you are interested in emulating a particular hardware system or incorporating a specific emulator not mentioned in this Handbook, please contact the EAASI team.
 
 |
 
