@@ -14,6 +14,9 @@ Glossary
       A base is an :term:`environment` as initially created in EAASI. “Base” essentially refers to a
       starting point for configuration and can thus be highly contextual to a workflow. Base environments will generally take up the most storage space in an instance.
 
+  Computer Image
+      A system disk image obtained by the user either from a pre-existing (outside of EAASI) virtual machine, or from the hard drive of a physical machine. Can nominally be imported into EAASI and used as an :term:`image` resource, but severe limitations discourage the use of Computer Images with EAASI in `v2021-10`. See :ref:`import-image`.
+
   Configuration User
       Configuration users have the lowest set of permissions in EAASI. They are able to configure or edit metadata for
       existing :term:`resources<resource>` and run environments, but can not interact access user account management features.
@@ -30,18 +33,21 @@ Glossary
 
   Derivative
       Any configuration performed and saved on a :term:`base` environment in EAASI is captured and referred to
-      as a derivative environment. Derivatives are stored as delta/diff files from the original base to conserve storage. Derivatives allow
+      as a derivative environment. Derivatives are stored as delta/diff files from the original base to conserve storage (see :term:`image`). Derivatives allow
       EAASI users to build off previous work without starting from scratch every time a new environment is needed. The
       derivative chain of any given environment can be traced via its Details page.
 
   Environment
       Environments are emulated computing systems - i.e., a combination of emulated hardware and software
       components. The goal of EAASI is to make it simple to create and run environments in a browser. Every environment must have
-      at least two pieces: a :term:`hardware configuration` and bootable software (i.e. an :term:`operating system`).
+      at least two pieces: a :term:`hardware configuration` and bootable software. The latter could be stored in an :term:`object`, but in the vast majority of cases is an installed operating system stored on an :term:`image`.
 
   Hardware Configuration
       An :term:`environment’s<environment>` hardware configuration refers to the emulator configuration settings that replicate the hardware
-      of a physical computer system. Within EAASI, these configurations are provided as templates.
+      of a physical computer system. Within EAASI, these configurations are initially provided as templates, then saved as part of an :term:`environment's<environment>` metadata.
+
+  Image
+      A disk image representing and storing an :term:`environment's<environment>` system drive. Most Environments are a combination of a :term:`hardware configuration` and an :term:`image` containing a bootable operating system. EAASI images are stored in the `QCOW2 <https://www.qemu.org/docs/master/interop/qcow2.html>`_ file format. The "copy-on-write" functionality of the QCOW2 format enables the system of :term:`base` and :term:`derivative` Environments at the core of EAASI's workflows and storage efficiency.
 
   Object
       The collection of files that represent the materials used to transmit, install, and/or operate :term:`software` or :term:`content`
