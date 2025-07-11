@@ -2,54 +2,12 @@
 
 .. _roadmap:
 
-EaaSI Product Roadmap
+EAASI Product Roadmap
 ======================
 
-The annual EaaSI Product Roadmap is a high-level summary of both development and maintenance work that has been prioritized for the current calendar year (2024). Work is identified and prioritized for the roadmap according to stakeholder needs. This roadmap is updated quarterly.
+EAASI development is now tracked on the platform's GitHub. Please consult the `EAASI Current Roadmap and Idea Backlog <https://github.com/orgs/eaasi/projects/5/views/6>`_ for up-to-date progress on the work that has been prioritized by the Yale Software Preservation and Emulation unit in collaboration with the EAASI Research Alliance.
 
+The day-to-day effort of team members to address the roadmap is broken down in further detail on the `EAASI Prioitized Issue Tracker <https://github.com/orgs/eaasi/projects/3/views/1>`_ for even greater transparency. Please post to the `User Forum <https://forum.eaasi.cloud/c/eaasi-alliance-discussion/roadmap-governance/23>`_ if you have any questions about the product roadmap or how EAASI dev works!
 
-New Release and/or Feature Development
----------------------------------------
-
-- Mint new release of EaaSI in first half of 2024, which will include the following:
-
-    - Emulation Project "Advanced Workflow" (allowing dynamic object to drive assignment and construction of Environments using imported Images)
-    - Map all resource permissions in S3-compatible storage to Keycloak user management module
-    - Updated resource type icons and labels for consistency
-    - Bug fixes
-    - Stability and dependency updates
-
-- Investigate the following functionality for the subsequent release of EaaSI:
-
-    - Related to managing user accounts:
-  
-        - Ability to reset account password by email
-        - Ability to log in to EaaSI using the single sign-on system of one's institution
-        - Ability to designate "Access Users" and "Node Administrators"
-
-    - Related to creating and managing emulation environments:
-
-        - Ability to batch import objects and software into EaaSI via API
-        - Ability to delete an object, content environment, or base environment that has been shared to multiple users
-        - Ability to add a new emulator to be used with EaaSI
-
-    - Related to discovering emulation environments:
-
-        - Ability to narrow search results to locate resources by era or system requirements
-
-    - Related to sharing emulation environments:
-
-        - Ability to share an environment to other members of one's Organization
-        - Ability to share an environment or resource with another specific user
-        - Ability to restrict access to an environment for a user by IP 
-        - Ability to limit the length of time that a user can access an environment
-
-
-Essential Maintenance
-----------------------
-
-- Upgrade Yale's local, production installation of EaaSI to the newest release, migrate data to support Yale's continued participation in EaaSI networks
-- Update storage and permissions approach for objects, software, images, and environments - required to achieve the new release and/or feature development above
-- Update metadata approach for objects, software, and environments - required to achieve the new release and/or feature development above
-- Update emulator handling to enable abstraction and extensibility - required to achieve the new release and/or feature development above
-- Update essential dependencies that make it easier to install and maintain EaaSI
+.. warning::
+    All of the features and areas of work detailed in the Current Roadmap and Idea Backlog refer to the "latest", re-architected version of the EAASI platform - what we're referring to as "Next-Gen EAASI." Please be aware that the v2021.10 EAASI codebase is no longer under active development and will only be supported for EAASI Research Alliance members until Next-Gen EAASI is ready for active deployment. Suggestions for the Next-Gen EAASI roadmap based on your experience with v2021.10 are welcome, but please do not expect any direct updates to v2021.10 functionality.
