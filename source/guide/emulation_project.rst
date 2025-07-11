@@ -21,7 +21,7 @@ Once an Environment resource has been added to the Emulation Project, you can be
 .. note::
   Though you can add multiple Environments, multiple Content, and/or multiple Software resources to the Emulation Project page, in order to select "Run" and begin an Emulation Access session, you can only actively select **ONE** Environment resource and at most **ONE** Content or Software resource.
 
-In the example below, an existing "FreeDOS 1.2" Environment, a "Borland Quattro Pro 5.0" Software resource, and a "SimCity 1.02" Content resource have all been added to the Emulation Project. The "Borland Quattro Pro 5.0" is the **active** object and will be the one presented in the Emulation Access session once the user clicks "Run":
+In the example below, an existing "WFWG 3.11" Environment, a "SALESTOT.XLS" Content resource, and a "NCSA Mosaic 1.0" Content resource have all been added to the Emulation Project. "NCSA Mosaic 1.0" is the **active** object and will be the one presented in the Emulation Access session once the user clicks "Run":
 
 .. image:: ../images/emulation_project_example.png
 

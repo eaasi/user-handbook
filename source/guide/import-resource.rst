@@ -42,10 +42,6 @@ There are four Physical Formats available to describe the file(s) being uploaded
 communicate to emulators where/how to mount an object into an environment (i.e. relevant file system and/or virtual
 drive).
 
-.. image:: ../images/visual_designs4.jpg
-  :align: center
-
-
 - **ISO** - Mounts the object in an environment's virtual optical/CD-ROM drive. Should accept any file extension.
 
 - **Floppy** - Mounts the object in an environment's virtual floppy drive. Should accept any file extension.

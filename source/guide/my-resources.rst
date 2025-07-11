@@ -11,6 +11,4 @@ As on the :ref:`explore` page, you can use the Refine Your Results page to sort 
 
 .. image:: ../images/my_resources.png
 
-By default, the My Resources page will open on the "My Bookmarks" tab, but users can also navigate to the "Imported Resources" tab to view and track Software and Content resources imported by that account:
-
-.. image:: ../images/imported_resources.png
+By default, the My Resources page will open on the "My Bookmarks" tab, but users can also navigate to the "Imported Resources" tab to view and track Software and Content resources imported by that account.
