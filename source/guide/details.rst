@@ -32,7 +32,7 @@ In "Review Mode", users can view current descriptive metadata and configured emu
 By default, PC-based EAASI Environments should have at least: a Disk drive (for the Environment's system drive/operating system), a CDROM drive (for mounting ISO and Files type resources), and a Floppy drive (for mounting Floppy type resources). Adding additional Configured Drives, particularly with Macintosh or other non-PC hardware, may allow for Software and Content resources with multiple CD-ROM or Floppy type objects to be properly mounted.
 
 .. warning::
-  There can be severe limitations to the Configured Drive feature depending on the underlying emulator and the Environment's operating system. Please raise specific examples/concerns in the `Support Center <https://forum.eaasi.cloud/c/support-center/6>`_ in the EAASI Community Forum for help and guidance if needed.
+  There can be severe limitations to the Configured Drive feature depending on the underlying emulator and the Environment's operating system. Please raise specific examples/concerns in the `Support Center <https://forum.eaasi.cloud/c/support-center/6>`_ in the EAASI User Forum for help and guidance if needed.
 
 .. image:: ../images/configured_drives.png
 
@@ -54,7 +54,7 @@ By default, PC-based EAASI Environments should have at least: a Disk drive (for 
   "Requires clean shutdown" is recommended for most Environments from approximately 1998 and later (e.g. Windows 98 and up) to make sure emulation sessions save cleanly as a new Environment or revision without operating system errors. It should **not** be enabled for Environments and operating systems prior to this. See `Advanced Configuration and Power Interface <https://en.wikipedia.org/wiki/Advanced_Configuration_and_Power_Interface>`_.
 
 .. warning::
-  For "Environment can print" and "Enable Internet access" features to work correctly, the Environment's operating system must have been properly configured with a functional PostScript printer drive (for "Environment can print") or an installed TCP/IP networking stack ("Enable Internet access"). Please consult the `Support <https://forum.eaasi.cloud/c/support/6>`_ section of the EAASI Community Forum if needing assistance in this area for the Environment or legacy operating system of your choice.
+  For "Environment can print" and "Enable Internet access" features to work correctly, the Environment's operating system must have been properly configured with a functional PostScript printer drive (for "Environment can print") or an installed TCP/IP networking stack ("Enable Internet access"). Please consult the `Support <https://forum.eaasi.cloud/c/support/6>`_ section of the EAASI User Forum if needing assistance in this area for the Environment or legacy operating system of your choice.
 
 .. image:: ../images/ui_options.png
 
