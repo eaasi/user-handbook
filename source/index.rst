@@ -10,7 +10,6 @@ EaaSI User Handbook
    overview/introduction
    overview/roadmap
    overview/emulators
-   overview/monitoring
 
 .. toctree::
    :maxdepth: 1
@@ -27,7 +26,12 @@ EaaSI User Handbook
    guide/import_isos
    guide/administration
    guide/emulator_limitations
-   guide/creating_environment_recs
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Making Environments
+   configuration/template_environments
+   configuration/creating_environment_recs
 
 .. toctree::
    :maxdepth: 1
@@ -38,4 +42,3 @@ EaaSI User Handbook
    resources/faq
    resources/glossary
    resources/demo-video
-   resources/open-source-repo

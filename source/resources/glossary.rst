@@ -12,7 +12,7 @@ Glossary
 
   Base
       A base is an :term:`environment` as initially created in EAASI. “Base” essentially refers to a
-      starting point for configuration and can thus be highly contextual to a workflow. Base environments will generally take up the most storage space in an instance.
+      starting point for configuration and can thus be highly contextual to a workflow, but it most frequently refers to an Environment where only a baseline operating system has been installed, without additional specific domain- or content-specific software dependencies (saving those specific dependencies for :term:`derivative` Environments). Base Environments will generally take up the most storage space in an instance.
 
   Computer Image
       A system disk image obtained by the user either from a pre-existing (outside of EAASI) virtual machine, or from the hard drive of a physical machine. Can nominally be imported into EAASI and used as an :term:`image` resource, but severe limitations discourage the use of Computer Images with EAASI in `v2021-10`. See :ref:`import-image`.

@@ -96,6 +96,6 @@ Importing Computer Images
 
 "Computer Images" are a special kind of EAASI resource, referring to a disk image of a pre-existing machine that the user might want to import into EAASI: either a virtual machine originally created in another emulation/virtualization application, or taken from the hard drive of a physical computer.
 
-Developed during EAASI's experimental grant phase, `v2021-10` technically proved it was possible to import Computer Images and use them to create Environments, but the specific implementation was lacking for production use and it is not recommended to import your own Computer Images.
+Developed during EAASI's experimental grant phase, `v2021-10` technically proved it was viable to import Computer Images and use them to create Environments, but the specific implementation was lacking for production use and it is not recommended to import your own Computer Images.
 
 This functionality will return in EAASI's re-architected version, please consult the :ref:`roadmap`, updates in the :ref:`forum`, or switch to the "latest" version of the User Handbook to check on the status of importing Computer Images.

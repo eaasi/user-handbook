@@ -3,7 +3,7 @@
 Demo Videos
 *****************
 
-EaaSI Overview
+EAASI Overview
 ----------------
 
   .. raw:: html

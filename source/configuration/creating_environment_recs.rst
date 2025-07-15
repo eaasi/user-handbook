@@ -5,7 +5,7 @@
 Recommendations from the EAASI Team for Creating Environments
 =============================================================================
 
-In Emulation-as-a-Service, :term:`Environment` resources can be created and chained off one another, allowing different configurations and combinations of software to be re-used broadly across collections (or tailored to suit specific digital objects and use cases). In this :ref:`chain model<derivation>`, the starting link is generally referred to as a :term:`base` Environment, while the next/successive link in the chain is referred to as a :term:`derivative` Environment.
+In the Emulation-as-a-Service framework, :term:`Environment` resources can be created and chained off one another, allowing different configurations and combinations of software to be re-used broadly across collections (or tailored to suit specific digital objects and use cases). In this :ref:`chain model<derivation>`, the starting link is generally referred to as a :term:`base` Environment, while the next/successive link in the chain is referred to as a :term:`derivative` Environment.
 
 "Derivatives" is therefore a catch-all term that can be used to encompass several specific types of Environment that might be built on top of a base, including (but not necessarily limited to):
 
@@ -15,7 +15,7 @@ In Emulation-as-a-Service, :term:`Environment` resources can be created and chai
 
 Given the branching and highly variable nature of these derivative chains, it's particularly imported for EAASI-related workflows to start as much as possible from well-defined and replicable base Environments. However, the definition and requirements for a base environment may vary between :term:`organizations<organization>` or even collections - access to the live internet, for instance, might be of critical important to base environments in one workflow, while completely undesirable in another.
 
-Though the EAASI team **can not** dictate what makes an appropriate "base Environment" in *all* scenarios for *all* users, certain features, functionality, or even current limitations of the platform should be used to guide creation, configuration, and publishing of bases. This page is an attempt to provide this context and appropriate recommendations for potentially crucial decision-points in Environment creation, with the hope of encouraging more efficient workflows for EAASI users everywhere. 
+Though the EAASI team **can not** dictate what makes an appropriate "base Environment" in *all* scenarios for *all* users, certain features, functionality, or even current limitations of the platform should be used to guide creation and configuration of bases. This page is an attempt to provide this context and appropriate recommendations for potentially crucial decision-points in Environment creation, with the hope of encouraging more efficient workflows for EAASI users everywhere. 
 
 These are intended **only as guidelines** and should be adapted or changed as necessary into specific local workflows.
 
