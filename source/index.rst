@@ -1,6 +1,6 @@
 .. EaaSI docs
 
-EaaSI User Handbook
+EAASI User Handbook
 ====================================
 
 .. toctree::
@@ -30,6 +30,7 @@ EaaSI User Handbook
 .. toctree::
    :maxdepth: 1
    :caption: Making Environments
+   
    configuration/template_environments
    configuration/creating_environment_recs
 
