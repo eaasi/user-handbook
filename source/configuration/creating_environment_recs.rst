@@ -2,10 +2,10 @@
 
 .. _creating_env_recs:
 
-Recommendations from the EAASI Team for Creating Environments
-=============================================================================
+Recommendations from the EAASI Team for Configuring Environments
+======================================================================
 
-In the Emulation-as-a-Service framework, :term:`Environment` resources can be created and chained off one another, allowing different configurations and combinations of software to be re-used broadly across collections (or tailored to suit specific digital objects and use cases). In this :ref:`chain model<derivation>`, the starting link is generally referred to as a :term:`base` Environment, while the next/successive link in the chain is referred to as a :term:`derivative` Environment.
+In the Emulation-as-a-Service framework, :term:`Environment` resources can be created and chained off one another, allowing different configurations and combinations of software to be re-used broadly across collections (or tailored to suit specific digital objects and use cases). In this chain model, the starting link is generally referred to as a :term:`base` Environment, while the next/successive link in the chain is referred to as a :term:`derivative` Environment.
 
 "Derivatives" is therefore a catch-all term that can be used to encompass several specific types of Environment that might be built on top of a base, including (but not necessarily limited to):
 
@@ -13,7 +13,7 @@ In the Emulation-as-a-Service framework, :term:`Environment` resources can be cr
 - "revisions" (a derivative Environment with some adjustments or improvements made, intended to *supersede* or *replace* its base in the EAASI UI)
 - "forked" Environments (created when a user wants to intentionally create a new, stand-alone Environment branching off from a specific point in an Environment's derivative history)
 
-Given the branching and highly variable nature of these derivative chains, it's particularly imported for EAASI-related workflows to start as much as possible from well-defined and replicable base Environments. However, the definition and requirements for a base environment may vary between :term:`organizations<organization>` or even collections - access to the live internet, for instance, might be of critical important to base environments in one workflow, while completely undesirable in another.
+Given the branching and highly variable nature of these derivative chains, it's particularly important for EAASI-related workflows to start as much as possible from well-defined and replicable base Environments. However, the definition and requirements for a base environment may vary between :term:`organizations<organization>` or even collections - access to the live internet, for instance, might be of critical important to base environments in one workflow, while completely undesirable in another.
 
 Though the EAASI team **can not** dictate what makes an appropriate "base Environment" in *all* scenarios for *all* users, certain features, functionality, or even current limitations of the platform should be used to guide creation and configuration of bases. This page is an attempt to provide this context and appropriate recommendations for potentially crucial decision-points in Environment creation, with the hope of encouraging more efficient workflows for EAASI users everywhere. 
 
@@ -49,7 +49,7 @@ Examples of desktop environments:
 
         - Relative Mouse (Pointerlock) behavior is extremely variable depending on emulated system
         - Generally, users prefer not to have their mouse input captured by a web application; however, with some older guest systems (particularly older GUI-based systems that are NOT compatible with absoute pointing devices such as an emulated USB tablet), it may be the only way to make the system tolerably usable
-        - Relative Mouse input can be greatly affected by network latency, so lag will be variable depending on the user's internet connection and physical proximity to their EAASI :term:`node`
+        - Relative Mouse input can be greatly affected by network latency, so lag will be variable depending on the user's internet connection and physical proximity to their EAASI server
   
     - Virtualize CPU
 
@@ -62,7 +62,7 @@ Examples of desktop environments:
 
     - XPRA Video
 
-        - *Enable* XPRA Video
+        - *Disable* XPRA Video
 
     - Requires Clean Shutdown
 
@@ -73,11 +73,7 @@ Examples of desktop environments:
     - Configured Drives 
 
         - Configure *at least* one each of "CDROM" and "Floppy" drives (up to 7 total)
-        - At least one "Disk" type drive is required by EaaS Environments to function and the system will automatically enforce this without the need for user input
-
-    - Image size
-
-        - When creating new Image resources to use in the creation of new Environments from scratch, try to maximize drive size (to allow for the most possible space for Software or Content data to be copied to the drive if need be in derivative Environments) while staying within the realm of operating system and filesystem compatibility (for example,  the FAT16 filesystem used for many DOS systems did not allow for drive sizes greater than 2GB)
+        - At least one "Disk" type drive is required by Environments to function and the system will automatically enforce this without the need for user input
 
     - Emulator Configuration
 
@@ -93,16 +89,15 @@ Examples of desktop environments:
 
         - If possible, install a PostScript-compatible printer driver; otherwise the "Environment Can Print" feature will not work whether or not the Environment Option is enabled
 
-    - Setting up user accounts 
+    - Setting up guest user accounts 
   
-        - In multi-user systems, set up both at least one "root" (or admin) and one non-"root" (admin)-level user account
+        - In multi-user systems, set up both at least one "root" (or admin) and one non-"root" (admin)-level user account in the guest/emulated system
         - Record account credentials and passwords used during configuration and store them in a convenient *external* location for consulting or sharing
-        - While it is in the roadmap to include user account credentials in EAASI Environment metadata, this feature is not yet implemented; use an external site or method for description, recording the relevant Environment name and/or UUID for tracking purposes
         - It is strongly encouraged to configure the Environment to automaticlly log-in to the lower-permission (non-admin/non-"root") user account on boot; this will avoid the need to redundantly enter credentials
 
     - Display resolution
 
-        - 4:3 display ratios (e.g. 1024x768 or 800x600) generally look best if primary interaction will be via the Emulation Access interface of the EAASI UI
+        - 4:3 display ratios (e.g. 1024x768 or 800x600) generally look best if for interaction in the EAASI UI
 
     - Virtual CD-ROM drives
 
@@ -149,16 +144,11 @@ See: all the same recommendations made for :ref:`desktop-recs` above.
         - Many open source distributions have offered "light" or "net" installation media as an alternative to complete ISOs. These were intended to minimize the amount of time + data needed to download and install a basic version of the system, but assumed you would be able to supplement your system by fetching much more software from the internet later. Depending on the age of the system, this is no longer a safe assumption, and installing from known/provided media like an ISO file is a much more stable and convenient option in EAASI. 
         - **AVOID** "light", "net", or similar installation media offered by open source projects; associate as much of the software you actually intend to use/run in EAASI with a dedicated Software resource as possible.
 
-    - Connecting to the EAASI Open Source Archive
-
-        - Work is ongoing in the EAASI program to address issues related to legacy open source package management. 
-        - Please see :ref:`open-source-repo` for details and instructions on how you may be able to configure your open source system to install legacy versions of open source packages from EAASI's repository rather than the default (often defunct) sites on legacy systems.
-
     - `Sudo <https://en.wikipedia.org/wiki/Sudo>`_ 
 
         - Many common open source distribution systems, such as Linux and BSD systems, contain a "sudo" permission that allows a non-root/admin user account to temporarily gain root power, e.g. to install a piece of software.
         - As with :ref:`desktop environments <desktop-recs>`, EAASI recommends that open source environments are initially set up with at least one root/admin and one non-root/admin user account; however, we can not comprehensively recommend whether the/a non-root user should be set up with "sudo" rights.
-        - We *can* recommend that an EAASI user setting up a base environment **should/must** consider and evaluate whether to give the non-root account "sudo" rights during initial setup of a base Environment, based on expected use cases.
+        - We *can* recommend that an EAASI user setting up a base environment **should/must** evaluate whether to give the non-root account "sudo" rights during initial setup of a base Environment, based on expected use cases.
 
 .. _server-recs:
 
@@ -171,7 +161,7 @@ While support for emulated networks (connecting one running Environment to anoth
 
 It *does* mean that some light manipulation or counter-intuitive configuration of an Environment may be recommended, in order to replicate the traditional relationship between client and server applications - which are usually `assumed to be run on separate computers connected to each other over a network <https://en.wikipedia.org/wiki/Client%E2%80%93server_model>`_ - within a single Environment.
 
-This is particularly/notably true in the case of emulating web servers, where it is likely necessary to emulate both the original web application hosting/serving a site AND the legacy browser intended to run or view the site.
+This is particularly true in the case of emulating web servers, where it is likely necessary to emulate both the original web application serving a site AND the legacy browser intended to run or view the site.
 
 Examples of server environments to which these recommendations may apply:
 - Ubuntu Server 16.04
@@ -200,7 +190,7 @@ Since EAASI team recommends setting up graphical desktops for most server enviro
     - Domain name resolution 
 
         - When installing or configuring your target server-based application, make sure to configure all relveant domains and addresses to point to "localhost" or an equivalent local IP address (e.g. 127.0.0.1)
-        - External access to/from a virtual LAN, as stated previously, is not supported and domain name resolution will fail in any case. The server will only be able to find/locate itself or possibly (if the Environment Option is enabled) the internet, via a pre-defined/tunneled virtual LAN set up by EaaS.
+        - External access to/from a virtual LAN is not supported and domain name resolution will fail in any case. The server will only be able to find/locate itself or possibly (if the Environment Option is enabled) the internet, via a pre-defined/tunneled virtual LAN set up by EAASI.
 
     - Remote assets
 
@@ -223,9 +213,9 @@ Android Environments
 
 **Definition, Scope, Examples:**
 
-The open source mobile operating system Android can be run in EAASI, but has very specific requirements for installation media, Environment Options, and configuration to function as expected (compared to the much wider range of emulated hardware options and configuration settings potentially available to create desktop environments).
+The mobile operating system Android can be run in EAASI, but has very specific requirements for installation media, Environment Options, and configuration to function as expected (compared to the much wider range of emulated hardware options and configuration settings potentially available to create desktop environments).
 
-Specifically, at this point in time Android environments and software can only be used thanks to the `Android-x86 project <https://www.android-x86.org/>`_, which is a community-drive (not officially supported by Google) effort to port the operating system, which is originally designed for mobile processors using the ARM architecture, to the standard desktop PC Intel x86 architecture. Using installation media from the Android-x86 project, EAASI users can set up Android environments compatible with the standard/generic x86 processors emulated by QEMU.
+Specifically, at this point in time Android environments and software can only be used thanks to the `Android-x86 project <https://www.android-x86.org/>`_, which is a community-drive (not officially supported by Google) effort to port the operating system, which is originally designed for mobile processors using the ARM architecture, to the standard desktop PC Intel x86 architecture. Using installation media from the Android-x86 project, EAASI users can set up Android environments compatible with standard/generic x86 processors emulated by QEMU.
 
 The following options are recommended (or, where noted, required) in order to build Android-x86-based EAASI Environments.
 
