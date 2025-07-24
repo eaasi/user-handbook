@@ -29,10 +29,11 @@ EAASI User Handbook
 
 .. toctree::
    :maxdepth: 1
-   :caption: Making Environments
-   
+   :caption: Making and Sharing Environments
+
    configuration/template_environments
    configuration/creating_environment_recs
+   configuration/sharing_environments
 
 .. toctree::
    :maxdepth: 1
