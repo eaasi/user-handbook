@@ -5,7 +5,7 @@
 Emulator Limitations
 ======================
 
-While Emulation-as-a-Service and the EAASI platform provide a centralized, single interface for interacting with a number of different underlying :ref:`emulators`, variations between these different applications make it difficult if not impossible to have all EAASI features work in the same way for all Environments.
+While the EAASI platform provides a centralized, single interface for interacting with a number of different underlying :ref:`emulators`, variations between these different applications make it difficult if not impossible to have all EAASI features work in the same way for all Environments.
 
 This page details some of these limitations, along with recommended work-arounds, to help manage user expectations.
 

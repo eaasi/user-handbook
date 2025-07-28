@@ -7,8 +7,6 @@ Emulators
 
 EAASI relies on several open source projects to actually perform emulation and virtualization. These emulators have been containerized into Docker images to allow for swapping in new emulators (or different versions of an emulator) to an EAASI installation.
 
-Please see :ref:`managing_emulators` for detailed instructions to actually import or manage emulator images in the EAASI Client.
-
 
 Links to Source Projects
 --------------------------

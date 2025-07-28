@@ -20,4 +20,4 @@ EAASI Research Alliance
 SPN
 ===
 
-For more information about the EAASI Research Alliance and our full slate of efforts and exclusibe benefits within the Software Preservation Network, please visit the Alliance page's on the `Software Preservation Network website <https://www.softwarepreservationnetwork.org/projects/emulation-as-a-service-infrastructure>`_!
+For more information about the EAASI Research Alliance and our full slate of efforts and exclusibe benefits within the Software Preservation Network, please visit the Alliance page's on the `Software Preservation Network website <https://www.softwarepreservationnetwork.org/eaasi-research-alliance/>`_!

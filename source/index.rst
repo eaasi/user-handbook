@@ -25,17 +25,20 @@ EAASI User Handbook
    guide/import-resource
    guide/import_isos
    guide/administration
-   guide/publishing
-   guide/embedding_public_envs
-   guide/make_new_environment
    guide/emulator_limitations
-   guide/creating_environment_recs
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Making and Sharing Environments
+
+   configuration/creating_environment_recs
+   configuration/sharing_environments
 
 .. toctree::
    :maxdepth: 1
    :caption: API Documentation
 
-   api/eaas
+   api/eaasi
 
 .. toctree::
    :maxdepth: 1

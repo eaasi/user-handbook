@@ -10,7 +10,7 @@ The Emulation Access screen allows the user to interact with a running emulation
   #. They select the "Run in Emulator" or "Add Software" from the :ref:`actions` on any given Environment resource
   #. They run an :ref:`emulation-project` workflow
 
-.. image:: ../images/emulation_access.png
+.. image::
 
 The features offered on this page may vary depending on how the Environment has been configured.
 
@@ -43,10 +43,10 @@ Saving Environments
 
 There are two possible paths for EAASI users to save their Emulation Access session as an Environment in the Save Environment modal.
 
-.. image:: ../images/save_environment_modal.png
+.. image:: 
 
 **New Environment**
-saves the current (or just-concluded) Emulation Access session as a new Environment resource. The user must create a Title for this new Environment, and on successful save, the Environment should be available in the Explore Resources page as a Private Environment within the user's node.
+saves the current (or just-concluded) Emulation Access session as a new Environment resource. The user must create a Title for this new Environment, and on successful save, the Environment should be available in the Explore Resources page as a Private Environment.
 
 If the Emulation Access session began by choosing to Run a previously-existing Environment, that original Environment will also remain available and unchanged. The new Environment resource is a :term:`derivative` of the original Environment. A user can return to it and branch off on a completely different path of configuration and Environment creation as necessary.
 
@@ -56,7 +56,7 @@ If the Emulation Access session began by choosing to Run a previously-existing E
   EAASI Environments are version-controlled, so any revision can be reversed and no overwrite is permanent. On any given Environment's Details page, navigate to the "History" tab to view the descriptions from previous revisions. Selecting "fork" for any given revision will restore that prior state of the Environment as an available resource.
 
 .. warning::
-  Create a Revision will **only** overwrite a Private Environment. If a user chooses Create a Revision when running an Environment marked "Saved Locally" (that is, an Environment that has been published to the Network), it will have the *same effect* as creating a New Environment. A new, derivative Private Environment resource will be created in the user's node, with the same name as the published Environment. The published/Saved Locally Environment will persist in the interface as well.
+  Create a Revision will **only** overwrite a Private Environment.
 
 
 Saving Content Environments
@@ -71,8 +71,3 @@ The resulting new Environment will be referred to as a :term:`Content Environmen
 (This is in direct contrast to Software resources; if a new Environment is saved after pairing an Environment and Software resource via the Emulation Project, when running the derivative Environment in subsequent sessions the original Software resource will **not** remain mounted the emulator. In those cases the emulator's removable media drives are cleared to allow further Software or Content resources to be added to the derivative Environment.)
 
 This means that you will be unable to properly load further Software or Content resources into a Content Environment (as the original Content resource will remain bound to the emulator and block attempts to mount a new object).
-
-.. warning::
-  As of v2021.10, there is also a known issue with accessing multi-file Content resources in their equivalent Content Environment. If a multi-file Content object is saved into a new Content Environment, only the first file in the object remains accessible when running the Content Environment, and the Change Resource Media does not properly switch which file is mounted.
-
-  The EAASI team is actively working on a fix for this issue, and users can still access multi-file Content resources in an emulation session at any time by using the Emulation Project menu to pair the Content resource with an appropriate Environment. Please contact the EAASI team via the `Support Center <https://https://forum.eaasi.cloud/c/support-center/6>`_ at any point if you have questions or concerns with this work-around.

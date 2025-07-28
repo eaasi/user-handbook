@@ -6,26 +6,13 @@ Dashboard
 ==========
 
 The EAASI Dashboard provides a central hub for viewing :term:`resources <resource>` and activity within
-your node, as well as links for additional support and materials from the EAASI project.
+your node, as well as links for additional support and materials from the EAASI Research Alliance.
 
-.. image:: ../images/dashboard.png
-    
-**Sandbox Demo**: Will take the user to the `EAASI Open Source Sandbox <https://sandbox.eaasi.cloud>`_, a demonstration service for 
-showing the in-browser emulation capabilities of EaaS to those outside the EAASI Network.
+.. image:: 
   
-**Learn and Support**: Links to the EAASI User Handbook that you are reading right now!
+**Get Help**: Links to the EAASI User Handbook that you are reading right now!
 
-**User Forum**: Links to the `EAASI Community Forum <https://forum.eaasi.cloud>`_, a public Discourse for reporting bugs to the development team, as well as connecting with other
+**User Forum**: Links to the `EAASI User Forum <https://forum.eaasi.cloud>`_, a public Discourse for reporting bugs to the development team, as well as connecting with other
 EAASI users for support and collaboration. (See :ref:`community`)
-  
-Activity
----------
 
-The EAASI Dashboard displays three activity feeds to conveniently access the latest environments and other
-resources available in your EAASI :term:`node`.
-
-**My Node Activity** displays the latest Environments created or uploaded in your node, regardless of the
-user who created them. (You can click on "See ALL Node Resources" to navigate to the :ref:`explore` page)
-
-**My Resources** displays the latest Environments created, uploaded, or bookmarked by the currently logged-in
-user. (You can click on "See ALL My Resources" to navigate to the :ref:`my_resources` page)
+**EAASI Announcements**: Link to public announcements and news posted by the EAASI team to the wider digital preservation community.

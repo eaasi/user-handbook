@@ -5,13 +5,13 @@
 Emulation Project
 ===================
 
-The Emulation Project menu allows EAASI users the opportunity to build new Environments using existing Environment, Software and Content resources in their node.
+The Emulation Project menu allows EAASI users the opportunity to build new Environments using existing Environment, Software, Content, and Computer Image resources in their node.
 
-To create a new (derivative) Environment resource, you **must** start by selecting an existing "base environment" (an available resource from the network that has been Saved Locally to your node).
+[Emulation Project will be split into "Basic" and "Advanced" modes in Next-Gen EAASI. The following applies to "Basic" projects; "Advanced" projects will allow for using Computer Image resources. Details forthcoming]
 
 The shortcut buttons on the Emulation Project page will guide you back to either the Explore Resources overview or the My Resources page to select and add an Environment to the Emulation Project using the :ref:`Actions <actions>` menu.
 
-.. image:: ../images/emulation_project.png
+.. image:: 
 
 Once an Environment resource has been added to the Emulation Project, you can begin creating your new Environment resource by either:
 
@@ -23,7 +23,7 @@ Once an Environment resource has been added to the Emulation Project, you can be
 
 In the example below, an existing "FreeDOS 1.2" Environment, a "Borland Quattro Pro 5.0" Software resource, and a "SimCity 1.02" Content resource have all been added to the Emulation Project. The "Borland Quattro Pro 5.0" is the **active** object and will be the one presented in the Emulation Access session once the user clicks "Run":
 
-.. image:: ../images/emulation_project_example.png
+.. image::
 
 Once the user has crafted their desired resources and options, they may select "Run" to begin an :ref:`emulation_access` session. From this point, the user can install and configure the operating system software, Change Resource Media, save the new configuration as its own Environment resource, etc.
 

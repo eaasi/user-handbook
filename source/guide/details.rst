@@ -5,7 +5,7 @@
 Resource Detail Pages
 ======================
 
-:term:`Resource` Detail pages provide some additional descriptive information for EAASI resources. Depending on permissions and the resource's Network status, users may be also be able to edit teh resource's configuration settings for Emulation Access sessions.
+:term:`Resource` Detail pages provide some additional descriptive information for EAASI resources. Depending on permissions, users may be also be able to edit the resource's configuration settings for Emulation Access sessions.
 
 
 .. _environment_details:
@@ -18,34 +18,28 @@ The Details page for :term:`Environment` resources is divided into two tabs: Met
 Metadata
 *********
 
-In "Review Mode", users can view current descriptive metadata and configured emulator settings. Click on "Edit Mode" to edit and save changes to compatible fields in Private Environments.
-
-.. warning::
-  Resources marked "Public" and "Saved Locally" **are not editable**. Once published to the EAASI Network, neither their descriptive metadata nor emulator configuration settings can be altered. Editing **any** fields on a Public/Saved Locally Environment will create a new, derivative, Private Environment. Take care to change Resource Names or other fields to indicate new Environments created from changing settings on the Details page.
-
-.. note::
-  All resources are assigned a unique identifier (UUID) by the EaaS back-end on creation. UUIDs are not viewable in the EAASI interface or editable.
+In "Review Mode", users can view current descriptive metadata and configured emulator settings. Click on "Edit Mode" to edit and save changes to compatible fields in Environments.
 
 **Resource Name**: This is an arbitrary, free text field for users to identify the resource.
 
-.. image:: ../images/environment_name_desc.png
+.. image:: 
 
 **Configured Drives**: Storage drives must be added and configured properly for Environments in order to allow mounting Software and Content resources in emulation. Drive configuration requires a Media Type (CD-ROM/ISO, Floppy, or Disk) corresponding to the three available :ref:`Media Types <media_types>` for Software and Content resources). Depending on the underlying emulator, additional storage interface and bus/address numbers must be specified to function properly. (editable)
 
 By default, PC-based EAASI Environments should have at least: a Disk drive (for the Environment's system drive/operating system), a CDROM drive (for mounting ISO and Files type resources), and a Floppy drive (for mounting Floppy type resources). Adding additional Configured Drives, particularly with Macintosh or other non-PC hardware, may allow for Software and Content resources with multiple CD-ROM or Floppy type objects to be properly mounted.
 
 .. warning::
-  There can be severe limitations to the Configured Drive feature depending on the underlying emulator and the Environment's operating system. Please raise specific examples/concerns in the `Support Center <https://forum.eaasi.cloud/c/support-center/6>`_ in the EAASI Community Forum for help and guidance if needed.
+  There can be severe limitations to the Configured Drive feature depending on the underlying emulator and the Environment's operating system. Please raise specific examples/concerns in the `Support center <https://forum.eaasi.cloud/c/support-center/6>`_ in the EAASI User Forum for help and guidance if needed.
 
-.. image:: ../images/configured_drives.png
+.. image:: 
 
 **Emulator**: This section indicates the underlying emulator and :term:`Hardware Configuration` used to run this Environment in emulation. Advanced users can use this section to switch the emulator version used to run the Environment (e.g. QEMU 2.12 or QEMU 3.1) and, if necessary, tweak the emulated machine's hardware. Consult each emulator's own documentation to correctly pass Configuration settings to the emulator.
 
-.. image:: ../images/emulator_details.png
+.. image:: 
 
 **Environment Options**: Enables (or disables) various options for running the Environment in the Emulation Access Interface.
 
-"Environment can Print" enables the "Download Print Jobs" feature. If an emulated operating system is configured with a PostScript-enabled virtual printer, print jobs sent to that printer within the emulation session will be intercepted by the EAASI client and offered to the user to download as a PDF. This is currently the only method of extracting data/files from within EAASI Environments and :ref:`only available in QEMU-based Environments <print-jobs-qemu-limitation>`.
+"Environment can Print" enables the "Download Print Jobs" feature. If an emulated operating system is configured with a PostScript-enabled virtual printer, print jobs sent to that printer within the emulation session will be intercepted by Teleport and offered to the user to download as a PDF. This is currently the only method of extracting data/files from within EAASI Environments and :ref:`only available in QEMU-based Environments <print-jobs-qemu-limitation>`.
 
 "Relative Mouse (Pointerlock)" enables a running Environment to capture the user's mouse input.
 
@@ -59,7 +53,7 @@ By default, PC-based EAASI Environments should have at least: a Disk drive (for 
 .. warning::
   For "Environment can  print" and "Enable Internet access" features to work correctly, the Environment's operating system must have been properly configured with a functional PostScript printer drive (for "Environment can print") or an installed TCP/IP networking stack ("Enable Internet access"). Please consult the `Software Help <https://forum.eaasi.cloud/c/software-help/10>`_ section of the EAASI Community Forum if needing assistance in this area for the Environment or legacy operating system of your choice.
 
-.. image:: ../images/ui_options.png
+.. image:: 
 
 
 History
@@ -72,22 +66,23 @@ The History tab displays prior revisions of the Environment, if any. Revisions a
 
 The user can choose to "Fork" any previous revision. Forking will create a new, Private Environment resource based on that revision. This essentially allows node users to revert Environment revisions.
 
-.. image:: ../images/resource_history.png
+.. image:: 
 
 Software Details
 --------------------
 
-In "Review Mode", users can view current properties of Software resources and some details of the object, including attached files and their Media Type. In "Edit Mode", **only** "Software Properties" are editable.
+.. warning::
+  Software metadata is **not** editable after import.
 
-**Software Properties**: These are editable settings that control to some degree how and when users can interact with the Software resource in emulation. "License Information" is a free-text field and a recommended place to stash license key or registration information that a user may need to correctly run or install the software. "This is an Operating System" communicates whether the Software resource contains a bootable operating system or operatiny system installer.
-
-.. note::
-  "Allowed Number of Instances" is set by default to "unlimited", allowing an unlimited number of concurrent emulation sessions. Future updates will allow editing of this field to limit simultaneous sessions using that resource.
+Software resource details are ONLY available in "Review Mode." Users can view current properties of Software resources and some details of the object, including attached files and their Media Type, but not edit any of these properties.
 
 .. note::
-  "Is Operating System" is currently a descriptive distinction but will be important information to communicate to emulators in planned EAASI workflows. The EAASI team recommends setting this accurately and choosing a relevant OS preset for the future.
+  "Allowed Number of Instances" is set by default to "unlimited", allowing an unlimited number of concurrent emulation sessions.
 
-.. image:: ../images/software_properties.png
+.. note::
+  "Is Operating System" is a legacy descriptive metadata field with no effect on EAASI functionality, and can be ignored. It will always display "FALSE" regardless of whether the imported Software object actually is an operating system installer or not.
+
+.. image:: 
 
 Content Details
 -------------------
