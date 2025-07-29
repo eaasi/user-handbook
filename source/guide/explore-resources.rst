@@ -78,13 +78,13 @@ Clicking on the top left corner of any resource card will activate a slide menu 
 * **"Bookmark This Resource"** adds the resource to bookmarks on the :ref:`my_resources` page (same action as clicking the bookmark icon)
 * **"Add to Emulation Project"** adds the resource to the user's current :ref:`emulation-project`
 * **"Add Software"** allows the user to select a Software resource from a dropdown menu, then opens that Environment in the Emulation Access interface with the Software resource attached
-* **"Publish to Network"** (Private Environment resources only) makes an Environment available for users all other user accounts - the Environment tag will change from "Private" to "Saved Locally" - see :ref:`warning<publish_warning>` below
+* **"Publish to Network"** (Private Environment resources only) makes an Environment available for ALL user accounts in ALL organizations across an EAASI server - the Environment tag will change from "Private" to "Saved Locally" - see :ref:`warning<publish_warning>` below
 * **"Delete"** (Private Environment, Software and Content resources only) removes the selected resource
 
 .. _publish_warning::
 
 .. warning::
-  Please **DO NOT** use the "Publish to Network" button without consulting with the EAASI team and/or the rest of the EAASI Research Alliance via the `User Forum <https://forum.eaasi.cloud/c/eaasi-alliance-discussion/8/none>`_ first.
+  Please **DO NOT** use the "Publish to Network" button without posting to the rest of the EAASI Research Alliance via the `User Forum <https://forum.eaasi.cloud/c/eaasi-alliance-discussion/8/none>`_ first.
 
   v2021.10 of EAASI and its sharing features - including "Publishing" - were designed EAASI's experimental grant-funded cycle, and likely have larger-than-intended repercussions for who can then access and use your Environment and its data. Unfortunately, technical limitations and complexities in the code also meant we could not remove this function altogether before deployment.
 

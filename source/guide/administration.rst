@@ -28,13 +28,16 @@ The Running Tasks tab allows Admins to monitor activity in the EAASI server, inc
 Troubleshooting
 -----------------
 
-In the event that EAASI users encounter bugs or unexpected behavior, Admin users can use this menu to download server and web API logs. These logs may provide guidance to the EAASI support team. Please attach these logs when reporting :ref:`bugs` if possible.
+In the event that EAASI users encounter bugs or unexpected behavior, Admin users can use this menu to download server and web API logs. These logs may provide guidance to the EAASI support team. Please attach these logs when :ref:`bugs` if possible.
 
 
 .. _user_admin:
 
 Node User Administration
 =========================
+
+.. warning::
+  For more context on user account administration and recommendations from the EAASI team for using the Research Alliance's v2021.10 deployment, please review the :ref:`sharing-environments` page.
 
 Manage Users
 -------------
