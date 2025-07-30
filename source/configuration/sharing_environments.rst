@@ -9,7 +9,7 @@ Sharing Environments
 
 Due to limitations in the underlying architecture, the options for having multiple users interact with the same Environment in v2021.10 of EAASI - whether at the same time, or distributed - are few.
 
-This page attempts to lay out some historical context behind this limited functionality - if you would like to skip straight to the team's functional recommendations for "sharing" resources in v2021.10, click to that `section below <#recommendations>_.
+This page attempts to lay out some historical context behind this limited functionality - if you would like to skip straight to the team's functional recommendations for "sharing" resources in v2021.10, click to that :ref:`section below<recommendations>`.
 
 Development History
 *********************
