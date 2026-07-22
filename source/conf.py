@@ -28,7 +28,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = 'EAASI'
-copyright = '2025, Yale University, CC BY-NC-SA 4.0'
+copyright = '2026, Yale University, CC BY-NC-SA 4.0'
 author = 'EAASI Team'
 
 # The version info for the project you're documenting, acts as replacement for

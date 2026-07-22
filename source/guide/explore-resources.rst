@@ -84,8 +84,6 @@ Clicking on the top left corner of any resource card will activate a slide menu 
 .. _publish_warning::
 
 .. warning::
-  Please **DO NOT** use the "Publish to Network" button without posting to the rest of the EAASI Research Alliance via the `User Forum <https://forum.eaasi.cloud/c/eaasi-alliance-discussion/8/none>`_ first.
-
-  v2021.10 of EAASI and its sharing features - including "Publishing" - were designed EAASI's experimental grant-funded cycle, and likely have larger-than-intended repercussions for who can then access and use your Environment and its data. Unfortunately, technical limitations and complexities in the code also meant we could not remove this function altogether before deployment.
+  v2021.10 of EAASI and its :ref:`sharing features <sharing_environments>` - including "Publishing" - were designed EAASI's experimental grant-funded cycle, and likely have larger-than-intended repercussions for who can then access and use your Environment and its data. Unfortunately, technical limitations and complexities in the code also meant we could not remove this function altogether before deployment.
 
   Unless you are extremely confident that you want your Environment to be available to all other instutitions and user accounts in the EAASI Research Alliance, **do not** select "Publish to Network".

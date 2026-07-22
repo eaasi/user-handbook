@@ -7,7 +7,7 @@ Emulators
 
 EAASI relies on several open source projects to actually perform emulation and virtualization. These emulators must be specially containerized into Docker images in order to conform with EAASI's underlying Emulation-as-a-Service architecture. 
 
-Compatible and available emulators are listed below. If you would like more information about the versions of these emulators available in EAASI, their capabilities, and/or their :ref:`limitations <emulator_limitations>`, please raise a question in the `EAASI User Forum <http://forum.eaasi.cloud>`_.
+Compatible and available emulators are listed below. If you would like more information about the versions of these emulators available in EAASI, their capabilities, and/or their :ref:`limitations <emulator_limitations>`, please contact the Yale Software Preservation and Emulation team at softwarepreservation@yale.edu.
 
 Links to Source Projects
 --------------------------
