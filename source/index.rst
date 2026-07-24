@@ -45,7 +45,6 @@ EAASI User Handbook
    :caption: More Help
 
    resources/bugs
-   resources/community
    resources/faq
    resources/glossary
    resources/demo-video
