@@ -62,7 +62,7 @@ Content results can only be minimally sorted and refined until further developme
 Image Results
 --------------
 
-Due to technical limitations within the v2021.10 codebase (see :ref:`import_image`), all EAASI accounts will see a small handful of :term:`Computer Image` resources listed as available to them on the Explore Resources page of the EAASI Research Alliance's hosted deployment. These are all essentially blank disk images ("Blank 1GB". "Blank 10GB", etc.) and are functionally useless - users can not add them to their Emulation Project or view any metadata about them. Please ignore these resource results.
+Due to technical limitations within the v2021.10 codebase (see :ref:`import_image`), :term:`Computer Image` resources that have been imported to an EAASI server are visible in resource search results, to all user accounts in the server - however, there is no way to functionally interact with these resources via the Emulation Project or Emulation Access interfaces. See :ref:`make_new_environment` for details on how to make use of Computer Image resources.
 
 .. _actions:
 
@@ -86,4 +86,4 @@ Clicking on the top left corner of any resource card will activate a slide menu 
 .. warning::
   v2021.10 of EAASI and its :ref:`sharing features <sharing_environments>` - including "Publishing" - were designed EAASI's experimental grant-funded cycle, and likely have larger-than-intended repercussions for who can then access and use your Environment and its data. Unfortunately, technical limitations and complexities in the code also meant we could not remove this function altogether before deployment.
 
-  Unless you are extremely confident that you want your Environment to be available to all other instutitions and user accounts in the EAASI Research Alliance, **do not** select "Publish to Network".
+  Unless you are extremely confident that you want your Environment to be available to all other accounts in the server, **do not** select "Publish to Network".

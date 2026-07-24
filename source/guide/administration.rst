@@ -37,7 +37,7 @@ Node User Administration
 =========================
 
 .. warning::
-  For more context on user account administration and recommendations from the EAASI team for using the Research Alliance's v2021.10 deployment, please review the :ref:`sharing-environments` page.
+  For more context on user account administration and recommendations from the EAASI team, please review the :ref:`sharing-environments` page.
 
 Manage Users
 -------------
@@ -107,7 +107,7 @@ Lower-level ("Configuration") users may be restricted from performing certain ac
 
 **Configuration**-level users can:
   - import new local Software and Content resources to their account
-  - run and create new Environment resources using Saved Locally "Template Environments"
+  - run and create new Environment resources using published, "Saved Locally" Environments
   - run and create new Environment resources using their private Software and Content resources
   - download server logs helpful for troubleshooting and filing bug reports
   - change their basic user account settings (email and password)

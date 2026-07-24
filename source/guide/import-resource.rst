@@ -90,12 +90,6 @@ Importing Computer Images
 .. warning::
   Due to severe technical limitations, stand-alone :term:`Image` resources in `v2021-10` of EAASI are visible to **ALL** user accounts in **ALL** Organizations across an EAASI server. Image resources are also unusable on the Emulation Project page - even by the user account that imported them.
 
-  Due to these limitations, the EAASI team **STRONGLY URGES** users **DO NOT USE** the "Import Computer Image" workflow.
+  Due to these limitations, the EAASI team **STRONGLY URGES** users **DO NOT USE** the "Import Computer Image" workflow; see :ref:`make_new_environment` for instructions on importing and making use of Computer Image resources.
 
-  Some context is provided below, but please `contact <https://forum.eaasi.cloud/c/support/6>`_ the EAASI support team for *any* questions regarding importing computer images. We apologize for any confusion.
-
-"Computer Images" are a special kind of EAASI resource, referring to a disk image of a pre-existing machine that the user might want to import into EAASI: either a virtual machine originally created in another emulation/virtualization application, or taken from the hard drive of a physical computer.
-
-Developed during EAASI's experimental grant phase, `v2021-10` technically proved it was viable to import Computer Images and use them to create Environments, but the specific implementation was lacking for production use and it is not recommended to import your own Computer Images.
-
-This functionality will return in EAASI's re-architected version, please consult the :ref:`roadmap`, updates in the :ref:`forum`, or switch to the "latest" version of the User Handbook to check on the status of importing Computer Images.
+"Computer Images" are a special kind of EAASI resource, referring to a disk image of a pre-existing machine that the user might want to import into EAASI: either a virtual machine originally created in another emulation/virtualization application, or taken from the hard drive of a physical computer. Blank/unformatted Computer Images are also technically necessary in order to create new environments from scratch.

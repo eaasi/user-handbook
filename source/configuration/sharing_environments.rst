@@ -5,7 +5,7 @@ Sharing Environments
 
 .. note::
 
-    The following guidance is unique to `v2021-10` of EAASI. It reflects the technical capabilities and limitations of the platform's grant-funded, exploratory period and does not reflect how the EAASI team imagines Environment and resource sharing to function moving foward in the re-architected, "Next-Gen" EAASI platform. For more details on the team's future vision for user account management and access control, please check out the :ref:`roadmap` or join the discussion on the `User Forum <https://forum.eaasi.cloud/c/eaasi-alliance-discussion/roadmap-governance/23>`_!
+    The following guidance is unique to `v2021-10` of EAASI. It reflects the technical capabilities and limitations of the platform's grant-funded, exploratory period and does not reflect how the EAASI team imagines Environment and resource sharing to function moving foward in the re-architected, "Next-Gen" EAASI platform. For more details on the team's future vision for user account management and access control, please check out the :ref:`roadmap`!
 
 Due to limitations in the underlying architecture, the options for having multiple users interact with the same Environment in v2021.10 of EAASI - whether at the same time, or distributed - are few.
 
@@ -37,7 +37,7 @@ Over the six-year course of the Mellon- and Sloan-foundation-funded "Scaling Emu
 Recommendations
 ****************
 
-The EAASI team can not categorically state that any sharing approach is appropriate across all possible access and use scenarios for the platform. Our aim is to describe the technical possibilites, limitations and repercussions of certain actions in the platform, and allow users and the Research Alliance community of practice to determine the paths forward for their holdings and EAASI resources from there.
+The EAASI team can not categorically state that any sharing approach is appropriate across all possible access and use scenarios for the platform. Our aim is to describe the technical possibilites, limitations and repercussions of certain actions in the platform, and allow the community of practice to determine the paths forward for their holdings and EAASI resources from there.
 
 Because Environments **can not be shared between user accounts without "Publishing" them - thereby making them available to ALL user accounts within ALL Organizations in the EAASI server** - the EAASI team recommends creating and using **only one Admin-level user account per Organization**.
 
@@ -61,6 +61,4 @@ Assuming that Organizations map to a real-world instutition or organization, and
 The only alternatives for "sharing" an Environment (including Content Environments) between user accounts are:
 
 1. Selecting the relevant Environment and using the "Publish to Network" option in the Actions menu - making the Environment visible and runnable by all user accounts across all Organizations in the deployment.
-2. Logging in to the second user account ahead of time, re-create the relevant Environment (including its entire configuration chain, starting from any of the available :ref:`template environments`) in the second user account, log out and back in to the first, Admin-level user account, use the User Management options on the Manage Node page to reset the password on the second user account, then provide the generated temporary password for the second user account to the desired individual user, outside of EAASI. (Note that this approach is not even so much "sharing" an Environment as it is a separate Environment resource that duplicates the configuration effort of the target Environment)
-
-If you have further questions about sharing or having multiple users access EAASI resources, please start a thread in the `Forum <https://forum.eaasi.cloud/c/support/6>`_!
+2. Logging in to the second user account ahead of time, re-create the relevant Environment in the second user account, log out and back in to the first, Admin-level user account, use the User Management options on the Manage Node page to reset the password on the second user account, then provide the generated temporary password for the second user account to the desired individual user, outside of EAASI. (Note that this approach is not even so much "sharing" an Environment as it is a separate Environment resource that duplicates the configuration effort of the target Environment)

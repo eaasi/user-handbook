@@ -7,7 +7,7 @@ Emulation Project
 
 The Emulation Project menu allows EAASI users the opportunity to build new Environments using existing Environment, Software and Content resources.
 
-To create a new (derivative) Environment resource, you **must** start by selecting an existing Environment (either a Saved Locally "Template Environment" or a Private Environment already present in your user account).
+To create a new (derivative) Environment resource, you **must** start by selecting an existing Environment.
 
 The shortcut buttons on the Emulation Project page will guide you back to either the Explore Resources overview or the My Resources page to select and add an Environment to the Emulation Project using the :ref:`Actions <actions>` menu.
 
