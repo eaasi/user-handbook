@@ -31,16 +31,22 @@ EAASI User Handbook
    :maxdepth: 1
    :caption: Making and Sharing Environments
 
-   configuration/template_environments
+   configuration/make_new_environment
+   configuration/mac_environments
    configuration/creating_environment_recs
    configuration/sharing_environments
+
+.. toctree::
+   :maxdepth: 1
+   :caption: API Documentation
+
+   api/eaas
 
 .. toctree::
    :maxdepth: 1
    :caption: More Help
 
    resources/bugs
-   resources/community
    resources/faq
    resources/glossary
    resources/demo-video
