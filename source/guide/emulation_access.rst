@@ -75,4 +75,4 @@ This means that you will be unable to properly load further Software or Content 
 .. warning::
   As of v2021.10, there is also a known issue with accessing multi-file Content resources in their equivalent Content Environment. If a multi-file Content object is saved into a new Content Environment, only the first file in the object remains accessible when running the Content Environment, and the Change Resource Media does not properly switch which file is mounted.
 
-  As a work-around, users can still access multi-file Content resources in an emulation session at any time by using the Emulation Project menu to pair the Content resource with an appropriate Environment. Please contact the EAASI team via the `Support Center <https://https://forum.eaasi.cloud/c/support-center/6>`_ at any point if you have questions or concerns with this work-around.
+  As a work-around, users can still access multi-file Content resources in an emulation session at any time by using the Emulation Project menu to pair the Content resource with an appropriate Environment.

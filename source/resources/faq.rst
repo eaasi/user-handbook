@@ -72,6 +72,6 @@ Choosing a "new environment" creates an entirely new resource card anywhere reso
 
 Choosing "revision" does not create a new resource card - instead it updates and overrides the current resource card.
 
-(**This is only true** if the original Environment was a **Private** resource, not published to the EAASI Network. If the original Environment was a Public + Saved Locally Environment, selecting "revision" will have **the same** effect as "new environment", and a new resource card will be created for the revision.)
+(**This is only true** if the original Environment was a **Private** resource, not Published. If the original Environment was a Public + Saved Locally Environment, selecting "revision" will have **the same** effect as "new environment", and a new resource card will be created for the revision.)
 
 In both cases, Emulation-as-a-Service creates a derivative QCOW disk image file to represent and save the changes to the original Environment, whether the changes are *presented* as a new Environment or as a revision. So revisions can still be easily reverted by consulting the History tab on the Environment's details page and creating a fork at the point of the original Environment.
